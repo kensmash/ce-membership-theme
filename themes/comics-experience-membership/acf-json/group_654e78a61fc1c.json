@@ -3,24 +3,32 @@
     "title": "Block: Testimonial Slider",
     "fields": [
         {
-            "key": "field_654e78a65b19d",
-            "label": "Author",
-            "name": "author",
+            "key": "field_654e9424211d1",
+            "label": "Testimonials",
+            "name": "testimonials",
             "aria-label": "",
-            "type": "text",
+            "type": "post_object",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "post_type": [
+                "testimonial"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 1,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -41,5 +49,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699642102
+    "modified": 1699648752
 }

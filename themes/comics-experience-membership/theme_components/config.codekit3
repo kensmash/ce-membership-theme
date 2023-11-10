@@ -9,6 +9,28 @@
   ],
   "creatorBuild" : "34518",
   "files" : {
+    "\/js\/global.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/Users\/kenfrederick\/Documents\/sites\/wpe-comics-experience\/app\/public\/wp-content\/themes\/comics-experience-membership\/assets\/js\/global-min.js",
+      "oF" : 6,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/js\/sliders.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/Users\/kenfrederick\/Documents\/sites\/wpe-comics-experience\/app\/public\/wp-content\/themes\/comics-experience-membership\/assets\/js\/sliders-min.js",
+      "oF" : 6,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/scss\/bootstrap\/_accordion.scss" : {
       "aP" : 0,
       "bl" : 0,

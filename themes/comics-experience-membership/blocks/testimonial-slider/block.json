@@ -7,7 +7,7 @@
     "icon": "admin-comments",
     "keywords": ["testimonial", "quote"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "testimonial-slider.php"
     },
     "supports": {
