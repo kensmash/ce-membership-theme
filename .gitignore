@@ -1,0 +1,71 @@
+# Created by http://www.gitignore.io
+
+### WordPress Ignores by https://github.com/github/gitignore/blob/master/WordPress.gitignore ###
+**/
+/index.php
+
+!/themes
+!/themes/comics-experience-membership
+!/themes/comics-experience-membership/**/
+
+/themes/comics-experience-membership/assets
+
+!/plugins
+
+### OSX ###
+.AppleDouble
+.DS_Store
+.LSOverride
+
+### Icon must end with two \r ###
+Icon
+
+### Thumbnails ###
+._*
+
+### Files that might appear on external disk ###
+.Spotlight-V100
+.Trashes
+
+### Directories potentially created on remote AFP share ###
+.apdisk
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+
+### Videos ###
+*.wmv
+*.mpg
+*.mpeg
+*.mp4
+*.mov
+*.flv
+*.avi
+*.ogv
+*.ogg
+*.webm
+
+### Audio ###
+*.wav
+*.mp3
+*.wma
+
+### Created by http://www.gitignore.io ###
+*.css.map
+*.log
+*.sql
+*.zip
+.phpintel
+.sass-cache
+.tmp
+advanced-cache.php
+cache
+.cache
+db.php
+dist
+node_modules
+npm-debug.log
+object-cache.php
+.idea
+.pnpm-store
