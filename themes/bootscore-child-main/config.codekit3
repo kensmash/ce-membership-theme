@@ -243,22 +243,22 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/blocks\/testimonial-slider\/assets\/testimonial.asset.php" : {
+    "\/blocks\/testimonial-slider\/assets\/testimonial-slider.asset.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial.asset.php",
-      "oF" : 0
+      "oA" : 1,
+      "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial-slider.asset.php",
+      "oF" : 1
     },
-    "\/blocks\/testimonial-slider\/assets\/testimonial.js" : {
+    "\/blocks\/testimonial-slider\/assets\/testimonial-slider.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial-min.js",
-      "oF" : 0,
+      "oA" : 1,
+      "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial-slider-min.js",
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -266,7 +266,7 @@
       "ft" : 524288,
       "oA" : 1,
       "oAP" : "\/blocks\/testimonial-slider\/block-min.json",
-      "oF" : 0,
+      "oF" : 1,
       "oO" : 1,
       "oS" : 1
     },
@@ -274,9 +274,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/blocks\/testimonial-slider\/testimonial-slider.php",
-      "oF" : 0
+      "oF" : 1
     },
     "\/composer.json" : {
       "ft" : 524288,
@@ -441,7 +441,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/theme_components\/scss\/blocks\/_testimonials-slider.scss" : {
+    "\/theme_components\/scss\/blocks\/testimonial-slider.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -449,9 +449,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/theme_components\/scss\/blocks\/_testimonials-slider.css",
-      "oF" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial-slider.css",
+      "oF" : 3,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0

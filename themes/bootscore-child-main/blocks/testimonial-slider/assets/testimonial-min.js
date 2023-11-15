@@ -1,1 +1,0 @@
-!function($){console.log("wheee");var e=function(e){$(".slider").slick({dots:!0,infinite:!0,speed:300,slidesToShow:1,adaptiveHeight:!0,rows:0})};$(document).ready((function(){e()})),window.acf&&window.acf.addAction("render_block_preview",e)}(jQuery);
