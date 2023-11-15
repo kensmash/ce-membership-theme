@@ -49,6 +49,7 @@ $style  = implode( '; ', $styles );
 ?>
 
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" style="<?php echo esc_attr( $style ); ?>">
+    <p>BLAHHHH</p>
     <div class="testimonial__col">
         <blockquote class="testimonial__blockquote">
             <?php echo esc_html( $quote ); ?>

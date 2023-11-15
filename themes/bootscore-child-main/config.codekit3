@@ -61,6 +61,14 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/assets\/css\/main.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/css\/main.css.map",
+      "oF" : 0
+    },
     "\/assets\/css\/main.map" : {
       "cB" : 0,
       "ft" : 8192,
@@ -68,6 +76,18 @@
       "oA" : 0,
       "oAP" : "\/assets\/css\/main.map",
       "oF" : 0
+    },
+    "\/assets\/css\/slick.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/css\/slick-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/assets\/images\/favicon\/android-chrome-192x192.png" : {
       "ft" : 32768,
@@ -424,7 +444,7 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 0,
       "oAP" : "\/assets\/css\/main.css",
       "oF" : 2,
@@ -441,8 +461,8 @@
   },
   "projectAttributes" : {
     "creationDate" : 721754548.20647705,
-    "displayValue" : "bootscore-child-main",
-    "displayValueWasSetByUser" : 0,
+    "displayValue" : "CE Bootscore",
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "\/assets\/images\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0
   },
