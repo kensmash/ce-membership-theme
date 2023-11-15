@@ -243,6 +243,25 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/blocks\/testimonial-slider\/assets\/testimonial.asset.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial.asset.php",
+      "oF" : 0
+    },
+    "\/blocks\/testimonial-slider\/assets\/testimonial.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/blocks\/testimonial-slider\/block.json" : {
       "ft" : 524288,
       "oA" : 1,
