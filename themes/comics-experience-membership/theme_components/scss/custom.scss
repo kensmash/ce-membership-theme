@@ -4,6 +4,8 @@
 // Required
 @import "bootstrap/bootstrap";
 
+//@import "blocks/_testimonials-slider";
+
 $ce-blue: #83d9ff;
 $ce-darkblue: #173751;
 $ce-mediumblue: #1e80ae;
@@ -84,9 +86,9 @@ $theme-colors: (
 # General styles
 --------------------------------------------------------------*/
 
-@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
+//@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
 
-$comic-font: "Architects Daughter", Helvetica, Arial, sans-serif;
+//$comic-font: "Architects Daughter", Helvetica, Arial, sans-serif;
 
 body {
   background: #f1f1f1 url(../images/gui/bg_pattern.jpg);
@@ -222,7 +224,7 @@ hr {
 # Main Navigation
 --------------------------------------------------------------*/
 .ce-title {
-  font-family: $comic-font;
+  //font-family: $comic-font;
   text-transform: uppercase;
   font-size: 1.4em;
   padding-left: 0.15em;
@@ -247,7 +249,7 @@ hr {
 /* change the link color */
 .navbar-dark .nav-item .nav-link {
   color: $ce-iceblue;
-  font-family: $comic-font;
+  //font-family: $comic-font;
   text-transform: uppercase;
   font-size: 1.1em;
 }
@@ -339,7 +341,7 @@ li:focus-within a {
 .entry-title,
 .page-title,
 .mentor-name {
-  font-family: $comic-font;
+  //font-family: $comic-font;
   text-transform: uppercase;
   color: $ce-darkblue;
   line-height: 1em;

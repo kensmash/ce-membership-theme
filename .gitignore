@@ -7,8 +7,12 @@
 !/themes
 !/themes/comics-experience-membership
 !/themes/comics-experience-membership/**/
-
 /themes/comics-experience-membership/assets
+
+!/themes/bootscore-child-main
+!/themes/bootscore-child-main/**/
+/themes/bootscore-child-main/assets
+
 
 !/plugins
 
