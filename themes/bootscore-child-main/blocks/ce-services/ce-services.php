@@ -7,7 +7,23 @@
 
 // Load values and assign defaults.
 
-$featured_testimonials = get_field('testimonials');
+$acf_services_values = get_field('services');
+
+$services = array();
+
+if( have_rows($acf_services_values) ):
+
+    while( have_rows($acf_services_values) ) : the_row();
+
+    $services[] = array(
+        'name' 				=> get_sub_field('service_name'),
+        'thumbnail' 		=> get_sub_field('service_thumbnail_image'),
+        'description' 	    => get_sub_field('service_description'),
+    );
+
+    // End loop.
+    endwhile;
+endif;
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -16,7 +32,7 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'container testimonial-slider';
+$class_name = 'container';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
@@ -26,26 +42,55 @@ if ( ! empty( $block['align'] ) ) {
 ?>
 
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" style="">
-    <?php 
-        if( $featured_testimonials ):
-        foreach( $featured_testimonials as $testimonial ): 
-            $permalink = get_permalink( $testimonial->ID );
-            $title = get_the_title( $testimonial->ID );
-            //$content = get_post_field('post_content', $testimonial->ID); 
-            $content = get_the_excerpt($testimonial->ID); 
-            $credentials = get_field( 'credentials', $testimonial->ID );
-        ?>
-        <div class="testimonial-slide px-2">
-            <div class="card h-100">
-                <div class="card-body">
-                    <p class="card-text"><?php echo $content; ?></p>
-                    <?php echo esc_html( $title ); ?>
-                    <span><?php echo esc_html( $credentials ); ?></span>
+
+    <?php
+    
+    if( !empty( $services ) ): ?>
+
+        <div class="ce-services-cards">
+
+            <?php foreach( $services as $service ): 
+
+                $service_thumbnail = esc_url($service['thumbnail']['url']);
+
+                $div_style = 'background-image: url(' . esc_url($service_thumbnail) . '); background-size: cover;';
+
+                if (!$service_thumbnail) {
+                    $div_style = 'background-image: url(' . get_stylesheet_directory_uri() . '/images/ui/guru-video-thumbnail-default.png); background-size: contain; background-repeat: no-repeat; background-position: center center;';
+                }
+                
+                ?>
+
+                    <div class="ce-service-cards-slide">
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="services-image-container" style="<?php echo $div_style; ?>">
+                            <div class="card-body">
+                                <p class="card-text"><?php echo $service['name']; ?></p>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                <?php endforeach; ?>
+                
+            <?php endif; ?>
+
+        </div><!-- .ce-services-cards -->
+
+        <div class="ce-services-descriptions">
+
+            <?php foreach( $services as $service ): ?>
+
+                <div class="ce-service-descriptions-slide">
+                    <div>
+                        <?php echo $service['description']; ?>
+                    </div>
                 </div>
-            </div>
-        </div>
-    <?php 
-        endforeach;
-        endif; 
-    ?>
+
+            <?php endforeach; ?>
+
+        </div> <!-- .ce-services-descriptions -->
+        
+    <?php endif; ?>
 </div>
