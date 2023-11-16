@@ -1,0 +1,17 @@
+{
+    "name": "acf/comics-experience-services",
+    "title": "Comics Experience Services",
+    "description": "Block to display Comics Experience services.",
+    "style": [ "file:./assets/ce-services.css" ],
+    "script": "file:./assets/ce-services.js",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["services"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "ce-services.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

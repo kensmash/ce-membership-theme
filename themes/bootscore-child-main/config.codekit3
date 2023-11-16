@@ -33,6 +33,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/group_65567ed5e194d.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_65567ed5e194d-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/post_type_654e7459cd01d.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -221,6 +229,17 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/js\/custom-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/custom-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/assets\/js\/global-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -243,6 +262,38 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/blocks\/ce-services\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/ce-services\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/ce-services\/ce-services.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-services\/ce-services.php",
+      "oF" : 0
+    },
+    "\/blocks\/hero-block\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/hero-block\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/hero-block\/hero-block.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/hero-block\/hero-block.php",
+      "oF" : 0
+    },
     "\/blocks\/testimonial-slider\/assets\/testimonial-slider.asset.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -250,6 +301,18 @@
       "oA" : 1,
       "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial-slider.asset.php",
       "oF" : 1
+    },
+    "\/blocks\/testimonial-slider\/assets\/testimonial-slider.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial-slider-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/blocks\/testimonial-slider\/assets\/testimonial-slider.js" : {
       "bF" : 0,
@@ -326,6 +389,14 @@
       "oAP" : "\/LICENSE",
       "oF" : 0
     },
+    "\/page.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page.php",
+      "oF" : 0
+    },
     "\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -384,8 +455,8 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/theme_components\/js\/custom-min.js",
-      "oF" : 0,
+      "oAP" : "\/assets\/js\/custom-min.js",
+      "oF" : 2,
       "sC" : 3,
       "tS" : 0
     },

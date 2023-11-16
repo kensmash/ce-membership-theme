@@ -27,7 +27,10 @@ function bootscore_child_enqueue_styles() {
 
 }
 
-/**
-* Custom blocks.
-*/
+// Fluid layout
+function bootscore_container_class() {
+  return "container-fluid";
+}
+
+// Custom blocks.
 require get_theme_file_path( 'inc/blocks.php' );

@@ -1,7 +1,7 @@
 {
     "name": "acf/testimonial-slider",
     "title": "Testimonial Slider",
-    "description": "A custom testimonial slider block that uses ACF fields.",
+    "description": "A slider block for displaying CE testimonials.",
     "style": [ "file:./assets/testimonial-slider.css" ],
     "script": "file:./assets/testimonial-slider.js",
     "category": "formatting",

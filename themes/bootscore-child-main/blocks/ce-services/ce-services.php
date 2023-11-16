@@ -1,6 +1,6 @@
 <?php
 /**
- * Testimonial Block template.
+ * Comics Experience Services Block template.
  *
  * @param array $block The block settings and attributes.
  */
