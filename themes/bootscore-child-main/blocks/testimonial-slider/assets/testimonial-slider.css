@@ -1,0 +1,8 @@
+.testimonial-slider .slick-track {
+  display: flex !important;
+}
+
+.testimonial-slider .slick-slide {
+  height: inherit !important;
+}
+
