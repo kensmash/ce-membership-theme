@@ -34,3 +34,7 @@ function bootscore_container_class() {
 
 // Custom blocks.
 require get_theme_file_path( 'inc/blocks.php' );
+
+// Extend TinyMCE editor
+require get_theme_file_path( 'inc/extend-tiny-mce.php' );
+
