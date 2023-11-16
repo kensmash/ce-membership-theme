@@ -7,13 +7,11 @@
 
 // Load values and assign defaults.
 
-$acf_services_values = get_field('services');
+$services = [];
 
-$services = array();
+if( have_rows('services') ):
 
-if( have_rows($acf_services_values) ):
-
-    while( have_rows($acf_services_values) ) : the_row();
+    while( have_rows('services') ) : the_row();
 
     $services[] = array(
         'name' 				=> get_sub_field('service_name'),
@@ -73,8 +71,6 @@ if ( ! empty( $block['align'] ) ) {
                     </div>
 
                 <?php endforeach; ?>
-                
-            <?php endif; ?>
 
         </div><!-- .ce-services-cards -->
 

@@ -27,7 +27,7 @@ function my_mce_before_init_insert_formats( $init_array ) {
             'title' => 'Button Primary Outline',  
             'selector' => 'a',  
             'classes' => 'btn btn-outline-primary'             
-        )
+        ),
         array(  
             'title' => 'Button Secondary Outline',  
             'selector' => 'a',  
