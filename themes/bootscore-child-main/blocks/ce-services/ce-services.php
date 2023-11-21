@@ -8,6 +8,7 @@
 // Load values and assign defaults.
 
 $services = [];
+$services_funnels = [];
 
 if( have_rows('services') ):
 
@@ -16,10 +17,23 @@ if( have_rows('services') ):
     $services[] = array(
         'name' 				=> get_sub_field('service_name'),
         'thumbnail' 		=> get_sub_field('service_thumbnail_image'),
-        'description' 	    => get_sub_field('service_description'),
     );
 
-    // End loop.
+    if( have_rows('service_funnel') ):
+       
+        // loop through rows (sub repeater)
+        while( have_rows('service_funnel') ): the_row();
+
+            $services_funnels[] = array(
+                'title' 			=> get_sub_field('title'),
+                'description' 		=> get_sub_field('description'),
+                'button_text' 		=> get_sub_field('button_text'),
+                'link' 		        => get_sub_field('link'),
+            );
+
+        endwhile;
+        endif; //if( get_sub_field('service_funnel') ): 
+
     endwhile;
 endif;
 
@@ -61,8 +75,8 @@ if ( ! empty( $block['align'] ) ) {
 
                     <div class="ce-service-cards-slide">
 
-                        <div class="card" style="width: 18rem;">
-                            <div class="services-image-container" style="<?php echo $div_style; ?>">
+                        <div class="card">
+                            <div class="services-image-container" style="<?php echo $div_style; ?>"></div>
                             <div class="card-body">
                                 <p class="card-text"><?php echo $service['name']; ?></p>
                             </div>
@@ -76,11 +90,11 @@ if ( ! empty( $block['align'] ) ) {
 
         <div class="ce-services-descriptions">
 
-            <?php foreach( $services as $service ): ?>
+            <?php foreach( $services_funnels as $service_funnel ): ?>
 
                 <div class="ce-service-descriptions-slide">
                     <div>
-                        <?php echo $service['description']; ?>
+                        <?php echo $service_funnel['description']; ?>
                     </div>
                 </div>
 

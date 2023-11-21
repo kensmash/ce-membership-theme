@@ -7,7 +7,7 @@
     "icon": "admin-comments",
     "keywords": ["hero"],
     "acf": {
-        "mode": "auto",
+        "mode": "preview",
         "renderTemplate": "hero-block.php"
     },
     "supports": {

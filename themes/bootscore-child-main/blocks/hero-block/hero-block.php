@@ -8,10 +8,8 @@
 // Load values and assign defaults.
 $headline          = !empty(get_field( 'headline' )) ? get_field( 'headline' ) : 'Your headline here...';
 $subhead           = get_field( 'subhead' );
-$author_role       = get_field( 'role' );
 $background_image  = get_field( 'background_image' );
 $background_color  = get_field( 'background_color' ); // ACF's color picker.
-$text_color        = get_field( 'text_color' ); // ACF's color picker.
 
 
 // Support custom "anchor" values.
@@ -33,7 +31,7 @@ if ( $background_color || $text_color ) {
 }
 
 // Build a valid style attribute for background and text colors.
-$styles = array( 'background-color: ' . $background_color, 'color: ' . $text_color );
+$styles = array( 'background-color: ' . $background_color );
 $style  = implode( '; ', $styles );
 ?>
 

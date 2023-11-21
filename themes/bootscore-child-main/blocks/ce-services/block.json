@@ -3,7 +3,7 @@
     "title": "Comics Experience Services",
     "description": "Block to display Comics Experience services.",
     "style": [ "file:./assets/ce-services.css" ],
-    "script": "file:./assets/ce-services.js",
+    "script": "file:./assets/ce-services-sliders.js",
     "category": "formatting",
     "icon": "admin-comments",
     "keywords": ["services"],
