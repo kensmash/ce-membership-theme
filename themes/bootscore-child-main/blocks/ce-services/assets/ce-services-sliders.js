@@ -3,8 +3,10 @@
     var initializeBlock = function( $block ) {
         $(".ce-services-cards").slick({
           slidesToShow: 2,
+          arrows: false,
           mobileFirst: true,
           focusOnSelect: true,
+          asNavFor: ".ce-services-descriptions",
           responsive: [
             {
               breakpoint: 1024,
@@ -18,7 +20,7 @@
         $(".ce-services-descriptions").slick({
           slidesToShow: 1,
           mobileFirst: true,
-          focusOnSelect: true,
+          arrows: false,
         });
     }
 
