@@ -3,6 +3,7 @@
     var initializeBlock = function( $block ) {
         $(".ce-services-cards").slick({
           slidesToShow: 2,
+          slidesToScroll: 1,
           arrows: false,
           mobileFirst: true,
           focusOnSelect: true,
@@ -19,8 +20,10 @@
 
         $(".ce-services-descriptions").slick({
           slidesToShow: 1,
+          slidesToScroll: 1,
           mobileFirst: true,
           arrows: false,
+          fade: true,
         });
     }
 

@@ -9,8 +9,7 @@
 
 $services = [];
 
-
-
+/* inspiration https://support.advancedcustomfields.com/forums/topic/saving-repeater-nested-repeater-values-to-an-associative-array/ */
 if (have_rows('services')) {
     while (have_rows('services')) {
       the_row();
@@ -92,12 +91,14 @@ if ( ! empty( $block['align'] ) ) {
             <?php foreach( $services as $service ): ?>
 
                 <div class="ce-service-descriptions-slide">
-                    <div>
-                        <?php foreach( $service['service_funnels'] as $service_funnel ): ?>
+                 
+                    <?php foreach( $service['service_funnels'] as $service_funnel ): ?>
+                        <div>
                             <?php echo $service_funnel['title']; ?>
                             <?php echo $service_funnel['description']; ?>
-                        <?php endforeach; ?>
-                    </div>
+                        </div>
+                    <?php endforeach; ?>
+                    
                 </div>
 
             <?php endforeach; ?>
