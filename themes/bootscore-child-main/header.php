@@ -39,9 +39,9 @@
 
   <header id="masthead" class="site-header">
 
-    <div class="fixed-top bg-body-tertiary">
+    <div class="fixed-top">
 
-      <nav id="nav-main" class="navbar navbar-expand-lg">
+      <nav id="nav-main" class="navbar navbar-expand-lg navbar-transparent">
 
         <div class="<?= bootscore_container_class(); ?>">
 

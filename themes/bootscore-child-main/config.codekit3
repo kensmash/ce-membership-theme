@@ -345,6 +345,25 @@
       "oAP" : "\/blocks\/ce-services\/ce-services.php",
       "oF" : 0
     },
+    "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.asset.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.asset.php",
+      "oF" : 0
+    },
+    "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/blocks\/community-spotlight\/block.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -359,22 +378,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/blocks\/community-spotlight\/community-spotlight.php",
-      "oF" : 0
-    },
-    "\/blocks\/hero-block\/block.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/blocks\/hero-block\/block-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/blocks\/hero-block\/hero-block.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/blocks\/hero-block\/hero-block.php",
       "oF" : 0
     },
     "\/blocks\/testimonial-slider\/assets\/testimonial-slider.asset.php" : {
@@ -423,22 +426,6 @@
       "oA" : 1,
       "oAP" : "\/blocks\/testimonial-slider\/testimonial-slider.php",
       "oF" : 1
-    },
-    "\/blocks\/video-block\/block.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/blocks\/video-block\/block-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/blocks\/video-block\/video-block.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/blocks\/video-block\/video-block.php",
-      "oF" : 0
     },
     "\/composer.json" : {
       "ft" : 524288,
