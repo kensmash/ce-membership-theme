@@ -6,11 +6,11 @@
  */
 
 // Load values and assign defaults.
-$headline          = !empty(get_field( 'headline' )) ? get_field( 'headline' ) : 'Your headline here...';
+$headline          = !empty(get_field( 'block_headline' )) ? get_field( 'block_headline' ) : 'Your headline here...';
 $subhead           = get_field( 'subhead' );
 $background_image  = get_field( 'background_image' );
 $background_color  = get_field( 'background_color' ); // ACF's color picker.
-
+$text_color        = get_field( 'text_color' ); // ACF's color picker.
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -31,26 +31,43 @@ if ( $background_color || $text_color ) {
 }
 
 // Build a valid style attribute for background and text colors.
-$styles = array( 'background-color: ' . $background_color );
+$styles = array( 'background-color: ' . $background_color, 'color: ' . $text_color );
 $style  = implode( '; ', $styles );
 ?>
 
-<div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" style="<?php echo esc_attr( $style ); ?>">
-    <div class="testimonial__col">
-        <blockquote class="testimonial__blockquote">
-            <?php echo esc_html( $quote ); ?>
+<div <?php echo esc_attr( $anchor ); ?>class="container-fluid <?php echo esc_attr( $class_name );?> mt-lg-5" style="<?php echo esc_attr( $style ); ?>">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div><!-- .col -->
 
-            <?php if ( !empty( $quote_attribution ) ) : ?>
-                <?php echo wp_kses_post( $quote_attribution ); ?>
-            <?php endif; ?>
-        </blockquote>
-    </div>
+            <div class="col">
+                <h1><?php echo esc_html($headline); ?></h1>
+                <p><?php echo esc_html($subhead); ?></p>
+                <?php
+                    if( have_rows('buttons') ): ?>
 
-    <?php if ( $image ) : ?>
-        <div class="testimonial__col">
-            <figure class="testimonial__image">
-                <?php echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'testimonial__img' ) ); ?>
-            </figure>
-        </div>
-    <?php endif; ?>
-</div>
+                    <div>
+
+                        <?php while( have_rows('buttons') ) : the_row();
+
+                            $button_text = get_sub_field('button_text'); 
+                            $button_link = get_sub_field('button_link'); 
+                            $button_class = get_sub_field('button_color'); 
+                            ?>
+
+                            <a class="btn <?php echo esc_attr($button_class); ?>" href="<?php echo esc_attr( $button_link); ?>" role="button"><?php echo esc_html($button_text); ?></a>
+
+                            <?php 
+
+                        endwhile; ?>
+
+                    </div>
+
+                    <?php endif; ?>
+                
+            </div> <!-- .col -->
+            
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .container-fluid -->

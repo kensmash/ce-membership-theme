@@ -3,9 +3,27 @@
     "title": "Block: Hero",
     "fields": [
         {
+            "key": "field_655df849dac15",
+            "label": "Text Color",
+            "name": "text_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
             "key": "field_6556a9011a8cf",
             "label": "Headline",
-            "name": "headline",
+            "name": "block_headline",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -161,8 +179,8 @@
                         "id": ""
                     },
                     "choices": {
-                        "blue": "Blue",
-                        "green": "Green"
+                        "btn-primary": "Blue",
+                        "btn-success": "Green"
                     },
                     "default_value": "",
                     "return_format": "value",
@@ -191,5 +209,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1700595492
+    "modified": 1700658294
 }
