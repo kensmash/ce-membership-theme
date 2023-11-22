@@ -1,0 +1,17 @@
+{
+    "name": "acf/video-block",
+    "title": "CE Video Block",
+    "description": "Block to display CE promotional video.",
+    "style": [ "file:./assets/ce-services.css" ],
+    "script": "file:./assets/ce-services-sliders.js",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["services"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "video-block.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
