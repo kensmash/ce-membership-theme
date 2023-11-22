@@ -5,7 +5,7 @@
     "style": [ "file:./assets/hero-block.css" ],
     "category": "formatting",
     "icon": "admin-comments",
-    "keywords": ["hero"],
+    "keywords": ["community", "spotlight"],
     "acf": {
         "mode": "preview",
         "renderTemplate": "hero-block.php"

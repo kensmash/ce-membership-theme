@@ -6,7 +6,7 @@
     "script": "file:./assets/ce-services-sliders.js",
     "category": "formatting",
     "icon": "admin-comments",
-    "keywords": ["services"],
+    "keywords": ["video"],
     "acf": {
         "mode": "auto",
         "renderTemplate": "video-block.php"

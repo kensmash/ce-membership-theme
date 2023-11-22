@@ -38,8 +38,6 @@ $style  = implode( '; ', $styles );
 <div <?php echo esc_attr( $anchor ); ?>class="container-fluid <?php echo esc_attr( $class_name );?> mt-lg-5" style="<?php echo esc_attr( $style ); ?>">
     <div class="container">
         <div class="row">
-            <div class="col">
-            </div><!-- .col -->
 
             <div class="col">
                 <h1><?php echo esc_html($headline); ?></h1>
