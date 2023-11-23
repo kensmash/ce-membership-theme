@@ -14,7 +14,7 @@
 
 ?>
 
-<footer class="container-fluid bg-body-tertiary text-light border-top">
+<footer class="container-fluid ce-footer border-top">
 
   <div class="container bootscore-footer pt-5 pb-3">
     <div class="<?= bootscore_container_class(); ?>">
