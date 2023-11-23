@@ -345,14 +345,6 @@
       "oAP" : "\/blocks\/ce-services\/ce-services.php",
       "oF" : 0
     },
-    "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.asset.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.asset.php",
-      "oF" : 0
-    },
     "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -363,6 +355,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/blocks\/community-spotlight\/assets\/couunity-spotlight-slider.asset.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-spotlight\/assets\/couunity-spotlight-slider.asset.php",
+      "oF" : 0
     },
     "\/blocks\/community-spotlight\/block.json" : {
       "ft" : 524288,
