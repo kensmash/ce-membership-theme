@@ -35,6 +35,9 @@ function bootscore_container_class() {
 // Custom blocks.
 require get_theme_file_path( 'inc/blocks.php' );
 
+// Custom widgets.
+require get_theme_file_path( 'inc/widgets.php' );
+
 // Extend TinyMCE editor
 require get_theme_file_path( 'inc/extend-tiny-mce.php' );
 

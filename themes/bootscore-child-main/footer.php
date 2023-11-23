@@ -14,7 +14,7 @@
 
 ?>
 
-<footer class="bg-body-tertiary body-color-dark">
+<footer class="bg-body-tertiary text-light">
 
   <div class="bootscore-footer pt-5 pb-3">
     <div class="<?= bootscore_container_class(); ?>">
@@ -25,32 +25,44 @@
       <?php endif; ?>
 
       <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row d-flex justify-content-center">
 
         <!-- Footer 1 Widget -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-2">
           <?php if (is_active_sidebar('footer-1')) : ?>
             <?php dynamic_sidebar('footer-1'); ?>
           <?php endif; ?>
         </div>
 
         <!-- Footer 2 Widget -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-2">
           <?php if (is_active_sidebar('footer-2')) : ?>
             <?php dynamic_sidebar('footer-2'); ?>
           <?php endif; ?>
         </div>
 
         <!-- Footer 3 Widget -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-2">
           <?php if (is_active_sidebar('footer-3')) : ?>
             <?php dynamic_sidebar('footer-3'); ?>
           <?php endif; ?>
         </div>
 
         <!-- Footer 4 Widget -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-2">
           <?php if (is_active_sidebar('footer-4')) : ?>
             <?php dynamic_sidebar('footer-4'); ?>
+          <?php endif; ?>
+        </div>
+
+        <!-- Footer 4 Widget -->
+        <div class="col-md-6 col-lg-2">
+          <?php if (is_active_sidebar('footer-5')) : ?>
+            <?php dynamic_sidebar('footer-5'); ?>
           <?php endif; ?>
         </div>
 

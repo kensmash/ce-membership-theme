@@ -491,6 +491,14 @@
       "oAP" : "\/inc\/extend-tiny-mce.php",
       "oF" : 0
     },
+    "\/inc\/widgets.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/widgets.php",
+      "oF" : 0
+    },
     "\/LICENSE" : {
       "cB" : 0,
       "ft" : 8192,
