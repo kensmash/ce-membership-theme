@@ -3,46 +3,6 @@
     "title": "Block: Community Spotlight",
     "fields": [
         {
-            "key": "field_655e25c6ad7bf",
-            "label": "Headline",
-            "name": "headline",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_655e25dead7c0",
-            "label": "Subhead",
-            "name": "subhead",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
-        },
-        {
             "key": "field_655e25e8ad7c1",
             "label": "Books",
             "name": "books",
@@ -174,5 +134,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1700668969
+    "modified": 1700691301
 }

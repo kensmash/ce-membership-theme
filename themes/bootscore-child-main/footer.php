@@ -14,7 +14,7 @@
 
 ?>
 
-<footer class="ce-footer">
+<footer class="bg-body-tertiary body-color-dark">
 
   <div class="bootscore-footer pt-5 pb-3">
     <div class="<?= bootscore_container_class(); ?>">
