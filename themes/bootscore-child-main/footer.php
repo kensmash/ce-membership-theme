@@ -17,14 +17,9 @@
 <footer class="container-fluid ce-footer border-top">
 
   <div class="container bootscore-footer pt-5 pb-3">
-    <div class="<?= bootscore_container_class(); ?>">
-
-      <!-- Top Footer Widget -->
-      <?php if (is_active_sidebar('top-footer')) : ?>
-        <?php dynamic_sidebar('top-footer'); ?>
-      <?php endif; ?>
 
       <div class="row">
+
         <div class="col">
             <div>
 
@@ -38,10 +33,12 @@
                 <?php endif; ?>
             </div>
         </div><!-- .col -->
+        
         <div class="col">
             
-        </div>
-      </div><!-- .col -->
+        </div><!-- .col -->
+
+      </div><!-- .row -->
 
       <div class="row justify-content-space-between">
 
@@ -73,19 +70,16 @@
           <?php endif; ?>
         </div>
 
-        <!-- Footer 4 Widget -->
+        <!-- Footer 5 Widget -->
         <div class="col-md-6 col-lg">
           <?php if (is_active_sidebar('footer-5')) : ?>
             <?php dynamic_sidebar('footer-5'); ?>
           <?php endif; ?>
         </div>
 
-      </div>
+      </div><!-- .row -->
 
-    
-
-    </div>
-  </div>
+    </div><!--  .container -->
 
 </footer>
 
