@@ -30,11 +30,9 @@ get_header();
             <header class="container entry-header">
               <?php 
                 the_post();
-                if (!get_field('hide_page_title')):
-                  echo '<h1>' . the_title() . '</h1>'; 
-                endif; 
-                bootscore_post_thumbnail();
-              ?>
+                if (!get_field('hide_page_title')): ?>
+                  <h1><?php the_title(); ?></h1>
+               <?php endif; ?>
             </header>
 
             <div class="entry-content">
