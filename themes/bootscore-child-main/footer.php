@@ -14,20 +14,34 @@
 
 ?>
 
-<footer class="bg-body-tertiary text-light">
+<footer class="container-fluid bg-body-tertiary text-light">
 
-  <div class="bootscore-footer pt-5 pb-3">
+  <div class="container bootscore-footer pt-5 pb-3 border-top">
     <div class="<?= bootscore_container_class(); ?>">
 
       <!-- Top Footer Widget -->
       <?php if (is_active_sidebar('top-footer')) : ?>
-        <?php dynamic_sidebar('top footer'); ?>
+        <?php dynamic_sidebar('top-footer'); ?>
       <?php endif; ?>
 
       <div class="row">
-        <div class="col"></div>
-        <div class="col"></div>
-      </div>
+        <div class="col">
+            <div>
+
+            </div>
+            <div>
+                <small class="bootscore-copyright"><span class="cr-symbol">&copy;</span>&nbsp;<?= date('Y'); ?> <?php bloginfo('name'); ?></small>
+            </div>
+            <div>
+                <?php if (is_active_sidebar('footer-social-media')) : ?>
+                    <?php dynamic_sidebar('footer-social-media'); ?>
+                <?php endif; ?>
+            </div>
+        </div><!-- .col -->
+        <div class="col">
+            
+        </div>
+      </div><!-- .col -->
 
       <div class="row d-flex justify-content-center">
 
@@ -68,28 +82,8 @@
 
       </div>
 
-      <!-- Bootstrap 5 Nav Walker Footer Menu -->
-      <?php
-      wp_nav_menu(array(
-        'theme_location' => 'footer-menu',
-        'container'      => false,
-        'menu_class'     => '',
-        'fallback_cb'    => '__return_false',
-        'items_wrap'     => '<ul id="footer-menu" class="nav %2$s">%3$s</ul>',
-        'depth'          => 1,
-        'walker'         => new bootstrap_5_wp_nav_menu_walker()
-      ));
-      ?>
+    
 
-    </div>
-  </div>
-
-  <div class="bootscore-info border-top py-2 text-center">
-    <div class="<?= bootscore_container_class(); ?>">
-      <?php if (is_active_sidebar('footer-info')) : ?>
-        <?php dynamic_sidebar('footer-info'); ?>
-      <?php endif; ?>
-      <small class="bootscore-copyright"><span class="cr-symbol">&copy;</span>&nbsp;<?= date('Y'); ?> <?php bloginfo('name'); ?></small>
     </div>
   </div>
 

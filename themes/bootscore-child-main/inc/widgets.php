@@ -143,8 +143,8 @@ if (!function_exists('bootscore_widgets_init')) :
 
     // Footer Info
     register_sidebar(array(
-      'name'          => esc_html__('Footer Info', 'bootscore'),
-      'id'            => 'footer-info',
+      'name'          => esc_html__('Footer Social Media', 'bootscore'),
+      'id'            => 'footer-social-media',
       'description'   => esc_html__('Add widgets here.', 'bootscore'),
       'before_widget' => '<div class="footer_widget">',
       'after_widget'  => '</div>',
