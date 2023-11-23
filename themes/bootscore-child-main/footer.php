@@ -14,9 +14,9 @@
 
 ?>
 
-<footer class="container-fluid bg-body-tertiary text-light">
+<footer class="container-fluid bg-body-tertiary text-light border-top">
 
-  <div class="container bootscore-footer pt-5 pb-3 border-top">
+  <div class="container bootscore-footer pt-5 pb-3">
     <div class="<?= bootscore_container_class(); ?>">
 
       <!-- Top Footer Widget -->
@@ -43,7 +43,7 @@
         </div>
       </div><!-- .col -->
 
-      <div class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-space-between">
 
         <!-- Footer 1 Widget -->
         <div class="col-md-6 col-lg-2">
