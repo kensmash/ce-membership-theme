@@ -55,7 +55,7 @@
               <span class="h5 offcanvas-title"><?php esc_html_e('Menu', 'bootscore'); ?></span>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body justify-content-lg-center">
 
               <!-- Bootstrap 5 Nav Walker Main Menu -->
               <?php
@@ -64,7 +64,7 @@
                 'container'      => false,
                 'menu_class'     => '',
                 'fallback_cb'    => '__return_false',
-                'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto %2$s">%3$s</ul>',
+                'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-lg-0 %2$s">%3$s</ul>',
                 'depth'          => 2,
                 'walker'         => new bootstrap_5_wp_nav_menu_walker()
               ));
