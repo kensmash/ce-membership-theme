@@ -41,7 +41,7 @@
 
     <div class="fixed-top">
 
-      <nav id="nav-main" class="navbar navbar-expand-lg navbar-transparent">
+      <nav id="nav-main" class="navbar navbar-expand-lg <?php echo is_front_page() ? "navbar-transparent" : ""; ?>">
 
         <div class="<?= bootscore_container_class(); ?>">
 
@@ -69,6 +69,29 @@
                 'walker'         => new bootstrap_5_wp_nav_menu_walker()
               ));
               ?>
+
+              <?php 
+
+              if ( is_user_logged_in() ) {
+                //there is a user, is user a member?
+                //if not a member, show signup button
+                $user_id = get_current_user_id();
+                $mepr_user = new MeprUser( $user_id );
+                //echo var_dump($mepr_user);
+                if( !$mepr_user ) { ?>
+                  <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2">
+                    <a>Community Signup</a>
+                  </div>
+                <?php 
+                }
+              } else { 
+                //no logged in user, show signup and login buttons
+                ?>
+                <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2">
+                  <a>Community Login</a>
+                  <a class="btn btn-success ms-3" href="#" role="button">Community Signup</a>
+                </div>
+              <?php } ?>
 
               <!-- Top Nav 2 Widget -->
               <?php if (is_active_sidebar('top-nav-2')) : ?>
