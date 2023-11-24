@@ -39,48 +39,6 @@ add_action( 'after_setup_theme', 'comics_experience_woocommerce_setup' );
 
 
 /**
- * Remove default WooCommerce wrapper.
- */
-remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
-remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
-
-if ( ! function_exists( 'comics_experience_woocommerce_wrapper_before' ) ) {
-	/**
-	 * Before Content.
-	 *
-	 * Wraps all WooCommerce content in wrappers which match the theme markup.
-	 *
-	 * @return void
-	 */
-	function comics_experience_woocommerce_wrapper_before() {
-		?>
-<main id="primary" class="site-main container p-4 bg-white shadow-sm clearfix">
-	<?php
-	}
-}
-add_action( 'woocommerce_before_main_content', 'comics_experience_woocommerce_wrapper_before' );
-
-if ( ! function_exists( 'comics_experience_woocommerce_wrapper_after' ) ) {
-	/**
-	 * After Content.
-	 *
-	 * Closes the wrapping divs.
-	 *
-	 * @return void
-	 */
-	function comics_experience_woocommerce_wrapper_after() {
-		?>
-</main><!-- #main -->
-<?php
-	}
-}
-add_action( 'woocommerce_after_main_content', 'comics_experience_woocommerce_wrapper_after' );
-
-
-
-
-
-/**
  * WooCommerce customizations
  */
  
@@ -146,22 +104,6 @@ function woo_related_products_limit() {
 //remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 
- /**
- * Add course meta info before title
- * *https://wordpress.org/support/topic/add-content-under-single-product-title/
- */ 
-
-add_action( 'woocommerce_before_single_product', 'display_courses_meta', 5 );
-function display_courses_meta(){
-	$content = "";
-
-   if ( is_product() && has_term( 'courses', 'product_cat' ) ) {
-	$content = get_template_part( 'template-parts/content', 'coursesmeta' );
-} 
-
-   return $content;
-}
-
 
 /**
   * Remove default product page tabs
@@ -175,34 +117,6 @@ function display_courses_meta(){
    return $tabs;
  }
  
-/**
- * Add in custom tabs based on category
- */ 
-add_action( 'woocommerce_after_single_product_summary', 'product_custom_content', 10);
-
-function product_custom_content() {
-	/* https://docs.woocommerce.com/document/remov-product-content-based-on-category */
-	//is it a course?
-	if ( is_product() && has_term( 'courses', 'product_cat' ) ) {
-		global $product;
-		//check for sale, if on sale get bundle template and course tabs
-		if ( $product->is_on_sale() ) {
-			/* well crap, this apparently has stopped working for Woo Discount Rules ? */
-			$content = get_template_part( 'template-parts/content', 'coursebundle' ) . get_template_part( 'template-parts/tabs/tabs', 'courses' );
-		} else {
-			//else just get course tabs
-			$content = get_template_part( 'template-parts/content', 'coursebundle' ) . get_template_part( 'template-parts/tabs/tabs', 'courses' );
-			/* $content = get_template_part( 'template-parts/tabs/tabs', 'courses' ); */
-		}	
-	} else {
-		//else get page tabs
-		$content = get_template_part( 'template-parts/tabs/tabs', 'page' );
-	}
-    
-    return $content;
-    
-}
-
 
 
 /*
@@ -215,21 +129,6 @@ add_action( 'woocommerce_single_product_summary', 'the_content', 20 );
 # WooCommerce Archive Pages
 --------------------------------------------------------------*/
 
-/*
-* add course meta above course on archive pages
-* https://www.businessbloomer.com/woocommerce-visual-hook-guide-archiveshopcat-page/
-*/
-function woo_course_archive_showmeta() {
-      
-    if ( has_term( 'courses', 'product_cat' ) ) {
-		$content = get_template_part( 'template-parts/productsarchive/courses', 'meta' );
-	} 
-    
-    return $content;
-      
-}
-
-add_action( 'woocommerce_after_shop_loop_item_title', 'woo_course_archive_showmeta', 20 );
 
 /*
 * add product short description on archive pages
@@ -257,6 +156,12 @@ function display_sale_badge() {
 		echo '<span class="onsale">Sale!</span>'; 
 	}
  }
+
+
+ // Disable AJAX Cart
+function register_ajax_cart() {
+}
+add_action('after_setup_theme', 'register_ajax_cart');
 
 
 
