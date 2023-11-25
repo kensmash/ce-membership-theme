@@ -39,7 +39,7 @@
 
   <header id="masthead" class="site-header">
 
-    <div class="fixed-top">
+    <div class="<?php echo get_post_type( get_the_ID() ) == 'courses' ? "" : "fixed-top"; ?>">
 
       <nav id="nav-main" class="navbar navbar-expand-lg <?php echo is_front_page() ? "navbar-transparent" : ""; ?>">
 
