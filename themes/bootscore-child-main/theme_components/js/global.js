@@ -6,7 +6,7 @@
  *
  * Idea from: https://stackoverflow.com/questions/49173297/bootstrap-4-smooth-scrolling-working-on-nav-link-but-not-on-other-anchor-eleme/49173734
  */
-jQuery(".anchorlink").click(function () {
+jQuery(".anchorlink").click(function (event) {
     var sectionTo = jQuery(this).attr("href");
     jQuery("html, body").animate(
       {
@@ -19,16 +19,3 @@ jQuery(".anchorlink").click(function () {
 });
   
 
-jQuery(function($) {
-  //caches a jQuery object containing the header element
-  var header = $("#nav-main");
-  $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      //console.log("scroll? ", scroll)
-      if (scroll >= 400) {
-          header.removeClass('navbar-transparent').addClass('navbar-dark bg-dark');
-      } else {
-          header.removeClass('navbar-dark bg-dark').addClass('navbar-transparent');
-      }
-  });
-});

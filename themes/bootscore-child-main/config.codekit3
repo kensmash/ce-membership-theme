@@ -597,17 +597,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/theme_components\/js\/custom.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/assets\/js\/custom-min.js",
-      "oF" : 2,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/theme_components\/js\/global.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -615,6 +604,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/assets\/js\/global-min.js",
+      "oF" : 2,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/theme_components\/js\/home.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/home-min.js",
       "oF" : 2,
       "sC" : 3,
       "tS" : 0
