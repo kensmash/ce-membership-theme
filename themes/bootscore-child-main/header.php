@@ -39,9 +39,9 @@
 
   <header id="masthead" class="site-header">
 
-    <?php $post_types = array('courses', 'lesson'); ?>
+    <?php $avoid_fixed_nav_post_types = array('courses', 'lesson', 'forum', 'topic', 'reply'); ?>
 
-    <div class="<?php echo in_array( get_post_type( get_the_id() ), $post_types ) ? "" : "fixed-top"; ?>">
+    <div class="<?php echo in_array( get_post_type( get_the_id() ), $avoid_fixed_nav_post_types ) ? "" : "fixed-top"; ?>">
 
       <nav id="nav-main" class="navbar navbar-expand-lg <?php echo is_front_page() ? "navbar-transparent" : ""; ?>">
 

@@ -16,8 +16,10 @@
 get_header();
 ?>
 
+<?php $avoid_fluid_container_post_types = array('forum', 'topic', 'reply'); ?>
+
   <div id="content" class="site-content <?php echo bootscore_container_class(); ?> py-5 mt-5">
-    <div id="primary" class="content-area <?php echo is_cart() ? "container" : ""; ?>">
+    <div id="primary" class="content-area <?php echo is_cart() || in_array( get_post_type( get_the_id() ), $avoid_fluid_container_post_types ) ? "container" : ""; ?>">
 
       <!-- Hook to add something nice -->
       <?php bs_after_primary(); ?>
