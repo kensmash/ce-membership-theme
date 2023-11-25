@@ -28,9 +28,9 @@ function bootscore_child_enqueue_styles() {
 }
 
 // Fluid layout
-function bootscore_container_class() {
+/* function bootscore_container_class() {
   return "container-fluid";
-}
+} */
 
 // Custom blocks.
 require get_theme_file_path( 'inc/blocks.php' );
