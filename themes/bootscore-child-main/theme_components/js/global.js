@@ -18,3 +18,17 @@ jQuery(".anchorlink").click(function () {
     event.stopPropagation();
 });
   
+
+jQuery(function($) {
+  //caches a jQuery object containing the header element
+  var header = $("#nav-main");
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      console.log("scroll? ", scroll)
+      if (scroll >= 400) {
+          header.removeClass('navbar-transparent').addClass('navbar-dark');
+      } else {
+          header.removeClass('navbar-dark').addClass('navbar-transparent');
+      }
+  });
+});

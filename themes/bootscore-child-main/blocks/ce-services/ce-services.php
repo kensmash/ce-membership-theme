@@ -93,7 +93,7 @@ if ( ! empty( $block['align'] ) ) {
                 <div class="ce-service-descriptions-slide">
                  
                     <?php foreach( $service['service_funnels'] as $service_funnel ): ?>
-                        <div>
+                        <div class="ce-slide-funnels-content">
                             <?php echo $service_funnel['title']; ?>
                             <?php echo $service_funnel['description']; ?>
                         </div>
