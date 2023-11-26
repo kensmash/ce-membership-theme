@@ -7,9 +7,9 @@ jQuery(function($) {
         var scroll = $(window).scrollTop();
         //console.log("scroll? ", scroll)
         if (scroll >= 400) {
-            header.removeClass('navbar-transparent').addClass('navbar-dark bg-dark');
+            header.removeClass('navbar-transparent').addClass('bg-dark');
         } else {
-            header.removeClass('navbar-dark bg-dark').addClass('navbar-transparent');
+            header.removeClass('bg-dark').addClass('navbar-transparent');
         }
     });
   });

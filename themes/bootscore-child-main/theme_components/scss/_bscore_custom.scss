@@ -6,6 +6,10 @@
 // Because this file is compiled after Bootstrap, you're also able to use Bootstrap mixins for better code.
 // Some examples can be found here: https://bootscore.me/documentation/bootstrap-css-sass
 
+.navbar {
+    transition: all .25s;
+}
+
 .navbar-transparent {
     background-color: rgba(0,0,0,0);  
 }
