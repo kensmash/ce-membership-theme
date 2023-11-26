@@ -11863,6 +11863,15 @@ textarea.form-control-lg {
   height: inherit !important;
 }
 
+.ce-service-cards-slide-card {
+  min-height: 300px;
+}
+
+.services-slide-text-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 80px;
+}
+
 .ce-services-descriptions {
   background-color: #f8f9fa;
 }

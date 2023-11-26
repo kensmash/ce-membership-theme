@@ -66,17 +66,16 @@ if ( ! empty( $block['align'] ) ) {
                 $div_style = 'background-image: url(' . esc_url($service_thumbnail) . '); background-size: cover;';
 
                 if (!$service_thumbnail) {
-                    $div_style = 'background-image: url(' . get_stylesheet_directory_uri() . '/images/ui/guru-video-thumbnail-default.png); background-size: contain; background-repeat: no-repeat; background-position: center center;';
+                    $div_style = 'background-image: url(' . get_stylesheet_directory_uri() . '/images/ui/services-thumbnail-default.png); background-size: contain; background-repeat: no-repeat; background-position: center center;';
                 }
                 
                 ?>
 
                     <div class="ce-service-cards-slide px-2">
 
-                        <div class="card h-100">
-                            <div class="services-image-container" style="<?php echo $div_style; ?>"></div>
-                            <div class="card-body">
-                                <p class="card-text"><?php echo $service['name']; ?></p>
+                        <div class="ce-service-cards-slide-card card d-flex flex-column justify-content-end h-100" style="<?php echo $div_style; ?>">
+                            <div class="services-slide-text-container text-center text-light px-3 py-3">
+                                <p class="card-text fw-bold"><?php echo $service['name']; ?></p>
                             </div>
                         </div>
                        
@@ -94,7 +93,7 @@ if ( ! empty( $block['align'] ) ) {
                  
                     <?php foreach( $service['service_funnels'] as $service_funnel ): ?>
                         <div class="ce-slide-funnels-content">
-                            <p><?php echo $service_funnel['title']; ?></p>
+                            <p class="fw-bold"><?php echo $service_funnel['title']; ?></p>
                             <p><?php echo $service_funnel['description']; ?></p>
                         </div>
                     <?php endforeach; ?>

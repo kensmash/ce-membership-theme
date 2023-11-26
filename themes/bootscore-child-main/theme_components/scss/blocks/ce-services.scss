@@ -1,11 +1,22 @@
 @import "../../../../bootscore-main/scss/bootstrap/bootstrap";  // Collecting Bootstrap source from parent-theme
 
+//equal height slider divs
 .slick-track {
     display: flex !important;
 }
 
 .slick-slide {
     height: inherit !important;
+}
+
+//slider styles
+.ce-service-cards-slide-card {
+    min-height: 300px;
+}
+
+.services-slide-text-container {
+    background-color: rgba(0,0,0,0.4);
+    min-height: 80px;
 }
 
 .ce-services-descriptions {

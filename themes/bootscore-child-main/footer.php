@@ -16,7 +16,7 @@
 
 <footer class="container-fluid ce-footer border-top <?php echo !is_front_page() ? "mt-5" : ""; ?>">
 
-  <div class="bootscore-footer pt-5 pb-3">
+  <div class="bootscore-footer pt-3 pb-3">
     
     <div class="container">
 
@@ -25,7 +25,7 @@
             <div class="col-lg-3">
                 <div class="py-4 pe-4">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/logo/ce-logo-footer.svg" alt="Comics Experience logo">
+                        <img class="footer-logo" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/logo/ce-logo-footer.svg" alt="Comics Experience logo">
                     </a>
                 </div>
                 <div>
