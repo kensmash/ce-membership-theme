@@ -11873,5 +11873,19 @@ textarea.form-control-lg {
 }
 
 .ce-services-descriptions {
-  background-color: #f8f9fa;
+  background-color: #e9ecef;
+}
+
+.ce-service-cards-slide {
+  position: relative;
+}
+.ce-service-cards-slide.slick-current::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: white url("../../../assets/images/triangle.svg");
+  left: 45%;
+  bottom: 0px;
+  position: absolute;
+  display: inline-block;
 }

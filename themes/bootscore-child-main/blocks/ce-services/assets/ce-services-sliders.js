@@ -1,3 +1,4 @@
+
 (function($){
     
     var initializeBlock = function( $block ) {

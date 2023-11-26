@@ -20,5 +20,23 @@
 }
 
 .ce-services-descriptions {
-    background-color: $gray-100;
+    background-color: $gray-200;
 }
+
+.ce-service-cards-slide {
+    position: relative;
+
+    &.slick-current::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background:white url('../../../assets/images/triangle.svg');
+        left: 45%;
+        bottom: 0px;
+        position: absolute;
+        display: inline-block;
+    }
+}
+
+
+

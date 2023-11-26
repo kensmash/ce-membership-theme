@@ -57,7 +57,7 @@ if ( ! empty( $block['align'] ) ) {
     
     if( !empty( $services ) ): ?>
 
-        <div class="ce-services-cards mb-4">
+        <div class="ce-services-cards">
 
             <?php foreach( $services as $service ): 
 
@@ -71,21 +71,21 @@ if ( ! empty( $block['align'] ) ) {
                 
                 ?>
 
-                    <div class="ce-service-cards-slide px-2">
+                    <div class="ce-service-cards-slide px-2 pb-5">
 
                         <div class="ce-service-cards-slide-card card d-flex flex-column justify-content-end h-100 border-0 rounded-2" style="<?php echo $div_style; ?>">
                             <div class="services-slide-text-container text-center text-light px-3 py-3 rounded-bottom-2">
                                 <p class="card-text fw-bold"><?php echo $service['name']; ?></p>
                             </div>
                         </div>
-                       
+            
                     </div>
 
                 <?php endforeach; ?>
 
         </div><!-- .ce-services-cards -->
 
-        <div class="ce-services-descriptions mx-2 px-4 py-3">
+        <div class="ce-services-descriptions mx-2 px-4 py-3 rounded-2">
 
             <?php foreach( $services as $service ): ?>
 

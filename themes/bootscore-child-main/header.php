@@ -82,7 +82,7 @@
                 //echo var_dump($mepr_user);
                 if( !$mepr_user ) { ?>
                   <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2 ps-4">
-                    <a>Community Signup</a>
+                    <a href="#">Community Signup</a>
                   </div>
                 <?php 
                 }
@@ -90,7 +90,7 @@
                 //no logged in user, show signup and login buttons
                 ?>
                 <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2 ps-4">
-                  <a>Community Login</a>
+                  <a href="#">Community Login</a>
                   <a class="btn btn-success ms-3" href="#" role="button">Community Signup</a>
                 </div>
               <?php } ?>
