@@ -43,7 +43,7 @@
 
     <div class="<?php echo in_array( get_post_type( get_the_id() ), $avoid_fixed_nav_post_types ) ? "" : "fixed-top"; ?>">
 
-      <nav id="nav-main" class="navbar navbar-expand-lg <?php echo is_front_page() ? "navbar-transparent" : "navbar-dark bg-dark"; ?>">
+      <nav id="nav-main" class="navbar navbar-expand-lg <?php echo is_front_page() ? "navbar-transparent navbar-dark" : "navbar-dark bg-dark"; ?>">
 
         <div class="container-fluid">
 
