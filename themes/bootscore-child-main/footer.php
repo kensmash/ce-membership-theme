@@ -14,7 +14,7 @@
 
 ?>
 
-<footer class="container-fluid ce-footer border-top <?php echo !is_front_page() ? "mt-5" : ""; ?>">
+<footer class="container-fluid ce-footer <?php echo !is_front_page() ? "mt-5" : ""; ?>">
 
   <div class="bootscore-footer pt-3 pb-3">
     
