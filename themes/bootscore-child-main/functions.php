@@ -39,9 +39,6 @@ function bootscore_child_enqueue_styles() {
 // Custom blocks.
 require get_theme_file_path( 'inc/blocks.php' );
 
-// Custom widgets.
-require get_theme_file_path( 'inc/widgets.php' );
-
 // Custom Woo settings.
 require get_theme_file_path( 'inc/woocommerce.php' );
 

@@ -32,9 +32,16 @@
                     <small class="bootscore-copyright"><span class="cr-symbol">&copy;</span>&nbsp;<?= date('Y'); ?> <?php bloginfo('name'); ?></small>
                 </div>
                 <div>
-                    <?php if (is_active_sidebar('footer-social-media')) : ?>
-                        <?php dynamic_sidebar('footer-social-media'); ?>
-                    <?php endif; ?>
+                    <?php
+                        wp_nav_menu(array(
+                            'menu' => 'Footer Social Media',
+                            'menu_id' => 'menu-footer-social-media',
+                            'menu_class' => 'd-flex flex-row',
+                            'fallback_cb' => '__return_false',
+                            'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
+                            'depth' => 1,
+                        )); 
+                     ?>
                 </div>
             </div><!-- .col -->
             
@@ -52,37 +59,77 @@
 
             <!-- Footer 1 Widget -->
             <div class="col-md-6 col-lg">
-            <?php if (is_active_sidebar('footer-1')) : ?>
-                <?php dynamic_sidebar('footer-1'); ?>
-            <?php endif; ?>
+                <?php
+                    wp_nav_menu(array(
+                        'menu' => 'Footer 1 Nav',
+                        'container' => false,
+                        'menu_id' => '',
+                        'menu_class' => '',
+                        'fallback_cb' => '__return_false',
+                        'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
+                        'depth' => 1,
+                    )); 
+                ?>
             </div>
 
             <!-- Footer 2 Widget -->
             <div class="col-md-6 col-lg">
-            <?php if (is_active_sidebar('footer-2')) : ?>
-                <?php dynamic_sidebar('footer-2'); ?>
-            <?php endif; ?>
+            <?php
+                    wp_nav_menu(array(
+                        'menu' => 'Footer 2 Nav',
+                        'container' => false,
+                        'menu_id' => '',
+                        'menu_class' => '',
+                        'fallback_cb' => '__return_false',
+                        'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
+                        'depth' => 1,
+                    )); 
+                ?>
             </div>
 
             <!-- Footer 3 Widget -->
             <div class="col-md-6 col-lg">
-            <?php if (is_active_sidebar('footer-3')) : ?>
-                <?php dynamic_sidebar('footer-3'); ?>
-            <?php endif; ?>
+            <?php
+                    wp_nav_menu(array(
+                        'menu' => 'Footer 3 Nav',
+                        'container' => false,
+                        'menu_id' => '',
+                        'menu_class' => '',
+                        'fallback_cb' => '__return_false',
+                        'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
+                        'depth' => 1,
+                    )); 
+                ?>
             </div>
 
             <!-- Footer 4 Widget -->
             <div class="col-md-6 col-lg">
-            <?php if (is_active_sidebar('footer-4')) : ?>
-                <?php dynamic_sidebar('footer-4'); ?>
-            <?php endif; ?>
+            <?php
+                    wp_nav_menu(array(
+                        'menu' => 'Footer 4 Nav',
+                        'container' => false,
+                        'menu_id' => '',
+                        'menu_class' => '',
+                        'fallback_cb' => '__return_false',
+                        'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
+                        'depth' => 1,
+                    )); 
+                ?>
             </div>
 
             <!-- Footer 5 Widget -->
             <div class="col-md-6 col-lg">
-            <?php if (is_active_sidebar('footer-5')) : ?>
-                <?php dynamic_sidebar('footer-5'); ?>
-            <?php endif; ?>
+            <?php
+                    wp_nav_menu(array(
+                        'menu' => 'Footer 5 Nav',
+                        'container' => false,
+                        'menu_id' => '',
+                        'menu_class' => '',
+                        'fallback_cb' => '__return_false',
+                        'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
+                        'depth' => 1,
+                    )); 
+                ?>
             </div>
 
         </div><!-- .row -->
