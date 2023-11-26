@@ -11855,6 +11855,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.ce-slide-funnels-content {
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+.ce-services-descriptions {
   background-color: #f8f9fa;
 }

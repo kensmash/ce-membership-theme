@@ -1,6 +1,13 @@
 @import "../../../../bootscore-main/scss/bootstrap/bootstrap";  // Collecting Bootstrap source from parent-theme
 
+.slick-track {
+    display: flex !important;
+}
 
-.ce-slide-funnels-content {
+.slick-slide {
+    height: inherit !important;
+}
+
+.ce-services-descriptions {
     background-color: $gray-100;
 }

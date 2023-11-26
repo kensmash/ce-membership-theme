@@ -57,7 +57,7 @@ if ( ! empty( $block['align'] ) ) {
     
     if( !empty( $services ) ): ?>
 
-        <div class="ce-services-cards">
+        <div class="ce-services-cards mb-4">
 
             <?php foreach( $services as $service ): 
 
@@ -71,9 +71,9 @@ if ( ! empty( $block['align'] ) ) {
                 
                 ?>
 
-                    <div class="ce-service-cards-slide">
+                    <div class="ce-service-cards-slide px-2">
 
-                        <div class="card">
+                        <div class="card h-100">
                             <div class="services-image-container" style="<?php echo $div_style; ?>"></div>
                             <div class="card-body">
                                 <p class="card-text"><?php echo $service['name']; ?></p>
@@ -86,7 +86,7 @@ if ( ! empty( $block['align'] ) ) {
 
         </div><!-- .ce-services-cards -->
 
-        <div class="ce-services-descriptions">
+        <div class="ce-services-descriptions mx-2 px-4 py-3">
 
             <?php foreach( $services as $service ): ?>
 
@@ -94,14 +94,14 @@ if ( ! empty( $block['align'] ) ) {
                  
                     <?php foreach( $service['service_funnels'] as $service_funnel ): ?>
                         <div class="ce-slide-funnels-content">
-                            <?php echo $service_funnel['title']; ?>
-                            <?php echo $service_funnel['description']; ?>
+                            <p><?php echo $service_funnel['title']; ?></p>
+                            <p><?php echo $service_funnel['description']; ?></p>
                         </div>
                     <?php endforeach; ?>
                     
                 </div>
 
-            <?php endforeach; ?>
+            <?php endforeach; ?> 
 
         </div> <!-- .ce-services-descriptions -->
         

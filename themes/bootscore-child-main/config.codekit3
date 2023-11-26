@@ -309,6 +309,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/assets\/js\/home-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/home-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/assets\/js\/slick.min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -648,18 +659,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/theme_components\/scss\/blocks\/ce-services.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/theme_components\/scss\/blocks\/ce-services-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/theme_components\/scss\/blocks\/ce-services.scss" : {
       "aP" : 0,
