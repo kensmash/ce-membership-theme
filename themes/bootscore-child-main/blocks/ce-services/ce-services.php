@@ -73,7 +73,7 @@ if ( ! empty( $block['align'] ) ) {
 
                     <div class="ce-service-cards-slide px-2">
 
-                        <div class="ce-service-cards-slide-card card d-flex flex-column justify-content-end h-100" style="<?php echo $div_style; ?>">
+                        <div class="ce-service-cards-slide-card card d-flex flex-column justify-content-end h-100 border-0" style="<?php echo $div_style; ?>">
                             <div class="services-slide-text-container text-center text-light px-3 py-3">
                                 <p class="card-text fw-bold"><?php echo $service['name']; ?></p>
                             </div>
