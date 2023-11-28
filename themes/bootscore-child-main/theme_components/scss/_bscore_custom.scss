@@ -6,6 +6,22 @@
 // Because this file is compiled after Bootstrap, you're also able to use Bootstrap mixins for better code.
 // Some examples can be found here: https://bootscore.me/documentation/bootstrap-css-sass
 
+$ce-blue: #83d9ff;
+$ce-darkblue: #173751;
+$ce-mediumblue: #1e80ae;
+$ce-lightblue: #4ba2d7;
+$ce-iceblue: #6dcefb;
+$ce-orange: #edaf1b;
+$ce-grey: #b8b7b7;
+$ce-lightgrey: #ccc9c9;
+$ce-offwhite: #e8e4e4;
+$ce-green: #77a464;
+$ce-darkgray: #212529;
+
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
 .navbar {
     transition: all .25s;
 }
@@ -14,16 +30,36 @@
     background-color: rgba(0,0,0,0);  
 }
 
-.ce-footer {
-    background: #000;
-    color: white;
+/* link text */
+.navbar-dark li a,
+.navbar-dark li a {
+  color: white;
+  padding: 0;
+  margin: 0 0.85em 0 0.35em;
 }
+
+/* change hover color */
+.navbar-dark li a:focus,
+.navbar-dark li a:hover {
+  color: $ce-iceblue;
+}
+
+
+/*--------------------------------------------------------------
+# WooCommerce
+--------------------------------------------------------------*/
 
 .shipping-text {
     display: none;
 }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
 .ce-footer {
+    background: #000;
+    color: white;
     border-top: 1px solid rgba(255,255,255,0.25);
 }
 
