@@ -10,12 +10,28 @@
 }
 
 //slider styles
+
+.ce-service-cards-slide {
+    transition: all .2s ease-in-out;
+
+    &.slick-current {
+        .ce-service-cards-slide-card {
+            box-shadow: 14px 17px 18px -12px rgba(0,0,0,0.1);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+}
+
 .ce-service-cards-slide-card {
     min-height: 300px;
 }
 
 .services-slide-text-container {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
     min-height: 80px;
 }
 
