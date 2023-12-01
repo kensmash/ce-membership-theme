@@ -46,7 +46,7 @@
             </div><!-- .col -->
             
             <div class="col">
-                
+                <?php echo do_shortcode("[gravityform id='1']"); ?>
             </div><!-- .col -->
 
         </div><!-- .row -->
