@@ -18,25 +18,25 @@
 
   <div class="bootscore-footer pt-3 pb-3">
     
-    <div class="container">
+    <div class="container pb-5">
 
         <div class="row">
 
             <div class="col-lg-3">
-                <div class="py-4 pe-4">
+                <div class="py-4 pe-1">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                         <img class="footer-logo" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/logo/ce-logo-footer.svg" alt="Comics Experience logo">
                     </a>
                 </div>
-                <div>
-                    <small class="bootscore-copyright"><span class="cr-symbol">&copy;</span>&nbsp;<?= date('Y'); ?> <?php bloginfo('name'); ?></small>
+                <div class="text-center">
+                    <small class="bootscore-copyright"><span class="cr-symbol">&copy;</span>&nbsp;<?php echo date('Y'); ?> Andy Schmidt. All rights reserved.</small>
                 </div>
-                <div>
+                <div class="mt-4">
                     <?php
                         wp_nav_menu(array(
                             'menu' => 'Footer Social Media',
                             'menu_id' => 'menu-footer-social-media',
-                            'menu_class' => 'd-flex flex-row',
+                            'menu_class' => 'd-flex flex-row justify-content-between',
                             'fallback_cb' => '__return_false',
                             'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
                             'depth' => 1,
@@ -53,7 +53,7 @@
 
     </div><!-- .container -->
 
-    <div class="container mt-4">
+    <div class="container py-4">
 
       <div class="row justify-content-space-between">
 

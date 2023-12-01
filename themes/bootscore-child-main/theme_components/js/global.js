@@ -17,5 +17,12 @@ jQuery(".anchorlink").click(function (event) {
     event.preventDefault();
     event.stopPropagation();
 });
+
+jQuery(document).ready(function () { 
+  /* add bootstrap classes to PMP forms */
+  jQuery("#user_login").addClass("form-control"); 
+  jQuery("#user_pass").addClass("form-control"); 
+  jQuery("#wp-submit").addClass("btn btn-primary"); 
+})
   
 
