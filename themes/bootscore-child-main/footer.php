@@ -20,7 +20,7 @@
     
     <div class="container pb-5">
 
-        <div class="row">
+        <div class="row justify-content-between">
 
             <div class="col-lg-3">
                 <div class="py-4 pe-1">
@@ -45,8 +45,10 @@
                 </div>
             </div><!-- .col -->
             
-            <div class="col">
-                <?php echo do_shortcode("[gravityform id='1']"); ?>
+            <div class="col-lg-4 text-light">
+                <h3>Get Our Newsletter</h3>
+                <p>Sign up for our <b>monthly email newsletter</b> to receive updates on courses, information on making comics, and community news!</p>
+                <?php echo do_shortcode("[gravityform id='1' title='false']"); ?>
             </div><!-- .col -->
 
         </div><!-- .row -->
