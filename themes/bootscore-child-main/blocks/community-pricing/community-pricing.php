@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row mb-2 px-1 text-center">
 
-        <div class="col-md-6 my-2">
+        <div class="col my-2">
             <div class="card h-100">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal">Offer 1</h4>
@@ -16,7 +16,7 @@
             </div>
         </div><!-- .col -->
 
-        <div class="col-md-6 my-2">
+        <div class="col my-2">
             <div class="card h-100">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal">Offer 2</h4>
