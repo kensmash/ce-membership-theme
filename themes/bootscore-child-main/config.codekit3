@@ -626,6 +626,14 @@
       "oAP" : "\/template-parts\/header\/actions-woocommerce.php",
       "oF" : 0
     },
+    "\/template-parts\/header\/top-nav-search-collapse-woocommerce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/header\/top-nav-search-collapse-woocommerce.php",
+      "oF" : 0
+    },
     "\/theme_components\/js\/global.js" : {
       "bF" : 0,
       "ft" : 64,
