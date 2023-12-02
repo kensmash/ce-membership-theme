@@ -45,7 +45,7 @@
                 </div>
             </div><!-- .col -->
             
-            <div class="col-lg-4 text-light">
+            <div class="col-lg-5 text-light pt-3">
                 <h3>Get Our Newsletter</h3>
                 <p>Sign up for our <b>monthly email newsletter</b> to receive updates on courses, information on making comics, and community news!</p>
                 <?php echo do_shortcode("[gravityform id='1' title='false']"); ?>
