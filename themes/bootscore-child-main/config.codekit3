@@ -270,6 +270,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/images\/footer\/footer-samurai.jpg" : {
+      "ft" : 16384,
+      "iS" : 491306,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/footer\/footer-samurai.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/logo\/ce-logo-footer.svg" : {
       "ft" : 2097152,
       "miP" : 0,
