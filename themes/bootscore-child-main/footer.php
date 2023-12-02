@@ -140,6 +140,19 @@
 
     </div><!--  .container -->
 
+    <?php
+        // load random photo from header-images folder
+        // http://zzamboni.org/new/brt/2008/11/03/how-to-display-random-header-images-in-a-wordpress-theme/index.html
+        $curdir=getcwd(); chdir(get_stylesheet_directory() . "/assets/images/footer");
+        $files=glob("*.{gif,png,jpg}", GLOB_BRACE);
+        chdir($curdir);
+        $file=$files[array_rand($files)];
+    ?>
+
+    <div class="footer-art container-fluid p-0" style="background-image: url(<?php echo(get_stylesheet_directory_uri() ."/assets/images/footer/$file"); ?>);">
+        
+    </div>
+
 </footer>
 
 <!-- To top button -->

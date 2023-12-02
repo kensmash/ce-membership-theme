@@ -91,3 +91,10 @@ $ce-darkgray: #212529;
         
     }
 }
+
+.footer-art {
+    border-top: 5px solid $ce-orange;
+    background-position: center center;
+    background-size: cover;
+    min-height: 200px;
+}
