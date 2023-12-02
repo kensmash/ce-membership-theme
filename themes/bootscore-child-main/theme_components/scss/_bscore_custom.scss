@@ -49,18 +49,6 @@ $ce-darkgray: #212529;
     align-items: center;
 }
 
-
-/*--------------------------------------------------------------
-# WooCommerce
---------------------------------------------------------------*/
-
-.shipping-text {
-    display: none;
-}
-
-
-
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -76,7 +64,24 @@ $ce-darkgray: #212529;
     font-size: 2em;
 }
 
-.ce-footer a {
-    color: $ce-iceblue;
-    text-decoration: none;
-  }
+.ce-footer {
+    
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+            color: $ce-iceblue;
+        }
+    }
+
+    .sub-menu {
+        padding-top: 1em;
+
+        a {
+            font-weight: 400;
+        }
+        
+    }
+}

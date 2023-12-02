@@ -31,7 +31,7 @@
                 <div class="text-center">
                     <small class="bootscore-copyright"><span class="cr-symbol">&copy;</span>&nbsp;<?php echo date('Y'); ?> Andy Schmidt. All rights reserved.</small>
                 </div>
-                <div class="mt-4">
+                <div class="mt-4 px-2">
                     <?php
                         wp_nav_menu(array(
                             'menu' => 'Footer Social Media',
@@ -69,7 +69,7 @@
                         'menu_class' => '',
                         'fallback_cb' => '__return_false',
                         'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
-                        'depth' => 1,
+                        'depth' => 2,
                     )); 
                 ?>
             </div>
@@ -84,7 +84,7 @@
                         'menu_class' => '',
                         'fallback_cb' => '__return_false',
                         'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
-                        'depth' => 1,
+                        'depth' => 2,
                     )); 
                 ?>
             </div>
@@ -99,7 +99,7 @@
                         'menu_class' => '',
                         'fallback_cb' => '__return_false',
                         'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
-                        'depth' => 1,
+                        'depth' => 2,
                     )); 
                 ?>
             </div>
@@ -114,7 +114,7 @@
                         'menu_class' => '',
                         'fallback_cb' => '__return_false',
                         'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
-                        'depth' => 1,
+                        'depth' => 2,
                     )); 
                 ?>
             </div>
@@ -129,7 +129,7 @@
                         'menu_class' => '',
                         'fallback_cb' => '__return_false',
                         'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
-                        'depth' => 1,
+                        'depth' => 2,
                     )); 
                 ?>
             </div>
