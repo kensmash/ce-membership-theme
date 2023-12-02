@@ -72,7 +72,31 @@
               ));
               ?>
 
-            
+            <?php 
+
+            if ( is_user_logged_in() ) {
+              //there is a user, is user a member?
+              //if not a member, show signup button
+              $pmp_member = pmpro_getMembershipLevelForUser(get_current_user_id());
+              //echo var_dump($pmp_member);
+              if( !$pmp_member ) { ?>
+                <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2">
+                  <a>Community Signup</a>
+                </div>
+              <?php 
+              } else { ?>
+                <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2">
+                  <a>Community Links</a>
+                </div>
+             <?php }
+            } else { 
+              //no logged in user, show signup and login buttons
+              ?>
+                <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2">
+                  <a>Community Login</a>
+                  <a class="btn btn-success ms-3" href="#" role="button">Community Signup</a>
+                </div>
+              <?php } ?>
 
             </div>
           </div>
