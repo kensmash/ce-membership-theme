@@ -414,6 +414,22 @@
       "oAP" : "\/blocks\/ce-services\/ce-services.php",
       "oF" : 1
     },
+    "\/blocks\/community-pricing\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/community-pricing\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/community-pricing\/community-pricing.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-pricing\/community-pricing.php",
+      "oF" : 0
+    },
     "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.js" : {
       "bF" : 0,
       "ft" : 64,
