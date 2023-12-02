@@ -84,11 +84,17 @@
                   <a>Community Signup</a>
                 </div>
               <?php 
-              } else { ?>
-                <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2">
-                  <a>Community Links</a>
-                </div>
-             <?php }
+              } else { 
+                wp_nav_menu(array(
+                  'menu' => 'Community Links',
+                  'container'      => false,
+                  'menu_class'     => '',
+                  'fallback_cb'    => '__return_false',
+                  'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-lg-0 %2$s">%3$s</ul>',
+                  'depth'          => 2,
+                  'walker'         => new bootstrap_5_wp_nav_menu_walker()
+                ));
+               }
             } else { 
               //no logged in user, show signup and login buttons
               ?>
