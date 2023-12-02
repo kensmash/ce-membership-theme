@@ -54,14 +54,14 @@ $ce-darkgray: #212529;
 --------------------------------------------------------------*/
 
 .ce-footer {
-    background: #000;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 100%);
     color: white;
     border-top: 1px solid rgba(255,255,255,0.25);
 }
 
 #menu-footer-social-media li a {
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     transition: all .25s ease-out;
 
     &:hover {
