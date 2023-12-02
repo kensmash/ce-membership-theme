@@ -62,6 +62,11 @@ $ce-darkgray: #212529;
 #menu-footer-social-media li a {
     color: white;
     font-size: 2em;
+    transition: all .25s ease-out;
+
+    &:hover {
+        color: $ce-iceblue;
+    }
 }
 
 .ce-footer {
@@ -70,6 +75,7 @@ $ce-darkgray: #212529;
         color: #ffffff;
         text-decoration: none;
         font-weight: 700;
+        transition: all .25s ease-out;
 
         &:hover {
             color: $ce-iceblue;
