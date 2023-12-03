@@ -1,3 +1,6 @@
+@import "../_bscore_custom.scss";  // Collecting Bootstrap source from parent-theme
+
+
 .slick-track {
     display: flex !important;
 }
@@ -6,6 +9,38 @@
     height: inherit !important;
 }
 
-.testimonial-slide {
-    background-color: blue;
-}
+/*--------------------------------------------------------------
+# DEFAULT SLICK STYLES
+--------------------------------------------------------------*/
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+    color: $ce-blue;
+    font-size: 50px;
+    cursor: pointer;
+    background: transparent;
+    outline: none !important;
+  }
+  
+  .slick-arrow:hover,
+  .slick-arrow:focus {
+    color: $ce-blue;
+  }
+  
+  .slick-prev {
+    left: -10px;
+  }
+  
+  .slick-next {
+    right: -10px;
+  }
+
+/*--------------------------------------------------------------
+# SLIDER STYLES STYLES
+--------------------------------------------------------------*/
+

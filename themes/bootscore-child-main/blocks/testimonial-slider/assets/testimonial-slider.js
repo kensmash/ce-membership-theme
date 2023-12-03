@@ -6,9 +6,9 @@
           mobileFirst: true,
           focusOnSelect: true,
           prevArrow:
-            "<button type='button' class='slick-prev'><i class='far fa-long-arrow-left' aria-hidden='true'></i></button>",
+            "<span class='slick-prev'><i class='fa-solid fa-chevron-left' aria-hidden='true'></i></span>",
           nextArrow:
-            "<button type='button' class='slick-next'><i class='far fa-long-arrow-right' aria-hidden='true'></i></button>",
+            "<span class='slick-next'><i class='fa-solid fa-chevron-right' aria-hidden='true'></i></span>",
           responsive: [
             {
               breakpoint: 768,

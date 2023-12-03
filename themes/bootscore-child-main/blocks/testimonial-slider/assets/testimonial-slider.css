@@ -1,8 +1,135 @@
-.testimonial-slider .slick-track {
+/*!
+ * bootScore custom styles
+ */
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+#bootscore-navbar {
+  font-weight: 700;
+}
+
+.navbar {
+  transition: all 0.25s;
+}
+
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* link text */
+.navbar-dark li a,
+.navbar-dark li a {
+  color: white;
+  padding: 0;
+  margin: 0 0.85em 0 0.35em;
+}
+
+/* change hover color */
+.navbar-dark li a:focus,
+.navbar-dark li a:hover {
+  color: #6dcefb;
+}
+
+#bootscore-navbar li {
+  display: flex;
+  align-items: center;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.ce-footer {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(43, 43, 43) 100%);
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#menu-footer-social-media li a {
+  color: white;
+  font-size: 1.5em;
+  transition: all 0.25s ease-out;
+}
+#menu-footer-social-media li a:hover {
+  color: #6dcefb;
+}
+
+.ce-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.25s ease-out;
+}
+.ce-footer a:hover {
+  color: #6dcefb;
+}
+.ce-footer .sub-menu {
+  padding-top: 1em;
+}
+.ce-footer .sub-menu a {
+  font-weight: 400;
+}
+
+.footer-art {
+  border-top: 5px solid #edaf1b;
+  background-position: top center;
+  background-size: cover;
+  min-height: 200px;
+}
+@media only screen and (min-width: 1200px) {
+  .footer-art {
+    min-height: 400px;
+  }
+}
+
+.slick-track {
   display: flex !important;
 }
 
-.testimonial-slider .slick-slide {
+.slick-slide {
   height: inherit !important;
 }
 
+/*--------------------------------------------------------------
+# DEFAULT SLICK STYLES
+--------------------------------------------------------------*/
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #83d9ff;
+  font-size: 50px;
+  cursor: pointer;
+  background: transparent;
+  outline: none !important;
+}
+
+.slick-arrow:hover,
+.slick-arrow:focus {
+  color: #83d9ff;
+}
+
+.slick-prev {
+  left: -10px;
+}
+
+.slick-next {
+  right: -10px;
+}
+
+/*--------------------------------------------------------------
+# SLIDER STYLES STYLES
+--------------------------------------------------------------*/
