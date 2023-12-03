@@ -46,10 +46,7 @@ form.pmpro_form .pmpro_asterisk abbr {
     color: #8b0000;
 }
 form.pmpro_form .pmpro_captcha div {}
-form.pmpro_form .pmpro_submit {
-    @extend .btn;
-    @extend .btn-success;
-}
+form.pmpro_form .pmpro_submit {}
 form.pmpro_form #pmpro_processing_message {}
 form.pmpro_form input[type=text] {
     @extend .form-control;
@@ -72,6 +69,29 @@ form.pmpro_form select {
 
 form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmpro_form input[type=email], form.pmpro_form input[type=number], form.pmpro_form textarea, form.pmpro_form select, #loginform input[type=text], #loginform input[type=password] {
     max-width: 100%;
+}
+
+.pmpro_checkout-field-bfirstname, .pmpro_checkout-field-blastname {
+    display: inline-block;
+    width: 48%;
+}
+
+.pmpro_checkout-field-bfirstname {
+    padding-right: 12px;
+}
+
+
+#ExpirationMonth, #ExpirationYear {
+    display: inline-block;
+    width: 47%;
+}
+
+#ExpirationMonth {
+    margin-right: 12px;
+}
+
+#ExpirationYear {
+    margin-left: 12px;
 }
 
 /*---------------------------------------
@@ -175,6 +195,7 @@ form.pmpro_form .pmpro_change_password-fields {}
 ---------------------------------------*/
 #pmpro_levels_table { 
     @extend .table;
+    @extend .table-striped; 
 }
 #pmpro_levels_table td:nth-child(1) {}
 #pmpro_levels_table .pmpro_btn {

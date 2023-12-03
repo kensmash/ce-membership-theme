@@ -38,7 +38,7 @@ function my_pmpro_move_required_asterisk_span() {
 				jQuery('div.pmpro_checkout-field-required label').not('.pmprorh_checkbox_label').not('.pmprorh_radio_label').append(asteriskHtml);
 
 				// Array of required by default fields
-				var otherFields = ['username','password','password2','bemail','bconfirmemail','first_name','last_name','bfirstname','blastname','baddress1','baddress2','bcity','bstate','bzipcode','bcountry','bphone'];
+				var otherFields = ['username','password','password2','bemail','bconfirmemail','first_name','last_name','bfirstname','blastname','baddress1','bcity','bstate','bzipcode','bcountry','bphone'];
 
 				<?php
 				if ( $shipping_asterisk ) {
