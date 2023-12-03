@@ -72,12 +72,12 @@ form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmp
 }
 
 @media only screen and (min-width: 768px) {
-    .pmpro_checkout-field-bfirstname, .pmpro_checkout-field-blastname {
+    .pmpro_checkout-field-bfirstname, .pmpro_checkout-field-blastname, .pmpro_checkout-field-bcity, .pmpro_checkout-field-bstate {
         display: inline-block;
-        width: 48%;
+        width: 49%;
     }
     
-    .pmpro_checkout-field-bfirstname {
+    .pmpro_checkout-field-bfirstname, .pmpro_checkout-field-bcity {
         padding-right: 12px;
     }
     
