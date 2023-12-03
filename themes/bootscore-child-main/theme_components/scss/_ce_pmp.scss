@@ -173,9 +173,14 @@ form.pmpro_form .pmpro_change_password-fields {}
 /*---------------------------------------
 	Membership Levels
 ---------------------------------------*/
-#pmpro_levels_table {}
+#pmpro_levels_table { 
+    @extend .table;
+}
 #pmpro_levels_table td:nth-child(1) {}
-#pmpro_levels_table .pmpro_btn {}
+#pmpro_levels_table .pmpro_btn {
+    @extend .btn;
+    @extend .btn-success;
+}
 
 /*---------------------------------------
 	Misc
