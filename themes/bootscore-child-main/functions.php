@@ -45,3 +45,6 @@ require get_theme_file_path( 'inc/woocommerce.php' );
 // Extend TinyMCE editor
 require get_theme_file_path( 'inc/extend-tiny-mce.php' );
 
+// PMP customize
+require get_theme_file_path( 'inc/pmp.php' );
+

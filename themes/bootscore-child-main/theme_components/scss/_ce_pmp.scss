@@ -42,7 +42,9 @@ form.pmpro_form .pmpro_checkout-fields div {}
 form.pmpro_form label {}
 form.pmpro_form label.pmpro_label-inline {}
 form.pmpro_form label.pmpro_clickable {}
-form.pmpro_form .pmpro_asterisk abbr {}
+form.pmpro_form .pmpro_asterisk abbr {
+    color: #8b0000;
+}
 form.pmpro_form .pmpro_captcha div {}
 form.pmpro_form .pmpro_submit {
     @extend .btn;
