@@ -97,6 +97,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/post_type_656cd59f950f6.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/post_type_656cd59f950f6-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/taxonomy_654e96e2378dc.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -695,14 +703,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/header\/actions-woocommerce.php",
-      "oF" : 0
-    },
-    "\/template-parts\/header\/top-nav-search-collapse-woocommerce.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/header\/top-nav-search-collapse-woocommerce.php",
       "oF" : 0
     },
     "\/theme_components\/js\/global.js" : {
