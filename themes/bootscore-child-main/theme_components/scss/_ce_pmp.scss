@@ -71,27 +71,28 @@ form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmp
     max-width: 100%;
 }
 
-.pmpro_checkout-field-bfirstname, .pmpro_checkout-field-blastname {
-    display: inline-block;
-    width: 48%;
-}
-
-.pmpro_checkout-field-bfirstname {
-    padding-right: 12px;
-}
-
-
-#ExpirationMonth, #ExpirationYear {
-    display: inline-block;
-    width: 47%;
-}
-
-#ExpirationMonth {
-    margin-right: 12px;
-}
-
-#ExpirationYear {
-    margin-left: 12px;
+@media only screen and (min-width: 768px) {
+    .pmpro_checkout-field-bfirstname, .pmpro_checkout-field-blastname {
+        display: inline-block;
+        width: 48%;
+    }
+    
+    .pmpro_checkout-field-bfirstname {
+        padding-right: 12px;
+    }
+    
+    #ExpirationMonth, #ExpirationYear {
+        display: inline-block;
+        width: 47%;
+    }
+    
+    #ExpirationMonth {
+        margin-right: 12px;
+    }
+    
+    #ExpirationYear {
+        margin-left: 12px;
+    }
 }
 
 /*---------------------------------------
