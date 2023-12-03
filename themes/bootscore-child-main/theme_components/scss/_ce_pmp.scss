@@ -1,14 +1,37 @@
 /*---------------------------------------
 	Buttons
 ---------------------------------------*/
-.pmpro_btn {}
+.pmpro_btn {
+    @extend .btn;
+    @extend .btn-success;
+}
 .pmpro_content_message a {}
 .pmpro_btn.disabled {}
-.pmpro_btn.pmpro_btn-cancel {}
-.pmpro_btn.pmpro_btn-submit-checkout {}
-input[type="button"]#discount_code_button {}
-input[type="button"]#other_discount_code_button {}
-button[type="button"]#other_discount_code_toggle {}
+.pmpro_btn.pmpro_btn-cancel {
+    @extend .btn;
+    @extend .btn-secondary;
+}
+.pmpro_btn.pmpro_btn-submit-checkout {
+    @extend .btn;
+    @extend .btn-success;
+}
+input[type="button"]#discount_code_button {
+    @extend .btn;
+    @extend .btn-success;
+}
+input[type="button"]#other_discount_code_button {
+    @extend .btn;
+    @extend .btn-success;
+}
+button[type="button"]#other_discount_code_toggle {
+    @extend .btn;
+    @extend .btn-success;
+}
+
+#wp-submit {
+    @extend .btn;
+    @extend .btn-success;
+}
 
 /*---------------------------------------
 	Forms
@@ -21,14 +44,33 @@ form.pmpro_form label.pmpro_label-inline {}
 form.pmpro_form label.pmpro_clickable {}
 form.pmpro_form .pmpro_asterisk abbr {}
 form.pmpro_form .pmpro_captcha div {}
-form.pmpro_form .pmpro_submit {}
+form.pmpro_form .pmpro_submit {
+    @extend .btn;
+    @extend .btn-success;
+}
 form.pmpro_form #pmpro_processing_message {}
-form.pmpro_form input[type=text] {}
-form.pmpro_form input[type=password] {}
-form.pmpro_form input[type=email] {}
-form.pmpro_form input[type=number] {}
-form.pmpro_form textarea {}
-form.pmpro_form select {}
+form.pmpro_form input[type=text] {
+    @extend .form-control;
+}
+form.pmpro_form input[type=password] {
+    @extend .form-control;
+}
+form.pmpro_form input[type=email] {
+    @extend .form-control;
+}
+form.pmpro_form input[type=number] {
+    @extend .form-control;
+}
+form.pmpro_form textarea {
+    @extend .form-control;
+}
+form.pmpro_form select {
+    @extend .form-control;
+}
+
+form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmpro_form input[type=email], form.pmpro_form input[type=number], form.pmpro_form textarea, form.pmpro_form select, #loginform input[type=text], #loginform input[type=password] {
+    max-width: 100%;
+}
 
 /*---------------------------------------
 	Log In and Password Reset Pages
@@ -36,8 +78,12 @@ form.pmpro_form select {}
 .pmpro_login_wrap, .pmpro_lost_password_wrap, .pmpro_reset_password_wrap {}
 #loginform p {}
 #loginform label {}
-#loginform input[type=text] {}
-#loginform input[type=password] {}
+#loginform input[type=text] {
+    @extend .form-control;
+}
+#loginform input[type=password] {
+    @extend .form-control;
+}
 
 /* -- Reset Password (not logged in) --*/
 .pmpro_reset_password_wrap form.pmpro_form {}
