@@ -1,7 +1,158 @@
 /*--------------------------------------------------------------
-# WooCommerce
+# WooCommerce Single Product Pages
 --------------------------------------------------------------*/
 
-.shipping-text {
+  /*fix too much spacing in layout */
+  @media only screen and (min-width: 768px) {
+   /* also fix ipad layout here */
+    .woocommerce #content div.product div.images,
+    .woocommerce div.product div.images,
+    .woocommerce-page #content div.product div.images,
+    .woocommerce-page div.product div.images {
+      float: left;
+      clear: none;
+      width: 48%;
+    }
+  
+    .woocommerce #content div.product div.summary,
+    .woocommerce div.product div.summary,
+    .woocommerce-page #content div.product div.summary,
+    .woocommerce-page div.product div.summary {
+      float: right;
+      clear: none;
+      width: 48%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .woocommerce #content div.product div.images,
+    .woocommerce div.product div.images,
+    .woocommerce-page #content div.product div.images,
+    .woocommerce-page div.product div.images {
+      width: 49%;
+    }
+  
+    .woocommerce #content div.product div.summary,
+    .woocommerce div.product div.summary,
+    .woocommerce-page #content div.product div.summary,
+    .woocommerce-page div.product div.summary {
+      width: 49%;
+    }
+  }
+  
+  /*remove redundant title in tab*/
+  .woocommerce-Tabs-panel h2 {
     display: none;
-}
+  }
+  
+  h2.yikes-custom-woo-tab-title {
+    display: none;
+  }
+  
+  /* reduce space below product image */
+  .woocommerce div.product div.images {
+    margin-bottom: 1.25em;
+  }
+  
+  /*add padding to button*/
+  .woocommerce div.product form.cart .button {
+    background-color: $ce-green;
+    padding: 1em 1.5em;
+  }
+  
+  .woocommerce div.product form.cart .button:hover {
+    background-color: #00bff3;
+  }
+  
+  /* up sells cross sells */
+  .up-sells h2,
+  .cross-sells h2,
+  .related h2 {
+    margin-bottom: 1em;
+  }
+  
+  .related {
+    clear: both;
+    margin-top: 0.5em;
+  }
+  
+  /* course bundle offer stuff */
+  .course-bundle {
+    clear: both;
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .woocommerce div.product div.summary {
+      margin-bottom: 0;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # WooCommerce Archive Pages
+  --------------------------------------------------------------*/
+  /* make sale badge round */
+  .woocommerce span.onsale {
+    padding: 0;
+    left: 0.5em;
+  }
+  
+  .course-listing {
+    list-style: none;
+  }
+  
+  /* fix huge bottom margins on desktop */
+  @media only screen and (min-width: 800px) {
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+      margin-bottom: 0em !important;
+    }
+  
+    .woocommerce span.onsale {
+      left: -0.5em;
+    }
+  }
+  
+  /* button styles */
+  .woocommerce a.button {
+    background-color: $ce-green;
+    color: #fff;
+  }
+  
+  .woocommerce a.button:hover {
+    background-color: #00bff3;
+    color: #fff;
+  }
+  
+  /* fixed height for product titles to help alignment*/
+  .woocommerce-loop-product__title {
+    min-height: 55px !important;
+  }
+  
+  .course-length,
+  .wooarchive-description {
+    color: $ce-darkgray;
+  }
+  
+  .wooarchive-description {
+    font-size: 0.95em;
+    min-height: 150px !important;
+  }
+  
+  /* make quantity field height line up better with Add to Cart button */
+  .qty {
+    line-height: 1.9em;
+  }
+  
+  /* add some spacing to added message after user adds an item to cart  */
+  .added_to_cart {
+    margin-left: 0.75em;
+  }
+  
+  /*--------------------------------------------------------------
+  # WooCommerce Checkout Page
+  --------------------------------------------------------------*/
+  
+  #order_review_heading {
+    margin: 0.6em 0 0.5em;
+  }
+  

@@ -42,7 +42,7 @@ if ( ! empty( $block['align'] ) ) {
                             <div><?php echo get_sub_field('level_description'); ?></div>
                         </div>
                         <div class="card-footer">
-                            <a class="btn btn-success" href="<?php echo esc_url( $link['url'] ); ?>">Choose Tier</a>
+                            <a class="btn btn-success" href="<?php echo esc_url( $link['url'] ); ?>">Join Now</a>
                         </div>
                     </div><!-- .card -->
                 </div><!-- .col -->

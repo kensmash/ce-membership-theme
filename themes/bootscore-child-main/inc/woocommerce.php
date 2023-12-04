@@ -104,7 +104,6 @@ function woo_related_products_limit() {
 //remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 
-
 /**
   * Remove default product page tabs
   */
@@ -117,7 +116,25 @@ function woo_related_products_limit() {
    return $tabs;
  }
  
+/**
+ * Add in custom tabs based on category
+ */ 
+add_action( 'woocommerce_after_single_product_summary', 'product_custom_content', 10);
 
+function product_custom_content() {
+	/* https://docs.woocommerce.com/document/remov-product-content-based-on-category */
+	//is it a course?
+	if ( is_product() && has_term( 'courses', 'product_cat' ) ) {
+			/* $content = get_template_part( 'template-parts/content', 'coursebundle' ) . get_template_part( 'template-parts/tabs/tabs', 'courses' ); */
+			$content = get_template_part( 'template-parts/tabs/tabs', 'courses' );	
+	} else {
+		//else get page tabs
+		$content = get_template_part( 'template-parts/tabs/tabs', 'page' );
+	}
+    
+    return $content;
+    
+}
 
 /*
  * Woocommerce swap short product description and full description
@@ -159,9 +176,9 @@ function display_sale_badge() {
 
 
  // Disable AJAX Cart
-function register_ajax_cart() {
+ function register_ajax_cart() {
 }
-add_action('after_setup_theme', 'register_ajax_cart');
+add_action('after_setup_theme', 'register_ajax_cart'); 
 
 
 
