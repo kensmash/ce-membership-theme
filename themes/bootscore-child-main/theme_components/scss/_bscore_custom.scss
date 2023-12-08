@@ -38,7 +38,7 @@ h1 {
 # Navigation
 --------------------------------------------------------------*/
 
-#bootscore-navbar {
+#bootscore-navbar, .top-nav-widget-2 {
     font-weight: 700;
 }
 
@@ -70,6 +70,13 @@ h1 {
 #bootscore-navbar li {
     display: flex;
     align-items: center;
+}
+
+/* customize header bootstrap button colors */
+.header-actions 
+    .btn-outline-secondary {
+        border: 1px solid #abadaf;
+        color: #abadaf;
 }
 
 /*--------------------------------------------------------------

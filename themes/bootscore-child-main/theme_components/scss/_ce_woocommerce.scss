@@ -45,10 +45,6 @@
     display: none;
   }
   
-  h2.yikes-custom-woo-tab-title {
-    display: none;
-  }
-  
   /* reduce space below product image */
   .woocommerce div.product div.images {
     margin-bottom: 1.25em;
@@ -154,5 +150,9 @@
   
   #order_review_heading {
     margin: 0.6em 0 0.5em;
+  }
+
+  .single_add_to_cart_button {
+    @extend .btn-success;
   }
   

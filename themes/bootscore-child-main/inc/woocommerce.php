@@ -176,9 +176,9 @@ function display_sale_badge() {
 
 
  // Disable AJAX Cart
- function register_ajax_cart() {
+ /* function register_ajax_cart() {
 }
-add_action('after_setup_theme', 'register_ajax_cart'); 
+add_action('after_setup_theme', 'register_ajax_cart'); */
 
 
 

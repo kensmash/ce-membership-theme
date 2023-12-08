@@ -73,6 +73,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/group_656e485d1e2ea.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_656e485d1e2ea-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/group_6556a9015ced8.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -712,14 +720,6 @@
       "oAP" : "\/style-min.css",
       "oF" : 0,
       "pg" : 0
-    },
-    "\/template-parts\/header\/actions-woocommerce.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/header\/actions-woocommerce.php",
-      "oF" : 0
     },
     "\/template-parts\/tabs\/tabs-page.php" : {
       "cB" : 0,
