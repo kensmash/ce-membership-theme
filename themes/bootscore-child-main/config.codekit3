@@ -97,6 +97,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/group_657362b1d3a4f.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_657362b1d3a4f-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/group_655686699403d.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -129,10 +137,26 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/post_type_6573617a7e705.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/post_type_6573617a7e705-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/taxonomy_654e96e2378dc.json" : {
       "ft" : 524288,
       "oA" : 1,
       "oAP" : "\/acf-json\/taxonomy_654e96e2378dc-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/acf-json\/taxonomy_657361a49a73b.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/taxonomy_657361a49a73b-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
@@ -627,6 +651,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/inc\/pmp.php",
+      "oF" : 0
+    },
+    "\/inc\/shortcodes.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/shortcodes.php",
       "oF" : 0
     },
     "\/inc\/woocommerce.php" : {
