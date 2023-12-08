@@ -21,7 +21,7 @@
     transform: translateY(-50%);
     z-index: 1;
     color: $ce-blue;
-    font-size: 50px;
+    font-size: 30px;
     cursor: pointer;
     background: transparent;
     outline: none !important;
@@ -33,11 +33,11 @@
   }
   
   .slick-prev {
-    left: -10px;
+    left: -20px;
   }
   
   .slick-next {
-    right: -10px;
+    right: -20px;
   }
 
 /*--------------------------------------------------------------

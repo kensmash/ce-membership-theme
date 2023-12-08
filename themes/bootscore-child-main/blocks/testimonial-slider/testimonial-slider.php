@@ -41,7 +41,7 @@ if ( ! empty( $block['align'] ) ) {
                     <p class="card-text"><?php echo $content; ?></p>
                 </div><!-- .card-body -->
                 <div class="card-footer">
-                    <?php echo esc_html( $title ); ?>
+                    <strong><?php echo esc_html( $title ); ?></strong>
                     <span><?php echo esc_html( $credentials ); ?></span>
                 </div> <!-- .card-footere -->
             </div><!-- .card -->
