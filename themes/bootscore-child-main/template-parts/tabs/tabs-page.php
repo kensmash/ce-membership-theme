@@ -10,11 +10,18 @@
 
 ?>
 
+<?php
+  $tab_type = "nav-tabs";
+  if ( wp_is_mobile() ) {
+    $tab_type = "nav-pills";
+  }
+?>
+
 <?php if (have_rows('tabs')) { ?>
 
 <div class="mt-2 pt-1 pt-lg-2 page-tabs">
 
-  <ul class="nav nav-pills nav-fill flex-column flex-xl-row" id="myTab" role="tablist">
+  <ul class="nav <?php echo $tab_type; ?> nav-fill flex-column flex-xl-row" id="myTab" role="tablist">
     <?php $i=0; while ( have_rows('tabs') ) : the_row(); ?>
 
     <?php 
