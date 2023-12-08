@@ -39,11 +39,13 @@ if ( ! empty( $block['align'] ) ) {
             <div class="card h-100">
                 <div class="card-body">
                     <p class="card-text"><?php echo $content; ?></p>
+                </div><!-- .card-body -->
+                <div class="card-footer">
                     <?php echo esc_html( $title ); ?>
                     <span><?php echo esc_html( $credentials ); ?></span>
-                </div>
-            </div>
-        </div>
+                </div> <!-- .card-footere -->
+            </div><!-- .card -->
+        </div><!-- .testimonial-slide -->
     <?php 
         endforeach;
         endif; 
