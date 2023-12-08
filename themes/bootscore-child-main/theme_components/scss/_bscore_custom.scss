@@ -77,6 +77,10 @@ h1 {
     .btn-outline-secondary {
         border: 1px solid #abadaf;
         color: #abadaf;
+
+        &:hover {
+            color: white;
+        }
 }
 
 /*--------------------------------------------------------------

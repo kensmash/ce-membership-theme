@@ -56,6 +56,9 @@ h1 {
   border: 1px solid #abadaf;
   color: #abadaf;
 }
+.header-actions .btn-outline-secondary:hover {
+  color: white;
+}
 
 /*--------------------------------------------------------------
 # Layout
