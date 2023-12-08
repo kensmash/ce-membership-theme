@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<main id="main" class="container p-4 bg-white shadow-sm">
+<main id="main" class="container pt-5">
 
 	<?php if ( have_posts() ) : 
         
@@ -23,7 +23,7 @@ get_header();
 		$nextText = "&laquo; Newer episodes"; 
 		?>
 
-	<header class="page-header pt-1 px-2">
+	<header class="page-header pt-4 px-2">
 		<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 		<div class="row pt-2 pb-3">
 
