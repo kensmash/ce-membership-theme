@@ -48,8 +48,35 @@ h1 {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.top-nav-widget-2 a:focus #bootscore-navbar li,
+.offcanvas-body #bootscore-navbar li {
+  display: block;
+}
+.top-nav-widget-2 a:focus .top-nav-widget-2 a:not(.btn),
+.offcanvas-body .top-nav-widget-2 a:not(.btn) {
+  display: block;
+  width: 100%;
+}
+.top-nav-widget-2 a:focus .top-nav-widget-2 a.btn,
+.offcanvas-body .top-nav-widget-2 a.btn {
+  margin-top: 16px;
+}
+
+.navbar li a,
+.navbar li a {
+  color: #173751;
+}
+.navbar li a:hover, .navbar li a:focus, .navbar li a:active, .navbar li a.show,
+.navbar li a:hover,
+.navbar li a:focus,
+.navbar li a:active,
+.navbar li a.show {
+  color: #173751 !important;
+}
+
 @media only screen and (min-width: 1200px) {
-  /* link text */
+  /* desktop link text */
+  .top-nav-widget-2 a,
   .navbar-dark li a,
   .navbar-dark li a {
     color: white;
@@ -58,14 +85,11 @@ h1 {
   }
 }
 /* change hover color */
+.top-nav-widget-2 a:focus,
+.top-nav-widget-2 a:hover,
 .navbar-dark li a:focus,
 .navbar-dark li a:hover {
   color: #6dcefb;
-}
-
-#bootscore-navbar li {
-  display: flex;
-  align-items: center;
 }
 
 /* customize header bootstrap button colors */
@@ -82,28 +106,23 @@ li:focus-within a {
   outline: none;
 }
 
-/* dropdown menu */
-.navbar-nav > li > .dropdown-menu {
-  /*fix background color*/
-  background-color: #212529;
-  border: 0;
-  padding: 0.5em 0.5em 0.75em;
-  margin: 1em 0 0 0;
-  border-radius: 0;
-}
-
-.dropdown-item {
-  font-weight: 700;
-  color: #6dcefb;
-  padding-left: 0.5em;
-}
-.dropdown-item:hover {
-  background-color: transparent;
-}
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
+  /* dropdown menu */
+  .navbar-nav > li > .dropdown-menu {
+    /*fix background color*/
+    background-color: #212529;
+    border: 0;
+    padding: 0.5em 0.5em 0.75em;
+    margin: 1em 0 0 0;
+    border-radius: 0;
+  }
   .dropdown-item {
-    padding-left: 1em;
+    font-weight: 700;
+    color: #6dcefb;
+    padding-left: 0.5em;
+  }
+  .dropdown-item:hover {
+    background-color: transparent;
   }
 }
 /*--------------------------------------------------------------

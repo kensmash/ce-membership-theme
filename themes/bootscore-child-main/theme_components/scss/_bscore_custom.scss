@@ -69,25 +69,54 @@ h1 {
     background-color: rgba(0,0,0,0);  
 }
 
+.top-nav-widget-2 a:focus,
+
+/* off-canvas styling */
+.offcanvas-body {
+    #bootscore-navbar {
+        li {
+            display: block;
+        }
+    }
+    
+    .top-nav-widget-2 a:not(.btn) {
+        display: block;
+        width: 100%;
+    }
+
+    .top-nav-widget-2 a {
+       &.btn {
+            margin-top: 16px;
+       }
+    }
+}
+
+.navbar li a,
+.navbar li a {
+    color: $ce-darkblue;
+
+    &:hover, &:focus, &:active, &.show {
+        color: $ce-darkblue !important;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
-   /* link text */
+   /* desktop link text */
+   .top-nav-widget-2 a,
     .navbar-dark li a,
     .navbar-dark li a {
-    color: white;
-    padding: 0;
-    margin: 0 0.85em 0 0.35em;
+        color: white;
+        padding: 0;
+        margin: 0 0.85em 0 0.35em;
     }
 }
 
 /* change hover color */
+.top-nav-widget-2 a:focus,
+.top-nav-widget-2 a:hover,
 .navbar-dark li a:focus,
 .navbar-dark li a:hover {
   color: $ce-iceblue;
-}
-
-#bootscore-navbar li {
-    display: flex;
-    align-items: center;
 }
 
 /* customize header bootstrap button colors */
@@ -106,6 +135,7 @@ li:focus-within a {
     outline: none;
   }
   
+@media only screen and (min-width: 1024px) {
   /* dropdown menu */
   .navbar-nav > li > .dropdown-menu {
     /*fix background color*/
@@ -125,12 +155,8 @@ li:focus-within a {
         background-color: transparent;
     }
   }
+}
   
-  @media (min-width: 768px) {
-    .dropdown-item {
-      padding-left: 1em;
-    }
-  }
 
 /*--------------------------------------------------------------
 # Layout
