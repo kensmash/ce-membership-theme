@@ -23,9 +23,9 @@ body {
     //background: white;
   }
 
-  .container {
-    max-width: 1300px;
-  }
+.container {
+max-width: 1300px;
+}
 
 /*--------------------------------------------------------------
 # Typography
@@ -60,6 +60,9 @@ h1 {
     margin-top: 0.75em;
 }
 
+a {
+    text-decoration: none;
+}
 
 /*--------------------------------------------------------------
 # Navigation

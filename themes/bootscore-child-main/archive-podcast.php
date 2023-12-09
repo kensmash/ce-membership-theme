@@ -11,7 +11,10 @@ get_header();
 ?>
 
 <div id="content" class="site-content container-fluid py-5 mt-5">
-    <div id="primary" class="content-area container bg-white rounded-1 py-4">
+    
+    <div id="primary" class="content-area container bg-white rounded-1 px-0">
+    <?php get_template_part( 'template-parts/content', 'topimage' ); ?>
+
 
 	<?php if ( have_posts() ) : 
         
@@ -24,7 +27,9 @@ get_header();
 		$nextText = "&laquo; Newer episodes"; 
 		?>
 
-	<header class="page-header pt-4 pb-3 px-2">
+        <div class="py-4 px-4">
+
+	<header class="page-header pt-3 pb-3 px-2">
 		<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 		<div class="row pt-2 pb-3">
 
@@ -68,6 +73,8 @@ get_header();
 
 		endif;
 		?>
+
+    </div>
 
     </div>
 </div>
