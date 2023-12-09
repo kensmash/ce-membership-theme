@@ -28,7 +28,7 @@
 
 	<?php bootscore_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="entry-content pb-4">
 		<?php
 		the_content(
 			sprintf(

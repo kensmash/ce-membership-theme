@@ -55,7 +55,7 @@ get_header();
                   </li>
                 </ul>
               </nav>
-              <?php /* comments_template(); */ ?>
+              <?php  comments_template();  ?>
             </footer>
 
           </main>
