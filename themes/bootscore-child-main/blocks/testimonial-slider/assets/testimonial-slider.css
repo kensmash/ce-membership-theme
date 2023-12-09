@@ -5,6 +5,10 @@ body {
   background: #f1f1f1 url(../../assets/images/bg_pattern.jpg);
 }
 
+.container {
+  max-width: 1300px;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -142,6 +146,10 @@ li:focus-within a {
     background-color: transparent;
   }
 }
+.dropdown-item.active {
+  background-color: transparent;
+}
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/

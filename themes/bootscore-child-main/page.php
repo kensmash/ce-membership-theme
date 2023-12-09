@@ -19,14 +19,14 @@ get_header();
 <?php $avoid_fluid_container_post_types = array('forum', 'topic', 'reply'); ?>
 
   <div id="content" class="site-content container-fluid py-5 mt-5">
-    <div id="primary" class="content-area container bg-white rounded-1 px-4">
+    <div id="primary" class="content-area container bg-white rounded-1 px-0">
 
     <?php get_template_part( 'template-parts/content', 'topimage' ); ?>
 
       <!-- Hook to add something nice -->
       <?php bs_after_primary(); ?>
 
-      <div class="row">
+      <div class="row px-4">
         <div class="<?php echo bootscore_main_col_class(); ?> px-0">
 
           <main id="main" class="site-main">

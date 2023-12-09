@@ -11,8 +11,10 @@ get_header();
 ?>
 
 <div id="content" class="site-content container-fluid py-5 mt-5">
-    <div id="primary" class="content-area container bg-white rounded-1 py-4">
 
+
+    <div id="primary" class="content-area container bg-white rounded-1 px-0">
+	<?php get_template_part( 'template-parts/content', 'topimage' ); ?>
 		<?php 
 
 		$args = array( 'post_type' => 'script','orderby'=> 'title', 'order' => 'ASC','posts_per_page' => -1 ); 
@@ -21,7 +23,7 @@ get_header();
 		
 		if( $the_query->have_posts() ): ?>
 		
-
+		<div class="py-4 px-4">
 		<header class="page-header">
 			<?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
 			<div class="row pt-2 pb-3">
@@ -77,6 +79,8 @@ get_header();
 			<?php endif; ?>
 			
 		</div><!-- accordion -->
+
+	</div>
 
 	</div><!-- #main -->
 </div><!-- #primary -->
