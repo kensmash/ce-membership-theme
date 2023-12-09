@@ -10,7 +10,8 @@
 get_header();
 ?>
 
-<main id="main" class="container pt-5 bg-white">
+<div id="content" class="site-content container-fluid py-5 mt-5">
+    <div id="primary" class="content-area container bg-white rounded-1 py-4">
 
 	<?php if ( have_posts() ) : 
         
@@ -68,7 +69,8 @@ get_header();
 		endif;
 		?>
 
-</main><!-- #main -->
+    </div>
+</div>
 
 <?php
 get_sidebar();

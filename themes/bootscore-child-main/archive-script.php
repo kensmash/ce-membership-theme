@@ -10,9 +10,8 @@
 get_header();
 ?>
 
-<div id="primary" class="container pt-5 bg-white">
-
-	<main id="main" class="site-main p-4">
+<div id="content" class="site-content container-fluid py-5 mt-5">
+    <div id="primary" class="content-area container bg-white rounded-1 py-4">
 
 		<?php 
 
@@ -79,7 +78,7 @@ get_header();
 			
 		</div><!-- accordion -->
 
-	</main><!-- #main -->
+	</div><!-- #main -->
 </div><!-- #primary -->
 
 <?php
