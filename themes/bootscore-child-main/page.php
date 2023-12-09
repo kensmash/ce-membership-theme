@@ -21,6 +21,8 @@ get_header();
   <div id="content" class="site-content container-fluid py-5 mt-5">
     <div id="primary" class="content-area <?php echo is_cart() || in_array( get_post_type( get_the_id() ), $avoid_fluid_container_post_types ) ? "container" : "container"; ?>">
 
+    <?php get_template_part( 'template-parts/content', 'topimage' ); ?>
+
       <!-- Hook to add something nice -->
       <?php bs_after_primary(); ?>
 
