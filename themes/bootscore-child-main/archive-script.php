@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<div id="primary" class="container pt-5">
+<div id="primary" class="container pt-5 bg-white">
 
 	<main id="main" class="site-main p-4">
 

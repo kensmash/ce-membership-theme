@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<main id="main" class="container pt-5">
+<main id="main" class="container pt-5 bg-white">
 
 	<?php if ( have_posts() ) : 
         
