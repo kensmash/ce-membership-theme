@@ -23,13 +23,11 @@ get_header();
 		$nextText = "&laquo; Newer episodes"; 
 		?>
 
-	<header class="page-header pt-4 px-2">
+	<header class="page-header pt-4 pb-3 px-2">
 		<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 		<div class="row pt-2 pb-3">
 
-			<p>The <strong>Comics Experience Make Comics</strong> podcast provides ~15 minutes of advice per episode on all aspects of creating comics and breaking in to the industry.</p>
-
-			<p>Join Comics Experience founder and former Marvel and IDW Editor Andy Schmidt and his co-host Joey Groah as they discuss making comics! (Also, big thanks to the co-host of the first 50 episodes, iFanboy's Josh Flanagan!)</p>
+			<p>The <strong>Comics Connection</strong> podcast provides ~15 minutes of advice per episode on all aspects of creating comics and breaking in to the industry.</p>
 
 			<p>Do you have a question about making comics you'd like to hear discussed on the podcast? Email us at <a href="mailto:info@comicsexperience.com">info@comicsexperience.com.</a></p>
 

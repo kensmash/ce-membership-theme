@@ -17,6 +17,22 @@ h1 {
   font-weight: 700;
 }
 
+/* scripts page */
+.scripts ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-inline-start: 0.75em;
+}
+
+.podcast-desc-logo {
+  max-width: 99%;
+  margin-bottom: 1em;
+}
+
+.podcast_meta {
+  margin-top: 0.75em;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -61,6 +77,35 @@ h1 {
   color: white;
 }
 
+/* remove focus ring in safari on drop-down click */
+li:focus-within a {
+  outline: none;
+}
+
+/* dropdown menu */
+.navbar-nav > li > .dropdown-menu {
+  /*fix background color*/
+  background-color: #212529;
+  border: 0;
+  padding: 0.5em 0.5em 0.75em;
+  margin: 1em 0 0 0;
+  border-radius: 0;
+}
+
+.dropdown-item {
+  font-weight: 700;
+  color: #6dcefb;
+  padding-left: 0.5em;
+}
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .dropdown-item {
+    padding-left: 1em;
+  }
+}
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
