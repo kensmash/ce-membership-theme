@@ -1,6 +1,6 @@
 {
     "key": "group_654e9550444e8",
-    "title": "Post Type: Testimonial",
+    "title": "Testimonial Options",
     "fields": [
         {
             "key": "field_654e9550a5f07",
@@ -41,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699649229
+    "modified": 1702156100
 }

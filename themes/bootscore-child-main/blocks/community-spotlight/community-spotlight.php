@@ -1,13 +1,13 @@
 <?php
 /**
- * Testimonial Block template.
+ * Community Spotlight Block template.
  *
  * @param array $block The block settings and attributes.
  */
 
 // Load values and assign defaults.
 
-$featured_testimonials = get_field('testimonials');
+$spotlight_books = get_field('spotlight_books');
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -27,13 +27,13 @@ if ( ! empty( $block['align'] ) ) {
 
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" style="">
     <?php 
-        if( $featured_testimonials ):
-        foreach( $featured_testimonials as $testimonial ): 
-            $permalink = get_permalink( $testimonial->ID );
-            $title = get_the_title( $testimonial->ID );
+        if( $spotlight_books ):
+        foreach( $spotlight_books as $book ): 
+            $permalink = get_permalink( $book->ID );
+            $title = get_the_title( $book->ID );
             //$content = get_post_field('post_content', $testimonial->ID); 
-            $content = get_the_excerpt($testimonial->ID); 
-            $credentials = get_field( 'credentials', $testimonial->ID );
+            $content = get_the_excerpt($book->ID); 
+            $credentials = get_field( 'credentials', $book->ID );
         ?>
         <div class="testimonial-slide px-2">
             <div class="card h-100">

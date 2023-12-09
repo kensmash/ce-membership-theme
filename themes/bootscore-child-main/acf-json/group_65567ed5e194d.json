@@ -12,11 +12,31 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "message": "Check to prevent the page title from displaying.",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_65746cf756611",
+            "label": "Show Header Image",
+            "name": "show_header_image",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "Check this if page should show header image.",
             "default_value": 0,
             "ui": 0,
             "ui_on_text": "",
@@ -108,26 +128,6 @@
                     "parent_repeater": "field_65736920b8893"
                 }
             ]
-        },
-        {
-            "key": "field_65746cf756611",
-            "label": "Show Header Image",
-            "name": "show_header_image",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "Check this if page should show header image.",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
         }
     ],
     "location": [
@@ -148,5 +148,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702128931
+    "modified": 1702155952
 }

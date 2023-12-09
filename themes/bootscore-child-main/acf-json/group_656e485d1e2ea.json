@@ -1,6 +1,6 @@
 {
     "key": "group_656e485d1e2ea",
-    "title": "Post Type: Connection Comics",
+    "title": "Connection Comics Information",
     "fields": [
         {
             "key": "field_656e488c7aa1b",
@@ -106,5 +106,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701726663
+    "modified": 1702156084
 }

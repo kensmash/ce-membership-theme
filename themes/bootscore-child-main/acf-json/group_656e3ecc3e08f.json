@@ -1,6 +1,6 @@
 {
     "key": "group_656e3ecc3e08f",
-    "title": "Post Type: Product",
+    "title": "Product Information",
     "fields": [
         {
             "key": "field_656e3ecccdada",
@@ -108,5 +108,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701724083
+    "modified": 1702156072
 }

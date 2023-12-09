@@ -29,7 +29,7 @@ get_header();
       <div class="row px-4">
         <div class="<?php echo bootscore_main_col_class(); ?> px-0">
 
-          <main id="main" class="site-main">
+          <main id="main" class="site-main px-3">
 
             <header class="entry-header pt-3 ps-2">
               <?php 
