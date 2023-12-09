@@ -11,7 +11,7 @@
 get_header();
 ?>
 
-  <div id="content" class="site-content container-fluid">
+  <div id="content" class="site-content container-fluid bg-white">
     <div id="primary" class="content-area">
 
       <!-- Hook to add something nice -->
