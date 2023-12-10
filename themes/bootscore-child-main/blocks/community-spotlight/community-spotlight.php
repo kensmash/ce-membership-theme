@@ -16,7 +16,7 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'container spotlight-slider';
+$class_name = 'container spotlight-slider pt-4';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
@@ -41,7 +41,7 @@ if ( ! empty( $block['align'] ) ) {
                 <div class="card-body">
                     <div><?php echo $image; ?></div>
                     <div class="pt-5 text-white">
-                        <h3><?php echo esc_html( $title ); ?></h3>
+                        <h3 class="mb-1"><?php echo esc_html( $title ); ?></h3>
                         <p><?php echo esc_html( $creator_names ); ?></p>
                         <p class="card-text"><?php echo $content; ?></p>
                     </div>

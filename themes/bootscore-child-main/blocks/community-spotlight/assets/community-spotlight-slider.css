@@ -251,3 +251,18 @@ li:focus-within a {
 .spotlight-card {
   background-color: rgba(0, 0, 0, 0) !important;
 }
+.spotlight-card img {
+  transition: all 0.25s ease-in;
+  transform: scale(0.75);
+}
+.spotlight-card h3, .spotlight-card p {
+  transition: all 0.25s ease-in;
+  opacity: 0;
+}
+
+.slick-current .spotlight-card img {
+  transform: scale(1);
+}
+.slick-current .spotlight-card h3, .slick-current .spotlight-card p {
+  opacity: 1;
+}
