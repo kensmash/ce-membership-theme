@@ -1,4 +1,4 @@
-@import "../_bscore_custom.scss";  // Collecting Bootstrap source from parent-theme
+@import "../_bscore_colors.scss";  // Collecting Bootstrap source from parent-theme
 
 
 .slick-track {
@@ -20,11 +20,13 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 1;
-    color: $ce-blue;
+    //color: $ce-blue;
+    color: white;
     font-size: 30px;
     cursor: pointer;
     background: transparent;
     outline: none !important;
+    transition: all 0.25s ease-in;
   }
   
   .slick-arrow:hover,

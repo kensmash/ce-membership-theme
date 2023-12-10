@@ -173,6 +173,7 @@ function display_sale_badge() {
 		echo '<span class="onsale">Sale!</span>'; 
 	}
  }
+ 
 
 
  // Disable AJAX Cart

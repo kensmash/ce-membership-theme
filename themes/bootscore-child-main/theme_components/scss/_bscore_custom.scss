@@ -6,18 +6,6 @@
 // Because this file is compiled after Bootstrap, you're also able to use Bootstrap mixins for better code.
 // Some examples can be found here: https://bootscore.me/documentation/bootstrap-css-sass
 
-$ce-blue: #83d9ff;
-$ce-darkblue: #173751;
-$ce-mediumblue: #1e80ae;
-$ce-lightblue: #4ba2d7;
-$ce-iceblue: #6dcefb;
-$ce-orange: #edaf1b;
-$ce-grey: #b8b7b7;
-$ce-lightgrey: #ccc9c9;
-$ce-offwhite: #e8e4e4;
-$ce-green: #77a464;
-$ce-darkgray: #212529;
-
 body {
     background: #f1f1f1 url(../../assets/images/bg_pattern.jpg);
     //background: white;
@@ -200,7 +188,7 @@ li:focus-within a {
 --------------------------------------------------------------*/
 
 .ce-footer {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(25,25,25,1) 100%);
     color: white;
     border-top: 1px solid rgba(255,255,255,0.25);
 }
