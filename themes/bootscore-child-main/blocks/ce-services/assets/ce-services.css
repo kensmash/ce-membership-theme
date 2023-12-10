@@ -11900,3 +11900,10 @@ textarea.form-control-lg {
   position: absolute;
   display: inline-block;
 }
+
+@media only screen and (min-width: 1024px) {
+  .ce-slide-funnels-content-container {
+    padding: 1em;
+    columns: 2;
+  }
+}

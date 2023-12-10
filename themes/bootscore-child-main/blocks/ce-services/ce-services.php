@@ -91,12 +91,14 @@ if ( ! empty( $block['align'] ) ) {
 
                 <div class="ce-service-descriptions-slide">
                  
-                    <?php foreach( $service['service_funnels'] as $service_funnel ): ?>
-                        <div class="ce-slide-funnels-content">
-                            <p class="fw-bold"><?php echo $service_funnel['title']; ?></p>
-                            <p><?php echo $service_funnel['description']; ?></p>
-                        </div>
-                    <?php endforeach; ?>
+                    <div class="ce-slide-funnels-content-container">
+                        <?php foreach( $service['service_funnels'] as $service_funnel ): ?>
+                            <div class="ce-slide-funnels-content">
+                                <p class="fw-bold"><?php echo $service_funnel['title']; ?></p>
+                                <p><?php echo $service_funnel['description']; ?></p>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
                     
                 </div>
 
