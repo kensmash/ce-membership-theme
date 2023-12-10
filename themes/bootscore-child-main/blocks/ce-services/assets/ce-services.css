@@ -11906,4 +11906,7 @@ textarea.form-control-lg {
     padding: 1em;
     columns: 2;
   }
+  .ce-slide-funnels-content-container div {
+    break-inside: avoid-column;
+  }
 }

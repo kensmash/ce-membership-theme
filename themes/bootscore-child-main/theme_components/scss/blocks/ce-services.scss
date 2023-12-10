@@ -58,7 +58,10 @@
     .ce-slide-funnels-content-container {
         padding: 1em;
         columns: 2;
-    
+        
+        div {
+            break-inside: avoid-column;
+        }
     }
 }
 
