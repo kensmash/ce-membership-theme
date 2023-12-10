@@ -17,7 +17,7 @@
 <footer class="container-fluid ce-footer px-0 <?php echo !is_front_page() ? "mt-5" : ""; ?>">
 
     <div class="bootscore-footer pt-3 pb-3">
-        
+
         <div class="container pb-5">
 
             <div class="row justify-content-between">
@@ -44,8 +44,8 @@
                         ?>
                     </div>
                 </div><!-- .col -->
-                
-                <div class="col-lg-5 text-light pt-3">
+
+                <div id="newsletter-signup" class="col-lg-5 text-light pt-3">
                     <h3>Get Our Newsletter</h3>
                     <p>Sign up for our <b>monthly email newsletter</b> to receive updates on courses, information on making comics, and community news!</p>
                     <?php echo do_shortcode("[gravityform id='1' title='false']"); ?>
@@ -57,7 +57,7 @@
 
         <div class="container py-4">
 
-        <div class="row justify-content-space-between">
+            <div class="row justify-content-space-between">
 
                 <!-- Footer 1 Widget -->
                 <div class="col-md-6 col-lg">
@@ -76,7 +76,7 @@
 
                 <!-- Footer 2 Widget -->
                 <div class="col-md-6 col-lg">
-                <?php
+                    <?php
                         wp_nav_menu(array(
                             'menu' => 'Footer 2 Nav',
                             'container' => false,
@@ -91,7 +91,7 @@
 
                 <!-- Footer 3 Widget -->
                 <div class="col-md-6 col-lg">
-                <?php
+                    <?php
                         wp_nav_menu(array(
                             'menu' => 'Footer 3 Nav',
                             'container' => false,
@@ -106,7 +106,7 @@
 
                 <!-- Footer 4 Widget -->
                 <div class="col-md-6 col-lg">
-                <?php
+                    <?php
                         wp_nav_menu(array(
                             'menu' => 'Footer 4 Nav',
                             'container' => false,
@@ -121,7 +121,7 @@
 
                 <!-- Footer 5 Widget -->
                 <div class="col-md-6 col-lg">
-                <?php
+                    <?php
                         wp_nav_menu(array(
                             'menu' => 'Footer 5 Nav',
                             'container' => false,
@@ -147,7 +147,7 @@
 
 </div><!-- #page -->
 
-    <?php wp_footer(); ?>
+<?php wp_footer(); ?>
 
 </body>
 

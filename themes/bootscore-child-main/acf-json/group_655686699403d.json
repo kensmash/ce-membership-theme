@@ -169,8 +169,13 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": "",
-                            "post_status": "",
+                            "post_type": [
+                                "page",
+                                "product"
+                            ],
+                            "post_status": [
+                                "publish"
+                            ],
                             "taxonomy": "",
                             "allow_archives": 1,
                             "multiple": 0,
@@ -201,5 +206,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1700596932
+    "modified": 1702238371
 }
