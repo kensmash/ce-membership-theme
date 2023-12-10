@@ -143,6 +143,13 @@
   .added_to_cart {
     margin-left: 0.75em;
   }
+
+  /* why is this bad red? red scary */
+  .cart-content-count {
+    &.bg-danger {
+      background-color: $green !important;
+    }
+  }
   
   /*--------------------------------------------------------------
   # WooCommerce Checkout Page
