@@ -35,7 +35,7 @@ if ( ! empty( $block['align'] ) ) {
             $content = get_the_excerpt($book->ID); 
             $credentials = get_field( 'credentials', $book->ID );
         ?>
-        <div class="testimonial-slide px-2">
+        <div class="spotlight-slide px-2">
             <div class="card h-100">
                 <div class="card-body">
                     <p class="card-text"><?php echo $content; ?></p>

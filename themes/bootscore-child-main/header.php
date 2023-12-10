@@ -85,6 +85,7 @@
                 </div>
               <?php 
               } else { 
+                //we have a logged in member, show them a custom membership menu
                 wp_nav_menu(array(
                   'menu' => 'Community Links',
                   'container'      => false,

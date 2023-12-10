@@ -75,6 +75,7 @@
             "choices": {
                 "Anthology": "Anthology",
                 "One-Shot": "One-Shot",
+                "Graphic Novel": "Graphic Novel",
                 "Digital Comic": "Digital Comic",
                 "Limited Series": "Limited Series",
                 "Trade Paperback": "Trade Paperback"
@@ -106,5 +107,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702156084
+    "modified": 1702217096
 }
