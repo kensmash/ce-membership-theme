@@ -24,10 +24,10 @@ function mentors_tab_mentors() {
                 'key'   => 'mentor',
                 'value' => '1',
             ),
-            array(
+            /* array(
                 'key'   => 'active',
                 'value' => '1',
-            )
+            ) */
         )
         );
 
@@ -173,10 +173,10 @@ function tab_testimonials($atts) {
 	$output = '';
          
     $args = array(
-        'post_type' => 'testimonials',
+        'post_type' => 'testimonial',
         'posts_per_page' => 10,
         'order' => 'DESC',
-        'testimonial_categories' => $category
+        'testimonial-category' => $category
         );
 
     $query = new WP_Query( $args );
