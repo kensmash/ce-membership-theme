@@ -39,7 +39,7 @@ if ( ! empty( $block['align'] ) ) {
         <div class="spotlight-slide px-2">
             <div class="card spotlight-card h-100">
                 <div class="card-body">
-                    <div><?php echo $image; ?></div>
+                    <div><a href="<?php echo esc_url( $permalink ); ?>"><?php echo $image; ?></a></div>
                     <div class="pt-5 text-white">
                         <h3 class="mb-1"><?php echo esc_html( $title ); ?></h3>
                         <p><?php echo esc_html( $creator_names ); ?></p>
