@@ -164,6 +164,7 @@
   # Buttons
   --------------------------------------------------------------*/
 
+  /* address odd bug in footer that would change email signup button color on woocommerce product pages */
   .woocommerce a.button:hover {
     background-color: var(--bs-btn-hover-bg);
   }
@@ -186,8 +187,7 @@
       &.button {
         @extend .btn;
         @extend .btn-success;
-        border: 0px;
-        color: white;
+       
 
         &:hover {
           background-color: var(--bs-btn-hover-bg);
@@ -196,14 +196,14 @@
     }
   }
 
+/* change button color in related producst card */
 .woocommerce {
     .card {
       a {
         &.button {
           @extend .btn;
           @extend .btn-success;
-          border: 0px;
-          color: white;
+
 
           &:hover {
             @extend .btn-success;
@@ -213,6 +213,7 @@
     }
   }
 
+/* change button color in single product page */
 .woocommerce {
    div {
     &.product {
