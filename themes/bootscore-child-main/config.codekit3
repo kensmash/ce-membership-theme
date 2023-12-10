@@ -137,6 +137,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/post_type_6575bf1870b6d.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/post_type_6575bf1870b6d-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/post_type_6573617a7e705.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -692,6 +700,18 @@
       "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.asset.php",
       "oF" : 1
     },
+    "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -1089,6 +1109,18 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/theme_components\/scss\/blocks\/community-spotlight-slider.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/theme_components\/scss\/blocks\/community-spotlight-slider-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/theme_components\/scss\/blocks\/community-spotlight-slider.scss" : {
       "aP" : 0,
