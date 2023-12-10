@@ -12,31 +12,28 @@
 /*--------------------------------------------------------------
 # DEFAULT SLICK STYLES
 --------------------------------------------------------------*/
-.slick-arrow {
+.testimonial-slider .slick-arrow {
   position: absolute;
   top: 50%;
   -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
-  color: white;
+  color: #83d9ff;
   font-size: 30px;
   cursor: pointer;
   background: transparent;
   outline: none !important;
   transition: all 0.25s ease-in;
 }
-
-.slick-arrow:hover,
-.slick-arrow:focus {
+.testimonial-slider .slick-arrow:hover,
+.testimonial-slider .slick-arrow:focus {
   color: #83d9ff;
 }
-
-.slick-prev {
+.testimonial-slider .slick-prev {
   left: -20px;
 }
-
-.slick-next {
+.testimonial-slider .slick-next {
   right: -20px;
 }
 

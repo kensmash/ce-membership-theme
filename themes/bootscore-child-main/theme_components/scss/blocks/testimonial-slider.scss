@@ -12,7 +12,7 @@
 /*--------------------------------------------------------------
 # DEFAULT SLICK STYLES
 --------------------------------------------------------------*/
-
+.testimonial-slider {
 .slick-arrow {
     position: absolute;
     top: 50%;
@@ -20,8 +20,8 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 1;
-    //color: $ce-blue;
-    color: white;
+    color: $ce-blue;
+    //color: white;
     font-size: 30px;
     cursor: pointer;
     background: transparent;
@@ -41,6 +41,7 @@
   .slick-next {
     right: -20px;
   }
+}
 
 /*--------------------------------------------------------------
 # SLIDER STYLES STYLES
