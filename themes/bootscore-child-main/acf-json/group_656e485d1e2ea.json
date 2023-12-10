@@ -59,6 +59,26 @@
             "return_format": "array"
         },
         {
+            "key": "field_6575d084a2172",
+            "label": "Order Button Text",
+            "name": "order_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Buy Here",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_656e497c4f86d",
             "label": "Format",
             "name": "format",
@@ -73,6 +93,7 @@
                 "id": ""
             },
             "choices": {
+                "none": "Select Format",
                 "Anthology": "Anthology",
                 "One-Shot": "One-Shot",
                 "Graphic Novel": "Graphic Novel",
@@ -80,7 +101,7 @@
                 "Limited Series": "Limited Series",
                 "Trade Paperback": "Trade Paperback"
             },
-            "default_value": false,
+            "default_value": "none",
             "return_format": "label",
             "multiple": 0,
             "allow_null": 0,
@@ -107,5 +128,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702217096
+    "modified": 1702220675
 }

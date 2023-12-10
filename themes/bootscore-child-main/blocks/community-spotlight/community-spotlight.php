@@ -30,17 +30,21 @@ if ( ! empty( $block['align'] ) ) {
         if( $spotlight_books ):
         foreach( $spotlight_books as $book ): 
             $permalink = get_permalink( $book->ID );
+            $image = get_the_post_thumbnail( $book->ID );   
             $title = get_the_title( $book->ID );
             //$content = get_post_field('post_content', $testimonial->ID); 
             $content = get_the_excerpt($book->ID); 
-            $credentials = get_field( 'credentials', $book->ID );
+            $creator_names = get_field( 'creator_names', $book->ID );
         ?>
         <div class="spotlight-slide px-2">
-            <div class="card h-100">
+            <div class="card spotlight-card h-100">
                 <div class="card-body">
-                    <p class="card-text"><?php echo $content; ?></p>
-                    <?php echo esc_html( $title ); ?>
-                    <span><?php echo esc_html( $credentials ); ?></span>
+                    <div><?php echo $image; ?></div>
+                    <div class="pt-5 text-white">
+                        <h3><?php echo esc_html( $title ); ?></h3>
+                        <p><?php echo esc_html( $creator_names ); ?></p>
+                        <p class="card-text"><?php echo $content; ?></p>
+                    </div>
                 </div>
             </div>
         </div>
