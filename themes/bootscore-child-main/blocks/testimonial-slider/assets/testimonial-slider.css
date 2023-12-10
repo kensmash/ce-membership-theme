@@ -248,3 +248,14 @@ li:focus-within a {
 /*--------------------------------------------------------------
 # SLIDER STYLES STYLES
 --------------------------------------------------------------*/
+.testimonial-slide .card {
+  border: 0px !important;
+  background-color: #2979a2 !important;
+  color: white !important;
+}
+.testimonial-slide .card .card-footer {
+  border-top: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 0.75em;
+  padding-bottom: 1em;
+}
