@@ -151,7 +151,7 @@ li:focus-within a {
     /*fix background color*/
     background-color: #212529;
     border: 0;
-    padding: .5em .5em .75em;
+    padding: .5em .5em .45em;
     margin: .7em 0 0 0;
     border-radius: 0;
   }
@@ -160,7 +160,7 @@ li:focus-within a {
     font-weight: 700;
     color: $ce-iceblue;
     padding-left: 0.5em;
-    margin-bottom: 0.4em;
+    padding-bottom: 0.25em !important;
 
     &:hover {
         background-color: transparent;
