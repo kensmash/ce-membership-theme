@@ -40,14 +40,22 @@
     <header id="masthead" class="site-header">
 
       <?php 
-        $avoid_fixed_nav_post_types = array('courses', 'lesson', 'forum', 'topic', 'reply'); 
+        $is_dashboard = false;
+        
+        $avoid_fixed_nav_post_types = array('courses', 'lesson', 'forum', 'topic', 'reply');
+        $page_title = $wp_query->post->post_title;
+        //echo "page title? " . $page_title;
+        if ($page_title == "Dashboard") {
+            $is_dashboard = true;
+        }
+        
         $header_margin_bottom = "";
-         if ( is_post_type_archive( 'courses' ) ) {
-            $header_margin_bottom = "mb-4";
-         }
+        if ( is_post_type_archive( 'courses' ) || $is_dashboard ) {
+          $header_margin_bottom = "mb-4";
+        }
       ?>
 
-      <div class="<?php echo in_array( get_post_type( get_the_id() ), $avoid_fixed_nav_post_types ) ? $header_margin_bottom : "fixed-top"; ?>">
+      <div class="<?php echo $is_dashboard || in_array( get_post_type( get_the_id() ), $avoid_fixed_nav_post_types ) ? $header_margin_bottom : "fixed-top"; ?>">
 
         <nav id="nav-main" class="navbar navbar-expand-lg <?php echo is_front_page() ? "navbar-dark navbar-transparent navbar-dark" : "navbar-dark bg-dark"; ?>">
 

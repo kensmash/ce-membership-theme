@@ -176,10 +176,10 @@ function display_sale_badge() {
  
 
 
- // Disable AJAX Cart
- /* function register_ajax_cart() {
+ // Disable AJAX Cart, at least until TutorLMS issue is fixed
+function register_ajax_cart() {
 }
-add_action('after_setup_theme', 'register_ajax_cart'); */
+add_action('after_setup_theme', 'register_ajax_cart');
 
 
 
