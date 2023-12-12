@@ -50,7 +50,7 @@
         }
         
         $header_margin_bottom = "";
-        if ( is_post_type_archive( 'courses' ) || $is_dashboard ) {
+        if ( is_post_type_archive( 'courses' ) || is_singular( 'courses' ) ||$is_dashboard ) {
           $header_margin_bottom = "mb-4";
         }
       ?>

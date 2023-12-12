@@ -163,20 +163,18 @@ function woo_excerpt_in_product_archives() {
 
 add_action( 'woocommerce_after_shop_loop_item_title', 'woo_excerpt_in_product_archives', 40 );
 
-
-/* display sale badge in custom loop */
-/* https://www.skyverge.com/blog/get-a-list-of-woocommerce-sale-products/ */
-/* https://stackoverflow.com/questions/57193661/woocommerce-how-display-discount-in-custom-loop */
-function display_sale_badge() {
-	global $product;
-	if ( $product->is_on_sale() ) {
-		echo '<span class="onsale">Sale!</span>'; 
-	}
- }
  
+//https://stackoverflow.com/questions/50562595/remove-woocommerce-cart-quantity-selector-from-cart-page
+add_filter( 'woocommerce_cart_item_quantity', 'wc_cart_item_quantity', 10, 3 );
+function wc_cart_item_quantity( $product_quantity, $cart_item_key, $cart_item ){
+if( is_cart() ){
+$product_quantity = sprintf( '%2$s <input type="hidden" name="cart[%1$s][qty]" value="%2$s" />', $cart_item_key, $cart_item['quantity'] );
+}
+return $product_quantity;
+}
 
 
- // Disable AJAX Cart, at least until TutorLMS issue is fixed
+// Disable AJAX Cart, at least until TutorLMS issue is fixed
 function register_ajax_cart() {
 }
 add_action('after_setup_theme', 'register_ajax_cart');
