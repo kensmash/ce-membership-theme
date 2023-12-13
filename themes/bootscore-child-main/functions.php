@@ -77,4 +77,3 @@ require get_theme_file_path( 'inc/pmp.php' );
 
 // shortcodes
 require get_theme_file_path( 'inc/shortcodes.php' );
-
