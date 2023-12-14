@@ -18,49 +18,50 @@ function my_pmpro_move_required_asterisk_span() {
 
 	if ( is_page( $pmpro_pages['checkout'] ) || is_page( $pmpro_pages['billing'] ) || is_page( $pmpro_pages['member_profile_edit'] ) ) {
 		?>
+		<script type="text/javascript">
+			jQuery(document).ready(function () {
+				// HTML for required asterisk
+				var asteriskHtml = '<span class="pmpro_asterisk"> <abbr title="Required Field">*</abbr> </span>';
 
-<script type="text/javascript">
-	
-	jQuery(document).ready(function () {
-		// HTML for required asterisk
-		var asteriskHtml = '<span class="pmpro_asterisk"> <abbr title="Required Field">*</abbr> </span>';
+				// Remove asterisks
+				jQuery('.pmpro_checkout-field-required .pmpro_asterisk').remove();
+				jQuery('.pmpro_required').next('.pmpro_asterisk').remove();
+				<?php
+				if ( $shipping_asterisk ) {
+					?>
+					jQuery('#pmpro_shipping_address_fields .pmpro_checkout-fields #shipping-fields .pmpro_asterisk').remove();
+					<?php
+				}
+				?>
 
-		// Remove asterisks
-		jQuery('.pmpro_checkout-field-required .pmpro_asterisk').remove();
-		jQuery('.pmpro_required').next('.pmpro_asterisk').remove(); 
+				// Add asterisk inside label for all User fields. For backward compatibility exclude deprecated Register Helper grouped input fields.
+				jQuery('div.pmpro_checkout-field-required label').not('.pmprorh_checkbox_label').not('.pmprorh_radio_label').append(asteriskHtml);
+
+				// Array of required by default fields
+				var otherFields = ['username','password','password2','bemail','bconfirmemail','first_name','last_name','bfirstname','blastname','baddress1','bcity','bstate','bzipcode','bcountry','bphone'];
+
+				<?php
+				if ( $shipping_asterisk ) {
+					?>
+					var shippingFields = ['sfirstname','slastname','saddress1','scity','sstate','szipcode','scountry','sphone'];
+
+					// add shipping fields to otherFields array
+					otherFields = otherFields.concat(shippingFields);
+					<?php
+				}
+				?>
+
+				// Add asterisk for fields in otherFields array.
+				jQuery.each(otherFields, function (i, value){
+					jQuery('[name="' + value + '"]').next('.pmpro_asterisk').remove();
+					jQuery('[name="' + value + '"]').prev('label').append(asteriskHtml);
+					jQuery('[name="pmpro_' + value + '"]').prev('label').append(asteriskHtml);
+				});
+
+
+			});
+		</script>
 		<?php
-		if ($shipping_asterisk) {
-			?>
-			jQuery('#pmpro_shipping_address_fields .pmpro_checkout-fields #shipping-fields .pmpro_asterisk').remove(); 
-			<?php
-		} ?>
-
-		// Add asterisk inside label for all User fields. For backward compatibility exclude deprecated Register Helper grouped input fields.
-		jQuery('div.pmpro_checkout-field-required label').not('.pmprorh_checkbox_label').not('.pmprorh_radio_label').append(asteriskHtml);
-
-		// Array of required by default fields
-		var otherFields = ['username', 'password', 'bemail', 'bconfirmemail', 'first_name', 'last_name', 'bfirstname', 'blastname', 'baddress1', 'bcity', 'bstate', 'bzipcode', 'bcountry', 'bphone'];
-
-		<?php
-		if ($shipping_asterisk) {
-			?>
-			var shippingFields = ['sfirstname', 'slastname', 'saddress1', 'scity', 'sstate', 'szipcode', 'scountry', 'sphone'];
-
-			// add shipping fields to otherFields array
-			otherFields = otherFields.concat(shippingFields); <?php
-		} ?>
-
-		// Add asterisk for fields in otherFields array.
-		jQuery.each(otherFields, function (i, value) {
-			jQuery('[name="' + value + '"]').next('.pmpro_asterisk').remove();
-			jQuery('[name="' + value + '"]').prev('label').append(asteriskHtml);
-			jQuery('[name="pmpro_' + value + '"]').prev('label').append(asteriskHtml);
-		});
-
-
-	});
-</script>
-<?php
 	}
 }
 add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
