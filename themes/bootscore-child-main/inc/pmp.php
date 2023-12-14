@@ -67,17 +67,23 @@ function my_pmpro_move_required_asterisk_span() {
 add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
 
 /* https://www.paidmembershipspro.com/redirect-members/ */
-function my_login_redirect( $redirect_to ) {
-// If you'd like to honor previously set redirects, uncomment this section.
-/*
-if ( ! empty( $redirect_to ) ) {
-return $redirect_to;
-}
-*/
+/* https://wordpress.stackexchange.com/questions/325574/how-to-use-login-redirect-with-a-user-capability */
+function my_login_redirect( $redirect_to, $request, $user ) {
 
-// Set your redirect.
-$redirect_to = home_url('/comics-connection-member-dashboard/'); // Use home_url( '/my-page-slug/' ); to use a specific slug/URL on the site.
+    if ( is_a ( $user , 'WP_User' ) && $user->exists() ) {
 
-return $redirect_to;
+        if ( pmpro_getMembershipLevelForUser($user->ID) ) {
+			//send them to member dashboard
+            $redirect_to = home_url('/comics-connection-member-dashboard/');
+
+        } else {
+			//not a member, send them to Woo dashboard
+			$redirect_to = home_url('/my-account/');
+	
+		}
+
+    }
+
+    return $redirect_to;
 }
-add_filter( 'login_redirect', 'my_login_redirect', 999 );
+add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );

@@ -95,7 +95,7 @@
               //echo var_dump($pmp_member);
               if( !$pmp_member ) { ?>
                 <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2">
-                  <a class="btn btn-success ms-lg-3 mt-3 mt-lg-0" href="<?php echo site_url('membership-levels'); ?>" role="button">Community Signup</a>
+                  <a class="btn btn-success ms-lg-3 mt-3 mt-lg-0" href="<?php echo site_url('community'); ?>" role="button">Community Signup</a>
                 </div>
                 <?php 
               } else { 
@@ -115,7 +115,7 @@
               ?>
                 <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2">
                   <a href="<?php echo site_url('login'); ?>">Login</a>
-                  <a class="btn btn-success ms-lg-3 mt-3 mt-lg-0" href="<?php echo site_url('membership-levels'); ?>" role="button">Community Signup</a>
+                  <a class="btn btn-success ms-lg-3 mt-3 mt-lg-0" href="<?php echo site_url('community'); ?>" role="button">Community Signup</a>
                 </div>
                 <?php } ?>
 
