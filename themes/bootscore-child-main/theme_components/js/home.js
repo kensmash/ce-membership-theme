@@ -5,12 +5,12 @@ jQuery(function($) {
     var header = $("#nav-main");
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        //console.log("scroll? ", scroll)
+        //console.log("width? ", $(window).width())
         if ($(window).width() >= 1024) {
             if (scroll >= 400) {
-                header.removeClass('navbar-transparent').addClass('bg-dark');
+                header.removeClass('bg-transparent').addClass('bg-dark');
             } else {
-                header.removeClass('bg-dark').addClass('navbar-transparent');
+                header.removeClass('bg-dark').addClass('bg-transparent');
             }
         }
     });
