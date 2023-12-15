@@ -13,8 +13,8 @@ get_header();
 <div id="content" class="site-content container-fluid py-5 mt-5">
     
     <div id="primary" class="content-area container bg-white rounded-1 px-0">
-    <?php get_template_part( 'template-parts/content', 'topimage' ); ?>
 
+     <img src=" <?php echo(get_stylesheet_directory_uri() . "/assets/images/subpage_images/header-img-comics-connection.png"); ?>" class="img-fluid rounded-top-1" alt="Comics Connection" />
 
 	<?php if ( have_posts() ) : 
         
