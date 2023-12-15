@@ -12,35 +12,48 @@
 /*--------------------------------------------------------------
 # DEFAULT SLICK STYLES
 --------------------------------------------------------------*/
+.spotlight-slider {
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 1;
+        //color: $ce-blue;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        background: transparent;
+        outline: none !important;
+        transition: all 0.25s ease-in;
+    }
+    
+    .slick-arrow:hover,
+    .slick-arrow:focus {
+        color: $ce-blue;
+    }
 
-.slick-arrow {
-    position: absolute;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index: 1;
-    //color: $ce-blue;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    background: transparent;
-    outline: none !important;
-    transition: all 0.25s ease-in;
-  }
-  
-  .slick-arrow:hover,
-  .slick-arrow:focus {
-    color: $ce-blue;
-  }
-  
-  .slick-prev {
-    left: -20px;
-  }
-  
-  .slick-next {
-    right: -20px;
-  }
+    .slick-prev {
+        left: 10px;
+    }
+    
+    .slick-next {
+        right: 10px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+    
+        .slick-prev {
+            left: -40px;
+        }
+        
+        .slick-next {
+            right: -40px;
+        }
+
+    }
+}
 
 /*--------------------------------------------------------------
 # OTHER STYLES

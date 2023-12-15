@@ -31,10 +31,18 @@
   color: #83d9ff;
 }
 .testimonial-slider .slick-prev {
-  left: -20px;
+  left: 5px;
 }
 .testimonial-slider .slick-next {
-  right: -20px;
+  right: 5px;
+}
+@media only screen and (min-width: 1024px) {
+  .testimonial-slider .slick-prev {
+    left: -20px;
+  }
+  .testimonial-slider .slick-next {
+    right: -20px;
+  }
 }
 
 /*--------------------------------------------------------------

@@ -12,7 +12,7 @@
 /*--------------------------------------------------------------
 # DEFAULT SLICK STYLES
 --------------------------------------------------------------*/
-.slick-arrow {
+.spotlight-slider .slick-arrow {
   position: absolute;
   top: 50%;
   -moz-transform: translateY(-50%);
@@ -26,18 +26,23 @@
   outline: none !important;
   transition: all 0.25s ease-in;
 }
-
-.slick-arrow:hover,
-.slick-arrow:focus {
+.spotlight-slider .slick-arrow:hover,
+.spotlight-slider .slick-arrow:focus {
   color: #83d9ff;
 }
-
-.slick-prev {
-  left: -20px;
+.spotlight-slider .slick-prev {
+  left: 10px;
 }
-
-.slick-next {
-  right: -20px;
+.spotlight-slider .slick-next {
+  right: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  .spotlight-slider .slick-prev {
+    left: -40px;
+  }
+  .spotlight-slider .slick-next {
+    right: -40px;
+  }
 }
 
 /*--------------------------------------------------------------
