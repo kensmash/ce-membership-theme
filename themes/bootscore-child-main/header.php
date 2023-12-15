@@ -57,7 +57,7 @@
 
       <div class="<?php echo $is_dashboard || in_array( get_post_type( get_the_id() ), $avoid_fixed_nav_post_types ) ? $header_margin_bottom : "fixed-top"; ?>">
 
-        <nav id="nav-main" class="navbar navbar-expand-lg <?php echo is_front_page() ? "navbar-dark navbar-transparent navbar-dark" : "navbar-dark bg-dark"; ?>">
+        <nav id="nav-main" class="navbar navbar-expand-lg <?php echo is_front_page() && !wp_is_mobile() ? "navbar-dark navbar-transparent navbar-dark" : "navbar-dark bg-dark"; ?>">
 
           <div class="container-fluid">
 

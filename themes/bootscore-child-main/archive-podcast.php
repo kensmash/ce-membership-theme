@@ -30,7 +30,7 @@ get_header();
         <div class="py-4 px-4">
 
 	<header class="page-header pt-3 pb-3 px-2">
-		<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
+		<h1 class="page-title">Comics Connection Podcast</h1>
 		<div class="row pt-2 pb-3">
 
 			<p>The <strong>Comics Connection</strong> podcast provides ~15 minutes of advice per episode on all aspects of creating comics and breaking in to the industry.</p>

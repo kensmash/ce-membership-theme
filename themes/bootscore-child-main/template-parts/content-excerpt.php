@@ -19,7 +19,7 @@ $isPodcast = get_query_var('podcast');
                 <?php if ( has_post_thumbnail() ) { // check if the post has a Featured Image assigned to it.
                     the_post_thumbnail('thumbnail', array( 'class'  => 'float-left mr-3' ));
                 } else { ?>
-                <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/thumbnail-blog.png" class="float-left mr-3" style="width: 150px;" alt="CE logo">
+                <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/thumbnail-podcast.png" class="float-left mr-3" style="width: 150px;" alt="CE logo">
                 <?php } ?>
                 </div>
                 <div class="col-10">
