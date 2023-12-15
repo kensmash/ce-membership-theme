@@ -32,7 +32,7 @@ if ( ! empty( $block['align'] ) ) {
                     $link = get_sub_field('level_link');
                 ?>
 
-                <div class="col my-2">
+                <div class="col-12 col-md-6 my-2">
                     <div class="card h-100">
                         <div class="card-header">
                             <h4 class="my-0 font-weight-normal"><?php echo get_sub_field('level_title'); ?></h4>
