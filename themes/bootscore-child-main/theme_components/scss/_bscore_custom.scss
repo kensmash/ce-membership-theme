@@ -99,9 +99,12 @@ a {
     }
 }
 
-.navbar li a,
-.navbar li a {
+.navbar li a, .nav-link {
     color: $ce-darkblue;
+
+    &.active {
+        color: $ce-darkblue !important;
+    }
 
     &:hover, &:focus, &:active, &.show {
         color: $ce-darkblue !important;
@@ -110,6 +113,7 @@ a {
 
 @media only screen and (min-width: 1024px) {
    /* desktop link text */
+   
     .top-nav-widget-2 a:not(.btn),
     .navbar-dark li a,
     .navbar-dark li a {
@@ -120,6 +124,16 @@ a {
         &:hover, &:focus, &:active {
             color: $ce-iceblue !important;
         }
+    }
+
+    .navbar li a, .nav-link {
+        
+    
+        &.active {
+            color: $ce-iceblue !important;
+        }
+    
+      
     }
     
 }
