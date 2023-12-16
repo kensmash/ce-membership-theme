@@ -86,20 +86,6 @@ li:focus-within a {
         display: block;
         width: 100%;
     }
-    
-    @media only screen and (min-width: 1024px) {
-        #bootscore-navbar {
-            li {
-                display: flex;
-                align-items: center;
-            }
-        }
-        
-        .top-nav-widget-2 a:not(.btn) {
-            display: inline;
-            width: auto;
-        }
-    }
 
     .navbar li a, .nav-link {
         color: $ce-darkblue;
@@ -113,7 +99,64 @@ li:focus-within a {
         }
     }
 
+     /* change hover color */
+     .navbar-dark li a:focus,
+     .navbar-dark li a:hover {
+       color: $ce-iceblue;
+     }
+
+    .dropdown-item {
+        &.active {
+            background-color: transparent;
+        }
+    }
+
+       /* customize header bootstrap button colors */
+       .header-actions 
+       .btn-outline-secondary {
+           border: 1px solid #abadaf;
+           color: #abadaf;
+   
+           &:hover {
+               color: white;
+           }
+       }
+
     @media only screen and (min-width: 1024px) {
+        #bootscore-navbar {
+            li {
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+        .top-nav-widget-2 a:not(.btn) {
+            display: inline;
+            width: auto;
+        }
+
+         /* dropdown menu */
+         .navbar-nav > li > .dropdown-menu {
+            /*fix background color*/
+            background-color: #212529;
+            border: 0;
+            padding: .5em .5em .45em;
+            margin: .65em 0 0 0;
+            border-radius: 0;
+        }
+        
+        .dropdown-item {
+            font-weight: 700;
+            color: white;
+            padding-left: 0.5em;
+            padding-bottom: 0.25em !important;
+
+            &:hover {
+                color: $ce-iceblue;
+                background-color: transparent;
+            }
+        }
+
         /* desktop link text */
          .top-nav-widget-2 a:not(.btn),
          .navbar-dark li a,
@@ -135,53 +178,7 @@ li:focus-within a {
              }
          }
      }
-     
-     /* change hover color */
-     .navbar-dark li a:focus,
-     .navbar-dark li a:hover {
-       color: $ce-iceblue;
-     }
-
-    .dropdown-item {
-        &.active {
-            background-color: transparent;
-        }
-    }
-    
-    @media only screen and (min-width: 1024px) {
-        /* dropdown menu */
-        .navbar-nav > li > .dropdown-menu {
-            /*fix background color*/
-            background-color: #212529;
-            border: 0;
-            padding: .5em .5em .45em;
-            margin: .65em 0 0 0;
-            border-radius: 0;
-        }
-        
-        .dropdown-item {
-            font-weight: 700;
-            color: white;
-            padding-left: 0.5em;
-            padding-bottom: 0.25em !important;
-
-            &:hover {
-                color: $ce-iceblue;
-                background-color: transparent;
-            }
-        }
-    }
-
-    /* customize header bootstrap button colors */
-    .header-actions 
-    .btn-outline-secondary {
-        border: 1px solid #abadaf;
-        color: #abadaf;
-
-        &:hover {
-            color: white;
-        }
-    }
+ 
 }
 
 /*--------------------------------------------------------------
