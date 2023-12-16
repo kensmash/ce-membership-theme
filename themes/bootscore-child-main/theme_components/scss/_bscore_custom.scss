@@ -69,7 +69,10 @@ a {
     
 }
 
-.top-nav-widget-2 a:focus,
+/* remove focus ring in safari on drop-down click */
+li:focus-within a {
+    outline: none;
+}
 
 /* off-canvas styling */
 #nav-main {
@@ -83,7 +86,6 @@ a {
         display: block;
         width: 100%;
     }
-    
     
     @media only screen and (min-width: 1024px) {
         #bootscore-navbar {
@@ -140,38 +142,33 @@ a {
        color: $ce-iceblue;
      }
 
-     /* remove focus ring in safari on drop-down click */
-    li:focus-within a {
-        outline: none;
-    }
-    
-    @media only screen and (min-width: 1024px) {
-    /* dropdown menu */
-    .navbar-nav > li > .dropdown-menu {
-        /*fix background color*/
-        background-color: #212529;
-        border: 0;
-        padding: .5em .5em .45em;
-        margin: .65em 0 0 0;
-        border-radius: 0;
-    }
-    
-    .dropdown-item {
-        font-weight: 700;
-        color: white;
-        padding-left: 0.5em;
-        padding-bottom: 0.25em !important;
-
-        &:hover {
-            color: $ce-iceblue;
-            background-color: transparent;
-        }
-    }
-    }
-
     .dropdown-item {
         &.active {
             background-color: transparent;
+        }
+    }
+    
+    @media only screen and (min-width: 1024px) {
+        /* dropdown menu */
+        .navbar-nav > li > .dropdown-menu {
+            /*fix background color*/
+            background-color: #212529;
+            border: 0;
+            padding: .5em .5em .45em;
+            margin: .65em 0 0 0;
+            border-radius: 0;
+        }
+        
+        .dropdown-item {
+            font-weight: 700;
+            color: white;
+            padding-left: 0.5em;
+            padding-bottom: 0.25em !important;
+
+            &:hover {
+                color: $ce-iceblue;
+                background-color: transparent;
+            }
         }
     }
 
