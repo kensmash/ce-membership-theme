@@ -72,80 +72,111 @@ a {
 .top-nav-widget-2 a:focus,
 
 /* off-canvas styling */
-
-#bootscore-navbar {
-    li {
-        display: block;
-    }
-}
-
-.top-nav-widget-2 a:not(.btn) {
-    display: block;
-    width: 100%;
-}
-
-
-@media only screen and (min-width: 1024px) {
+#nav-main {
     #bootscore-navbar {
         li {
-            display: flex;
-            align-items: center;
+            display: block;
         }
     }
     
     .top-nav-widget-2 a:not(.btn) {
-        display: inline;
-        width: auto;
+        display: block;
+        width: 100%;
     }
-}
-
-.navbar li a, .nav-link {
-    color: $ce-darkblue;
-
-    &.active {
-        color: $ce-darkblue !important;
-    }
-
-    &:hover, &:focus, &:active, &.show {
-        color: $ce-darkblue !important;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-   /* desktop link text */
-   
-    .top-nav-widget-2 a:not(.btn),
-    .navbar-dark li a,
-    .navbar-dark li a {
-        color: white;
-        padding: 0;
-        margin: 0 0.85em 0 0.35em;
-
-        &:hover, &:focus, &:active {
-            color: $ce-iceblue !important;
+    
+    
+    @media only screen and (min-width: 1024px) {
+        #bootscore-navbar {
+            li {
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+        .top-nav-widget-2 a:not(.btn) {
+            display: inline;
+            width: auto;
         }
     }
 
     .navbar li a, .nav-link {
-        
-    
+        color: $ce-darkblue;
+
         &.active {
+            color: $ce-darkblue !important;
+        }
+
+        &:hover, &:focus, &:active, &.show {
             color: $ce-iceblue !important;
         }
-    
-      
+    }
+
+    @media only screen and (min-width: 1024px) {
+        /* desktop link text */
+         .top-nav-widget-2 a:not(.btn),
+         .navbar-dark li a,
+         .navbar-dark li a {
+             color: white;
+             padding: 0;
+             margin: 0 0.85em 0 0.35em;
+     
+             &:hover, &:focus, &:active {
+                 color: $ce-iceblue !important;
+             }
+         }
+     
+         .navbar li a, .nav-link {
+            color: white;
+
+             &.active {
+                 color: $ce-iceblue !important;
+             }
+         }
+     }
+     
+     /* change hover color */
+     .navbar-dark li a:focus,
+     .navbar-dark li a:hover {
+       color: $ce-iceblue;
+     }
+
+     /* remove focus ring in safari on drop-down click */
+    li:focus-within a {
+        outline: none;
     }
     
-}
+    @media only screen and (min-width: 1024px) {
+    /* dropdown menu */
+    .navbar-nav > li > .dropdown-menu {
+        /*fix background color*/
+        background-color: #212529;
+        border: 0;
+        padding: .5em .5em .45em;
+        margin: .65em 0 0 0;
+        border-radius: 0;
+    }
+    
+    .dropdown-item {
+        font-weight: 700;
+        color: white;
+        padding-left: 0.5em;
+        padding-bottom: 0.25em !important;
 
-/* change hover color */
-.navbar-dark li a:focus,
-.navbar-dark li a:hover {
-  color: $ce-iceblue;
-}
+        &:hover {
+            color: $ce-iceblue;
+            background-color: transparent;
+        }
+    }
+    }
 
-/* customize header bootstrap button colors */
-.header-actions 
+    .dropdown-item {
+        &.active {
+            background-color: transparent;
+        }
+    }
+
+    /* customize header bootstrap button colors */
+    .header-actions 
     .btn-outline-secondary {
         border: 1px solid #abadaf;
         color: #abadaf;
@@ -153,42 +184,8 @@ a {
         &:hover {
             color: white;
         }
-}
-
-/* remove focus ring in safari on drop-down click */
-li:focus-within a {
-    outline: none;
-}
-  
-@media only screen and (min-width: 1024px) {
-  /* dropdown menu */
-  .navbar-nav > li > .dropdown-menu {
-    /*fix background color*/
-    background-color: #212529;
-    border: 0;
-    padding: .5em .5em .45em;
-    margin: .7em 0 0 0;
-    border-radius: 0;
-  }
-  
-  .dropdown-item {
-    font-weight: 700;
-    color: $ce-iceblue;
-    padding-left: 0.5em;
-    padding-bottom: 0.25em !important;
-
-    &:hover {
-        background-color: transparent;
-    }
-  }
-}
-
-.dropdown-item {
-    &.active {
-        background-color: transparent;
     }
 }
-  
 
 /*--------------------------------------------------------------
 # Layout
