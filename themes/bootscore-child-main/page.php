@@ -31,7 +31,7 @@ get_header();
 
           <main id="main" class="site-main px-3">
 
-            <header class="entry-header pt-4 ps-2">
+            <header class="entry-header pt-4">
               <?php 
                 the_post();
                 if (!get_field('hide_page_title')): ?>

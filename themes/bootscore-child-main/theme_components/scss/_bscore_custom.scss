@@ -135,6 +135,11 @@ li:focus-within a {
             width: auto;
         }
 
+        .menu-item {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
          /* dropdown menu */
          .navbar-nav > li > .dropdown-menu {
             /*fix background color*/
