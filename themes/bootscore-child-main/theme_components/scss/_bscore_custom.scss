@@ -282,3 +282,18 @@ li:focus-within a {
         min-height: 400px;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .home {
+        .has-triangle {
+            .areoi-background__image {
+                background-size: contain;
+                background-position: top -60px left;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+
+            }
+        }
+    }
+}
+
