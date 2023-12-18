@@ -1016,6 +1016,14 @@
       "oAP" : "\/template-parts\/content-topimage.php",
       "oF" : 0
     },
+    "\/template-parts\/content-useragreement.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-useragreement.php",
+      "oF" : 0
+    },
     "\/template-parts\/content.php" : {
       "cB" : 0,
       "ft" : 8192,
