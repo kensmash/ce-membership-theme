@@ -231,6 +231,14 @@ li:focus-within a {
     border-top: 1px solid rgba(255,255,255,0.25);
 }
 
+.footer-logo {
+    max-width: 250px;
+
+    @media only screen and (min-width: 1200px) {
+        max-width: 300px;
+    }
+}
+
 #menu-footer-social-media li a {
     color: white;
     font-size: 1.5em;

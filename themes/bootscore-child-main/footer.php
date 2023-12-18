@@ -24,7 +24,7 @@
 
                 <div class="col-lg-3">
                     <div class="py-4 pe-1">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="d-block text-center">
                             <img class="footer-logo" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/logo/ce-logo-footer.svg" alt="Comics Experience logo">
                         </a>
                     </div>
@@ -36,7 +36,7 @@
                             wp_nav_menu(array(
                                 'menu' => 'Footer Social Media',
                                 'menu_id' => 'menu-footer-social-media',
-                                'menu_class' => 'd-flex flex-row justify-content-between',
+                                'menu_class' => 'd-flex flex-row justify-content-around justify-content-lg-between',
                                 'fallback_cb' => '__return_false',
                                 'items_wrap' => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s">%3$s</ul>',
                                 'depth' => 1,
