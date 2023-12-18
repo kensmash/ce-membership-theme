@@ -11880,7 +11880,12 @@ textarea.form-control-lg {
 
 .services-slide-text-container {
   background-color: rgba(0, 0, 0, 0.6);
-  min-height: 80px;
+  min-height: 140px;
+}
+@media only screen and (min-width: 1024px) {
+  .services-slide-text-container {
+    min-height: 80px;
+  }
 }
 
 .ce-services-descriptions {
