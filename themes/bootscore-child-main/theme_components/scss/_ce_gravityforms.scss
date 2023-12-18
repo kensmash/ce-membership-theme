@@ -82,3 +82,17 @@
   .gform-button--width-full {
     width: 100%;
   }
+
+  #newsletter-signup {
+    .gform_footer {
+      &.before {
+        margin-top: 12px;
+      }
+    }
+    
+    #gform_submit_button_1 {
+      @extend .btn;
+      @extend .btn-success;
+      width: 100% !important;
+    }
+  }

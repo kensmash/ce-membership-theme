@@ -14,7 +14,7 @@ get_header();
     
     <div id="primary" class="content-area container bg-white rounded-1 px-0">
 
-     <img src=" <?php echo(get_stylesheet_directory_uri() . "/assets/images/subpage_images/header-img-comics-connection.png"); ?>" class="img-fluid rounded-top-1" alt="Comics Connection" />
+     <img src=" <?php echo(get_stylesheet_directory_uri() . "/assets/images/header-img-comics-connection.png"); ?>" class="img-fluid rounded-top-1" alt="Comics Connection" />
 
 	<?php if ( have_posts() ) : 
         
