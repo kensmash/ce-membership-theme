@@ -175,9 +175,9 @@ return $product_quantity;
 
 
 // Disable AJAX Cart, at least until TutorLMS issue is fixed
-function register_ajax_cart() {
+/* function register_ajax_cart() {
 }
-add_action('after_setup_theme', 'register_ajax_cart');
+add_action('after_setup_theme', 'register_ajax_cart'); */
 
 
 
