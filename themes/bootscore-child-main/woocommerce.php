@@ -27,11 +27,11 @@ get_header();
         <div class="row px-0">
           <div class="<?= bootscore_main_col_class(); ?> px-0">
                 <!-- Breadcrumb -->
-                <?php woocommerce_breadcrumb(); ?>
+                <?php /* woocommerce_breadcrumb(); */ ?>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mt-3">
           <div class="<?= bootscore_main_col_class(); ?> bg-white p-4">
             <?php woocommerce_content(); ?>
           </div>

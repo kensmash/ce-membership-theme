@@ -972,14 +972,6 @@
       "oAP" : "\/single-connection-comic.php",
       "oF" : 0
     },
-    "\/single-lesson.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/single-lesson.php",
-      "oF" : 0
-    },
     "\/single.php" : {
       "cB" : 0,
       "ft" : 8192,
