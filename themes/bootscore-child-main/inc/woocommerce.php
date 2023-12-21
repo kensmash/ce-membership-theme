@@ -98,9 +98,9 @@ function woo_related_products_limit() {
 	  return $args;
   }
 
- /**
+/**
  * Remove related products output
- */
+*/
 //remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 
@@ -146,7 +146,6 @@ add_action( 'woocommerce_single_product_summary', 'the_content', 20 );
 # WooCommerce Archive Pages
 --------------------------------------------------------------*/
 
-
 /*
 * add product short description on archive pages
 * https://code.tutsplus.com/tutorials/woocommerce-adding-the-product-short-description-to-archive-pages--cms-25435
@@ -179,6 +178,87 @@ return $product_quantity;
 }
 add_action('after_setup_theme', 'register_ajax_cart'); */
 
+/*--------------------------------------------------------------
+# WooCommerce My Account Menu
+--------------------------------------------------------------*/
+
+// https://wpsimplehacks.com/how-to-merge-learndash-and-woocommerce/
+// Add new tab to My Account menu
+
+add_filter ( 'woocommerce_account_menu_items', 'wpsh_custom_endpoint', 40 );
+function wpsh_custom_endpoint( $menu_links ){
+ 
+	$menu_links = array_slice( $menu_links, 0, 5, true ) 
+		// Add your own slug (support, for example) and tab title here below
+	+ array( 'my-courses' => 'My Courses', 'my-memberships' => 'My Memberships') 
+	+ array_slice( $menu_links, 5, NULL, true );
+ 
+	return $menu_links;
+ 
+}
+// Let’s register this new endpoint permalink
+
+add_action( 'init', 'wpsh_new_endpoint' );
+function wpsh_new_endpoint() {
+	add_rewrite_endpoint( 'my-courses', EP_PAGES ); // Don’t forget to change the slug here
+	add_rewrite_endpoint( 'my-membership', EP_PAGES ); // Don’t forget to change the slug here
+}
+
+// Now let’s add some content inside your endpoint
+
+add_action( 'woocommerce_account_my-courses_endpoint', 'wpsh_endpoint_content' ); // If you change your slug above then don’t forget to chagne it also inside this function
+function wpsh_endpoint_content() {
+ 
+	// At the moment I will add Learndash profile with the shordcode
+	echo (
+		'<h3>Courses</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit facilisis tincidunt, nisi sociosqu lacinia auctor inceptos libero conubia accumsan</p>'
+		 );
+	echo do_shortcode('[ld_profile]');
+}
+
+add_action( 'woocommerce_account_my-membership_endpoint', 'wpmember_endpoint_content' ); // If you change your slug above then don’t forget to chagne it also inside this function
+function wpmember_endpoint_content() {
+ 
+	// At the moment I will add Learndash profile with the shordcode
+	echo (
+		'<h3>Membership</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit facilisis tincidunt, nisi sociosqu lacinia auctor inceptos libero conubia accumsan</p>'
+		 );
+	echo do_shortcode('[pmpro_member field="first_name"]');
+}
+
+// Change Woocommerce endpoint order
+
+add_filter ( 'woocommerce_account_menu_items', 'wpsh_custom_endpoint_order' );
+function wpsh_custom_endpoint_order() {
+ $myorder = array(
+        'dashboard'          => __( 'Dashboard', 'woocommerce' ),
+	 	'my-courses'    	 => __( 'Your courses', 'woocommerce' ), // Don’t forget to change the slug and title here
+		'my-membership'    	 => __( 'Your membership', 'woocommerce' ), // Don’t forget to change the slug and title here
+        'orders'             => __( 'Your orders', 'woocommerce' ), 
+        'edit-account'       => __( 'Account details', 'woocommerce' ),
+	 	'edit-address'       => __( 'Edit address', 'woocommerce' ),
+	 	'woo-wish-list'      => __( 'Wishlist', 'woocommerce' ),
+        'customer-logout'    => __( 'Log out', 'woocommerce' ),
+    );
+    return $myorder;
+}
+
+/* add_filter( 'woocommerce_login_redirect', 'learndash_login_redirect', 9999, 2 );
+function learndash_login_redirect( $redirect, $user ) {
+    if ( wc_user_has_role( $user, 'customer' ) ) {
+       $redirect = '/my-account/my-courses/'; // custom URL same site
+    } 
+    return $redirect;
+} */
+
+// Edit profile link under the Learndash profile avatar and clicking on that link opens up WordPress backend profile.
+// change link to go to My Account page
+add_filter( 'get_edit_user_link', function( $link, $user_id ) {
+	$link = "/my-account/edit-account/"; // HERE GOES THE EDIT ACCOUNT ENDPOINT URL
+	return $link;
+}, 30, 2 );
 
 
 
