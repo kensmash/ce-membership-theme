@@ -2,3 +2,14 @@
     background: #f1f1f1 url(../../assets/images/bg_pattern.jpg) !important;
 }
 
+.ld-course-status-seg-price {
+    display: none;
+}
+
+.woocommerce-MyAccount-content {
+    .learndash-wrapper {
+        .ld-item-list {
+            margin-top: 0;
+        }
+    }
+}

@@ -206,18 +206,13 @@ function wpsh_new_endpoint() {
 
 // Now let’s add some content inside your endpoint
 
-add_action( 'woocommerce_account_my-courses_endpoint', 'wpsh_endpoint_content' ); // If you change your slug above then don’t forget to chagne it also inside this function
+add_action( 'woocommerce_account_my-courses_endpoint', 'wpsh_endpoint_content' ); // If you change your slug above then don’t forget to change it also inside this function
 function wpsh_endpoint_content() {
  
-	// At the moment I will add Learndash profile with the shordcode
-	echo (
-		'<h3>Courses</h3>
-		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit facilisis tincidunt, nisi sociosqu lacinia auctor inceptos libero conubia accumsan</p>'
-		 );
-	echo do_shortcode('[ld_profile]');
+	echo do_shortcode('[ld_profile show_header="no"]');
 }
 
-add_action( 'woocommerce_account_my-membership_endpoint', 'wpmember_endpoint_content' ); // If you change your slug above then don’t forget to chagne it also inside this function
+add_action( 'woocommerce_account_my-membership_endpoint', 'wpmember_endpoint_content' ); // If you change your slug above then don’t forget to change it also inside this function
 function wpmember_endpoint_content() {
  
 	// At the moment I will add Learndash profile with the shordcode
