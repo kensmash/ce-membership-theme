@@ -32,7 +32,7 @@ get_header();
         </div>
 
         <div class="row mt-3">
-          <div class="<?= bootscore_main_col_class(); ?> bg-white p-4">
+          <div class="<?= bootscore_main_col_class(); ?> bg-white p-4 rounded-1">
             <?php woocommerce_content(); ?>
           </div>
           <!-- sidebar -->
