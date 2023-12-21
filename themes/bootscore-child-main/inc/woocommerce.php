@@ -190,7 +190,7 @@ function wpsh_custom_endpoint( $menu_links ){
  
 	$menu_links = array_slice( $menu_links, 0, 5, true ) 
 		// Add your own slug (support, for example) and tab title here below
-	+ array( 'my-courses' => 'My Courses', 'my-memberships' => 'My Memberships') 
+	+ array( 'my-courses' => 'My Courses', 'my-membership' => 'My Memberships') 
 	+ array_slice( $menu_links, 5, NULL, true );
  
 	return $menu_links;
@@ -239,7 +239,6 @@ function wpsh_custom_endpoint_order() {
         'orders'             => __( 'Your orders', 'woocommerce' ), 
         'edit-account'       => __( 'Account details', 'woocommerce' ),
 	 	'edit-address'       => __( 'Edit address', 'woocommerce' ),
-	 	'woo-wish-list'      => __( 'Wishlist', 'woocommerce' ),
         'customer-logout'    => __( 'Log out', 'woocommerce' ),
     );
     return $myorder;
