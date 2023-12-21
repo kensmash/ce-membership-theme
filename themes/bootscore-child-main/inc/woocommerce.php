@@ -223,9 +223,10 @@ function wpmember_endpoint_content() {
 	// At the moment I will add Learndash profile with the shordcode
 	echo (
 		'<h3>Membership</h3>
-		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit facilisis tincidunt, nisi sociosqu lacinia auctor inceptos libero conubia accumsan</p>'
+		<p>Membership Level: '
 		 );
-	echo do_shortcode('[pmpro_member field="first_name"]');
+	echo do_shortcode('[pmpro_member field="membership_name"]');
+	echo ('</p>');
 }
 
 // Change Woocommerce endpoint order
