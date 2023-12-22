@@ -57,7 +57,7 @@
 
       <div class="<?php echo $is_dashboard || in_array( get_post_type( get_the_id() ), $avoid_fixed_nav_post_types ) ? $header_margin_bottom : "fixed-top"; ?>">
 
-        <nav id="nav-main" class="navbar navbar-expand-lg <?php echo is_front_page() && !wp_is_mobile() ? "navbar-dark bg-transparent" : "navbar-dark bg-dark"; ?>">
+        <nav id="nav-main" class="navbar navbar-expand-xl <?php echo is_front_page() && !wp_is_mobile() ? "navbar-dark bg-transparent" : "navbar-dark bg-dark"; ?>">
 
           <div class="container-fluid">
 
@@ -71,7 +71,7 @@
                 <span class="h5 offcanvas-title"><?php esc_html_e('Menu', 'bootscore'); ?></span>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-              <div class="offcanvas-body justify-content-lg-center">
+              <div class="offcanvas-body justify-content-xl-center">
 
                 <!-- Bootstrap 5 Nav Walker Main Menu -->
                 <?php
@@ -80,7 +80,7 @@
                 'container'      => false,
                 'menu_class'     => '',
                 'fallback_cb'    => '__return_false',
-                'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-lg-0 %2$s">%3$s</ul>',
+                'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-xl-0 %2$s">%3$s</ul>',
                 'depth'          => 2,
                 'walker'         => new bootstrap_5_wp_nav_menu_walker()
               ));
@@ -138,7 +138,7 @@
             ?>
 
               <!-- Navbar Toggler -->
-              <button class="btn btn-outline-light d-lg-none ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
+              <button class="btn btn-outline-light d-xl-none ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
                 <i class="fa-solid fa-bars"></i><span class="visually-hidden-focusable">Menu</span>
               </button>
 
