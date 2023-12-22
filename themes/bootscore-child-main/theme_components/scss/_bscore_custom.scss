@@ -108,6 +108,7 @@ li:focus-within a {
     .dropdown-item {
         &.active {
             background-color: transparent;
+            color: $ce-darkblue;
         }
     }
 
