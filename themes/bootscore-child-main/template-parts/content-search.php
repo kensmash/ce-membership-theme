@@ -38,20 +38,31 @@ defined( 'ABSPATH' ) || exit;
             <?php the_title('<h2 class="blog-post-title h5">', '</h2>'); ?>
           </a>
 
-          <?php if ('post' === get_post_type()) : ?>
-            <p class="meta small mb-2 text-body-tertiary">
-              <?php
-              bootscore_date();
-              bootscore_author();
-              bootscore_comments();
-              bootscore_edit();
-              ?>
-            </p>
-          <?php endif; ?>
+          <?php $post_type =  get_post_type(get_the_ID()); ?>
+
+          <?php 
+                switch ($post_type) {
+                    case 'post':
+                        echo '<p class="meta small mb-2 text-body-tertiary">Posted in the Comics Experience Blog on ' . get_the_time('F j, Y') . '</p>';
+                        break;
+                    case 'podcast':
+                        echo '<p class="meta small mb-2 text-body-tertiary">Posted in Podcasts on ' . get_the_time('F j, Y') . '</p>';
+                        break;
+                    case 'courses':
+                        echo '<p class="meta small mb-2 text-body-tertiary">Posted in Courses</p>';
+                        break;
+                    case 'scripts':
+                        echo '<p class="meta small mb-2 text-body-tertiary">Posted in Scripts</p>';
+                        break;
+                    case 'videos':
+                        echo '<p class="meta small mb-2 text-body-tertiary">Posted in Videos</p>';
+                        break;
+                }
+            ?>
 
           <p class="card-text">
             <a class="text-body text-decoration-none" href="<?php the_permalink(); ?>">
-              <?php echo strip_tags(get_the_excerpt()); ?>
+              <?php echo strip_tags(search_excerpt_highlight()); ?>
             </a>
           </p>
 
