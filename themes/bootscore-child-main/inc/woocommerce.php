@@ -221,6 +221,10 @@ function wpmember_endpoint_content() {
 		<p>Membership Level: '
 		 );
 	echo do_shortcode('[pmpro_member field="membership_name"]');
+	echo (
+		'Connect with our Discord Community'
+		 );
+	echo do_shortcode('[discord_connect_button]');
 	echo ('</p>');
 }
 
