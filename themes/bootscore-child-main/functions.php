@@ -80,3 +80,6 @@ require get_theme_file_path( 'inc/bbpress.php' );
 
 // shortcodes
 require get_theme_file_path( 'inc/shortcodes.php' );
+
+// search customizations
+require get_theme_file_path( 'inc/search.php' );
