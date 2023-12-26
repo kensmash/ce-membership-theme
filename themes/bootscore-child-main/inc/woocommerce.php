@@ -222,7 +222,8 @@ function wpmember_endpoint_content() {
 		 );
 	echo do_shortcode('[pmpro_member field="membership_name"]');
 	echo (
-		'Connect with our Discord Community'
+		'<br>
+		<h4>Connect with our Discord Community</h4>'
 		 );
 	echo do_shortcode('[discord_connect_button]');
 	echo ('</p>');
