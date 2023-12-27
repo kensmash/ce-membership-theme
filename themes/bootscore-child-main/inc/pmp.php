@@ -73,8 +73,8 @@ function my_login_redirect( $redirect_to, $request, $user ) {
     if ( is_a ( $user , 'WP_User' ) && $user->exists() ) {
 
         if ( pmpro_getMembershipLevelForUser($user->ID) ) {
-			//send them to member dashboard
-            $redirect_to = home_url('/comics-connection-member-dashboard/');
+			//send them to buddypress activity page
+            $redirect_to = home_url('/activity/');
 
         } else {
 			//not a member, send them to Woo dashboard

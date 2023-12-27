@@ -30,13 +30,21 @@ body {
             padding: 5px 16px;
         }
 
-        .button, 
-        input[type="submit"]#aw-whats-new-submit {
+        .buddypress-wrap {
+            .generic-button {
+                a {
+                    @extend .btn;
+                    @extend .btn-primary;
+                }
+            }
+        }
+
+        input[type="submit"]#aw-whats-new-submit, .join-group {
             @extend .btn;
             @extend .btn-success; 
         }
 
-        input[type="button"], input[type="submit"], input[type="submit"]#submit {
+        input[type="button"], input[type="submit"], input[type="submit"]#submit, .leave-group {
             @extend .btn;
             @extend .btn-primary;
         }
