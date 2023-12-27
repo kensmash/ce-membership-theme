@@ -9,6 +9,11 @@ body {
             }
         }
 
+        #member-secondary-nav li a {
+            font-size: .75em;
+            padding: 5px 16px;
+        }
+
         .button, 
         input[type="submit"]#aw-whats-new-submit {
             @extend .btn;
