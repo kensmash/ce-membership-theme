@@ -122,16 +122,16 @@ li:focus-within a {
         }
     }
 
-       /* customize header bootstrap button colors */
-       .header-actions 
-       .btn-outline-secondary {
-           border: 1px solid #abadaf;
-           color: #abadaf;
-   
-           &:hover {
-               color: white;
-           }
-       }
+    /* customize header bootstrap button colors */
+    .header-actions 
+    .btn-outline-secondary {
+        border: 1px solid #abadaf;
+        color: #abadaf;
+
+        &:hover {
+            color: white;
+        }
+    }
 
     @media only screen and (min-width: 1024px) {
         #bootscore-navbar {
@@ -167,8 +167,8 @@ li:focus-within a {
             padding-left: 0.5em;
             padding-bottom: 0.25em !important;
 
-            &:hover {
-                color: $ce-iceblue;
+            &:hover, &.active {
+                color: $ce-iceblue !important;
                 background-color: transparent;
             }
         }
@@ -194,7 +194,6 @@ li:focus-within a {
              }
          }
      }
- 
 }
 
 /*--------------------------------------------------------------

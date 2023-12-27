@@ -39,7 +39,7 @@ body {
             @extend .btn;
         }
 
-        input[type=text], textarea#whats-new {
+        input[type=text], input[type=search], textarea#whats-new {
             @extend .form-control;
         }
 
@@ -69,6 +69,10 @@ body {
             .select-wrap {
                 border: 0px;
             }
+        }
+
+        #whats-new-textarea {
+            padding-left: 12px;
         }
 
         /* groups fixes */
