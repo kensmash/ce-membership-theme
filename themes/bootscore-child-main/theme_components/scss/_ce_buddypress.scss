@@ -1,9 +1,13 @@
 body {
-    &.buddypress {
+    &.xprofile {
         .entry-header {
             display: none;
         }
 
+    }
+
+    &.buddypress {
+       
         .avatar-50 {
             max-width: 50px;
             max-height: 50px;
