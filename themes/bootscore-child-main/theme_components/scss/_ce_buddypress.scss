@@ -70,5 +70,28 @@ body {
                 border: 0px;
             }
         }
+
+        /* groups fixes */
+        span {
+            &.count {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .single-headers {
+            #item-header-content {
+                padding-left: 0;
+            }
+
+        }
+
+        .groups-header {
+            div {
+                &#item-header-content {
+                    margin-left: 0;
+                }
+            }
+        }
     }
 }
