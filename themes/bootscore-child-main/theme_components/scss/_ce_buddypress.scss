@@ -1,0 +1,22 @@
+body {
+    &.buddypress {
+        /* overwrite buddypress max width styles that break bootstrap layout */
+        #page, #primary {
+            max-width: unset !important;
+
+            &.container {
+                max-width: $max-width !important;
+            }
+        }
+
+        .button {
+            @extend .btn;
+            @extend .btn-success; 
+        }
+
+        input[type="button"], input[type="submit"]#submit {
+            @extend .btn;
+            @extend .btn-primary;
+        }
+    }
+}
