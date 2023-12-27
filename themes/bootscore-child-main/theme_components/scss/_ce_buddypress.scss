@@ -1,5 +1,14 @@
 body {
     &.buddypress {
+        .avatar-50 {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        #header-cover-image {
+            background-color: black;
+        }
+
         /* overwrite buddypress max width styles that break bootstrap layout */
         #page, #primary {
             max-width: unset !important;
@@ -112,6 +121,7 @@ body {
 
                 div {
                     &.item-avatar {
+                        width: 50px;
                         padding-left: 12px;
                         margin: 0 0 16px;
                     }

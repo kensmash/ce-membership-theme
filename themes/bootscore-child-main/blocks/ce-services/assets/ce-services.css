@@ -11871,7 +11871,11 @@ textarea.form-control-lg {
 }
 .ce-service-cards-slide:hover {
   cursor: pointer;
-  transform: scale(1.03);
+}
+@media only screen and (min-width: 1024px) {
+  .ce-service-cards-slide:hover {
+    transform: scale(1.03);
+  }
 }
 
 .ce-service-cards-slide-card {
@@ -11880,7 +11884,7 @@ textarea.form-control-lg {
 
 .services-slide-text-container {
   background-color: rgba(0, 0, 0, 0.6);
-  min-height: 140px;
+  min-height: 135px;
 }
 @media only screen and (min-width: 1024px) {
   .services-slide-text-container {
