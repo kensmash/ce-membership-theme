@@ -93,5 +93,37 @@ body {
                 }
             }
         }
+
+        .subnav-filters > ul {
+            padding-left:  0;
+        }
+
+        .feed {
+            display: none;
+        }
+
+        .activity-list {
+            .activity-item {
+                border: 0px !important;
+
+                div {
+                    &.item-avatar {
+                        padding-left: 12px;
+                        margin: 0 0 16px;
+                    }
+                }
+            }
+        }
+
+        img.avatar {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-box-shadow: 0 1px 0 #fff;
+            -moz-box-shadow: 0 1px 0 #fff;
+            box-shadow: 0 1px 0 #fff;
+            }
     }
 }
