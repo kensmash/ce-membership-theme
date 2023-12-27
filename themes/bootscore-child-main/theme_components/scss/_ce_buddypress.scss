@@ -18,5 +18,37 @@ body {
             @extend .btn;
             @extend .btn-primary;
         }
+
+        input[type=text], textarea#whats-new {
+            @extend .form-control;
+        }
+
+        select, #activity-filter-by {
+            @extend .form-select;
+        }
+
+        .activity-update-form {
+            border: 0px;
+            box-shadow: none;
+        }
+
+        /* fix really gross activity filter styles */
+        .buddypress-wrap {
+            select {
+                max-width: 500px !important;
+            }
+
+            #activity-filter-by {
+                margin-right: 15px;
+            }
+
+            .select-arrow {
+                display: none;
+            }
+            
+            .select-wrap {
+                border: 0px;
+            }
+        }
     }
 }
