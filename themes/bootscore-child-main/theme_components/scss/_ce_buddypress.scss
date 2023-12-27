@@ -1,12 +1,19 @@
 body {
     &.buddypress {
+        .entry-header {
+            display: none;
+        }
+
         .avatar-50 {
             max-width: 50px;
             max-height: 50px;
         }
 
         #header-cover-image {
-            background-color: black;
+            background-color: rgba(64,94,170,1);
+            width: calc(100% + 3.5rem) !important;
+            margin-left: -1.75rem !important;
+            //background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(64,94,170,1) 100%);
         }
 
         /* overwrite buddypress max width styles that break bootstrap layout */
