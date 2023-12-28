@@ -39,8 +39,8 @@
 }
 
 .bbp-template-notice {
-    background-color: $ce-iceblue !important;
-    border: 1px solid $ce-blue !important;
+    background-color: #e5f5ff !important;
+    border: 1px solid #ccecff !important;
 }
 
 .bbp-search-form {
@@ -59,10 +59,9 @@
 }
 
 #wp-bbp_topic_content-editor-container {
-    border: 0px !important;
     margin-top: 12px !important;
 }
 
-#bbp_topic_title, #bbp_topic_tags, #bbp_search, textarea#bbp_topic_content {
+#bbp_topic_title, #bbp_topic_tags, #bbp_search {
     @extend .form-control;
 }

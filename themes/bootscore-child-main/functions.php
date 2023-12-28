@@ -75,11 +75,14 @@ require get_theme_file_path( 'inc/extend-tiny-mce.php' );
 // PMP customize
 require get_theme_file_path( 'inc/pmp.php' );
 
-// BBPress customize
-require get_theme_file_path( 'inc/bbpress.php' );
+
 
 // shortcodes
 require get_theme_file_path( 'inc/shortcodes.php' );
 
 // search customizations
 require get_theme_file_path( 'inc/search.php' );
+
+
+// BBPress customize
+require get_theme_file_path( 'inc/bbpress.php' );
