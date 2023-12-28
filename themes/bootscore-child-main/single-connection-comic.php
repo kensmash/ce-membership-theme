@@ -31,7 +31,17 @@ get_header();
                   <?php bootscore_post_thumbnail(); ?>
                 </div>
                 <div class="col-8">
-                  <?php the_content(); ?>
+                  <?php the_content(); 
+                    $link = get_field('order_link');
+                    if( $link ): 
+                      $link_url = $link['url'];
+                      $link_title = $link['title'];
+                      $link_target = $link['target'] ? $link['target'] : '_self';
+                    endif;
+                    ?>
+                 
+                 <p class="fw-bold fs-6"><?php echo esc_html ( get_field('creator_names') ); ?> | <?php echo esc_html ( get_field('format') ); ?> | <?php echo esc_html( get_field('publisher') ); ?></p>
+                  <a class="btn btn-success" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" role="button"><?php echo esc_html( get_field('order_button_text') ); ?></a>
                 </div>
             </div>
 
