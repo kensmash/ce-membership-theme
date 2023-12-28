@@ -30,6 +30,7 @@
 .bbp-form {
     legend {
         font-size: 1rem !important;
+        font-weight: 700 !important;
     }
 
     label {
@@ -40,4 +41,8 @@
 #bbp_topic_submit, #bbp_reply_submit {
     @extend .btn;
     @extend .btn-success;
+}
+
+#bbp_topic_tags {
+    @extend .form-control;
 }
