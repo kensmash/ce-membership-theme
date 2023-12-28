@@ -5,3 +5,39 @@
 .bbp-forum-content ul.sticky, .bbp-topics ul.sticky, .bbp-topics ul.super-sticky, .bbp-topics-front ul.super-sticky {
     background-color: #ffffff !important;
 }
+
+#bbpress-forums, .bbp-forums, .bbp-forum-content, .bbp-topic-title, .bbp-reply-content {
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+}
+
+.bbp-forum-title {
+    font-weight: 700 !important;
+}
+
+.bbp-forum-content {
+    padding-top: 6px !important;
+}
+
+#bbpress-forums fieldset{
+    &.bbp-form {
+        select {
+            height: auto;
+        }
+    }
+}
+
+.bbp-form {
+    legend {
+        font-size: 1rem !important;
+    }
+
+    label {
+        margin-bottom: 12px !important;
+    }
+}
+ 
+#bbp_topic_submit, #bbp_reply_submit {
+    @extend .btn;
+    @extend .btn-success;
+}
