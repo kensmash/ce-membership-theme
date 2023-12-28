@@ -70,6 +70,13 @@ a {
     font-weight: 700;
 }
 
+/* hide community link if we have a logged in pmp member */
+.pmpro-body-has-access {
+    .community-link {
+        display: none !important;
+    }
+}
+
 .navbar {
     transition: all .25s;
 }
