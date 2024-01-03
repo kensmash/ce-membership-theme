@@ -71,9 +71,11 @@ a {
 }
 
 /* hide community link if we have a logged in pmp member */
-.pmpro-body-has-access {
-    .community-link {
-        display: none !important;
+.logged-in {
+    &.pmpro-body-has-access {
+        .community-link {
+            display: none !important;
+        }
     }
 }
 
