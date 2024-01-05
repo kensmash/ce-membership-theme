@@ -150,7 +150,16 @@
       background-color: $green !important;
     }
   }
+
+  /*--------------------------------------------------------------
+    # WooCommerce Cart Page
+  --------------------------------------------------------------*/
   
+    /* try to make this label a little clearer */
+    .recurring-totals {
+      background-color: rgba(222, 226, 230, 0.6);
+    }
+
   /*--------------------------------------------------------------
   # WooCommerce Checkout Page
   --------------------------------------------------------------*/
@@ -159,11 +168,14 @@
     margin: 0.6em 0 0.5em;
   }
 
-  /* try to make this label a little clearer */
-  .recurring-totals {
-      background-color: rgba(222, 226, 230, 0.6);
+.woocommerce {
+  table {
+    &.shop_table {
+      border-collapse: collapse;
+    }
   }
-
+}
+ 
     
   /*--------------------------------------------------------------
   # Buttons
