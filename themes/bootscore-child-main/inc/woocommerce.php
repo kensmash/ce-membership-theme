@@ -260,6 +260,20 @@ add_filter( 'get_edit_user_link', function( $link, $user_id ) {
 }, 30, 2 );
 
 
+//https://stackoverflow.com/questions/54975625/exclude-a-product-category-from-woocommerce-related-products
+add_filter( 'woocommerce_related_products', 'exclude_product_category_from_related_products', 10, 3 );
+function exclude_product_category_from_related_products( $related_posts, $product_id, $args ){
+
+// Get the product ids in the defined product category
+$exclude_ids = wc_get_products( array(
+	'status' => 'publish',
+	'limit' => -1,
+	'category' => array('professional-service', 'community'),
+	'return' => 'ids',
+) );
+
+return array_diff( $related_posts, $exclude_ids );
+}
 
 
 
