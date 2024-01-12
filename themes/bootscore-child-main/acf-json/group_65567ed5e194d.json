@@ -43,6 +43,39 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_657cbf6ff5660",
+            "label": "Custom Header Image",
+            "name": "custom_header_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Upload custom header image here. Otherwise a random image will show.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_65746cf756611",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
             "key": "field_65736920b8893",
             "label": "Tabs",
             "name": "tabs",
@@ -148,5 +181,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702155952
+    "modified": 1702911405
 }

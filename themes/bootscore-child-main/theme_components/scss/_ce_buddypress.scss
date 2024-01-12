@@ -159,4 +159,14 @@ body {
             box-shadow: 0 1px 0 #fff;
             }
     }
+
+    &.directory {
+        button.group-button {
+            &.leave-group {
+            display: none !important;
+            }
+        }
+    }
+ 
 }
+

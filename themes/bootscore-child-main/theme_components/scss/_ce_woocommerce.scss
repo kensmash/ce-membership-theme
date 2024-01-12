@@ -175,7 +175,17 @@
     }
   }
 }
+
+ /*--------------------------------------------------------------
+  # WooCommerce Dashboard Page
+  --------------------------------------------------------------*/
  
+  /* hide Dokan become a vendor message on dashboard page */
+  .woocommerce-account {
+    .dokan-account-migration-lists {
+      display: none;
+    }
+  }
     
   /*--------------------------------------------------------------
   # Buttons
