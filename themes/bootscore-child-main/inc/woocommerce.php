@@ -276,6 +276,19 @@ return array_diff( $related_posts, $exclude_ids );
 }
 
 
+/**
+ * @snippet       Custom Redirect for Logins @ WooCommerce My Account
+ * @compatible    WooCommerce 6
+ */
+ 
+ add_filter( 'woocommerce_login_redirect', 'ce_customer_login_redirect', 9999 );
+ 
+ function ce_customer_login_redirect( $redirect_url ) {
+	 $redirect_url = home_url('/my-account/');
+	 return $redirect_url;
+ }
+
+
 
 
 
