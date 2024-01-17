@@ -7,7 +7,7 @@ jQuery(function($) {
         var scroll = $(window).scrollTop();
         //console.log("width? ", $(window).width())
         if ($(window).width() >= 1024) {
-            if (scroll >= 400) {
+            if (scroll >= 50) {
                 header.removeClass('bg-transparent').addClass('bg-dark');
             } else {
                 header.removeClass('bg-dark').addClass('bg-transparent');

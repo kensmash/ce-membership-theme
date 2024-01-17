@@ -288,7 +288,13 @@ return array_diff( $related_posts, $exclude_ids );
 	 return $redirect_url;
  }
 
-
+/* remove more products tab added by Dokan */
+/* https://wordpress.org/support/topic/how-to-remove-more-products-tab-and-seller-info-tab-in-dokan-plugin/ */
+ add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_more_seller_product_tab', 98 );
+    function wcs_woo_remove_more_seller_product_tab($tabs) {
+    unset($tabs['more_seller_product']);
+    return $tabs;
+}
 
 
 

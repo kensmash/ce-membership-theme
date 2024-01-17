@@ -186,7 +186,14 @@
       display: none;
     }
   }
-    
+
+  /* hide Dokan vendor registration form */
+  #customer_login_1 {
+    .register {
+      display: none !important;
+    }
+  }
+      
   /*--------------------------------------------------------------
   # Buttons
   --------------------------------------------------------------*/
@@ -223,7 +230,7 @@
     }
   }
 
-/* change button color in related producst card */
+/* change button color in related products card */
 .woocommerce {
     .card {
       a {
