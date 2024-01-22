@@ -17,6 +17,14 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
+    "\/acf-json\/group_65ae8269e8ae5.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_65ae8269e8ae5-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/group_634b747db2577.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -756,6 +764,22 @@
       "oA" : 1,
       "oAP" : "\/blocks\/community-spotlight\/community-spotlight.php",
       "oF" : 1
+    },
+    "\/blocks\/responsive-tabs\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/responsive-tabs\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/responsive-tabs\/responsive-tabs.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/responsive-tabs\/responsive-tabs.php",
+      "oF" : 0
     },
     "\/blocks\/testimonial-slider\/assets\/testimonial-slider.asset.php" : {
       "cB" : 0,

@@ -17,6 +17,7 @@ function ce_register_acf_blocks() {
     register_block_type( __DIR__ . '/../blocks/testimonial-slider' );
     register_block_type( __DIR__ . '/../blocks/community-spotlight' );
     register_block_type( __DIR__ . '/../blocks/community-pricing' );
+    register_block_type( __DIR__ . '/../blocks/responsive-tabs' );
 }
 
 // Here we call our ce_register_acf_block() function on init.
