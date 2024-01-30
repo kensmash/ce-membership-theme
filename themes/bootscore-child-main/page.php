@@ -43,9 +43,6 @@ get_header();
               <?php the_content(); ?>
             </div>
 
-            <!-- tabs -->
-		        <?php get_template_part( 'template-parts/tabs/tabs', 'page' ); ?>
-
           </main>
 
         </div>
