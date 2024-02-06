@@ -46,12 +46,17 @@ function mentors_tab_mentors() {
 			$query->the_post();
 
             // This is the output for your entry so what you want to do for each post.
-            $output .= '<div class="clearfix">';
-            $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'alignleft' ));
+            $output .= '<div class="card mb-4">';
+            $output .= '<div class="row g-0">';
+            $output .= '<div class="col-md-4">';
+            $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'img-fluid rounded-start' ));
+            $output .= '</div>';
+            $output .= '<div class="col-md-8">';
+            $output .= '<div class="card-body">';
             $output .= '<p class="testimonial-title">' . get_the_title() . '</p>';
             $output .= get_field('mentor_description');
-            $output .= '</div>';
-            if ($query->current_post +1 < $query->post_count) { $output .= "<hr />"; }
+            $output .= '</div></div></div></div>';
+            //if ($query->current_post +1 < $query->post_count) { $output .= "<hr />"; }
  
 		}
 
