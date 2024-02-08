@@ -225,6 +225,15 @@ function wpmember_endpoint_content() {
 		<h4>Connect with our Discord Community</h4>'
 		 );
 	echo do_shortcode('[discord_connect_button]');
+	$pmp_member = pmpro_getMembershipLevelForUser(get_current_user_id());
+	if ($pmp_member->name == 'Tier 2'):
+		echo (
+			'<br>
+			<h4>Exclusive Member Download</h4>
+			<p><a href="https://drive.google.com/file/d/1d8LKGidRS8UbZLNAJ563BcnBjtnQxdZ3/view" target="_blank">The Business of Independent Comic Book Publishing</a></p>'
+			);
+	endif;
+	
 	echo ('</p>');
 }
 
