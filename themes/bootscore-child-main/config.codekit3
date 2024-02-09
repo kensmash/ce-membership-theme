@@ -765,6 +765,22 @@
       "oAP" : "\/blocks\/community-spotlight\/community-spotlight.php",
       "oF" : 1
     },
+    "\/blocks\/professional-services\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/professional-services\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/professional-services\/professional-services.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/professional-services\/professional-services.php",
+      "oF" : 0
+    },
     "\/blocks\/responsive-tabs\/block.json" : {
       "ft" : 524288,
       "oA" : 1,
