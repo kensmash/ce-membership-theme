@@ -1028,6 +1028,14 @@
       "oAP" : "\/single-connection-comic.php",
       "oF" : 0
     },
+    "\/single-professional-service.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/single-professional-service.php",
+      "oF" : 0
+    },
     "\/single.php" : {
       "cB" : 0,
       "ft" : 8192,
