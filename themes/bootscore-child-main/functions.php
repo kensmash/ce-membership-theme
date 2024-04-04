@@ -83,6 +83,9 @@ require get_theme_file_path( 'inc/shortcodes.php' );
 // search customizations
 require get_theme_file_path( 'inc/search.php' );
 
-
 // BBPress customize
 require get_theme_file_path( 'inc/bbpress.php' );
+
+
+// Add support for responsive embedded content (YouTube, Vimeo, etc.).
+add_theme_support( 'responsive-embeds' );

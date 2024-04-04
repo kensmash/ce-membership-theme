@@ -702,6 +702,22 @@
       "oAP" : "\/blocks\/ce-services\/ce-services.php",
       "oF" : 1
     },
+    "\/blocks\/ce-staff\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/ce-staff\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/ce-staff\/ce-staff.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-staff\/ce-staff.php",
+      "oF" : 0
+    },
     "\/blocks\/community-pricing\/block.json" : {
       "ft" : 524288,
       "oA" : 1,

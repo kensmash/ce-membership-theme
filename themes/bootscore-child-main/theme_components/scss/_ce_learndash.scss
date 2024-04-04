@@ -13,3 +13,8 @@
         }
     }
 }
+
+/* hide pointless back to course button */
+.learndash-wrapper .ld-content-actions .ld-content-action .ld-course-step-back {
+    display: none !important;
+}
