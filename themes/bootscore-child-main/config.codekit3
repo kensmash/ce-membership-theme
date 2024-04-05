@@ -1065,6 +1065,14 @@
       "oAP" : "\/single-professional-service.php",
       "oF" : 0
     },
+    "\/single-staff.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/single-staff.php",
+      "oF" : 0
+    },
     "\/single.php" : {
       "cB" : 0,
       "ft" : 8192,
