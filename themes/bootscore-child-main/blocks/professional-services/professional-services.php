@@ -37,7 +37,7 @@ if ( ! empty( $block['align'] ) ) {
                 $content = get_the_excerpt($service->ID); 
             ?>
 
-            <div class="col-md-6 col-xl-4">
+            <div class="col-md-6 col-xl-4 mb-3">
                 <div class="card h-100">
                     <h5 class="card-header py-4"><?php echo esc_html( $title ); ?></h5>
                     <div class="card-body">

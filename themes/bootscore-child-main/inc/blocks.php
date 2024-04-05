@@ -14,6 +14,7 @@ function ce_register_acf_blocks() {
      * @link https://developer.wordpress.org/reference/functions/register_block_type/
      */
     register_block_type( __DIR__ . '/../blocks/ce-services' );
+    register_block_type( __DIR__ . '/../blocks/ce-staff' );
     register_block_type( __DIR__ . '/../blocks/testimonial-slider' );
     register_block_type( __DIR__ . '/../blocks/community-spotlight' );
     register_block_type( __DIR__ . '/../blocks/community-pricing' );

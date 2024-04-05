@@ -238,6 +238,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/images\/ce-bio-placeholder.png" : {
+      "ft" : 32768,
+      "iS" : 51161,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/ce-bio-placeholder.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/assets\/images\/favicon.png" : {
       "ft" : 32768,
       "iS" : 35181,
