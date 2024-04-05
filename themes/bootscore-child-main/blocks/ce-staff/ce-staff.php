@@ -6,6 +6,7 @@
  */
 
  $staff_members = get_field('staff_members');
+ $columns = get_field('columns');
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -21,12 +22,24 @@ if ( ! empty( $block['className'] ) ) {
 if ( ! empty( $block['align'] ) ) {
     $class_name .= ' align' . $block['align'];
 }
+
+$column_class = "col-md-3";
+
+switch ($columns) {
+    case 2:
+        $column_class = "col-md-6";
+        break;
+    case 3:
+        $column_class = "col-md-4";
+        break;
+}
+
 ?>
 
 
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
 
-    <div class="row justify-content-center">
+    <div class="row">
 
         <?php 
             if( $staff_members ):
@@ -38,7 +51,7 @@ if ( ! empty( $block['align'] ) ) {
                 $content = get_the_excerpt($staff->ID); 
             ?>
 
-            <div class="col-sm-6 col-md-3 mb-3">
+            <div class="col-sm-6 mb-3 <?php echo $column_class; ?>">
                 <div class="card h-100">
                     
                     <?php if ( $image ) { 
@@ -50,7 +63,7 @@ if ( ! empty( $block['align'] ) ) {
                 
                     <div class="card-body">
                         <h5 class="card-title mb-2"><a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $title ); ?></a></h5>
-                        <p class="card-text staff-meta text-muted"><?php echo $content; ?></p>
+                        <small class="card-text staff-meta text-muted"><?php echo $content; ?></small>
                     </div>
                         
                 </div><!-- card -->
