@@ -18,3 +18,15 @@
 .learndash-wrapper .ld-content-actions .ld-content-action .ld-course-step-back {
     display: none !important;
 }
+
+/* equal height learndash course grid columns, hopefully */
+.learndash-course-grid .items-wrapper .grid-2 .post {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Remove this if you don't want the "See more..." button aligned to bottom of each Course Grid item */
+.learndash-course-grid .items-wrapper .grid-2 .post {
+    justify-content: space-between;
+}

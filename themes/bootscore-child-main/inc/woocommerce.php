@@ -263,10 +263,12 @@ function learndash_login_redirect( $redirect, $user ) {
 
 // Edit profile link under the Learndash profile avatar and clicking on that link opens up WordPress backend profile.
 // change link to go to My Account page
-add_filter( 'get_edit_user_link', function( $link, $user_id ) {
-	$link = "/my-account/edit-account/"; // HERE GOES THE EDIT ACCOUNT ENDPOINT URL
-	return $link;
-}, 30, 2 );
+if( !is_admin() ) {
+	add_filter( 'get_edit_user_link', function( $link, $user_id ) {
+		$link = "/my-account/edit-account/"; // HERE GOES THE EDIT ACCOUNT ENDPOINT URL
+		return $link;
+	}, 30, 2 );
+}
 
 
 //https://stackoverflow.com/questions/54975625/exclude-a-product-category-from-woocommerce-related-products

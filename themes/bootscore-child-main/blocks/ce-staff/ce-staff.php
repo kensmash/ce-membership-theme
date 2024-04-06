@@ -57,7 +57,7 @@ switch ($columns) {
                     <?php if ( $image ) { 
                             echo $image;
                         } else { ?>
-                            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/ce-bio-placeholder.png" class="rounded-top" alt="Generic Staff Thumbnail">
+                            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/ce-bio-placeholder-1000x750.png" class="rounded-top" alt="Generic Staff Thumbnail">
                     <?php } ?>
             
                 
