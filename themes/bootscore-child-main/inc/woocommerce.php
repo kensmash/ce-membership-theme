@@ -208,7 +208,7 @@ function wpsh_new_endpoint() {
 
 add_action( 'woocommerce_account_my-courses_endpoint', 'wpsh_endpoint_content' ); // If you change your slug above then don’t forget to change it also inside this function
 function wpsh_endpoint_content() {
-	echo do_shortcode('[ld_profile]');
+	echo do_shortcode('[ld_profile show_header="no" show_search="no"]');
 }
 
 add_action( 'woocommerce_account_my-membership_endpoint', 'wpmember_endpoint_content' ); // If you change your slug above then don’t forget to change it also inside this function
