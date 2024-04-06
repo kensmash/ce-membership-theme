@@ -340,3 +340,8 @@ hr {
     }
 }
 
+/* hide dokan vendor dashboard button on user account page */
+.vendor-dashboard {
+    display: none !important;
+}
+
