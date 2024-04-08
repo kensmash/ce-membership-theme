@@ -2,6 +2,15 @@
 # WooCommerce Single Product Pages
 --------------------------------------------------------------*/
 
+  /* course product */
+  .course-meta {
+    font-size: 0.75em;
+    color: $gray-600;
+    text-transform: uppercase;
+    margin-top: -6px;
+  }
+
+
   /*fix too much spacing in layout */
   @media only screen and (min-width: 768px) {
    /* also fix ipad layout here */
@@ -80,6 +89,13 @@
   @media only screen and (min-width: 800px) {
     .woocommerce div.product div.summary {
       margin-bottom: 0;
+    }
+  }
+
+  /* fix stupid decision of parent theme to center align text in related products cards */
+  .related.products {
+    .text-center {
+      text-align: left !important;
     }
   }
   
