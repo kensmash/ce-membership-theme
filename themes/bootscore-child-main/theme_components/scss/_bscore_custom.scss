@@ -17,6 +17,11 @@ body:not(.single-lesson) {
     max-width: $max-width;
 }
 
+// Override stupid post image CSS from parent theme
+.wp-post-image {
+    width: unset;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/

@@ -393,30 +393,39 @@ function course_requirements($atts) {
 
     // Define output var
 	$output = '';
+
+    if ( $type == "Digital" ) { 
+        $output .= '<p><strong>To enroll in a Comics Experience digital course, you will need:</strong></p>';
+        $output .= '<ul>';
+        $output .= '<li>To agree to the terms included in <a href="#userAgreementModal" data-bs-toggle="modal" data-bs-target="#userAgreementModal">Comics Experience’s User Agreement.</a></li>';
+        $output .= '<li>High-speed Internet access</li>';
+        $output .= '<li>A mind like a sponge!</li>';
+        $output .= '</ul>';
+    } else {
+        $output .= '<p><strong>To participate in our live online sessions you will need:</strong></p>';
+        $output .= '<ul>';
+        
+            $output .= '<li>A computer or mobile device that meets <a href="https://support.zoom.us/hc/en-us/categories/200101697" title="Zoom minimum requirements" target="_blank">Zoom&rsquo;s minimum requirements</a></li>';
+      
+        $output .= '<li>To agree to the terms included in <a href="#userAgreementModal" data-bs-toggle="modal" data-bs-target="#userAgreementModal">Comics Experience’s User Agreement.</a></li>';
+        $output .= '<li>High-speed Internet access</li>';
+        $output .= '<li>Headphones/ear buds with microphone (optional, but strongly suggested)</li>';
+        $output .= '<li>A mind like a sponge!</li>';
+        $output .= '</ul>';
+    
+        $output .= '<p>What if I need to cancel my enrollment?</p>';
+        $output .= '<p>Unfortunately, Comics Experience cannot provide a full refund for course enrollment once the course is purchased.</p>';
+        $output .= '<ul>';
+        $output .= '<li>From the time of purchase until twenty-one (21) days before the class start date, 50% of the course fee can be refunded.</li>';
+        $output .= '<li>Between twenty (20) and seven (7) days prior to the class start date, 25% of the course fee can be refunded.</li>';
+        $output .= '<li>Six (6) days or fewer before the course start date, no refund will be issued.</li>';
+    
+        $output .= '<p>We appreciate your understanding and compliance to help us keep costs down and to continue offering high quality courses.</p>';
+        $output .= '</ul>'; 
+    }
         
 
-    $output .= '<p><strong>To participate in our live online sessions you will need:</strong></p>';
-    $output .= '<ul>';
-    if ( $type == "Zoom" ) { 
-        $output .= '<li>A computer or mobile device that meets <a href="https://support.zoom.us/hc/en-us/categories/200101697" title="Zoom minimum requirements" target="_blank">Zoom&rsquo;s minimum requirements</a></li>';
-    };
-    $output .= '<li>To agree to the terms included in <a href="#userAgreementModal" data-bs-toggle="modal" data-bs-target="#userAgreementModal">Comics Experience’s User Agreement.</a></li>';
-    $output .= '<li>High-speed Internet access</li>';
-    if ( $type != "Digital" ) { 
-        $output .= '<li>Headphones/ear buds with microphone (optional, but strongly suggested)</li>';
-    };
-    $output .= '<li>A mind like a sponge!</li>';
-    $output .= '</ul>';
 
-    $output .= '<p>What if I need to cancel my enrollment?</p>';
-    $output .= '<p>Unfortunately, Comics Experience cannot provide a full refund for course enrollment once the course is purchased.</p>';
-    $output .= '<ul>';
-    $output .= '<li>From the time of purchase until twenty-one (21) days before the class start date, 50% of the course fee can be refunded.</li>';
-    $output .= '<li>Between twenty (20) and seven (7) days prior to the class start date, 25% of the course fee can be refunded.</li>';
-    $output .= '<li>Six (6) days or fewer before the course start date, no refund will be issued.</li>';
-
-    $output .= '<p>We appreciate your understanding and compliance to help us keep costs down and to continue offering high quality courses.</p>';
-    $output .= '</ul>'; 
 
 	// Return your shortcode output
     return  $output;

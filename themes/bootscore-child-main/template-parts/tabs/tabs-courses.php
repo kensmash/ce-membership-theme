@@ -124,7 +124,7 @@
             setup_postdata($post); 
             $i++;
             echo "<div class='p-1'>";
-            the_post_thumbnail( 'full', ['class' => 'alignleft'] );
+            the_post_thumbnail( 'medium', ['class' => 'alignright'] );
             the_content();
             echo "</div>";
             if ($count > 1 && $i == 2){ echo '<hr class="mb-4">'; }
@@ -140,14 +140,19 @@
 
         <div class="tab-pane fade p-1 p-md-3" id="requirements" role="tabpanel" aria-labelledby="requirements-tab">
             <?php the_field('requirements_tab'); ?>
-            <?php $endOfDay = strtotime("tomorrow") - 1;
-        $unixtimestamp = strtotime(get_field('start_date')); 
-         if ($unixtimestamp > $endOfDay) { ?>
-            <p><strong>Online registration only:</strong>
-                To attend <?php if (get_field('course_type') == "Master Seminar"){ echo "the "; } ?>
-                <em><?php the_title() ?>,</em> you must register online. Enrollment is limited.*</p>
-            <p class="disclaimer-text"><small>*We do not currently offer refunds after enrollment.</small></p>
-            <?php } ?>
+            <?php 
+                if (get_field('course_type') !== "Digital Course"):
+                    $endOfDay = strtotime("tomorrow") - 1;
+                    $unixtimestamp = strtotime(get_field('start_date')); 
+                    if ($unixtimestamp > $endOfDay) { ?>
+                        <p><strong>Online registration only:</strong>
+                            To attend <?php if (get_field('course_type') == "Master Seminar"){ echo "the "; } ?>
+                            <em><?php the_title() ?>,</em> you must register online. Enrollment is limited.*</p>
+                        <p class="disclaimer-text"><small>*We do not currently offer refunds after enrollment.</small></p>
+            <?php 
+                } 
+                endif;
+            ?>
 
         </div>
 
@@ -173,4 +178,4 @@
     </div>
 </div>
 <?php get_template_part( 'template-parts/content', 'useragreementmodal' ); ?>
-<?php echo '<div class="page-tabs"><hr class="clearfix mb-4"></div>'; ?>
+<?php echo '<div class="page-tabs"></div><hr class="mb-4">'; ?>
