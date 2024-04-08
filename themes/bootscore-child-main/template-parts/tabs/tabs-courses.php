@@ -59,7 +59,7 @@
 
         //ADD IT TO TESTIMONIALS META QUERY
         $testimonials_dynamic_meta_query = array(
-            'post_type' => 'testimonials',
+            'post_type' => 'testimonial',
             'order' => 'DESC',
             'posts_per_page' => $postcount, 
             'meta_query'    => array(
