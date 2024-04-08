@@ -75,7 +75,8 @@ require get_theme_file_path( 'inc/extend-tiny-mce.php' );
 // PMP customize
 require get_theme_file_path( 'inc/pmp.php' );
 
-
+//Learndash customization
+//require get_theme_file_path( 'inc/learndash.php' );
 
 // shortcodes
 require get_theme_file_path( 'inc/shortcodes.php' );
