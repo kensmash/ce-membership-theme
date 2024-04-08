@@ -1093,6 +1093,14 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/template-parts\/content-coursesmeta.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-coursesmeta.php",
+      "oF" : 0
+    },
     "\/template-parts\/content-excerpt.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1133,12 +1141,28 @@
       "oAP" : "\/template-parts\/content-useragreement.php",
       "oF" : 0
     },
+    "\/template-parts\/content-useragreementmodal.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-useragreementmodal.php",
+      "oF" : 0
+    },
     "\/template-parts\/content.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/content.php",
+      "oF" : 0
+    },
+    "\/template-parts\/tabs\/tabs-courses.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/tabs\/tabs-courses.php",
       "oF" : 0
     },
     "\/template-parts\/tabs\/tabs-page.php" : {

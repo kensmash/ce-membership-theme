@@ -103,6 +103,22 @@ function woo_related_products_limit() {
 */
 //remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
+ /**
+ * Add course meta info before title
+ * *https://wordpress.org/support/topic/add-content-under-single-product-title/
+ */ 
+
+ add_action( 'woocommerce_before_single_product', 'display_courses_meta', 5 );
+ function display_courses_meta(){
+	 $content = "";
+ 
+	if ( is_product() && has_term( 'courses', 'product_cat' ) ) {
+	 $content = get_template_part( 'template-parts/content', 'coursesmeta' );
+ } 
+ 
+	return $content;
+ }
+ 
 
 /**
   * Remove default product page tabs
@@ -309,6 +325,64 @@ return array_diff( $related_posts, $exclude_ids );
 
 
 
+/*
+ * get instructors
+ */
+
+ function ce_instructors($outputString){		
+	
+	$instructorNumber = count(get_field('instructors')); //get the total number of instructors from our Instructor field
+	$cohost = get_field('co_host'); 
+	$leftText = "Instructor";
+	//if we pass an argument to the function, that argument will be the left text
+	if ($outputString !== '') {
+		$leftText = $outputString;
+	}
+					
+		if ($instructorNumber == 1) { //just one instructor
+				$instructor = get_field('instructors');
+				foreach ($instructor as $post_id) {
+					$the_post = get_post($post_id);
+					$the_permalink = get_permalink($post_id);
+					echo "$leftText";
+					if ($outputString == '') {
+						echo ": ";
+					}
+					echo "$the_post->post_title";
+				} 
+		} else { //two instructors
+				echo "$leftText";
+				if ($outputString == '') {
+					echo "s: ";
+				}
+				$instructor = get_field('instructors');
+				$i = 0;
+				foreach ($instructor as $post_id) {
+					$i++;
+					$the_post = get_post($post_id);
+					$the_permalink = get_permalink($post_id);
+					echo "$the_post->post_title";
+					if ($i != $instructorNumber) echo' and '; // add and
+			}
+		}
+				
+	if (isset($cohost)){
+		foreach ($cohost as $post_id) { 
+		    	$the_post = get_post($post_id);
+		    	if ($myQueryString == 'screen' or $myVar == 'screen') {
+		    		$the_permalink =  add_query_arg( 'type', 'screen', get_permalink($post_id) ); //append query string to link
+		    		} else {
+			    	$the_permalink = get_permalink($post_id);
+		    		} 
+				if ($myPageLocation == "courses") {
+		    		echo "</span> | <span> Co-host: <a href='$the_permalink'>$the_post->post_title</a></span>";
+		    	} else {
+			    	echo "</span> | <span> Co-Host: $the_post->post_title</span>";
+		    	}
+					
+		   }
+	 }
+}
 
 
 
