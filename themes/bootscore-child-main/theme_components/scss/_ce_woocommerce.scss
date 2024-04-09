@@ -10,7 +10,7 @@
     margin-top: -6px;
   }
 
-  /* raarrrr */
+  /* hide quantity field on single product page */
   .cart { 
     .quantity {
       display: none;
@@ -103,6 +103,10 @@
     .text-center {
       text-align: left !important;
     }
+  }
+
+  .amount {
+    color: $ce-green;
   }
   
   /*--------------------------------------------------------------
