@@ -14,7 +14,7 @@ get_header();
     
     <div id="primary" class="content-area container bg-white rounded-1 px-0">
 
-     <img src=" <?php echo(get_stylesheet_directory_uri() . "/assets/images/header-img-comics-connection.png"); ?>" class="img-fluid rounded-top-1" alt="Comics Connection" />
+	<?php get_template_part( 'template-parts/content', 'topimage' ); ?>
 
 	<?php if ( have_posts() ) : 
         
@@ -30,10 +30,10 @@ get_header();
         <div class="py-4 px-4">
 
 	<header class="page-header pt-3 pb-3 px-2">
-		<h1 class="page-title">Comics Connection Podcast</h1>
+		<h1 class="page-title">Make Comics Podcast</h1>
 		<div class="row pt-2 pb-3">
 
-			<p>The <strong>Comics Connection</strong> podcast provides ~15 minutes of advice per episode on all aspects of creating comics and breaking in to the industry.</p>
+			<p>The <strong>Comics Experience Make Comics</strong> podcast provides ~15 minutes of advice per episode on all aspects of creating comics and breaking in to the industry.</p>
 
 			<p>Do you have a question about making comics you'd like to hear discussed on the podcast? Email us at <a href="mailto:info@comicsexperience.com">info@comicsexperience.com.</a></p>
 
