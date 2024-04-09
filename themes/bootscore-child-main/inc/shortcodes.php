@@ -398,7 +398,7 @@ function course_requirements($atts) {
         $output .= '<p><strong>To enroll in a Comics Experience digital course, you will need:</strong></p>';
         $output .= '<ul>';
         $output .= '<li>To agree to the terms included in <a href="#userAgreementModal" data-bs-toggle="modal" data-bs-target="#userAgreementModal">Comics Experience’s User Agreement.</a></li>';
-        $output .= '<li>High-speed Internet access</li>';
+        $output .= '<li>High-speed Internet access.</li>';
         $output .= '<li>A mind like a sponge!</li>';
         $output .= '</ul>';
     } else {

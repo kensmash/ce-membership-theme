@@ -186,6 +186,11 @@
       background-color: rgba(222, 226, 230, 0.6);
     }
 
+    /* hide subtotal */
+    .woocommerce .cart-subtotal {
+      display: none;
+      }
+
   /*--------------------------------------------------------------
   # WooCommerce Checkout Page
   --------------------------------------------------------------*/

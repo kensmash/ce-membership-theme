@@ -5,6 +5,12 @@
     }
 }
 
+.cart_item {
+    .variation {
+        display: none;
+    }
+}
+
  /* hide Dokan become a vendor message on dashboard page */
  .woocommerce-account {
     .dokan-account-migration-lists {
