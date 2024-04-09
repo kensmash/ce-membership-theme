@@ -1,0 +1,20 @@
+/* get rid of vendor display in add to cart message */
+.item-quantity {
+   .variation {
+        display: none;
+    }
+}
+
+ /* hide Dokan become a vendor message on dashboard page */
+ .woocommerce-account {
+    .dokan-account-migration-lists {
+      display: none;
+    }
+  }
+
+  /* hide Dokan vendor registration form */
+  #customer_login_1 {
+    .register {
+      display: none !important;
+    }
+  }
