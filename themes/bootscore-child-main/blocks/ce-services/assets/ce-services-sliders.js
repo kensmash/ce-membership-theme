@@ -5,14 +5,18 @@
         $(".ce-services-cards").slick({
           slidesToShow: 2,
           slidesToScroll: 1,
-          arrows: false,
           mobileFirst: true,
           focusOnSelect: true,
+          prevArrow:
+          "<span class='slick-prev'><i class='fa-solid fa-chevron-left' aria-hidden='true'></i></span>",
+        nextArrow:
+          "<span class='slick-next'><i class='fa-solid fa-chevron-right' aria-hidden='true'></i></span>",
           asNavFor: ".ce-services-descriptions",
           responsive: [
             {
               breakpoint: 768,
               settings: {
+                arrows: false,
                 slidesToShow: 4,
               },
             },

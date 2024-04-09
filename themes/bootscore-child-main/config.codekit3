@@ -614,6 +614,16 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/assets\/images\/triangle-darker.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/images\/triangle-darker.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/images\/triangle.svg" : {
       "ft" : 2097152,
       "miP" : 0,

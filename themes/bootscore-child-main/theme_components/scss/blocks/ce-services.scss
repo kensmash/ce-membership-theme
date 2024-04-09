@@ -1,4 +1,4 @@
-@import "../../../../bootscore-main/scss/bootstrap/bootstrap";  // Collecting Bootstrap source from parent-theme
+@import "../_bscore_colors.scss";  // Collecting Bootstrap source from parent-theme
 
 //equal height slider divs
 .slick-track {
@@ -7,6 +7,40 @@
 
 .slick-slide {
     height: inherit !important;
+}
+
+/*--------------------------------------------------------------
+# DEFAULT SLICK STYLES
+--------------------------------------------------------------*/
+.ce-services-cards {
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 1;
+        color: black;
+        font-size: 22px;
+        cursor: pointer;
+        background: transparent;
+        outline: none !important;
+        transition: all 0.25s ease-in;
+    }
+    
+    .slick-arrow:hover,
+    .slick-arrow:focus {
+        color: $ce-blue;
+    }
+
+    .slick-prev {
+        left: -8px;
+    }
+    
+    .slick-next {
+        right: -8px;
+    }
+
 }
 
 //slider styles
@@ -35,7 +69,7 @@
 
 .services-slide-text-container {
     background-color: rgba(0,0,0,0.6);
-    min-height: 155px;
+    min-height: 145px;
 
     @media only screen and (min-width: 1024px) {
         min-height: 80px;
@@ -43,7 +77,8 @@
 }
 
 .ce-services-descriptions {
-    background-color: $gray-200;
+    //background-color: $gray-300;
+    background-color: #ccc;
 }
 
 .ce-service-cards-slide {
@@ -53,7 +88,7 @@
         content: "";
         width: 30px;
         height: 30px;
-        background:white url('../../../assets/images/triangle.svg');
+        background:white url('../../../assets/images/triangle-darker.svg');
         left: 45%;
         bottom: 0px;
         position: absolute;
