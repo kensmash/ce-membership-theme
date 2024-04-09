@@ -231,12 +231,9 @@ add_action( 'woocommerce_account_my-membership_endpoint', 'wpmember_endpoint_con
 function wpmember_endpoint_content() {
  
 	// At the moment I will add Learndash profile with the shordcode
-	echo (
-		'<h3>Membership</h3>
-		<p><strong>Membership Level: '
-		 );
+	echo ('<h3>Membership - ');
 	echo do_shortcode('[pmpro_member field="membership_name"]');
-	echo ('</strong></p>');
+	echo ('</h3>');
 	echo ('<p><a href="/membership-account/">Billing Details</a> | <a href="/membership-account/membership-levels/">Change Membership</a> | <a href="/membership-account/membership-cancel/">Cancel Membership</a></p>');
 	echo (
 		'<br>
@@ -244,7 +241,7 @@ function wpmember_endpoint_content() {
 		 );
 	echo do_shortcode('[discord_connect_button]');
 	$pmp_member = pmpro_getMembershipLevelForUser(get_current_user_id());
-	if ($pmp_member->name == 'Tier 2'):
+	if ($pmp_member->name == 'Tier 2: Community Pro'):
 		echo (
 			'<br>
 			<h4>Exclusive Member Download</h4>
