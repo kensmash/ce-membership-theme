@@ -233,9 +233,11 @@ function wpmember_endpoint_content() {
 	// At the moment I will add Learndash profile with the shordcode
 	echo (
 		'<h3>Membership</h3>
-		<p>Membership Level: '
+		<p><strong>Membership Level: '
 		 );
 	echo do_shortcode('[pmpro_member field="membership_name"]');
+	echo ('</strong></p>');
+	echo ('<p><a href="/membership-account/">Billing Details</a> | <a href="/membership-account/membership-levels/">Change Membership</a> | <a href="/membership-account/membership-cancel/">Cancel Membership</a></p>');
 	echo (
 		'<br>
 		<h4>Connect with our Discord Community</h4>'
