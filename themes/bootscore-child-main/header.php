@@ -101,7 +101,7 @@
               } else { 
                  //we have a logged in member, show them a custom membership menu
                   wp_nav_menu(array(
-                    'menu'           => $pmp_member->name == 'Tier 2' ? 'Tier 2 Community Links' : 'Tier 1 Community Links',
+                    'menu'           => $pmp_member->name == 'Community Pro' ? 'Tier 2 Community Links' : 'Tier 1 Community Links',
                     'container'      => false,
                     'menu_class'     => '',
                     'fallback_cb'    => '__return_false',
