@@ -39,7 +39,9 @@ if ( ! empty( $block['align'] ) ) {
                         </div>
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title"><?php echo get_sub_field('level_price'); ?> <small class="text-muted">/ mo</small></h1>
-                            <div><?php echo get_sub_field('level_description'); ?></div>
+                            <div class="text-start">
+                                <?php echo get_sub_field('level_description'); ?>
+                            </div>
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-success" href="<?php echo esc_url( $link['url'] ); ?>">Join Now</a>
