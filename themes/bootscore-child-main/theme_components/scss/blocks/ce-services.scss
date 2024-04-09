@@ -86,9 +86,13 @@
 
     &.slick-current::after {
         content: "";
-        width: 30px;
-        height: 30px;
-        background:white url('../../../assets/images/triangle-darker.svg');
+        //width: 30px;
+        //height: 30px;
+        //background:white url('../../../assets/images/triangle-darker.svg');
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid #ccc;
+        border-left: 30px solid transparent;
         left: 45%;
         bottom: 0px;
         position: absolute;

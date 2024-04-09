@@ -89,8 +89,7 @@ a {
 }
 
 .bg-transparent {
-    background-color: rgba(0,0,0,0);  
-    
+    background-color: rgba(0,0,0,1) !important; 
 }
 
 /* remove focus ring in safari on drop-down click */
