@@ -28,3 +28,16 @@
 .learndash-course-grid .items-wrapper .grid-2 .ribbon {
     text-shadow: none;
 }
+
+/* c=make course list look nicer */
+
+.ld-item-list {
+    .ld-item-list-item {
+        border: 1px solid #e2e7ed !important;
+    }
+} 
+
+.ld-status-icon {
+    margin-top:  0 !important;
+    border: 1px solid #e2e7ed !important;
+}
