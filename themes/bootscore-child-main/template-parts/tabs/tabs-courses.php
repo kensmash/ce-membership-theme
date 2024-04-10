@@ -20,7 +20,7 @@
 
 <div class="page-tabs pt-2">
 
-    <ul class="nav <?php echo $tab_type; ?> nav-fill flex-column flex-xl-row text-md-center" id="myTab" role="tablist">
+    <ul class="nav <?php echo $tab_type; ?> nav-fill flex-column flex-lg-row text-md-center" id="myTab" role="tablist">
         <li class="nav-item flex-sm-fill text-md-center">
             <a class="nav-link active" id="details-tab" data-bs-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Details</a>
         </li>

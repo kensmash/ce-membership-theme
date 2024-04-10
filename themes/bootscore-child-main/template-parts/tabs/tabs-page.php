@@ -21,7 +21,7 @@
 
 <div class="mt-2 pt-1 pt-lg-2 page-tabs">
 
-  <ul class="nav <?php echo $tab_type; ?> nav-fill flex-column flex-xl-row" id="myTab" role="tablist">
+  <ul class="nav <?php echo $tab_type; ?> nav-fill flex-column flex-lg-row" id="myTab" role="tablist">
     <?php $i=0; while ( have_rows('tabs') ) : the_row(); ?>
 
     <?php 
