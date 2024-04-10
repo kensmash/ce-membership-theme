@@ -385,6 +385,6 @@ return array_diff( $related_posts, $exclude_ids );
 
 
 
-
-
+// https://wordpress.org/support/topic/remove-vendor-in-order-email/
+remove_action( 'woocommerce_order_item_meta_start', 'dokan_attach_vendor_name', 10, 2 );
   
