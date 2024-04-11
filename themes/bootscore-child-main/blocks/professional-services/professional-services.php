@@ -5,8 +5,6 @@
  * @param array $block The block settings and attributes.
  */
 
- $featured_services = get_field('professional_services');
-
 // Support custom "anchor" values.
 $anchor = '';
 if ( ! empty( $block['anchor'] ) ) {
@@ -28,33 +26,25 @@ if ( ! empty( $block['align'] ) ) {
 
     <div class="row">
 
-        <?php 
-            if( $featured_services ):
-            foreach( $featured_services as $service ): 
-                $permalink = get_permalink( $service->ID );
-                $title = get_the_title( $service->ID );
-                //$content = get_post_field('post_content', $service->ID); 
-                $content = get_the_excerpt($service->ID); 
-            ?>
-
-            <div class="col-md-6 col-xl-4 mb-3">
-                <div class="card h-100">
-                    <h5 class="card-header py-4"><?php echo esc_html( $title ); ?></h5>
-                    <div class="card-body">
-                        <p class="card-text"><?php echo $content; ?></p>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 py-4">
-                        <div class="d-grid">
-                            <a href="<?php echo esc_url( $permalink ); ?>" class="btn btn-primary px-md-5">Learn More</a>
+        <?php if( have_rows('professional_services') ): ?>
+            
+            <?php while( have_rows('professional_services') ): the_row(); $link = get_sub_field('service_link'); ?>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <h5 class="card-header py-4"><?php echo acf_esc_html( get_sub_field('service_name') ); ?></h5>
+                        <div class="card-body">
+                            <p class="card-text"><?php echo get_sub_field('service_description') ?></p>
                         </div>
-                    </div>
-                </div><!-- card -->
-            </div> <!-- col -->
-
-        <?php 
-            endforeach;
-            endif; 
-        ?>
+                        <div class="card-footer bg-transparent border-0 py-4">
+                            <div class="d-grid">
+                                <a href="<?php echo esc_url( $link ); ?>" class="btn btn-primary px-md-5">Learn More</a>
+                            </div>
+                        </div>
+                    </div><!-- card -->
+                </div> <!-- col -->
+            <?php endwhile; ?>
+        
+        <?php endif; ?>
 
     </div> <!-- row -->
 

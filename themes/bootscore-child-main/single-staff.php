@@ -27,10 +27,7 @@ get_header();
             </header>
 
             <div class="row entry-content pt-3">
-                <div class="col-4 order-last">
-                  <?php bootscore_post_thumbnail(); ?>
-                </div>
-                <div class="col-8">
+                <div class="col-12">
                   <?php the_content();  ?>
                 </div>
             </div>
