@@ -26,7 +26,7 @@ get_header();
                 the_post(); ?>
               <?php bootscore_category_badge(); ?>
               <h1><?php the_title(); ?></h1>
-              <?php if ($post_type !== "sfwd-courses" && $post_type !== "sfwd-lessons" && $post_type !== "sfwd-topics"): ?>
+              <?php if ($post_type !== "sfwd-courses" && $post_type !== "sfwd-lessons" && $post_type !== "sfwd-topics" && $post_type !== "creative-services"): ?>
               <p class="entry-meta">
                 <small class="text-body-tertiary">
                   <?php

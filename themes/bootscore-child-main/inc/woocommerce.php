@@ -328,10 +328,34 @@ return array_diff( $related_posts, $exclude_ids );
  * get instructors
  */
 
- function ce_instructors($outputString){		
-	
+function ce_courseloop_instructors($postId){
+	$instructorNumber = count(get_field('instructors', $postId)); //get the total number of instructors from our Instructor field
+	$cohost = get_field('co-host', $postId); 
+			
+	if ($instructorNumber == 1) { //just one instructor
+			$instructor = get_field('instructors', $postId);
+			foreach ($instructor as $post_id) {
+				$the_post = get_post($post_id);
+				$the_permalink = get_permalink($post_id);
+				echo "Instructor: ". $the_post->post_title;
+			} 
+	} else { //two instructors
+			echo "Instructors: ";
+			$instructor = get_field('instructors', $postId);
+			$i = 0;
+			foreach ($instructor as $post_id) {
+				$i++;
+				$the_post = get_post($post_id);
+				$the_permalink = get_permalink($post_id);
+				echo "$the_post->post_title";
+				if ($i != $instructorNumber) echo' and '; // add and
+		}
+	}
+ }
+
+ function ce_instructors($outputString){	
 	$instructorNumber = count(get_field('instructors')); //get the total number of instructors from our Instructor field
-	$cohost = get_field('co_host'); 
+	$cohost = get_field('co-host'); 
 	$leftText = "Instructor";
 	//if we pass an argument to the function, that argument will be the left text
 	if ($outputString !== '') {
@@ -368,17 +392,9 @@ return array_diff( $related_posts, $exclude_ids );
 	if (isset($cohost)){
 		foreach ($cohost as $post_id) { 
 		    	$the_post = get_post($post_id);
-		    	if ($myQueryString == 'screen' or $myVar == 'screen') {
-		    		$the_permalink =  add_query_arg( 'type', 'screen', get_permalink($post_id) ); //append query string to link
-		    		} else {
-			    	$the_permalink = get_permalink($post_id);
-		    		} 
-				if ($myPageLocation == "courses") {
-		    		echo "</span> | <span> Co-host: <a href='$the_permalink'>$the_post->post_title</a></span>";
-		    	} else {
-			    	echo "</span> | <span> Co-Host: $the_post->post_title</span>";
-		    	}
-					
+		    	$the_permalink = get_permalink($post_id);
+		    	echo "</span> | <span> Co-Host: $the_post->post_title</span>";
+		    		
 		   }
 	 }
 }

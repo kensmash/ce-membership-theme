@@ -678,6 +678,22 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/blocks\/ce-courses\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/ce-courses\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/ce-courses\/ce-courses.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-courses\/ce-courses.php",
+      "oF" : 0
+    },
     "\/blocks\/ce-services\/assets\/ce-services-sliders.asset.php" : {
       "cB" : 0,
       "ft" : 8192,
