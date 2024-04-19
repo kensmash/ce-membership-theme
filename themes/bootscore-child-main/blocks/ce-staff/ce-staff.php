@@ -54,11 +54,13 @@ switch ($columns) {
             <div class="col-sm-6 mb-3 <?php echo $column_class; ?>">
                 <div class="card h-100">
                     
-                    <?php if ( $image ) { 
-                            echo $image;
-                        } else { ?>
-                            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/ce-bio-placeholder-1000x750.png" class="rounded-top" alt="Generic Staff Thumbnail">
-                    <?php } ?>
+                    <a href="<?php echo esc_url( $permalink ); ?>">
+                        <?php if ( $image ) { 
+                                echo $image;
+                            } else { ?>
+                                <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/ce-bio-placeholder-1000x750.png" class="rounded-top" alt="Generic Staff Thumbnail">
+                        <?php } ?>
+                    </a>
             
                 
                     <div class="card-body">

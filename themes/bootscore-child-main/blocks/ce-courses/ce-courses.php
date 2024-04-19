@@ -66,8 +66,10 @@ if ( ! empty( $block['align'] ) ) {
                             <?php the_excerpt(); ?>
 
                         </div>
-                        <div class="card-footer bg-transparent text-muted">
-                            <a href="<?php the_permalink();?>" class="btn btn-primary btn-block border-0 mb-2">Learn More</a>
+                        <div class="card-footer bg-transparent text-muted border-top-0">
+                            <div class="d-grid pt-2">
+                                <a href="<?php the_permalink();?>" class="btn btn-primary btn-block border-0 mb-2">Learn More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
