@@ -14,3 +14,13 @@ add_filter( 'learndash_course_grid_custom_button_text', function( $button_text =
     // Always return $button_text
     return $button_text;
 }, 10, 2 );
+
+
+/**
+ * Force loading of the Course Grid CSS assets.
+ */
+add_action( 'wp_enqueue_scripts', function() {
+
+	learndash_course_grid_load_resources();
+
+} );
