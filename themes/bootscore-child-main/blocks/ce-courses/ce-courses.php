@@ -30,9 +30,16 @@ if ( ! empty( $block['align'] ) ) {
 
         <div class="col">
 
-        <?php if (learndash_user_get_enrolled_courses(get_current_user_id())): ?>
+        <?php if (learndash_user_get_enrolled_courses(get_current_user_id())): 
+           
+            $tab_type = "nav-tabs";
+            if ( wp_is_mobile() ) {
+                $tab_type = "nav-pills";
+            }
+        
+        ?>
 
-            <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="myTab" role="tablist">
+            <ul class="nav <?php echo $tab_type; ?> nav-fill flex-column flex-md-row" id="myTab" role="tablist">
                 <li class="nav-item flex-sm-fill text-md-center">
                     <a class="nav-link active" id="allcourses-tab" data-bs-toggle="tab" data-bs-target="#allcourses-tab-pane" type="button" role="tab" aria-controls="allcourses-tab-pane" aria-selected="true">All Courses</a>
                 </li>
@@ -52,7 +59,9 @@ if ( ! empty( $block['align'] ) ) {
 
         <?php else: ?>
 
-            <h2>Courses</h2>
+            <div class="ps-2">
+                <h2>Courses</h2>
+            </div>
 
             <?php require get_stylesheet_directory() . '/blocks/ce-courses/template-parts/content-coursesloop.php';
 

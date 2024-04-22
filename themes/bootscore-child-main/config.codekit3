@@ -614,6 +614,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/assets\/images\/thumbnail-scifi.jpg" : {
+      "ft" : 16384,
+      "iS" : 98640,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/thumbnail-scifi.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/triangle-darker.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -692,6 +705,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/blocks\/ce-courses\/ce-courses.php",
+      "oF" : 0
+    },
+    "\/blocks\/ce-courses\/template-parts\/content-coursesloop.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-courses\/template-parts\/content-coursesloop.php",
       "oF" : 0
     },
     "\/blocks\/ce-services\/assets\/ce-services-sliders.asset.php" : {
@@ -834,6 +855,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/blocks\/creative-services\/creative-services.php",
+      "oF" : 0
+    },
+    "\/blocks\/ld-conditional-headline\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/ld-conditional-headline\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/ld-conditional-headline\/ld-conditional-headline.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ld-conditional-headline\/ld-conditional-headline.php",
       "oF" : 0
     },
     "\/blocks\/professional-services\/block.json" : {
@@ -1221,14 +1258,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/tabs\/tabs-courses.php",
-      "oF" : 0
-    },
-    "\/template-parts\/tabs\/tabs-page.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/tabs\/tabs-page.php",
       "oF" : 0
     },
     "\/theme_components\/js\/global.js" : {
