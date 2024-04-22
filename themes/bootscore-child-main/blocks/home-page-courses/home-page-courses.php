@@ -30,7 +30,7 @@ if ( ! empty( $block['align'] ) ) {
 
         <div class="row">
 
-            <div class="col pt-4 pb-3">
+            <div class="col pt-4 pt-xl-5 pb-3">
 
                 <?php the_field('homepage_courses'); ?>
 
