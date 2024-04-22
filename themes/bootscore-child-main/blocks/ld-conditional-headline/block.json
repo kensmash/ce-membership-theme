@@ -1,0 +1,17 @@
+{
+    "name": "acf/learndash-conditional-headline",
+    "title": "Learndash Conditional Headline",
+    "description": "Block to display a headline if user is enrolled in a Learndash courdr.",
+    "style": [],
+    "script": "",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["learndash", "headline"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "ld-conditional-headline.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
