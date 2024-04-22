@@ -32,14 +32,7 @@ if ( ! empty( $block['align'] ) ) {
 
         <?php if (learndash_user_get_enrolled_courses(get_current_user_id())): ?>
 
-            <?php
-                $tab_type = "nav-pills";
-                if ( wp_is_mobile() ) {
-                    $tab_type = "nav-pills";
-                }
-            ?>
-
-            <ul class="nav <?php echo $tab_type; ?> nav-fill flex-column flex-md-row" id="myTab" role="tablist">
+            <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="myTab" role="tablist">
                 <li class="nav-item flex-sm-fill text-md-center">
                     <a class="nav-link active" id="allcourses-tab" data-bs-toggle="tab" data-bs-target="#allcourses-tab-pane" type="button" role="tab" aria-controls="allcourses-tab-pane" aria-selected="true">All Courses</a>
                 </li>
@@ -53,7 +46,7 @@ if ( ! empty( $block['align'] ) ) {
                     <?php require get_stylesheet_directory() . '/blocks/ce-courses/template-parts/content-coursesloop.php'; ?>
                 </div>
                 <div class="tab-pane fade p-lg-2" id="mycourses-tab-pane" role="tabpanel" aria-labelledby="mycourses-tab" tabindex="0">
-                    <?php the_field('my_courses'); ?>
+                    <?php the_field('my_courses'); /* had to output the shortcode via an ACF WYSIWYG field, or else Learndash styles would not load */ ?>
                 </div>
             </div>
 
