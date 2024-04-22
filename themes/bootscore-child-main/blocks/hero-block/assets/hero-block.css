@@ -1,3 +1,8 @@
 .hero-block-container {
   padding: 3rem 0 5rem;
 }
+@media only screen and (min-width: 1024px) {
+  .hero-block-container {
+    padding: 3rem 0 7rem;
+  }
+}

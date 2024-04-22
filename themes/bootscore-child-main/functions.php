@@ -25,9 +25,9 @@ function bootscore_child_enqueue_styles() {
   // global.js
   wp_enqueue_script('global-js', get_stylesheet_directory_uri() . '/assets/js/global-min.js', false, '', true);
 
-  if ( is_front_page() && !wp_is_mobile() ) {
+  /* if ( is_front_page() && !wp_is_mobile() ) {
     wp_enqueue_script('home-js', get_stylesheet_directory_uri() . '/assets/js/home-min.js', false, '', true);
-  } 
+  } */
 
 }
 
