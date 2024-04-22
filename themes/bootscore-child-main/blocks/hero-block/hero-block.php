@@ -50,7 +50,7 @@ $style  = implode( '; ', $styles );
               $pmp_member = pmpro_getMembershipLevelForUser(get_current_user_id());
               //echo "member level: " . var_dump($pmp_member);
               if( !$pmp_member ) { 
-                require get_stylesheet_directory() . '/blocks/hero-block/template-parts/content-nouser.php';
+                require get_stylesheet_directory() . '/blocks/hero-block/template-parts/content-user.php';
               } else { 
                  //we have a logged in member, show them custom content
                  require get_stylesheet_directory() . '/blocks/hero-block/template-parts/content-member.php';

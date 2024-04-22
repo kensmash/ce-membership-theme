@@ -893,6 +893,14 @@
       "oAP" : "\/blocks\/hero-block\/hero-block.php",
       "oF" : 0
     },
+    "\/blocks\/hero-block\/template-parts\/content-member 2.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/hero-block\/template-parts\/content-member 2.php",
+      "oF" : 0
+    },
     "\/blocks\/hero-block\/template-parts\/content-member.php" : {
       "cB" : 0,
       "ft" : 8192,
