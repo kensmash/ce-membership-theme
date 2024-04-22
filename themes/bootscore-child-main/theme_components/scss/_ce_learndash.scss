@@ -29,7 +29,7 @@
     text-shadow: none;
 }
 
-/* c=make course list look nicer */
+/* make course list look nicer */
 
 .ld-item-list {
     .ld-item-list-item {
@@ -40,4 +40,24 @@
 .ld-status-icon {
     margin-top:  0 !important;
     border: 1px solid #e2e7ed !important;
+}
+
+/* course list styles */
+.ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article, .ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+ 
+.ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption {
+    padding: 1em 1.25em;
+    justify-content: space-between;
+
+    .entry-title {
+        font-size: 1.25em;
+    }
+
+    .entry-content {
+        font-size: 1em;
+    }
 }
