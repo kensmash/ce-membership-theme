@@ -873,20 +873,20 @@
       "oAP" : "\/blocks\/hero-block\/hero-block.php",
       "oF" : 0
     },
-    "\/blocks\/ld-conditional-headline\/block.json" : {
+    "\/blocks\/home-page-courses\/block.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/blocks\/ld-conditional-headline\/block-min.json",
+      "oAP" : "\/blocks\/home-page-courses\/block-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/blocks\/ld-conditional-headline\/ld-conditional-headline.php" : {
+    "\/blocks\/home-page-courses\/home-page-courses.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/blocks\/ld-conditional-headline\/ld-conditional-headline.php",
+      "oAP" : "\/blocks\/home-page-courses\/home-page-courses.php",
       "oF" : 0
     },
     "\/blocks\/professional-services\/block.json" : {

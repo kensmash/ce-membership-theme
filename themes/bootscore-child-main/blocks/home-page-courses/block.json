@@ -1,0 +1,17 @@
+{
+    "name": "acf/home-page-courses",
+    "title": "Home Page Courses",
+    "description": "Block to display a user courses on the home page.",
+    "style": [],
+    "script": "",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["learndash", "courses"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "home-page-courses.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

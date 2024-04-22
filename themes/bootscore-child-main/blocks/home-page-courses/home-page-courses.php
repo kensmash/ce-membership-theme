@@ -1,6 +1,6 @@
 <?php
 /**
- * CE Learndash Conditional Headline template.
+ * CE Home Page Courses template.
  *
  * @param array $block The block settings and attributes.
  */
@@ -32,7 +32,7 @@ if ( ! empty( $block['align'] ) ) {
 
             <div class="col pt-4 pb-3">
 
-                <h2><?php echo esc_html( get_field('headline') ); ?></h2>
+                <?php the_field('homepage_courses'); ?>
 
             </div> <!-- col -->
 

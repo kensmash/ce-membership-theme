@@ -22,8 +22,8 @@ function ce_register_acf_blocks() {
     register_block_type( __DIR__ . '/../blocks/responsive-tabs' );
     register_block_type( __DIR__ . '/../blocks/professional-services' );
     register_block_type( __DIR__ . '/../blocks/creative-services' );
-    register_block_type( __DIR__ . '/../blocks/hero-block' );
-    register_block_type( __DIR__ . '/../blocks/ld-conditional-headline' );
+    //register_block_type( __DIR__ . '/../blocks/hero-block' );
+    register_block_type( __DIR__ . '/../blocks/home-page-courses' );
 }
 
 // Here we call our ce_register_acf_block() function on init.
