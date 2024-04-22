@@ -857,6 +857,22 @@
       "oAP" : "\/blocks\/creative-services\/creative-services.php",
       "oF" : 0
     },
+    "\/blocks\/hero-block\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/hero-block\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/hero-block\/hero-block.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/hero-block\/hero-block.php",
+      "oF" : 0
+    },
     "\/blocks\/ld-conditional-headline\/block.json" : {
       "ft" : 524288,
       "oA" : 1,
