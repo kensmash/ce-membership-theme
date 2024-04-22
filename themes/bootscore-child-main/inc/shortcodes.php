@@ -448,18 +448,3 @@ add_shortcode( 'requirements', 'course_requirements' );
 }
 
 add_shortcode( 'user-agreement', 'user_agreement' );
-
-
-
-/**
- * list all courses
- * Usage [ce-courses]
- */
-function comics_experience_courses($atts) {
-    /* https://wordpress.stackexchange.com/questions/213705/combining-shortcode-and-get-template-part */
-    ob_start();
-    get_template_part('template-parts/content', 'coursesloop' );
-    return ob_get_clean();
-}
-
-add_shortcode( 'ce-courses', 'comics_experience_courses' );
