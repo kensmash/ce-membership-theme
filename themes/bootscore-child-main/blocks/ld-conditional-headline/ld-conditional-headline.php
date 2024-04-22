@@ -22,20 +22,22 @@ if ( ! empty( $block['align'] ) ) {
 
 ?>
 
-<?php if (learndash_user_get_enrolled_courses()): ?>
 
-    <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
+
+<div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
+
+    <?php if (learndash_user_get_enrolled_courses(get_current_user_id())): ?>
 
         <div class="row">
 
-            <div class="col pb-4">
+            <div class="col pt-4 pb-3">
 
-                <h2><?php esc_html( get_field('headline') ); ?></h2>
+                <h2><?php echo esc_html( get_field('headline') ); ?></h2>
 
-            <div> <!-- col -->
+            </div> <!-- col -->
 
         </div> <!-- row -->
 
-    </div><!-- container -->
+    <?php endif; ?>
 
-<?php endif; ?>
+</div><!-- container -->

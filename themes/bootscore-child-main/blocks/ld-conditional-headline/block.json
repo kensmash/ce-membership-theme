@@ -1,7 +1,7 @@
 {
     "name": "acf/learndash-conditional-headline",
     "title": "Learndash Conditional Headline",
-    "description": "Block to display a headline if user is enrolled in a Learndash courdr.",
+    "description": "Block to display a headline if user is enrolled in a Learndash course.",
     "style": [],
     "script": "",
     "category": "formatting",
