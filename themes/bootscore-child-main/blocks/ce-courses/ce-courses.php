@@ -54,7 +54,7 @@ if ( ! empty( $block['align'] ) ) {
 
             <h2>Courses</h2>
 
-        <?php require get_stylesheet_directory() . '/blocks/ce-courses/template-parts/content-coursesloop.php';
+            <?php require get_stylesheet_directory() . '/blocks/ce-courses/template-parts/content-coursesloop.php';
 
         endif; ?>
 

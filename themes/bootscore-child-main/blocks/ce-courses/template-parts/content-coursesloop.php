@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * The loop that displays courses.
+ * The loop that displays WooCommerce courses products.
  *
  */
  
