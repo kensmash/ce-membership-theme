@@ -12,7 +12,7 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'container px-0';
+$class_name = 'container px-0 ce-courses';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
