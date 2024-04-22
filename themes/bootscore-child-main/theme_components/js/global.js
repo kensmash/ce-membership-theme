@@ -12,7 +12,7 @@ jQuery(".anchorlink").click(function (event) {
       {
         scrollTop: jQuery(sectionTo).offset().top
       },
-      1100
+      2000
     );
     event.preventDefault();
     event.stopPropagation();

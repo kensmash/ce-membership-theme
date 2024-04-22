@@ -12,7 +12,7 @@
             $button_class = get_sub_field('button_color'); 
             ?>
 
-            <a class="btn <?php echo esc_attr($button_class); ?>" href="<?php echo esc_attr( $button_link); ?>" role="button"><?php echo esc_html($button_text); ?></a>
+            <a class="anchorlink btn <?php echo esc_attr($button_class); ?>" href="<?php echo esc_attr( $button_link); ?>" role="button"><?php echo esc_html($button_text); ?></a>
 
             <?php 
 
