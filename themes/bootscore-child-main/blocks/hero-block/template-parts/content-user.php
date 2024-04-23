@@ -1,7 +1,7 @@
 <?php global $current_user;
 wp_get_current_user(); ?>
 
-<h1>Welcome, <?php echo $current_user->user_firstname; ?></h1>
+<h1>Welcome, <?php echo $current_user->user_firstname; ?>!</h1>
 
 <p>Text here</p>
 

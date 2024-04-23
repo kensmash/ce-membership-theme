@@ -59,10 +59,6 @@ if ( ! empty( $block['align'] ) ) {
 
         <?php else: ?>
 
-            <div class="ps-2">
-                <h2>Courses</h2>
-            </div>
-
             <?php require get_stylesheet_directory() . '/blocks/ce-courses/template-parts/content-coursesloop.php';
 
         endif; ?>
