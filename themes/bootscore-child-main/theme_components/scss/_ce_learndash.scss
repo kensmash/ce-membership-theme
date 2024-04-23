@@ -20,7 +20,6 @@
 }
 
 
-
 .learndash-course-grid .items-wrapper .grid-2 .content .entry-content {
     padding-bottom: 1.75em;
 }
@@ -56,10 +55,15 @@
     justify-content: space-between;
 
     .entry-title {
-        font-size: 1.25em;
+        font-size: 1.2em;
     }
 
     .entry-content {
-        font-size: 1em;
+        font-size: .85em;
+        color: $ce-grey;
+    }
+
+    .ld_course_grid_button {
+        padding-top: 1.5em;
     }
 }
