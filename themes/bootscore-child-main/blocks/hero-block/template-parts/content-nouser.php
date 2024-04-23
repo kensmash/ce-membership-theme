@@ -3,7 +3,7 @@
 <?php
     if( have_rows('buttons') ): ?>
 
-    <div class="d-grid gap-2">
+    <div class="d-grid gap-2 pt-3">
 
         <?php while( have_rows('buttons') ) : the_row();
 
