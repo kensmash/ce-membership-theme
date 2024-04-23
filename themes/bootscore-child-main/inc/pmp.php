@@ -68,7 +68,7 @@ add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
 
 /* https://www.paidmembershipspro.com/redirect-members/ */
 /* https://wordpress.stackexchange.com/questions/325574/how-to-use-login-redirect-with-a-user-capability */
-function my_login_redirect( $redirect_to, $request, $user ) {
+/* function my_login_redirect( $redirect_to, $request, $user ) {
 
     if ( is_a ( $user , 'WP_User' ) && $user->exists() ) {
 
@@ -87,7 +87,7 @@ function my_login_redirect( $redirect_to, $request, $user ) {
     return $redirect_to;
 }
 
-add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
+add_filter( 'login_redirect', 'my_login_redirect', 10, 3 ); */
 
 /* https://www.paidmembershipspro.com/limit-user-active-sessions/ */
 function my_wp_bouncer_number_simultaneous_logins($num) {

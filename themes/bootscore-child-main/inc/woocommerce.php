@@ -309,19 +309,6 @@ $exclude_ids = wc_get_products( array(
 return array_diff( $related_posts, $exclude_ids );
 }
 
-
-/**
- * @snippet       Custom Redirect for Logins @ WooCommerce My Account
- * @compatible    WooCommerce 6
- */
- 
- add_filter( 'woocommerce_login_redirect', 'ce_customer_login_redirect', 9999 );
- 
- function ce_customer_login_redirect( $redirect_url ) {
-	 $redirect_url = home_url('/my-account/');
-	 return $redirect_url;
- }
-
 /* remove more products tab added by Dokan */
 /* https://wordpress.org/support/topic/how-to-remove-more-products-tab-and-seller-info-tab-in-dokan-plugin/ */
  add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_more_seller_product_tab', 98 );
@@ -329,8 +316,6 @@ return array_diff( $related_posts, $exclude_ids );
     unset($tabs['more_seller_product']);
     return $tabs;
 }
-
-
 
 /*
  * get instructors
@@ -411,4 +396,19 @@ function ce_courseloop_instructors($postId){
 
 // https://wordpress.org/support/topic/remove-vendor-in-order-email/
 remove_action( 'woocommerce_order_item_meta_start', 'dokan_attach_vendor_name', 10, 2 );
+
+
+
+/**
+ * @snippet       Custom Redirect for Logins @ WooCommerce My Account
+ * @compatible    WooCommerce 6
+ */
+ 
+ /* add_filter( 'woocommerce_login_redirect', 'ce_customer_login_redirect', 9999 );
+ 
+ function ce_customer_login_redirect( $redirect_url ) {
+	 $redirect_url = home_url('/my-account/');
+	 return $redirect_url;
+ } */
+
   
