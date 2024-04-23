@@ -48,12 +48,14 @@ if ( ! empty( $block['align'] ) ) {
                 </li>
             </ul>
 
-            <div class="tab-content pt-4" id="myTabContent">
+            <div class="tab-content pt-4 pt-xxl-5" id="myTabContent">
                 <div class="tab-pane fade p-lg-2 show active" id="allcourses-tab-pane" role="tabpanel" aria-labelledby="allcourses-tab" tabindex="0">
                     <?php require get_stylesheet_directory() . '/blocks/ce-courses/template-parts/content-coursesloop.php'; ?>
                 </div>
                 <div class="tab-pane fade p-lg-2" id="mycourses-tab-pane" role="tabpanel" aria-labelledby="mycourses-tab" tabindex="0">
-                    <?php the_field('my_courses'); /* had to output the shortcode via an ACF WYSIWYG field, or else Learndash styles would not load */ ?>
+                    <div class="px-3">
+                        <?php the_field('my_courses'); /* had to output the shortcode via an ACF WYSIWYG field, or else Learndash styles would not load */ ?>
+                    </div>
                 </div>
             </div>
 
