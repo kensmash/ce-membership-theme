@@ -35,7 +35,7 @@ $styles = array( 'background-color: ' . $background_color, 'background-image: ' 
 $style  = implode( '; ', $styles );
 ?>
 
-<div <?php echo esc_attr( $anchor ); ?>class="container-fluid <?php echo esc_attr( $class_name );?> pt-lg-5" style="<?php echo esc_attr( $style ); ?>">
+<div <?php echo esc_attr( $anchor ); ?>class="container-fluid <?php echo esc_attr( $class_name );?> pt-4 pt-lg-5" style="<?php echo esc_attr( $style ); ?>">
     <div class="container hero-block-container">
         <div class="row justify-content-lg-between row-cols-1 row-cols-sm-1 row-cols-md-2">
            
