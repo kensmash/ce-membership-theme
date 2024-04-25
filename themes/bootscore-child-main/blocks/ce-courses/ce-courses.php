@@ -28,44 +28,54 @@ if ( ! empty( $block['align'] ) ) {
 
     <div class="row">
 
-        <div class="col">
-
-        <?php if (learndash_user_get_enrolled_courses(get_current_user_id())): 
-           
-            $tab_type = "nav-tabs";
-            if ( wp_is_mobile() ) {
-                $tab_type = "nav-pills";
-            }
+        <?php 
+        $query = new WP_Query(array(
+            'post_type' => 'product',
+            'post_status' => 'publish',
+            'posts_per_page' => -1,
+            'order' => 'ASC',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field' => 'slug', 
+                    'terms' => array( 'courses' ),
+                    'operator' => 'IN'
+                )
+            )
+        ));
         
-        ?>
+        if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-            <ul class="nav <?php echo $tab_type; ?> nav-fill flex-column flex-md-row" id="myTab" role="tablist">
-                <li class="nav-item flex-sm-fill text-md-center">
-                    <a class="nav-link active" id="allcourses-tab" data-bs-toggle="tab" data-bs-target="#allcourses-tab-pane" type="button" role="tab" aria-controls="allcourses-tab-pane" aria-selected="true">All Courses</a>
-                </li>
-                <li class="nav-item flex-sm-fill text-md-center">
-                    <a class="nav-link" id="mycourses-tab" data-bs-toggle="tab" data-bs-target="#mycourses-tab-pane" type="button" role="tab" aria-controls="mycourses-tab-pane" aria-selected="false">My Courses</a>
-                </li>
-            </ul>
+            <div class="woocommerce item-listing col-md-6 col-lg-4 p-2 my-1">
 
-            <div class="tab-content pt-4 pt-xxl-5" id="myTabContent">
-                <div class="tab-pane fade p-lg-2 show active" id="allcourses-tab-pane" role="tabpanel" aria-labelledby="allcourses-tab" tabindex="0">
-                    <?php require get_stylesheet_directory() . '/blocks/ce-courses/template-parts/content-coursesloop.php'; ?>
-                </div>
-                <div class="tab-pane fade p-lg-2" id="mycourses-tab-pane" role="tabpanel" aria-labelledby="mycourses-tab" tabindex="0">
-                    <div class="px-3">
-                        <?php the_field('my_courses'); /* had to output the shortcode via an ACF WYSIWYG field, or else Learndash styles would not load */ ?>
+                <div class="card h-100">
+                    <?php 
+ 
+                    $image = get_field('card_image', get_the_ID());
+                    if( !empty( $image ) ) { ?>
+                        <a href="<?php the_permalink();?>"><img src="<?php echo esc_url($image['url']); ?>" class="card-img-top" alt="<?php echo esc_attr($image['alt']); ?>" /></a>
+                        <?php } else { ?>
+                            <a href="<?php the_permalink();?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/thumbnail-scifi.jpg" class="card-img-top" alt="Science Fiction Illustration"></a>
+                        <?php } ?>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h5>
+                            <p class="card-text"><small class="text-muted"><?php ce_courseloop_instructors(get_the_ID()); ?></small></p>
+                            <p class="card-text card_course_start">
+                                <?php if ( get_field('course_type', get_the_ID()) == "Live Course" ) { echo '<small class="text-muted">' . the_field('course_duration', get_the_ID()) . 's </small><span class="badge bg-secondary ms-2 mt-1">Live</span>';} ?>
+                            </p>
+                            <?php the_excerpt(); ?>
+
+                        </div>
+                        <div class="card-footer bg-transparent text-muted border-top-0">
+                            <div class="d-grid pt-2">
+                                <a href="<?php the_permalink();?>" class="btn btn-primary btn-block border-0 mb-2">Learn More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        <?php else: ?>
-
-            <?php require get_stylesheet_directory() . '/blocks/ce-courses/template-parts/content-coursesloop.php';
-
-        endif; ?>
-
-        </div> <!-- col -->
+            <?php endwhile; endif; ?>
+            <?php wp_reset_postdata(); ?>
 
      </div> <!-- row -->
 
