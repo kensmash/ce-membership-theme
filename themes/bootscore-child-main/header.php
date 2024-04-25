@@ -73,17 +73,43 @@
               </div>
               <div class="offcanvas-body justify-content-xl-center">
 
+              <?php if (learndash_user_get_enrolled_courses(get_current_user_id())) {
+                //if user has purchased courses
+                  wp_nav_menu(array(
+                    'menu'           => 'Learndash Courses Links',
+                    'container'      => false,
+                    'menu_class'     => '',
+                    'fallback_cb'    => '__return_false',
+                    'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-lg-0 %2$s">%3$s</ul>',
+                    'depth'          => 2,
+                    'walker'         => new bootstrap_5_wp_nav_menu_walker()
+                  ));
+
+              } else {
+
+                wp_nav_menu(array(
+                  'menu'           => 'Courses Links',
+                  'container'      => false,
+                  'menu_class'     => '',
+                  'fallback_cb'    => '__return_false',
+                  'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-lg-0 %2$s">%3$s</ul>',
+                  'depth'          => 2,
+                  'walker'         => new bootstrap_5_wp_nav_menu_walker()
+                ));
+
+              } ?>
+
                 <!-- Bootstrap 5 Nav Walker Main Menu -->
                 <?php
-              wp_nav_menu(array(
-                'theme_location' => 'main-menu',
-                'container'      => false,
-                'menu_class'     => '',
-                'fallback_cb'    => '__return_false',
-                'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-xl-0 %2$s">%3$s</ul>',
-                'depth'          => 2,
-                'walker'         => new bootstrap_5_wp_nav_menu_walker()
-              ));
+                wp_nav_menu(array(
+                  'theme_location' => 'main-menu',
+                  'container'      => false,
+                  'menu_class'     => '',
+                  'fallback_cb'    => '__return_false',
+                  'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-xl-0 %2$s">%3$s</ul>',
+                  'depth'          => 2,
+                  'walker'         => new bootstrap_5_wp_nav_menu_walker()
+                ));
               ?>
 
                 <?php 
