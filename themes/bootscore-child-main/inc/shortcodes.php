@@ -488,8 +488,8 @@ function get_bundled_courses($atts) {
         $output .= '<div class="container p-0 mb-3">';
         $output .= '<div class="row">';
         $output .= '<div class="col-12 my-2">';
-        $output .= '<h4>Included in the Bundle</h4>';
-        $output .= '</div">';
+        $output .= '<h4>Included in the Bundle:</h4>';
+        $output .= '</div>';
         // Loop through posts
         while ( $query->have_posts() ) {
 
