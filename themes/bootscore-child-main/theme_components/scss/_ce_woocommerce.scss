@@ -75,19 +75,18 @@
     background-color: #00bff3;
   }
   
-  /* up sells cross sells */
-  .up-sells h2,
-  .cross-sells h2,
-  .related h2 {
-    margin-bottom: 1em;
-  }
-  
+ 
   .related {
     clear: both;
     margin-top: 0.5em;
   }
   
   /* course bundle offer stuff */
+
+  .bundle-course-excerpt {
+    font-size: .7em;
+  }
+
   .course-bundle {
     clear: both;
   }
@@ -112,6 +111,7 @@
   /*--------------------------------------------------------------
   # WooCommerce Archive Pages
   --------------------------------------------------------------*/
+
   /* make sale badge round */
   .woocommerce span.onsale {
     padding: 0;
