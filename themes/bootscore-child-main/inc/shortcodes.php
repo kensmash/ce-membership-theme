@@ -488,7 +488,7 @@ function get_bundled_courses($atts) {
         $output .= '<div class="container p-0 mb-3">';
         $output .= '<div class="row">';
         $output .= '<div class="col-12 my-2">';
-        $output .= '<h4>Included in the Bundle:</h4>';
+        $output .= '<h4 class="mb-0">Included in the Bundle:</h4>';
         $output .= '</div>';
         // Loop through posts
         while ( $query->have_posts() ) {
@@ -499,14 +499,14 @@ function get_bundled_courses($atts) {
             $output .= '<div class="col-12 my-2">';
             $output .= '<div class="card h-100">';
             $output .= '<div class="row g-0">';
-            $output .= '<div class="col-3">';
+            $output .= '<div class="col-1">';
             $output .= '<a href="'. get_the_permalink() .'">' . get_the_post_thumbnail($post->ID, 'thumbnail', array( 'class' => 'rounded-left' )) . '</a>';
             $output .= '</div">';
             $output .= '</div>';
-            $output .= '<div class="col-9">';
-            $output .= '<div class="card-body py-2 ps-3 pe-2">';
+            $output .= '<div class="col-11">';
+            $output .= '<div class="card-body py-2 ps-3 pe-2 d-flex h-100 align-items-center">';
             $output .= '<h5 class="card-title"><a href="'. get_the_permalink() .'">' . get_the_title() . '</a></h5>';
-            $output .= '<p class="text-secondary bundle-course-excerpt">' . get_the_excerpt() . '</p>';
+            //$output .= '<p class="text-secondary bundle-course-excerpt">' . get_the_excerpt() . '</p>';
             $output .= '</div>';
             $output .= '</div>';
             $output .= '</div>';
