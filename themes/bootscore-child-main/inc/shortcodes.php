@@ -424,9 +424,6 @@ function course_requirements($atts) {
         $output .= '</ul>'; 
     }
         
-
-
-
 	// Return your shortcode output
     return  $output;
 }
@@ -448,3 +445,87 @@ add_shortcode( 'requirements', 'course_requirements' );
 }
 
 add_shortcode( 'user-agreement', 'user_agreement' );
+
+
+/**
+ * Bundled Courses Shortcode for WooCommerce
+ * Usage [bundled_courses tag="bundle-intro-to-coloring"]
+ */
+function get_bundled_courses($atts) {
+    global $post;
+    /* https://wpexplorer-themes.com/total/snippets/simple-custom-shortcode-displaying-posts/ */
+  
+    $atts = shortcode_atts( array('tag' => 'bundle-intro-to-coloring'), $atts, 'get_bundled_courses' );
+
+	// Extract shortcode atributes
+    extract( $atts );
+    
+    // Define output var
+	$output = '';
+         
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => 10,
+        'post_status'  => 'publish',
+        'order' => 'ASC',
+        'tax_query'           => array(
+            // Product tag filter
+            array(
+                'taxonomy' => 'product_tag',
+                'terms'    => array($tag),
+                'field'    => 'slug',
+            ),
+        ),
+    );
+
+    $query = new WP_Query( $args );
+
+    // Add content if we found posts via our query
+    if ( $query->have_posts() ) {
+
+        // Open div wrapper around loop
+    
+        $output .= '<div class="container p-0 mb-3">';
+        $output .= '<div class="row">';
+        $output .= '<div class="col-12 my-2">';
+        $output .= '<h4>Bundled Courses</h4>';
+        $output .= '</div">';
+        // Loop through posts
+        while ( $query->have_posts() ) {
+
+            // Sets up post data so you can use functions like get_the_title(), get_permalink(), etc
+            $query->the_post();
+  
+            $output .= '<div class="col-12 my-2">';
+            $output .= '<div class="card h-100">';
+            $output .= '<div class="row g-0">';
+            $output .= '<div class="col-3">';
+            $output .= '<a href="'. get_the_permalink() .'">' . get_the_post_thumbnail($post->ID, 'thumbnail', array( 'class' => 'rounded-left' )) . '</a>';
+            $output .= '</div">';
+            $output .= '</div>';
+            $output .= '<div class="col-9">';
+            $output .= '<div class="card-body p-2">';
+            $output .= '<h5 class="card-title"><a href="'. get_the_permalink() .'">' . get_the_title() . '</a></h5>';
+            $output .= '<p>' . get_the_excerpt() . '</p>';
+            $output .= '</div>';
+            $output .= '</div>';
+            $output .= '</div>';
+            $output .= '</div>';
+            $output .= '</div>';
+        }
+
+        // Close div wrapper around loop
+        $output .= '</div>';
+        $output .= '</div>';
+
+        // Restore data
+        wp_reset_postdata();
+
+    }
+
+    // Return your shortcode output
+    return $output;
+    
+}
+
+add_shortcode( 'bundled_courses', 'get_bundled_courses' );
