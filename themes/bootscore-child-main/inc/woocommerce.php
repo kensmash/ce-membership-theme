@@ -91,6 +91,7 @@ function woo_related_products_limit() {
 	  $args['posts_per_page'] = 6;
 	  return $args;
   }
+
   add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
 	function jk_related_products_args( $args ) {
 	  $args['posts_per_page'] = 4; // 4 related products
@@ -108,7 +109,7 @@ function woo_related_products_limit() {
  * *https://wordpress.org/support/topic/add-content-under-single-product-title/
  */ 
 
- add_action( 'woocommerce_before_single_product', 'display_courses_meta', 5 );
+ /* add_action( 'woocommerce_before_single_product', 'display_courses_meta', 5 );
  function display_courses_meta(){
 	 $content = "";
  
@@ -117,7 +118,7 @@ function woo_related_products_limit() {
  } 
  
 	return $content;
- }
+ } */
  
 
 /**
@@ -297,7 +298,6 @@ if( !is_admin() ) {
 		return $link;
 	}, 30, 2 );
 }
-
 
 //https://stackoverflow.com/questions/54975625/exclude-a-product-category-from-woocommerce-related-products
 add_filter( 'woocommerce_related_products', 'exclude_product_category_from_related_products', 10, 3 );

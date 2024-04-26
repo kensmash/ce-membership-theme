@@ -504,9 +504,9 @@ function get_bundled_courses($atts) {
             $output .= '</div">';
             $output .= '</div>';
             $output .= '<div class="col-11">';
-            $output .= '<div class="card-body py-2 ps-3 pe-2 d-flex h-100 align-items-center">';
+            $output .= '<div class="card-body py-2 ps-3 pe-2">';
             $output .= '<h5 class="card-title"><a href="'. get_the_permalink() .'">' . get_the_title() . '</a></h5>';
-            //$output .= '<p class="text-secondary bundle-course-excerpt">' . get_the_excerpt() . '</p>';
+            $output .= '<p class="text-secondary bundle-course-excerpt">' . get_the_excerpt() . '</p>';
             $output .= '</div>';
             $output .= '</div>';
             $output .= '</div>';
