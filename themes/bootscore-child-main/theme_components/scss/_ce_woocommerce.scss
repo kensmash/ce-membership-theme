@@ -11,9 +11,11 @@
   }
 
   /* hide quantity field on single product page */
-  .cart { 
-    .quantity {
-      display: none;
+  .product_cat-courses, .product_tag-mentoring {
+    .cart { 
+      .quantity {
+        display: none;
+      }
     }
   }
 
