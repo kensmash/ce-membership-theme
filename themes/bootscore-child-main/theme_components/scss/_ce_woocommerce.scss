@@ -24,6 +24,14 @@
     padding-bottom: 1em;
   }
 
+  /* reduce awfule spacing on woo product variations label text */
+  .variations {
+    label {
+      line-height: 1.2;
+      padding-right: .5em;
+    }  
+  }
+
   /*fix too much spacing in layout */
   @media only screen and (min-width: 768px) {
    /* also fix ipad layout here */

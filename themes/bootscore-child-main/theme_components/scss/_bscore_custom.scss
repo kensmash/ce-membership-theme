@@ -279,10 +279,10 @@ hr {
 }
 
 .footer-logo {
-    max-width: 250px;
+    max-width: 250px !important;
 
     @media only screen and (min-width: 1200px) {
-        max-width: 300px;
+        max-width: 300px !important;
     }
 }
 

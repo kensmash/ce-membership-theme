@@ -79,14 +79,14 @@ add_shortcode( 'mentors-mentors', 'mentors_tab_mentors' );
  * Usage [critique-reviewers]
  */
 
-function reviewers_tab_reviwers() {
+function reviewers_tab_reviewers() {
     global $post;
     // Define output var
 	$output = '';
          
     $args = array(
         'post_type' => 'staff',
-        'posts_per_page' => 5,
+        'posts_per_page' => 8,
         'order' => 'ASC',
         'meta_query' => array(
             array(
@@ -141,7 +141,7 @@ function reviewers_tab_reviwers() {
     return  $output;
 }
 
-add_shortcode( 'critique-reviewers', 'reviewers_tab_reviwers' );
+add_shortcode( 'critique-reviewers', 'reviewers_tab_reviewers' );
 
 /**
  * Workshop page, list Staff
@@ -568,7 +568,7 @@ function get_bundled_courses($atts) {
             $output .= '<div class="col-12 my-2">';
             $output .= '<div class="card h-100">';
             $output .= '<div class="row g-0">';
-            $output .= '<div class="col-1">';
+            $output .= '<div class="col-1 d-none d-lg-flex">';
             $output .= '<a href="'. get_the_permalink() .'">' . get_the_post_thumbnail($post->ID, 'thumbnail', array( 'class' => 'rounded-left' )) . '</a>';
             $output .= '</div">';
             $output .= '</div>';
