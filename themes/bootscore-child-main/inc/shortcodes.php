@@ -7,8 +7,8 @@
 
  /**
  * Mentors page, list Mentors
+ * Usage [mentors-mentors]
  */
-
 
 function mentors_tab_mentors() {
     global $post;
@@ -48,10 +48,10 @@ function mentors_tab_mentors() {
             // This is the output for your entry so what you want to do for each post.
             $output .= '<div class="card mb-3 border-0">';
             $output .= '<div class="row g-0">';
-            $output .= '<div class="col-md-4">';
-            $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'img-fluid rounded-start' ));
+            $output .= '<div class="col-md-3">';
+            $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'img-fluid rounded-start mx-auto d-block' ));
             $output .= '</div>';
-            $output .= '<div class="col-md-8">';
+            $output .= '<div class="col-md-9">';
             $output .= '<div class="card-body">';
             $output .= '<p class="testimonial-title">' . get_the_title() . '</p>';
             $output .= get_field('mentor_description');
@@ -73,6 +73,75 @@ function mentors_tab_mentors() {
 }
 
 add_shortcode( 'mentors-mentors', 'mentors_tab_mentors' );
+
+/**
+ * Pro Script Critique page, list Reviewers
+ * Usage [critique-reviewers]
+ */
+
+function reviewers_tab_reviwers() {
+    global $post;
+    // Define output var
+	$output = '';
+         
+    $args = array(
+        'post_type' => 'staff',
+        'posts_per_page' => 5,
+        'order' => 'ASC',
+        'meta_query' => array(
+            array(
+                'key'   => 'reviewer',
+                'value' => '1',
+            ),
+            /* array(
+                'key'   => 'active',
+                'value' => '1',
+            ) */
+        )
+        );
+
+    $query = new WP_Query( $args );
+
+	// Add content if we found posts via our query
+	if ( $query->have_posts() ) {
+
+		// Open div wrapper around loop
+		$output .= '<div>';
+
+		// Loop through posts
+		while ( $query->have_posts() ) {
+
+			// Sets up post data so you can use functions like get_the_title(), get_permalink(), etc
+			$query->the_post();
+
+            // This is the output for your entry so what you want to do for each post.
+            $output .= '<div class="card mb-3 border-0">';
+            $output .= '<div class="row g-0">';
+            $output .= '<div class="col-md-3">';
+            $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'img-fluid rounded-start mx-auto d-block' ));
+            $output .= '</div>';
+            $output .= '<div class="col-md-9">';
+            $output .= '<div class="card-body">';
+            $output .= '<p class="testimonial-title">' . get_the_title() . '</p>';
+            $output .= get_field('reviewer_description');
+            $output .= '</div></div></div></div>';
+            if ($query->current_post +1 < $query->post_count) { $output .= "<hr />"; }
+ 
+		}
+
+		// Close div wrapper around loop
+		$output .= '</div>';
+
+		// Restore data
+		wp_reset_postdata();
+
+	}
+
+	// Return your shortcode output
+    return  $output;
+}
+
+add_shortcode( 'critique-reviewers', 'reviewers_tab_reviwers' );
 
 /**
  * Workshop page, list Staff
