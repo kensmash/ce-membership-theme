@@ -98,7 +98,8 @@ if ( ! empty( $block['align'] ) ) {
                 <div class="ce-slide-funnels-content">
                     <p class="fw-bold"><?php echo $service_funnel['title']; ?></p>
                     <p><?php echo $service_funnel['description']; ?></p>
-                    <a class="btn btn-success mb-4" href="<?php echo esc_url($service_funnel['button-link']); ?>" role="button"><?php echo $service_funnel['button-text']; ?></a>
+                    
+                    <a class="btn btn-success mb-4" href="<?php echo esc_url($service_funnel['button-link']['url']); ?>" target="<?php echo $service_funnel['button-link']['target'] ? $service_funnel['button-link']['target'] : '_self'; ?>" role="button"><?php echo $service_funnel['button-text']; ?></a>
                 </div>
                 <?php endforeach; ?>
             </div>
