@@ -49,7 +49,7 @@ function mentors_tab_mentors() {
             $output .= '<div class="card mb-3 border-0">';
             $output .= '<div class="row g-0">';
             $output .= '<div class="col-md-3">';
-            $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'img-fluid rounded-start mx-auto d-block' ));
+            $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'img-fluid rounded mx-auto d-block' ));
             $output .= '</div>';
             $output .= '<div class="col-md-9">';
             $output .= '<div class="card-body">';
@@ -118,7 +118,7 @@ function reviewers_tab_reviwers() {
             $output .= '<div class="card mb-3 border-0">';
             $output .= '<div class="row g-0">';
             $output .= '<div class="col-md-3">';
-            $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'img-fluid rounded-start mx-auto d-block' ));
+            $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'img-fluid rounded mx-auto d-block' ));
             $output .= '</div>';
             $output .= '<div class="col-md-9">';
             $output .= '<div class="card-body">';

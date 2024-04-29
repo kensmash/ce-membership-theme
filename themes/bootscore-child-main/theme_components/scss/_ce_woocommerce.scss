@@ -11,12 +11,17 @@
   }
 
   /* hide quantity field on single product page */
-  .product_cat-courses, .product_tag-mentoring {
+  .product_cat-courses, .product_cat-professional-service {
     .cart { 
       .quantity {
         display: none;
       }
     }
+  }
+
+  /* add spacing between product variation price and add to cart button */
+  .woocommerce-variation-price {
+    padding-bottom: 1em;
   }
 
   /*fix too much spacing in layout */
