@@ -11,9 +11,15 @@
     padding: 6rem 0 14rem !important;
   }
 }
-.hero-block-container .tribe-events-pro-week-day-selector__day-weekday, .hero-block-container .tribe-events-pro-week-day-selector__day-daynum {
+.hero-block-container .tribe-events-widget-events-week {
+  padding-bottom: 0.5rem !important;
+}
+.hero-block-container .tribe-events-pro-week-day-selector__day-weekday, .hero-block-container .tribe-events-pro-week-day-selector__day-daynum, .hero-block-container .tribe-events-pro-week-mobile-events__event-time-separator-text, .hero-block-container .tribe-events-pro-week-mobile-events__event-datetime-wrapper, .hero-block-container .tribe-events-pro-week-mobile-events__event-title-link {
   color: white !important;
 }
 .hero-block-container .tribe-events-c-top-bar__nav-list-date {
   font-size: 0.6em !important;
+}
+.hero-block-container .tribe-events-widget-events-week__view-more {
+  margin-top: 0 !important;
 }
