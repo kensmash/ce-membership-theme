@@ -7,7 +7,7 @@ wp_get_current_user(); ?>
 
 <div class="d-grid gap-2 pt-3">
   <?php if (learndash_user_get_enrolled_courses(get_current_user_id())): ?>
-    <a class="btn btn-primary" href="<?php echo site_url('my-account/my-courses'); ?>">Go to Your Courses</a>
+    <a class="btn btn-primary" href="<?php echo site_url('my-courses'); ?>">Go to Your Courses</a>
   <?php endif; ?>
     <a class="btn btn-success" href="<?php echo site_url('community'); ?>">Get Free Trial</a>
 </div>

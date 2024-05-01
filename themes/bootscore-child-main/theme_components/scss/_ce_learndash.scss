@@ -47,6 +47,15 @@
     border: 1px solid #e2e7ed !important;
 }
 
+/* fix ugliness on mobile */
+.ld-expand-button {
+    max-width: 100% !important;
+
+    @media only screen and (min-width: 768px) {
+        max-width: 120px;
+    }
+}
+
 /*--------------------------------------------------------------
 # Learndash course list styles
 --------------------------------------------------------------*/

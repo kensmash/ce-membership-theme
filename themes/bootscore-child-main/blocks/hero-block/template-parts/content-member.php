@@ -14,7 +14,7 @@
   <?php else: ?>
     <button class="btn btn-primary" type="button">Button</button>
   <?php endif; ?>
-  <a class="btn btn-success" href="<?php echo site_url('my-account/my-courses'); ?>">Go to Your Courses</a>
+  <a class="btn btn-success" href="<?php echo site_url('my-courses'); ?>">Go to Your Courses</a>
 </div>
 
 <p class="mt-4 ms-2"><strong>Member Events</strong></p>
