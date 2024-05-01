@@ -17,7 +17,7 @@ add_filter( 'wp_is_mobile', 'include_ipad_in_mobile_view' );
 // Please edit the address and name below.
 // Change the From address.
 add_filter( 'wp_mail_from', function ( $original_email_address ) {
-    return 'info.comicsexperience.com';
+    return 'info@comicsexperience.com';
 } );
  
 // Change the From name.
