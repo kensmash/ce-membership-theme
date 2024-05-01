@@ -1,9 +1,11 @@
 @import "../_bscore_colors.scss";  // Collecting Bootstrap source from parent-theme
 
-.hero-block-container {
-    padding: 3rem 0 4rem !important;
+.hero-block-content-container {
+    padding: 3rem 1.25rem 4rem !important;
+    background-color: rgba(0, 0, 0, 0.8);
 
     @media only screen and (min-width: 1024px) {
+        background-color: rgba(0, 0, 0, 0);
         padding: 6rem 0 7rem !important;
     }
 
