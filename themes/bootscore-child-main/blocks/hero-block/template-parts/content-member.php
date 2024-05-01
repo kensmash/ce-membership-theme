@@ -6,8 +6,6 @@
 
 <h1>Welcome, <?php echo $current_user->user_firstname; ?>!</h1>
 
-<?php echo do_shortcode('[tribe_this_week]'); ?>
-
 <div class="d-grid gap-2 pt-3">
   <?php if ($pmp_member->name == 'Community Pro'): ?>
     <a class="btn btn-primary" href="<?php echo site_url('forums'); ?>">Go to Forums</a>
@@ -16,3 +14,8 @@
   <?php endif; ?>
   <a class="btn btn-success" href="<?php echo site_url('my-account/my-courses'); ?>">Go to Your Courses</a>
 </div>
+
+<p class="mt-3 ms-2"><strong>Member Events</strong></p>
+
+<?php echo do_shortcode('[tribe_this_week]'); ?>
+

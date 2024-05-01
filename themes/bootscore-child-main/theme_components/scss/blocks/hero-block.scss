@@ -1,3 +1,5 @@
+@import "../_bscore_colors.scss";  // Collecting Bootstrap source from parent-theme
+
 .hero-block-container {
     padding: 3rem 0 5rem !important;
 
@@ -18,11 +20,21 @@
     }
 
     .tribe-events-c-top-bar__nav-list-date {
-        font-size: .6em !important;
+        font-size: .5em !important;
     }
 
     .tribe-events-widget-events-week__view-more {
         margin-top: .0 !important;
+    }
+
+    .tribe-events-widget-events-week__view-more-link {
+        color: $ce-iceblue !important;
+    }
+
+    .tribe-common-anchor-thin {
+        &:hover {
+            text-decoration: none !important;
+        }
     }
 }
 

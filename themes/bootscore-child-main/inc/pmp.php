@@ -157,9 +157,9 @@ function my_login_redirect( $redirect_to, $request, $user ) {
 add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
 
 /* https://www.paidmembershipspro.com/limit-user-active-sessions/ */
-function my_wp_bouncer_number_simultaneous_logins($num) {
+/* function my_wp_bouncer_number_simultaneous_logins($num) {
 	return 3;
 }
-add_filter('wp_bouncer_number_simultaneous_logins', 'my_wp_bouncer_number_simultaneous_logins');
+add_filter('wp_bouncer_number_simultaneous_logins', 'my_wp_bouncer_number_simultaneous_logins'); */
 
 
