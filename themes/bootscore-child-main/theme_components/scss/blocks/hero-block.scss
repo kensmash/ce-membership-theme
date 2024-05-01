@@ -31,10 +31,8 @@
         color: $ce-iceblue !important;
     }
 
-    .tribe-common-anchor-thin {
-        &:hover {
-            text-decoration: none !important;
-        }
+    .tribe-common-anchor-thin:hover {
+        border-bottom: 0px !important;
     }
 }
 

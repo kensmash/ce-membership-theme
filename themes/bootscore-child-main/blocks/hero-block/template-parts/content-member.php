@@ -15,7 +15,7 @@
   <a class="btn btn-success" href="<?php echo site_url('my-account/my-courses'); ?>">Go to Your Courses</a>
 </div>
 
-<p class="mt-3 ms-2"><strong>Member Events</strong></p>
+<p class="mt-4 ms-2"><strong>Member Events</strong></p>
 
 <?php echo do_shortcode('[tribe_this_week]'); ?>
 
