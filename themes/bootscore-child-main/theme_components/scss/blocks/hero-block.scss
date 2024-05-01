@@ -29,9 +29,14 @@
 
     .tribe-events-widget-events-week__view-more-link {
         color: $ce-iceblue !important;
+        transition: all .25s !important;
+
+        &:hover {
+            color: white !important;
+        }
     }
 
-    .tribe-common-anchor-thin:hover {
+    .tribe-common-anchor-thin:hover, .tribe-common-anchor-thin:active, .tribe-common-anchor-thin:focus  {
         border-bottom: 0px !important;
     }
 }

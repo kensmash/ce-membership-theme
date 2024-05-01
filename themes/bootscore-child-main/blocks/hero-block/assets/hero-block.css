@@ -28,7 +28,11 @@
 }
 .hero-block-container .tribe-events-widget-events-week__view-more-link {
   color: #6dcefb !important;
+  transition: all 0.25s !important;
 }
-.hero-block-container .tribe-common-anchor-thin:hover {
+.hero-block-container .tribe-events-widget-events-week__view-more-link:hover {
+  color: white !important;
+}
+.hero-block-container .tribe-common-anchor-thin:hover, .hero-block-container .tribe-common-anchor-thin:active, .hero-block-container .tribe-common-anchor-thin:focus {
   border-bottom: 0px !important;
 }
