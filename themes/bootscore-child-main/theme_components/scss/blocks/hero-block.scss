@@ -8,7 +8,7 @@
     }
 
     @media only screen and (min-width: 1350px) {
-        padding: 6rem 0 14rem !important;
+        padding: 6rem 0 10rem !important;
     }
 
     .tribe-events-widget-events-week {
@@ -34,6 +34,14 @@
         &:hover {
             color: white !important;
         }
+    }
+
+    .tribe-events-pro-week-day-selector__day--active {
+        border-color: $ce-iceblue !important;
+    }
+
+    .tribe-events-pro-week-day-selector__events-icon {
+        background-color: $ce-iceblue !important;
     }
 
     .tribe-common-anchor-thin:hover, .tribe-common-anchor-thin:active, .tribe-common-anchor-thin:focus  {

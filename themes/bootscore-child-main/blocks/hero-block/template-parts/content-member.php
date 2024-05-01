@@ -6,7 +6,9 @@
 
 <h1>Welcome, <?php echo $current_user->user_firstname; ?>!</h1>
 
-<div class="d-grid gap-2 pt-3">
+<p>We&rsquo;re glad to have you back.</p>
+
+<div class="d-grid gap-2 pt-2">
   <?php if ($pmp_member->name == 'Community Pro'): ?>
     <a class="btn btn-primary" href="<?php echo site_url('forums'); ?>">Go to Forums</a>
   <?php else: ?>

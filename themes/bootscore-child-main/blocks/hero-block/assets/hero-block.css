@@ -11,7 +11,7 @@
 }
 @media only screen and (min-width: 1350px) {
   .hero-block-container {
-    padding: 6rem 0 14rem !important;
+    padding: 6rem 0 10rem !important;
   }
 }
 .hero-block-container .tribe-events-widget-events-week {
@@ -32,6 +32,12 @@
 }
 .hero-block-container .tribe-events-widget-events-week__view-more-link:hover {
   color: white !important;
+}
+.hero-block-container .tribe-events-pro-week-day-selector__day--active {
+  border-color: #6dcefb !important;
+}
+.hero-block-container .tribe-events-pro-week-day-selector__events-icon {
+  background-color: #6dcefb !important;
 }
 .hero-block-container .tribe-common-anchor-thin:hover, .hero-block-container .tribe-common-anchor-thin:active, .hero-block-container .tribe-common-anchor-thin:focus {
   border-bottom: 0px !important;
