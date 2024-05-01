@@ -31,7 +31,8 @@ if ( $background_color || $text_color ) {
 }
 
 // Build a valid style attribute for background and text colors.
-$styles = array( 'background-color: ' . $background_color, 'background-image: ' . $background_image, 'color: ' . $text_color );
+//$styles = array( 'background-color: ' . $background_color, 'background-image: ' . $background_image, 'color: ' . $text_color );
+$styles = array( 'background-color: ' . $background_color, wp_is_mobile() ? '' : 'background-image: ' . $background_image, '; color: ' . $text_color );
 $style  = implode( '; ', $styles );
 ?>
 
