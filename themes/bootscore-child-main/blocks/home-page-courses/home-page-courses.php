@@ -32,7 +32,7 @@ if ( ! empty( $block['align'] ) ) {
 
             <div class="col pt-4 pt-xl-5 pb-3">
 
-                <?php the_field('homepage_courses'); ?>
+                <?php wp_kses_post(the_field('homepage_courses')); ?>
 
             </div> <!-- col -->
 

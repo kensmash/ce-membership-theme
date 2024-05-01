@@ -115,7 +115,7 @@
 
     <div class="tab-content pt-4" id="myTabContent">
         <div class="tab-pane fade show active p-1 py-md-2 px-md-1" id="details" role="tabpanel" aria-labelledby="details-tab">
-            <?php the_field('details_tab'); ?>
+            <?php wp_kses_post(the_field('details_tab')); ?>
         </div>
 
         <div class="instructor tab-pane fade p-1 p-md-3" id="instructor" role="tabpanel" aria-labelledby="instructor-tab">
@@ -141,12 +141,12 @@
             <?php endif; ?>
         </div>
         <?php if( get_field('faqs_tab') ) { ?>
-        <div class="tab-pane fade p-1 p-md-3" id="faqs" role="tabpanel" aria-labelledby="faqs-tab"> <?php the_field('faqs_tab'); ?></div>
+        <div class="tab-pane fade p-1 p-md-3" id="faqs" role="tabpanel" aria-labelledby="faqs-tab"> <?php wp_kses_post(the_field('faqs_tab')); ?></div>
         <?php } ?>
 
 
         <div class="tab-pane fade p-1 p-md-3" id="requirements" role="tabpanel" aria-labelledby="requirements-tab">
-            <?php the_field('requirements_tab'); ?>
+            <?php wp_kses_post(the_field('requirements_tab')); ?>
             <?php 
                 if (get_field('course_type') !== "Digital Course"):
                     $endOfDay = strtotime("tomorrow") - 1;

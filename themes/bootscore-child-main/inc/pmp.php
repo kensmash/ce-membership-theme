@@ -66,6 +66,7 @@ function my_pmpro_move_required_asterisk_span() {
 }
 add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
 
+/* https://www.paidmembershipspro.com/strike-through-pricing-woocommerce/ */
 /**
  * Add strike through pricing if the membership pricing is available for currrent user viewing Woo store.
  * 
