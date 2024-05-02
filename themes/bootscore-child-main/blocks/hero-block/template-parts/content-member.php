@@ -19,5 +19,9 @@
 
 <p class="mt-4 ms-2"><strong>Member Events</strong></p>
 
-<?php echo do_shortcode('[tribe_this_week]'); ?>
+<?php 
+  if ($pmp_member->name == 'Community Pro'): 
+    echo do_shortcode('[tribe_this_week]'); 
+  endif; 
+?>
 
