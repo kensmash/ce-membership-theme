@@ -124,10 +124,10 @@
                   <a class="btn btn-success ms-lg-3 mt-3 mt-lg-0" href="<?php echo site_url('community'); ?>" role="button">Community Signup</a>
                 </div>
                 <?php 
-              } else { 
-                 //we have a logged in member, show them a custom membership menu
+              } else if ($pmp_member->name == 'Community Pro') { 
+                 //we have a Community Pro member, show them a custom membership menu
                   wp_nav_menu(array(
-                    'menu'           => $pmp_member->name == 'Community Pro' ? 'Tier 2 Community Links' : 'Tier 1 Community Links',
+                    'menu'           => 'Tier 2 Community Links',
                     'container'      => false,
                     'menu_class'     => '',
                     'fallback_cb'    => '__return_false',
