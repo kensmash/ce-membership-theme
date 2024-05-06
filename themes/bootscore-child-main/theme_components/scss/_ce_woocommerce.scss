@@ -213,6 +213,15 @@
       display: none;
       }
 
+      /* hide shipping message when user adds item to cart, not applicable for us */
+      .widget_shopping_cart_content {
+        .cart-footer {
+          .shipping-text {
+            display: none;
+          }
+        }
+      }
+
   /*--------------------------------------------------------------
   # WooCommerce Checkout Page
   --------------------------------------------------------------*/
