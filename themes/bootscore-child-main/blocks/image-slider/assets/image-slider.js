@@ -2,7 +2,7 @@
 (function($){
     
     var initializeBlock = function( $block ) {
-        $(".ce-services-cards").slick({
+        $(".ce-images-slider-cards").slick({
           slidesToShow: 2,
           slidesToScroll: 1,
           mobileFirst: true,
@@ -15,7 +15,7 @@
             {
               breakpoint: 768,
               settings: {
-                arrows: false,
+                slidesToShow: 4,
               },
             },
           ],

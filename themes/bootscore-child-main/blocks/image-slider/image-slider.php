@@ -39,7 +39,7 @@ if ( ! empty( $block['align'] ) ) {
             
             ?>
 
-                <div class="card ce-images-slider-card">
+                <div class="card ce-images-slider-card-slide">
                  <?php echo wp_get_attachment_image( $image, 'full' ); ?>
                 </div>
 

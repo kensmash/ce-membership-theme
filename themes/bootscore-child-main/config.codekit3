@@ -933,6 +933,18 @@
       "oAP" : "\/blocks\/image-slider\/assets\/image-slider.asset.php",
       "oF" : 0
     },
+    "\/blocks\/image-slider\/assets\/image-slider.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/image-slider\/assets\/image-slider-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/blocks\/image-slider\/assets\/image-slider.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -1559,6 +1571,21 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/blocks\/hero-block\/assets\/hero-block.css",
+      "oF" : 2,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/theme_components\/scss\/blocks\/image-slider.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/image-slider\/assets\/image-slider.css",
       "oF" : 2,
       "oS" : 0,
       "pg" : 0,

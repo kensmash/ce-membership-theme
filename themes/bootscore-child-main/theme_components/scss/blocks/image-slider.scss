@@ -1,0 +1,74 @@
+@import "../_bscore_colors.scss";  // Collecting Bootstrap source from parent-theme
+
+//equal height slider divs
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit !important;
+}
+
+/*--------------------------------------------------------------
+# DEFAULT SLICK STYLES
+--------------------------------------------------------------*/
+.ce-images-slider-cards {
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 1;
+        color: black;
+        font-size: 22px;
+        cursor: pointer;
+        background: transparent;
+        outline: none !important;
+        transition: all 0.25s ease-in;
+    }
+    
+    .slick-arrow:hover,
+    .slick-arrow:focus {
+        color: $ce-blue;
+    }
+
+    .slick-prev {
+        left: -8px;
+    }
+    
+    .slick-next {
+        right: -8px;
+    }
+
+}
+
+//slider styles
+
+.ce-images-slider-card {
+    transition: all .2s ease-in-out;
+
+    &.slick-current {
+        .ce-images-slider-card-slide {
+            box-shadow: 14px 17px 18px -12px rgba(0,0,0,0.1);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+       
+        @media only screen and (min-width: 1024px) {
+            transform: scale(1.03);
+        }
+    }
+}
+
+.ce-service-cards-slide-card {
+    min-height: 300px;
+}
+
+
+
+
+
+
