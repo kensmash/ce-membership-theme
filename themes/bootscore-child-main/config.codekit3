@@ -925,6 +925,41 @@
       "oAP" : "\/blocks\/home-page-courses\/home-page-courses.php",
       "oF" : 0
     },
+    "\/blocks\/image-slider\/assets\/image-slider.asset.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/image-slider\/assets\/image-slider.asset.php",
+      "oF" : 0
+    },
+    "\/blocks\/image-slider\/assets\/image-slider.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/blocks\/image-slider\/assets\/image-slider-min.js",
+      "oF" : 1,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/blocks\/image-slider\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/image-slider\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/image-slider\/image-slider.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/image-slider\/image-slider.php",
+      "oF" : 0
+    },
     "\/blocks\/professional-services\/block.json" : {
       "ft" : 524288,
       "oA" : 1,
