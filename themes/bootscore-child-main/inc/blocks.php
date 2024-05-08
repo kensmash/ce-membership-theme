@@ -24,6 +24,7 @@ function ce_register_acf_blocks() {
     register_block_type( __DIR__ . '/../blocks/creative-services' );
     register_block_type( __DIR__ . '/../blocks/hero-block' );
     register_block_type( __DIR__ . '/../blocks/home-page-courses' );
+    register_block_type( __DIR__ . '/../blocks/image-slider' );
 }
 
 // Here we call our ce_register_acf_block() function on init.

@@ -7,6 +7,7 @@
           slidesToScroll: 1,
           mobileFirst: true,
           focusOnSelect: true,
+          asNavFor: '.ce-images-slider-card-modal',
           prevArrow:
           "<span class='slick-prev'><i class='fa-solid fa-chevron-left' aria-hidden='true'></i></span>",
           nextArrow:
@@ -21,7 +22,20 @@
           ],
         });
 
+        $('.ce-images-slider-card-modal').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          mobileFirst: true,
+          asNavFor: '.ce-images-slider-cards',
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true,
+          arrows: false,
+        });
+
     }
+
+    /* https://gist.github.com/holisticnetworking/23a9d10b8f09dce63cc71fa3c6cd1048 */
 
     // Initialize each block on page load (front end).
     $(document).ready(function(){
