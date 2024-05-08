@@ -28,7 +28,6 @@
           mobileFirst: true,
           asNavFor: '.ce-images-slider-cards',
           dots: false,
-          centerMode: true,
           focusOnSelect: true,
           arrows: false,
         });
