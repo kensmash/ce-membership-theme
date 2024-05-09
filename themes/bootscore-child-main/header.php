@@ -90,7 +90,7 @@
                   //else just show Courses link
               } else { ?>
                 
-                <div class="top-nav-widget-2 d-lg-flex align-items-lg-center my-2 mt-lg-0 ms-xl-2">
+                <div class="top-nav-widget-2 d-lg-flex align-items-lg-center my-2 ms-xl-2">
                   <a href="<?php echo site_url('courses'); ?>">Courses</a>
                 </div>
 
@@ -129,7 +129,7 @@
                }
             } else { 
               //no logged in user, show courses, main menu, signup and login buttons ?>
-                <div class="top-nav-widget-2 d-lg-flex align-items-lg-center my-2 mt-lg-0 ms-xl-2">
+                <div class="top-nav-widget-2 d-lg-flex align-items-lg-center my-2 ms-xl-2">
                   <a href="<?php echo site_url('courses'); ?>">Courses</a>
                 </div>
                 
