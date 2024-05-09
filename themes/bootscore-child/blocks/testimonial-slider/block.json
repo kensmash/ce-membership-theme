@@ -1,0 +1,17 @@
+{
+    "name": "acf/testimonial-slider",
+    "title": "Testimonial Slider",
+    "description": "A slider block for displaying CE testimonials.",
+    "style": [ "file:./assets/testimonial-slider.css" ],
+    "script": "file:./assets/testimonial-slider.js",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["testimonial", "quote"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "testimonial-slider.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

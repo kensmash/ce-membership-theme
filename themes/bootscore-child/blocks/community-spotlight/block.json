@@ -1,0 +1,17 @@
+{
+    "name": "acf/community-spotlight",
+    "title": "Community Spotlight",
+    "description": "Block to display CE community spotlight items.",
+    "style": [ "file:./assets/community-spotlight-slider.css" ],
+    "script": "file:./assets/community-spotlight-slider.js",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["spotlight"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "community-spotlight.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

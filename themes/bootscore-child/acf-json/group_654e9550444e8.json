@@ -1,0 +1,45 @@
+{
+    "key": "group_654e9550444e8",
+    "title": "Testimonial Options",
+    "fields": [
+        {
+            "key": "field_654e9550a5f07",
+            "label": "Credentials",
+            "name": "credentials",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter testimonial author's industry credentials, if applicable.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "testimonial"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1702156100
+}
