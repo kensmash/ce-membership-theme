@@ -13,6 +13,10 @@
 !/themes/bootscore-child-main/**/
 /themes/bootscore-child-main/assets
 
+!/themes/bootscore-child
+!/themes/bootscore-child/**/
+/themes/bootscore-child/assets
+
 
 !/plugins
 
