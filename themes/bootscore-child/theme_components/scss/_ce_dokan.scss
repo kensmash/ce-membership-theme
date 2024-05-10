@@ -33,3 +33,10 @@
     padding: 1em .5em !important;
     width: 100%;
   }
+
+  /* get rid of mobile become a vendor menu item on my account menu */
+  .woocommerce-MyAccount-content {
+    .dokan-account-migration-lists {
+      display: none !important;
+    }
+  }
