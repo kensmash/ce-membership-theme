@@ -23,12 +23,16 @@ get_header();
 
           <main id="main" class="site-main">
 
-            <div class="entry-header">
-              <?php the_post(); ?>
+          <header class="entry-header">
+              <?php 
+                $post_type = get_post_type( $post->ID );
+                //echo $post_type;
+                the_post(); ?>
               <?php bootscore_category_badge(); ?>
               <h1><?php the_title(); ?></h1>
+              <?php if ($post_type !== "sfwd-courses" && $post_type !== "sfwd-lessons" && $post_type !== "sfwd-topics" && $post_type !== "creative-services"): ?>
               <p class="entry-meta">
-                <small class="text-body-secondary">
+                <small class="text-body-tertiary">
                   <?php
                   bootscore_date();
                   bootscore_author();
@@ -37,7 +41,8 @@ get_header();
                 </small>
               </p>
               <?php bootscore_post_thumbnail(); ?>
-            </div>
+              <?php endif; ?>
+            </header>
 
             <div class="entry-content">
               <?php the_content(); ?>
