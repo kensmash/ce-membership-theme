@@ -1,6 +1,6 @@
 <?php
 /**
- * Testimonial Block template.
+ * Pricing Table Block template.
  *
  * @param array $block The block settings and attributes.
  */
@@ -61,7 +61,7 @@ if ( ! empty( $block['align'] ) ) {
               <li>Pro Critiques on Art and Scripts</li>
               <li>Live Q&A Sessions</li>
               <li>Pro Office Hours</li>
-              <li>Lessons and Q&As Videos</li>
+              <li>Lessons and Q&A Videos</li>
               <li>The Business of Comic Book Publishing e-book</li>
               <li>10% site-wide discount</li>
             </ul>
@@ -83,7 +83,7 @@ if ( ! empty( $block['align'] ) ) {
               <li>Pro Critiques on Art and Scripts</li>
               <li>Live Q&A Sessions</li>
               <li>Pro Office Hours</li>
-              <li>Lessons and Q&As Videos</li>
+              <li>Lessons and Q&A Videos</li>
               <li>The Business of Comic Book Publishing e-book</li>
               <li>10% site-wide discount</li>
               <li><b>Contact us for more info</b></li>
