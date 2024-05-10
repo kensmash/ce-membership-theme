@@ -1249,6 +1249,14 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/single-connection-comic.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/single-connection-comic.php",
+      "oF" : 0
+    },
     "\/single-staff.php" : {
       "cB" : 0,
       "ft" : 8192,
