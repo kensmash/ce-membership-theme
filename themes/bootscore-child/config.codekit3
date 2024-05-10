@@ -1646,8 +1646,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/theme_components\/scss\/blocks\/hero-block.css",
-      "oF" : 0,
+      "oAP" : "\/blocks\/hero-block\/assets\/hero-block.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
