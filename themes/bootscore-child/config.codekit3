@@ -1349,6 +1349,22 @@
       "oAP" : "\/template-parts\/content.php",
       "oF" : 0
     },
+    "\/template-parts\/header\/collapse-search-woocommerce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/header\/collapse-search-woocommerce.php",
+      "oF" : 0
+    },
+    "\/template-parts\/header\/collapse-search.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/header\/collapse-search.php",
+      "oF" : 0
+    },
     "\/template-parts\/header\/main-menu.php" : {
       "cB" : 0,
       "ft" : 8192,

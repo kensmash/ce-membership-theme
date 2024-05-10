@@ -23,6 +23,31 @@ body:not(.single-lesson) {
 }
 
 /*--------------------------------------------------------------
+# Form Elements
+--------------------------------------------------------------*/
+
+//attempt to disable ugly focus ring
+.bootstrap-select .form-control:focus {
+    outline: 0px none #fff !important;
+}
+
+.bootstrap-select .form-control > div.filter-option:focus {
+    outline: 0px none #fff !important;
+}
+
+.bootstrap-select .form-control > div.filter-option > div.filter-option-inner:focus {
+    outline: 0px none #fff !important;
+}
+
+.bootstrap-select .form-control > div.filter-option > div.filter-option-inner > div.filter-option-inner-inner:focus {
+    outline: 0px none #fff !important;
+}
+
+*:focus {
+    box-shadow: none !important;
+}
+
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 
