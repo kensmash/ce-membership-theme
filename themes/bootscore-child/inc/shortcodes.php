@@ -558,7 +558,7 @@ function get_bundled_courses($atts) {
         $output .= '<div class="row">';
         $output .= '<div class="col-12 my-2">';
         $output .= '<h4 class="mb-0">Included in the Bundle:</h4>';
-        $output .= '</div>';
+        $output .= '</div> <!-- col -->';
         // Loop through posts
         while ( $query->have_posts() ) {
 
@@ -566,27 +566,28 @@ function get_bundled_courses($atts) {
             $query->the_post();
   
             $output .= '<div class="col-12 my-2">';
-            $output .= '<div class="card h-100">';
-            $output .= '<div class="row g-0">';
+            $output .= '<div class="card">';
+            $output .= '<div class="container-fluid p-0">';
+            $output .= '<div class="row">';
             $output .= '<div class="col-1 d-none d-lg-flex">';
             $output .= '<a href="'. get_the_permalink() .'">' . get_the_post_thumbnail($post->ID, 'thumbnail', array( 'class' => 'rounded-left' )) . '</a>';
             $output .= '</div">';
-            $output .= '</div>';
-            $output .= '<div class="col-11">';
-            $output .= '<div class="card-body py-2 ps-3 pe-2">';
+            $output .= '<div class="col">';
+            $output .= '<div class="card-body py-2 ps-2 ps-lg-0 pe-2">';
             $output .= '<h5 class="card-title"><a href="'. get_the_permalink() .'">' . get_the_title() . '</a></h5>';
             $output .= '<p class="text-secondary bundle-course-excerpt">' . get_the_excerpt() . '</p>';
-            $output .= '</div>';
-            $output .= '</div>';
-            $output .= '</div>';
-            $output .= '</div>';
-            $output .= '</div>';
+            $output .= '</div> <!-- card-body -->';
+            $output .= '</div> <!-- col -->';
+            $output .= '</div> <!-- row -->';
+            $output .= '</div> <!-- container-fluid -->';
+            $output .= '</div> <!-- card -->';
+            $output .= '</div> <!-- col -->';
         }
 
         // Close div wrapper around loop
-        $output .= '</div>';
-        $output .= '</div>';
-
+        $output .= '</div> <!-- row -->';
+        $output .= '</div> <!-- container -->';
+       
         // Restore data
         wp_reset_postdata();
 

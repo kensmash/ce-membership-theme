@@ -146,7 +146,7 @@ function product_custom_content() {
 			$content = get_template_part( 'template-parts/tabs/tabs', 'courses' );	
 	} else {
 		//else get page tabs
-		$content = get_template_part( 'template-parts/tabs/tabs', 'page' );
+		$content = get_template_part( 'template-parts/tabs/tabs', 'products' );
 	}
     
     return $content;

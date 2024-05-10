@@ -1365,6 +1365,14 @@
       "oAP" : "\/template-parts\/tabs\/tabs-courses.php",
       "oF" : 0
     },
+    "\/template-parts\/tabs\/tabs-products.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/tabs\/tabs-products.php",
+      "oF" : 0
+    },
     "\/theme_components\/js\/global.js" : {
       "bF" : 0,
       "ft" : 64,
