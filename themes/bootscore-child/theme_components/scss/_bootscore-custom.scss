@@ -43,6 +43,7 @@ body:not(.single-lesson) {
     outline: 0px none #fff !important;
 }
 
+/* https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome */
 *:focus {
     box-shadow: none !important;
     outline: none;

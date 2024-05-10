@@ -21,84 +21,109 @@ if ( ! empty( $block['align'] ) ) {
 }
 ?>
 
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+</svg>
+
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" style="">
 
 <section>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card h-100 mb-4 rounded-3 shadow-sm" style="transform: scale(0.95);">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Free</h4>
+            <h4 class="my-0 fw-normal">Community</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+            <h1 class="card-title pricing-card-title">$4.99<small class="text-body-secondary fw-light">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
+              <li>Discord Community access</li>
+              <li>Peer Critiques on Art and Scripts</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+          <div class="card-footer bg-white border-top-0">
+            <a class="btn w-100 btn btn-lg btn-outline-primary" href="#" role="button">Sign up for free</a>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Pro</h4>
+        <div class="card h-100 mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header text-bg-primary border-primary py-3">
+            <h4 class="my-0">Community Pro</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+            <h1 class="card-title pricing-card-title">$29.99<small class="text-body-secondary fw-light">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
+              <li>Discord Community access</li>
+              <li>Pro Critiques on Art and Scripts</li>
+              <li>Live Q&A Sessions</li>
+              <li>Pro Office Hours</li>
+              <li>Lessons and Q&As Videos</li>
+              <li>The Business of Comic Book Publishing e-book</li>
+              <li>10% site-wide discount</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          
+          </div>
+          <div class="card-footer bg-white border-top-0">
+            <a class="btn w-100 btn btn-lg btn-primary" href="#" role="button">Sign up for free</a>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-bg-primary border-primary">
+        <div class="card h-100 mb-4 rounded-3 shadow-sm" style="transform: scale(0.95);">
+          <div class="card-header py-3">
             <h4 class="my-0 fw-normal">Enterprise</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
+              <li>Discord Community access</li>
+              <li>Pro Critiques on Art and Scripts</li>
+              <li>Live Q&A Sessions</li>
+              <li>Pro Office Hours</li>
+              <li>Lessons and Q&As Videos</li>
+              <li>The Business of Comic Book Publishing e-book</li>
+              <li>10% site-wide discount</li>
+              <li><b>Contact us for more info</b></li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          </div>
+          <div class="card-footer bg-white border-top-0">
+            <a class="btn w-100 btn btn-lg btn-outline-primary" href="#" role="button">Contact Us</a>
           </div>
         </div>
       </div>
     </div>
 
-    <h2 class="display-6 text-center mb-4">Compare plans</h2>
+    <h2 class="display-6 text-center mb-4 pt-3">Compare plans</h2>
 
     <div class="table-responsive">
       <table class="table text-center">
         <thead>
           <tr>
             <th style="width: 34%;"></th>
-            <th style="width: 22%;">Free</th>
-            <th style="width: 22%;">Pro</th>
+            <th style="width: 22%;">Community</th>
+            <th style="width: 22%;">Community Pro</th>
             <th style="width: 22%;">Enterprise</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row" class="text-start">Public</th>
+            <th scope="row" class="text-start">Discord Community</th>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
           </tr>
           <tr>
-            <th scope="row" class="text-start">Private</th>
+            <th scope="row" class="text-start">Peer Art and Script Critiques</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Pro Art and Script Critiques</th>
             <td></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
@@ -107,28 +132,46 @@ if ( ! empty( $block['align'] ) ) {
 
         <tbody>
           <tr>
-            <th scope="row" class="text-start">Permissions</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Sharing</th>
+            <th scope="row" class="text-start">Comics Experience Library</th>
             <td></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
           </tr>
           <tr>
-            <th scope="row" class="text-start">Unlimited members</th>
+            <th scope="row" class="text-start">Live Q&A Sessions</th>
             <td></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
           </tr>
           <tr>
-            <th scope="row" class="text-start">Extra security</th>
-            <td></td>
+            <th scope="row" class="text-start">Pro Office Hours</th>
             <td></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Lessons and Q&A Videos</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">The Business of Comic Book Publishing e-book</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">10% store discount</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Group enrollments and benefits</th>
+            <td></td>
+            <td></td>
+            <td>Contact us</td>
           </tr>
         </tbody>
       </table>
