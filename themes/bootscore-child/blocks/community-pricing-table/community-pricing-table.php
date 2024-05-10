@@ -45,7 +45,7 @@ if ( ! empty( $block['align'] ) ) {
             </ul>
           </div>
           <div class="card-footer bg-white border-top-0">
-            <a class="btn w-100 btn btn-lg btn-outline-primary" href="#" role="button">Sign up for free</a>
+            <a class="btn w-100 btn btn-lg btn-outline-primary" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=3'); ?>" role="button">Sign up for free</a>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@ if ( ! empty( $block['align'] ) ) {
           
           </div>
           <div class="card-footer bg-white border-top-0">
-            <a class="btn w-100 btn btn-lg btn-primary" href="#" role="button">Sign up for free</a>
+            <a class="btn w-100 btn btn-lg btn-primary" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=4'); ?>" role="button">Sign up for free</a>
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@ if ( ! empty( $block['align'] ) ) {
             </ul>
           </div>
           <div class="card-footer bg-white border-top-0">
-            <a class="btn w-100 btn btn-lg btn-outline-primary" href="#" role="button">Contact Us</a>
+            <a class="btn w-100 btn btn-lg btn-outline-primary" href="mailto:info@comicsexperience.com" role="button">Contact Us</a>
           </div>
         </div>
       </div>
