@@ -19,6 +19,7 @@ function ce_register_acf_blocks() {
     register_block_type( __DIR__ . '/../blocks/testimonial-slider' );
     register_block_type( __DIR__ . '/../blocks/community-spotlight' );
     register_block_type( __DIR__ . '/../blocks/community-pricing' );
+    register_block_type( __DIR__ . '/../blocks/community-pricing-table' );
     register_block_type( __DIR__ . '/../blocks/responsive-tabs' );
     register_block_type( __DIR__ . '/../blocks/professional-services' );
     register_block_type( __DIR__ . '/../blocks/creative-services' );

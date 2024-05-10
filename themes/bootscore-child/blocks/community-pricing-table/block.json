@@ -1,0 +1,16 @@
+{
+    "name": "acf/community-pricing-table",
+    "title": "Community Pricing Table",
+    "description": "A block for displaying CE community pricing table.",
+    "style": [ "file:./assets/community-pricing-table.css" ],
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["community", "pricing"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "community-pricing-table.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
