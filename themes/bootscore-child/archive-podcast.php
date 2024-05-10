@@ -27,7 +27,8 @@ get_header();
           <main id="main" class="site-main">
 
             <div class="page-header mb-4">
-              <?php the_archive_title('<h1>', '</h1>'); ?>
+              <?php /* the_archive_title('<h1>', '</h1>');  */?>
+              <h1>Comics Experience Podcast</h1>
               <?php the_field('podcast_description', 'option'); ?>
             </div>
 
