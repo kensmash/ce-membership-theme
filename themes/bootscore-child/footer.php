@@ -8,11 +8,14 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Bootscore
- *
- * @version 5.3.0
+ * @version 6.0.0
  */
 
+// Exit if accessed directly
+defined('ABSPATH') || exit;
+
 ?>
+
 
 <footer class="container-fluid ce-footer px-0 <?php echo !is_front_page() ? "mt-5" : ""; ?>">
 
@@ -143,7 +146,7 @@
 </footer>
 
 <!-- To top button -->
-<a href="#" class="btn btn-primary shadow top-button position-fixed zi-1020"><i class="fa-solid fa-chevron-up"></i><span class="visually-hidden-focusable">To top</span></a>
+<a href="#" class="<?= apply_filters('bootscore/class/footer/to_top_button', 'btn btn-primary shadow'); ?> position-fixed z-2 top-button"><i class="fa-solid fa-chevron-up"></i><span class="visually-hidden-focusable">To top</span></a>
 
 </div><!-- #page -->
 
