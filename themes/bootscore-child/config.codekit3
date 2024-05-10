@@ -1301,6 +1301,14 @@
       "oAP" : "\/template-parts\/content.php",
       "oF" : 0
     },
+    "\/template-parts\/header\/main-menu.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/header\/main-menu.php",
+      "oF" : 0
+    },
     "\/template-parts\/tabs\/tabs-courses.php" : {
       "cB" : 0,
       "ft" : 8192,
