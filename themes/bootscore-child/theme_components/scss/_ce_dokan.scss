@@ -5,9 +5,9 @@
     }
 }
 
-.cart_item {
+.cart_item, .woocommerce-mini-cart-item {
     .variation {
-        display: none;
+        display: none !important;
     }
 }
 

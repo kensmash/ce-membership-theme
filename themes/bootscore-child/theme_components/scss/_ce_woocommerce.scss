@@ -131,6 +131,23 @@
   }
   
   /*--------------------------------------------------------------
+  # WooCommerce Mini Cart
+  --------------------------------------------------------------*/
+  .woocommerce-mini-cart-item {
+    
+    .quantity {
+      display: none !important;
+    }
+
+    /* attempt to hide stupid sold individually badge in mini cart */
+    .badge {
+      &.bg-danger {
+        display: none !important;
+      }
+    }
+}
+
+  /*--------------------------------------------------------------
   # WooCommerce Archive Pages
   --------------------------------------------------------------*/
 
@@ -203,24 +220,24 @@
     # WooCommerce Cart Page
   --------------------------------------------------------------*/
   
-    /* try to make this label a little clearer */
-    .recurring-totals {
-      background-color: rgba(222, 226, 230, 0.6);
+  /* try to make this label a little clearer */
+  .recurring-totals {
+    background-color: rgba(222, 226, 230, 0.6);
+  }
+
+  /* hide subtotal */
+  .woocommerce .cart-subtotal {
+    display: none;
     }
 
-    /* hide subtotal */
-    .woocommerce .cart-subtotal {
-      display: none;
+  /* hide shipping message when user adds item to cart, not applicable for us */
+  .widget_shopping_cart_content {
+    .cart-footer {
+      .shipping-text {
+        display: none;
       }
-
-      /* hide shipping message when user adds item to cart, not applicable for us */
-      .widget_shopping_cart_content {
-        .cart-footer {
-          .shipping-text {
-            display: none;
-          }
-        }
-      }
+    }
+  }
 
   /*--------------------------------------------------------------
   # WooCommerce Checkout Page
@@ -230,10 +247,11 @@
     margin: 0.6em 0 0.5em;
   }
 
+    /* fix ugly border around table s*/
   .woocommerce {
     table {
       &.shop_table {
-        border-collapse: collapse;
+        border-collapse: collapse !important;
       }
     }
   }
