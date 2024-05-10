@@ -1249,6 +1249,14 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/single-staff.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/single-staff.php",
+      "oF" : 0
+    },
     "\/single.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1640,6 +1648,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/woocommerce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce.php",
+      "oF" : 0
     }
   },
   "hooks" : [
