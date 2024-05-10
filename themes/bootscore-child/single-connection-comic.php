@@ -17,7 +17,9 @@ get_header();
 
       <div class="row">
 
-        <div class="<?= apply_filters('bootscore/class/main/col', 'col px-4 px-xl-5 py-4'); ?>">
+        <div class="<?= apply_filters('bootscore/class/main/col', 'col px-4 px-xl-5 pt-2 pt-lg-4 pb-4'); ?>">
+
+        <?php the_breadcrumb(); ?>
 
         <main id="main" class="site-main">
 

@@ -15,11 +15,11 @@ get_header();
 <div id="content" class="site-content <?= apply_filters('bootscore/class/container', 'container-fluid', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0 py-lg-5 mt-lg-1', 'page'); ?>">
   <div id="primary" class="content-area <?= apply_filters('bootscore/class/container', 'container bg-white', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0', 'page'); ?>">
 
-      <?php the_breadcrumb(); ?>
-
       <div class="row">
 
-        <div class="<?= apply_filters('bootscore/class/main/col', 'col px-4 px-xl-5 py-4'); ?>">
+        <div class="<?= apply_filters('bootscore/class/main/col', 'col px-4 px-xl-5 pt-2 pt-lg-4 pb-4'); ?>">
+
+        <?php the_breadcrumb(); ?>
 
           <main id="main" class="site-main">
 
