@@ -19,15 +19,18 @@ get_header();
 
         <div class="<?= apply_filters('bootscore/class/main/col', 'col px-2 px-lg-4 px-xl-5 pt-2 pt-lg-4 pb-4'); ?>">
 
-        <?php the_breadcrumb(); ?>
+        <?php 
+            $post_type = get_post_type( $post->ID );
+            //echo $post_type;
+            if ($post_type !== "sfwd-courses" && $post_type !== "sfwd-lessons" && $post_type !== "sfwd-topics" && $post_type !== "creative-services"): 
+            the_breadcrumb();
+            endif;
+          ?>
 
           <main id="main" class="site-main">
 
           <header class="entry-header">
-              <?php 
-                $post_type = get_post_type( $post->ID );
-                //echo $post_type;
-                the_post(); ?>
+              <?php the_post(); ?>
               <?php bootscore_category_badge(); ?>
               <h1><?php the_title(); ?></h1>
               <?php if ($post_type !== "sfwd-courses" && $post_type !== "sfwd-lessons" && $post_type !== "sfwd-topics" && $post_type !== "creative-services"): ?>
