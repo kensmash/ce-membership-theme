@@ -3,21 +3,14 @@
 
 
 /**
- * Header position and bg
+ * Change path to logos
  */
-function header_bg_class() {
-    return "position-relative bg-dark shadow-sm";
+function change_logo_path($logo, $color) {
+  if ($color === 'theme-dark') {
+    return get_stylesheet_directory_uri() . '/assets/images/logo/logo.svg';
   }
-  add_filter('bootscore/class/header', 'header_bg_class', 10, 2);
-
-
-/**
- * Change container class in a single file
- */
-function container_class($string) {
-  if ( is_front_page()) {
-    return "container-fluid";
-  }
-  return $string;
+  return get_stylesheet_directory_uri() . '/assets/images/logo/logo.svg';
 }
-add_filter('bootscore/class/container', 'container_class', 10, 2);
+
+add_filter('bootscore/logo', 'change_logo_path', 10, 2);
+

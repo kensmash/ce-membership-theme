@@ -92,7 +92,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "return_format": "url",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -189,6 +189,26 @@
                     "parent_repeater": "field_6556a93b1a8d2"
                 }
             ]
+        },
+        {
+            "key": "field_662f992f278ef",
+            "label": "User Message",
+            "name": "user_message",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Enter text to display to a logged in user who is NOT a member.",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -206,8 +226,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1700691290
+    "modified": 1715269415
 }
