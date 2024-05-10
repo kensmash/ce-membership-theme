@@ -8,10 +8,14 @@
 
 $max-width: 1300px;
 
-body:not(.single-lesson) {
+body {
     background: #f1f1f1 url(../../assets/images/bg_pattern.jpg);
     //background: white;
-  }
+}
+
+/* body:not(.single-lesson) {
+    background: #f1f1f1 url(../../assets/images/bg_pattern.jpg);
+} */
 
 .container {
     max-width: $max-width;

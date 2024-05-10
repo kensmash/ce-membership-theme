@@ -1,6 +1,16 @@
-.ld-focus-content, .ld-in-focus-mode .learndash-wrapper {
-    background: #f1f1f1 url(../../assets/images/bg_pattern.jpg) !important;
-}
+body {
+    &.ld-in-focus-mode {
+        background: #f1f1f1 url(../../assets/images/bg_pattern.jpg) !important;
+
+        .learndash-wrapper {
+            background: rgba(255, 255, 255, 0) !important;
+        }
+
+      
+    }
+ }
+
+    
 
 .ld-course-status-seg-price {
     display: none;
