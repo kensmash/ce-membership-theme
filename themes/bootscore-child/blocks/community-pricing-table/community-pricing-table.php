@@ -32,7 +32,7 @@ if ( ! empty( $block['align'] ) ) {
 
 <section>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
+      <div class="col mb-4 mb-lg-0">
         <div class="card h-100 mb-4 rounded-3 shadow-sm" style="transform: scale(0.95);">
           <div class="card-header py-3">
             <h4 class="my-0 fw-normal">Community</h4>
@@ -45,11 +45,11 @@ if ( ! empty( $block['align'] ) ) {
             </ul>
           </div>
           <div class="card-footer bg-white border-top-0">
-            <a class="btn w-100 btn btn-lg btn-outline-primary" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=3'); ?>" role="button">Sign up for free</a>
+            <a class="btn w-100 btn btn-lg btn-outline-primary mb-3" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=3'); ?>" role="button">Sign up for free</a>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col mb-4 mb-lg-0">
         <div class="card h-100 mb-4 rounded-3 shadow-sm border-primary">
           <div class="card-header text-bg-primary border-primary py-3">
             <h4 class="my-0">Community Pro</h4>
@@ -68,11 +68,11 @@ if ( ! empty( $block['align'] ) ) {
           
           </div>
           <div class="card-footer bg-white border-top-0">
-            <a class="btn w-100 btn btn-lg btn-primary" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=4'); ?>" role="button">Sign up for free</a>
+            <a class="btn w-100 btn btn-lg btn-primary mb-3" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=4'); ?>" role="button">Sign up for free</a>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col mb-4 mb-lg-0">
         <div class="card h-100 mb-4 rounded-3 shadow-sm" style="transform: scale(0.95);">
           <div class="card-header py-3">
             <h4 class="my-0 fw-normal">Enterprise</h4>
@@ -90,7 +90,7 @@ if ( ! empty( $block['align'] ) ) {
             </ul>
           </div>
           <div class="card-footer bg-white border-top-0">
-            <a class="btn w-100 btn btn-lg btn-outline-primary" href="mailto:info@comicsexperience.com" role="button">Contact Us</a>
+            <a class="btn w-100 btn btn-lg btn-outline-primary mb-3" href="mailto:info@comicsexperience.com" role="button">Contact Us</a>
           </div>
         </div>
       </div>
