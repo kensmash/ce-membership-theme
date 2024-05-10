@@ -4,7 +4,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Comics_Experience_2022
+* @package Bootscore
+ * @version 6.0.0
  */
 
 ?>

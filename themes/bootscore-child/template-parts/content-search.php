@@ -5,8 +5,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Bootscore
- * @version 5.3.4
+* @package Bootscore
+ * @version 6.0.0
  */
 
 
