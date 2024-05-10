@@ -45,6 +45,11 @@ body:not(.single-lesson) {
 
 *:focus {
     box-shadow: none !important;
+    outline: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 /*--------------------------------------------------------------
