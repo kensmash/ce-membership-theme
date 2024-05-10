@@ -28,7 +28,8 @@ get_header();
 
         <?php /* woocommerce_breadcrumb(); */ ?>
 
-        <div class="row">
+        <div class="<?= apply_filters('bootscore/class/main/row', 'row px-0 g-0'); ?>">
+
             <div class="<?= apply_filters('bootscore/class/main/col', 'col px-4 px-xl-5 py-4'); ?>">
                 <?php woocommerce_content(); ?>
             </div><!-- col -->

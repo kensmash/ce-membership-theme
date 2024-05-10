@@ -20,7 +20,7 @@ get_header();
     
     <?php if (!wp_is_mobile()): get_template_part( 'template-parts/content', 'topimage' ); endif; ?>
 
-      <div class="row">
+        <div class="<?= apply_filters('bootscore/class/main/row', 'row px-0 g-0'); ?>">
 
         <div class="<?= apply_filters('bootscore/class/main/col', 'col px-4 px-xl-5 py-4'); ?>">
 

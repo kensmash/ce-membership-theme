@@ -14,7 +14,8 @@ get_header();
 <div id="content" class="site-content <?= apply_filters('bootscore/class/container', 'container-fluid bg-white', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0', 'page'); ?>">
     <div id="primary" class="content-area">
 
-      <div class="row">
+      <div class="<?= apply_filters('bootscore/class/main/row', 'row px-0 g-0'); ?>">
+
         <div class="<?= apply_filters('bootscore/class/main/col', 'col'); ?>">
 
           <main id="main" class="site-main">
