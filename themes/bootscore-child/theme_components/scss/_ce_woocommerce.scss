@@ -253,6 +253,15 @@
     }
   }
 
+  /* fix coupon message butting up against cart content on mobile */
+  .woocommerce-form-coupon-toggle {
+    margin-top: 1.25em;
+
+    @media (min-width: 1024px) {
+      margin-top: 0;
+    }
+  }
+
   /*--------------------------------------------------------------
   # WooCommerce Checkout Page
   --------------------------------------------------------------*/
