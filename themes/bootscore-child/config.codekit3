@@ -1704,6 +1704,14 @@
       "oA" : 0,
       "oAP" : "\/woocommerce.php",
       "oF" : 0
+    },
+    "\/woocommerce\/loop\/loop-start.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce\/loop\/loop-start.php",
+      "oF" : 0
     }
   },
   "hooks" : [
