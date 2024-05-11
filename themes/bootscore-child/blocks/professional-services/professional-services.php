@@ -24,7 +24,7 @@ if ( ! empty( $block['align'] ) ) {
 
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
 
-    <div class="row">
+    <div class="row g-0">
 
         <?php if( have_rows('professional_services') ): ?>
             
