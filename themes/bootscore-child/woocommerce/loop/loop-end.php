@@ -21,4 +21,4 @@ if (!defined('ABSPATH')) {
 }
 ?>
 </div><!-- row in loop-start.php -->
-</div>
+</div><!-- container in loop-start.php -->

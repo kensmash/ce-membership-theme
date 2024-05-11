@@ -21,6 +21,6 @@ if (!defined('ABSPATH')) {
 }
 ?>
 
-<div class="container-fluid p-0">
-<div class="row g-4 mb-4 products">
+<div class="container-fluid">
+<div class="row g-3 g-lg-4 mb-4 products">
   <!-- End in loop-end.php -->
