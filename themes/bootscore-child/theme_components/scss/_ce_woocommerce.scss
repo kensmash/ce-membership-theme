@@ -129,6 +129,20 @@
   .amount {
     color: $ce-green;
   }
+
+  /*--------------------------------------------------------------
+  # Off-canvas Login
+  --------------------------------------------------------------*/
+/* remove registration form */
+  .my-offcanvas-account {
+    .woocommerce {
+      #customer_login {
+        .u-column2 {
+          display: none !important;
+        }
+      }
+    }
+  }
   
   /*--------------------------------------------------------------
   # WooCommerce Mini Cart
