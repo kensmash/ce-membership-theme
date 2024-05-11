@@ -568,12 +568,12 @@ function get_bundled_courses($atts) {
             $output .= '<div class="col-12 my-2">';
             $output .= '<div class="card">';
             $output .= '<div class="container-fluid p-0">';
-            $output .= '<div class="row">';
+            $output .= '<div class="row pb-1 pb-lg-0">';
             $output .= '<div class="col-1 d-none d-lg-flex">';
             $output .= '<a href="'. get_the_permalink() .'">' . get_the_post_thumbnail($post->ID, 'thumbnail', array( 'class' => 'rounded-left' )) . '</a>';
             $output .= '</div">';
             $output .= '<div class="col">';
-            $output .= '<div class="card-body py-2 ps-2 ps-lg-0 pe-2">';
+            $output .= '<div class="card-body py-2 ps-3 ps-lg-0 pe-2">';
             $output .= '<h5 class="card-title"><a href="'. get_the_permalink() .'">' . get_the_title() . '</a></h5>';
             $output .= '<p class="text-secondary bundle-course-excerpt">' . get_the_excerpt() . '</p>';
             $output .= '</div> <!-- card-body -->';
