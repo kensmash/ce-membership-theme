@@ -16,11 +16,11 @@ get_header();
 ?>
 
 <div id="content" class="site-content <?= apply_filters('bootscore/class/container', 'container-fluid', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0 py-lg-5 mt-lg-1', 'page'); ?>">
-    <div id="primary" class="content-area <?= apply_filters('bootscore/class/container', 'container bg-white rounded-lg-1', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0', 'page'); ?>">
-    
+  <div id="primary" class="content-area <?= apply_filters('bootscore/class/container', 'container bg-white rounded-lg-1', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0', 'page'); ?>">
+
     <?php if (!wp_is_mobile()): get_template_part( 'template-parts/content', 'topimage' ); endif; ?>
 
-    <div class="<?= apply_filters('bootscore/class/main/row', 'row px-0 g-0'); ?>">
+      <div class="<?= apply_filters('bootscore/class/main/row', 'row px-0 g-0'); /* g-0 is necessary to prevent horizontal overflow at mobile sizes */ ?>">
 
         <div class="<?= apply_filters('bootscore/class/main/col', 'col px-2 px-lg-4 px-xl-5 py-4'); ?>">
 
@@ -61,7 +61,7 @@ get_header();
                 endwhile;
 			?>
 
-                <nav aria-label="Page navigation" class="col-12">
+                <nav aria-label="Page navigation" class="container-fluid">
                     <div class="row px-4">
                         <div class="col-md-6 text-center text-md-start"><?php previous_posts_link( $nextText ); ?></div>
                         <div class="col-md-6 text-center text-md-end"><?php next_posts_link( $prevText ); ?></div>

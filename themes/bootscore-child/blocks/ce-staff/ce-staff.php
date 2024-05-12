@@ -39,7 +39,7 @@ switch ($columns) {
 
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
 
-    <div class="row">
+    <div class="row g-0">
 
         <?php 
             if( $staff_members ):
