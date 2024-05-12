@@ -26,7 +26,7 @@
  
  <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
  
-     <div class="row g-0">
+     <div class="row g-0 g-md-3">
  
          <?php 
              if( $featured_services ):
