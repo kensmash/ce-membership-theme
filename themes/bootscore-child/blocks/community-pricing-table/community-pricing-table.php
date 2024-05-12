@@ -35,7 +35,7 @@ if ( ! empty( $block['align'] ) ) {
       <div class="col mb-4 mb-lg-0">
         <div class="card h-100 mb-4 rounded-3 pricing-card" style="transform: scale(0.95);">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Community</h4>
+            <h4 class="my-0">Community</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$4.99<small class="text-body-secondary fw-light">/mo</small></h1>
@@ -75,7 +75,7 @@ if ( ! empty( $block['align'] ) ) {
       <div class="col mb-4 mb-lg-0">
         <div class="card h-100 mb-4 rounded-3 pricing-card" style="transform: scale(0.95);">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Enterprise</h4>
+            <h4 class="my-0">Enterprise</h4>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">

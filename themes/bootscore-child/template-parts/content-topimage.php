@@ -16,7 +16,7 @@ if( get_field('show_header_image') || is_archive('script')) {
 	$image = get_field('custom_header_image');
 	if( !empty( $image ) ): ?>
 
-		<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="img-fluid rounded-top-1" />
+		<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="img-fluid header-image" />
 
 	<?php else:
 	// load random photo from header-images folder
@@ -26,7 +26,7 @@ if( get_field('show_header_image') || is_archive('script')) {
 	chdir($curdir);
 	$file=$files[array_rand($files)];
 	?>
-	<img src=" <?php echo(get_stylesheet_directory_uri() . "/assets/images/subpage_images/$file"); ?>" class="img-fluid rounded-top-1" alt="Comic Art" />
+	<img src=" <?php echo(get_stylesheet_directory_uri() . "/assets/images/subpage_images/$file"); ?>" class="img-fluid header-image" alt="Comic Art" />
 
 	<?php endif; ?>
 
