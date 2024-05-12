@@ -33,7 +33,7 @@ if ( ! empty( $block['align'] ) ) {
 <section>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div class="col mb-4 mb-lg-0">
-        <div class="card h-100 mb-4 rounded-3 shadow-sm" style="transform: scale(0.95);">
+        <div class="card h-100 mb-4 rounded-3 pricing-card" style="transform: scale(0.95);">
           <div class="card-header py-3">
             <h4 class="my-0 fw-normal">Community</h4>
           </div>
@@ -44,13 +44,13 @@ if ( ! empty( $block['align'] ) ) {
               <li>Peer Critiques on Art and Scripts</li>
             </ul>
           </div>
-          <div class="card-footer bg-white border-top-0">
-            <a class="btn w-100 btn btn-lg btn-outline-primary mb-3" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=3'); ?>" role="button">Sign up for free</a>
+          <div class="card-footer border-top-0">
+            <a class="btn w-100 btn btn-lg btn-outline-primary my-2" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=3'); ?>" role="button">Sign up for free</a>
           </div>
         </div>
       </div>
       <div class="col mb-4 mb-lg-0">
-        <div class="card h-100 mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card h-100 mb-4 rounded-3 border-primary pricing-card">
           <div class="card-header text-bg-primary border-primary py-3">
             <h4 class="my-0">Community Pro</h4>
           </div>
@@ -67,13 +67,13 @@ if ( ! empty( $block['align'] ) ) {
             </ul>
           
           </div>
-          <div class="card-footer bg-white border-top-0">
-            <a class="btn w-100 btn btn-lg btn-primary mb-3" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=4'); ?>" role="button">Sign up for free</a>
+          <div class="card-footer border-top-0">
+            <a class="btn w-100 btn btn-lg btn-primary my-2" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=4'); ?>" role="button">Sign up for free</a>
           </div>
         </div>
       </div>
       <div class="col mb-4 mb-lg-0">
-        <div class="card h-100 mb-4 rounded-3 shadow-sm" style="transform: scale(0.95);">
+        <div class="card h-100 mb-4 rounded-3 pricing-card" style="transform: scale(0.95);">
           <div class="card-header py-3">
             <h4 class="my-0 fw-normal">Enterprise</h4>
           </div>
@@ -89,14 +89,14 @@ if ( ! empty( $block['align'] ) ) {
               <li><b>Contact us for more info</b></li>
             </ul>
           </div>
-          <div class="card-footer bg-white border-top-0">
-            <a class="btn w-100 btn btn-lg btn-outline-primary mb-3" href="mailto:info@comicsexperience.com" role="button">Contact Us</a>
+          <div class="card-footer border-top-0">
+            <a class="btn w-100 btn btn-lg btn-outline-primary my-2" href="mailto:info@comicsexperience.com" role="button">Contact Us</a>
           </div>
         </div>
       </div>
     </div>
 
-    <h2 class="display-6 text-center mb-4 pt-3">Compare plans</h2>
+    <h3 class="text-center mb-4 mb-xl-5 pt-3">Compare plans</h3>
 
     <div class="table-responsive">
       <table class="table text-center">

@@ -784,6 +784,26 @@
       "oAP" : "\/blocks\/ce-staff\/ce-staff.php",
       "oF" : 0
     },
+    "\/blocks\/community-pricing-table\/assets\/community-pricing-table.asset.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-pricing-table\/assets\/community-pricing-table.asset.php",
+      "oF" : 0
+    },
+    "\/blocks\/community-pricing-table\/assets\/community-pricing-table.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-pricing-table\/assets\/community-pricing-table-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/blocks\/community-pricing-table\/block.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -1618,6 +1638,21 @@
       "oA" : 0,
       "oAP" : "\/theme_components\/scss\/blocks\/ce-services.css",
       "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/theme_components\/scss\/blocks\/community-pricing-table.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-pricing-table\/assets\/community-pricing-table.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
