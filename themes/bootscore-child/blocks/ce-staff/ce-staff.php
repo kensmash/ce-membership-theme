@@ -23,14 +23,14 @@ if ( ! empty( $block['align'] ) ) {
     $class_name .= ' align' . $block['align'];
 }
 
-$column_class = "col-md-3";
+$column_class = "col-md-4";
 
 switch ($columns) {
     case 2:
         $column_class = "col-md-6";
         break;
     case 3:
-        $column_class = "col-md-4";
+        $column_class = "col-lg-4";
         break;
 }
 
@@ -39,7 +39,7 @@ switch ($columns) {
 
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
 
-    <div class="row g-0">
+    <div class="row g-sm-0 g-md-3">
 
         <?php 
             if( $staff_members ):
@@ -51,7 +51,7 @@ switch ($columns) {
                 $content = get_the_excerpt($staff->ID); 
             ?>
 
-            <div class="col-sm-6 mb-3 <?php echo $column_class; ?>">
+            <div class="col-sm-6 <?php echo $column_class; ?> mb-3 ">
                 <div class="card h-100">
                     
                     <a href="<?php echo esc_url( $permalink ); ?>">
