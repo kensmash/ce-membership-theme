@@ -31,7 +31,7 @@ if ( ! empty( $block['align'] ) ) {
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" style="">
 
 <section>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 mb-xl-4 text-center">
       <div class="col mb-4 mb-lg-0">
         <div class="card h-100 mb-4 rounded-3 pricing-card" style="transform: scale(0.95);">
           <div class="card-header py-3">
