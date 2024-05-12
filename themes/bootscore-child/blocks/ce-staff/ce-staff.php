@@ -23,7 +23,7 @@ if ( ! empty( $block['align'] ) ) {
     $class_name .= ' align' . $block['align'];
 }
 
-$column_class = "col-md-4";
+$column_class = "col-md-4 col-lg-3";
 
 switch ($columns) {
     case 2:
