@@ -22,7 +22,7 @@ get_header();
 
     <div class="<?= apply_filters('bootscore/class/main/row', 'row px-0 g-0'); ?>">
 
-        <div class="<?= apply_filters('bootscore/class/main/col', 'col px-2 px-lg-4 px-xl-5 py-4'); ?>">
+        <div class="<?= apply_filters('bootscore/class/main/col', 'col px-3 px-lg-4 px-xl-5 py-4'); ?>">
 
           <main id="main" class="site-main">
 
