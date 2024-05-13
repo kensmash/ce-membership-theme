@@ -31,6 +31,7 @@ if ( ! empty( $block['align'] ) ) {
         foreach( $featured_testimonials as $testimonial ): 
             $permalink = get_permalink( $testimonial->ID );
             $title = get_the_title( $testimonial->ID );
+            $name = get_field( 'name', $testimonial->ID );
             //$content = get_post_field('post_content', $testimonial->ID); 
             $content = get_the_excerpt($testimonial->ID); 
             $credentials = get_field( 'credentials', $testimonial->ID );
@@ -41,8 +42,10 @@ if ( ! empty( $block['align'] ) ) {
                     <p class="card-text"><?php echo $content; ?></p>
                 </div><!-- .card-body -->
                 <div class="card-footer">
-                    <strong><?php echo esc_html( $title ); ?></strong>
-                    <span><?php echo esc_html( $credentials ); ?></span>
+                    <strong><?php echo esc_html( $name ); ?></strong>
+                    <?php if ($credentials): ?>
+                        <span> <i><?php echo esc_html( $credentials ); ?></i></span>
+                    <?php endif; ?>
                 </div> <!-- .card-footere -->
             </div><!-- .card -->
         </div><!-- .testimonial-slide -->

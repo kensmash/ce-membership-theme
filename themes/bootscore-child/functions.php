@@ -92,7 +92,7 @@ require get_theme_file_path( 'inc/search.php' );
 require get_theme_file_path( 'inc/bbpress.php' );
 
 //misc
-//require get_theme_file_path( 'inc/utilities.php' );
+require get_theme_file_path( 'inc/utilities.php' );
 
 
 // Add support for responsive embedded content (YouTube, Vimeo, etc.).
