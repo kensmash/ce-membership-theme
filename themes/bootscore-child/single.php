@@ -31,7 +31,7 @@ get_header();
 
           <main id="main" class="site-main">
 
-          <header class="entry-header ps-1 ps-lg-2">
+          <header class="entry-header ps-1">
               <?php the_post(); ?>
               <h1><?php the_title(); ?></h1>
               <?php if ($post_type == "post"): ?>
