@@ -268,7 +268,12 @@ function tab_testimonials($atts) {
 			$query->the_post();
 
 			// This is the output for your entry so what you want to do for each post.
-            $output .= '<p class="testimonial-title my-0">' . get_the_title() . '</p>';
+            if( get_field('name') ): 
+                $output .= '<p class="testimonial-title my-0">' .  get_field('name') . '</p>';
+            else: 
+                $output .= '<p class="testimonial-title my-0">' . get_the_title() . '</p>';
+            endif;
+            
             if( get_field('credentials') ): 
                 $output .= '<p class="testimonial-credentials">' .  get_field('credentials') . '</p>';
             endif;

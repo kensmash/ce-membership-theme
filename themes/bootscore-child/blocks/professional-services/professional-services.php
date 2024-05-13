@@ -30,7 +30,7 @@ if ( ! empty( $block['align'] ) ) {
             
             <?php while( have_rows('professional_services') ): the_row(); $link = get_sub_field('service_link'); ?>
                 <div class="col-md-6 mb-3">
-                    <div class="card h-100 px-3">
+                    <div class="card h-100 px-1 px-lg-3">
                         <h4 class="card-header bg-white border-0 px-3 pt-4 pb-2 text-center"><?php echo acf_esc_html( get_sub_field('service_name') ); ?></h4>
                         <div class="card-body">
                             <?php echo get_sub_field('service_description') ?>

@@ -169,7 +169,7 @@
     if ( $loop->have_posts() ) : ?>
         <div class="tab-pane fade p-1 p-md-3" id="testimonials" role="tabpanel" aria-labelledby="testimonials-tab">
             <?php while ( $loop->have_posts() ) : $loop->the_post();?>
-            <p class="testimonial-title my-0"><?php the_title();?></p>
+            <p class="testimonial-title my-0"><?php echo get_field('name') ? get_field('name') : the_title(); ?></p>
             <p class="testimonial-credentials"><?php echo get_field('credentials'); ?></p>
            <?php the_content();?>
             <?php if ($loop->current_post +1 < $loop->post_count) { echo "<hr />"; } ?>
