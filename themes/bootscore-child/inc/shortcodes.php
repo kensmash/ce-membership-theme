@@ -283,7 +283,7 @@ function tab_testimonials($atts) {
                     $output .= '<p class="testimonial-credentials">' .  get_the_title( $p->ID ) . '<sup>&copy;</sup></p>';
                 endforeach; 
             endif; 
-            $output .= '<p>' . get_the_content() . '</p>';
+            $output .= '<p>' . get_the_excerpt() . '</p>';
             if ($query->current_post +1 < $query->post_count) { $output .= "<hr />"; }
 
 		}

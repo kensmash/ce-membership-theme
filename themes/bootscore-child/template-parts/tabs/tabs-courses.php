@@ -171,7 +171,7 @@
             <?php while ( $loop->have_posts() ) : $loop->the_post();?>
             <p class="testimonial-title my-0"><?php echo get_field('name') ? get_field('name') : the_title(); ?></p>
             <p class="testimonial-credentials"><?php echo get_field('credentials'); ?></p>
-           <?php the_content();?>
+           <?php the_excerpt();?>
             <?php if ($loop->current_post +1 < $loop->post_count) { echo "<hr />"; } ?>
 
             <?php endwhile; ?>
