@@ -26,7 +26,7 @@ get_header();
 
           <main id="main" class="site-main">
 
-            <div class="page-header mb-4">
+            <div class="page-header ps-2 mb-4">
               <?php the_archive_title('<h1>', '</h1>'); ?>
               <?php the_field('scripts_post_type_description', 'option'); ?>
             </div>

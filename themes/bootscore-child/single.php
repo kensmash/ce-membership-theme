@@ -22,18 +22,17 @@ get_header();
         <?php 
             $post_type = get_post_type( $post->ID );
             //echo $post_type;
-            if ($post_type !== "sfwd-courses" && $post_type !== "sfwd-lessons" && $post_type !== "sfwd-topics" && $post_type !== "creative-services"): 
-            the_breadcrumb();
+            if ($post_type == "post"): 
+             the_breadcrumb();
             endif;
           ?>
 
           <main id="main" class="site-main">
 
-          <header class="entry-header">
+          <header class="entry-header ps-2">
               <?php the_post(); ?>
-              <?php bootscore_category_badge(); ?>
               <h1><?php the_title(); ?></h1>
-              <?php if ($post_type !== "sfwd-courses" && $post_type !== "sfwd-lessons" && $post_type !== "sfwd-topics" && $post_type !== "creative-services"): ?>
+              <?php if ($post_type == "post"): ?>
               <p class="entry-meta">
                 <small class="text-body-tertiary">
                   <?php

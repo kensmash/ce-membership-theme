@@ -26,7 +26,7 @@ if ( ! empty( $block['align'] ) ) {
 
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
 
-    <div class="row px-2 g-0">
+    <div class="row g-0">
 
         <?php 
         $query = new WP_Query(array(
