@@ -79,9 +79,6 @@ require get_theme_file_path( 'inc/extend-tiny-mce.php' );
 // PMP customize
 require get_theme_file_path( 'inc/pmp.php' );
 
-//Learndash customization
-//require get_theme_file_path( 'inc/learndash.php' );
-
 // shortcodes
 require get_theme_file_path( 'inc/shortcodes.php' );
 
@@ -93,6 +90,9 @@ require get_theme_file_path( 'inc/bbpress.php' );
 
 //misc
 require get_theme_file_path( 'inc/utilities.php' );
+
+//Learndash customization
+require get_theme_file_path( 'inc/learndash.php' );
 
 
 // Add support for responsive embedded content (YouTube, Vimeo, etc.).
