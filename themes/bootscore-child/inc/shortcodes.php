@@ -259,7 +259,7 @@ function tab_testimonials($atts) {
 	if ( $query->have_posts() ) {
 
 		// Open div wrapper around loop
-		$output .= '<div>';
+		$output .= '<div class="px-1">';
 
 		// Loop through posts
 		while ( $query->have_posts() ) {
