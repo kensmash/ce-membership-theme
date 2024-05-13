@@ -23,7 +23,7 @@ get_header();
 
           <main id="main" class="site-main">
 
-            <div class="entry-header ps-2">
+            <div class="entry-header ps-1 ps-lg-2">
               <?php the_post(); ?>
         
               <h1><?php the_title(); ?></h1>

@@ -15,6 +15,8 @@ get_header();
 <div id="content" class="site-content <?= apply_filters('bootscore/class/container', 'container-fluid', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0 py-lg-5 mt-lg-1', 'page'); ?>">
   <div id="primary" class="content-area <?= apply_filters('bootscore/class/container', 'container bg-white rounded-lg-1', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0', 'page'); ?>">
 
+  <?php if (!wp_is_mobile()): get_template_part( 'template-parts/content', 'topimage' ); endif; ?>
+
     <div class="<?= apply_filters('bootscore/class/main/row', 'row px-0 g-0'); /* g-0 is necessary to prevent horizontal overflow at mobile sizes */ ?>">
 
         <div class="<?= apply_filters('bootscore/class/main/col', 'col px-3 px-lg-4 px-xl-5 pt-2 pt-lg-4 pb-4'); ?>">
@@ -29,7 +31,7 @@ get_header();
 
           <main id="main" class="site-main">
 
-          <header class="entry-header ps-2">
+          <header class="entry-header ps-1 ps-lg-2">
               <?php the_post(); ?>
               <h1><?php the_title(); ?></h1>
               <?php if ($post_type == "post"): ?>
