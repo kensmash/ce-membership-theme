@@ -48,9 +48,10 @@ function mentors_tab_mentors() {
             // This is the output for your entry so what you want to do for each post.
             $output .= '<div class="card mb-3 border-0">';
             $output .= '<div class="row g-0">';
-            $output .= '<div class="col-md-3">';
+            $output .= '<div class="col-md-3 justify-content-center align-content-center">';
+            $output .= '<div class="pe-2">';
             $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'img-fluid rounded mx-auto d-block' ));
-            $output .= '</div>';
+            $output .= '</div></div>';
             $output .= '<div class="col-md-9">';
             $output .= '<div class="card-body">';
             $output .= '<p class="testimonial-title">' . get_the_title() . '</p>';
