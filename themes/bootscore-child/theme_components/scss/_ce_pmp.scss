@@ -95,6 +95,19 @@ form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmp
     }
 }
 
+/* fix gross birthday field styles */
+.pmpro_display-field-date {
+    select, input {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: .5em !important;
+    }
+
+    input {
+        margin-left: 0px !important;
+    }
+}
+
 /*---------------------------------------
 	Log In and Password Reset Pages
 ---------------------------------------*/

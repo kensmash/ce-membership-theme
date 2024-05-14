@@ -13,7 +13,7 @@
 @media only screen and (min-width: 1350px) {
   .hero-block-content-container {
     background-color: rgba(0, 0, 0, 0);
-    padding: 4rem 0 10rem !important;
+    padding: 6rem 0 10rem !important;
   }
 }
 .hero-block-content-container .tribe-events-widget-events-week {
