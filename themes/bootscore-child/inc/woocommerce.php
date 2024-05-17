@@ -397,14 +397,144 @@ function ce_courseloop_instructors($postId){
 	 }
 }
 
+// https://wordpress.org/support/topic/remove-vendor-in-order-email/
+remove_action( 'woocommerce_order_item_meta_start', 'dokan_attach_vendor_name', 10, 2 );
+
 /* https://wordpress.org/support/topic/change-checkout-login-message-and-class/ */
 add_filter( 'woocommerce_checkout_login_message', 'mycheckoutmessage_return_customer_message' );
 function mycheckoutmessage_return_customer_message() {
 	return '<span class="login-message">Returning customer or member?</span>';
 }
 
-// https://wordpress.org/support/topic/remove-vendor-in-order-email/
-remove_action( 'woocommerce_order_item_meta_start', 'dokan_attach_vendor_name', 10, 2 );
+/* https://stackoverflow.com/questions/66987369/hide-product-from-woocommerce-shop-page-if-it-has-already-been-purchased */
+add_action( 'pre_get_posts', 'hide_product_from_shop_page_if_user_already_purchased', 20 );
+
+function hide_product_from_shop_page_if_user_already_purchased( $query ) {
+   
+    if ( ! $query->is_main_query() ) return;
+   
+    if ( ! is_admin() && is_shop() ) {
+
+        $current_user = wp_get_current_user();
+        if ( 0 == $current_user->ID ) return;
+       
+        $customer_orders = get_posts( array(
+            'numberposts' => -1,
+            'meta_key'    => '_customer_user',
+            'meta_value'  => $current_user->ID,
+            'post_type'   => 'shop_order',
+            'post_status' => array( 'wc-processing', 'wc-completed' ),
+        ) );
+       
+        if ( ! $customer_orders ) return;
+        
+        $product_ids = array();
+        
+        foreach ( $customer_orders as $customer_order ) {
+            $order = wc_get_order( $customer_order->ID );
+            if( $order ){
+                $items = $order->get_items();
+                foreach ( $items as $item ) {
+                    $product_id    = $item->get_product_id();
+                    $product_ids[] = $product_id;
+                }
+            }
+        }
+
+        $product_ids = array_unique( $product_ids );
+
+        $query->set( 'post__not_in', $product_ids );
+    }
+
+}
+
+/* attempt to prevent customer from buying the same course twice */
+/* https://stackoverflow.com/questions/68005939/how-to-avoid-buying-the-same-product-again-in-woocommerce-by-adding-products-to */
+function filter_woocommerce_add_to_cart_validation( $passed, $product_id, $quantity, $variation_id = null, $variations = null ) {
+    // Retrieve the current user object
+    $current_user = wp_get_current_user();
+
+	$term_array = array();
+	$terms = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'slugs'));
+	if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+		foreach ( $terms as $term ) {
+            $term_array[] = $term;
+        }
+    }
+
+    //Check for variations, if you don't want this, delete this code line
+    //$product_id = $variation_id > 0 ? $variation_id : $product_id;
+    
+    // Checks if a user (by email or ID or both) has bought a course
+    if ( in_array('courses', $term_array) && wc_customer_bought_product( $current_user->user_email, $current_user->ID, $product_id ) ) {
+        // Display an error message
+        wc_add_notice( __( 'You have previously purchased a course in your cart.', 'woocommerce' ), 'error' );
+        
+        $passed = false;
+    }
+
+    return $passed;
+}
+add_filter( 'woocommerce_add_to_cart_validation', 'filter_woocommerce_add_to_cart_validation', 10, 5 );
+
+function action_woocommerce_check_cart_items() {
+    // Retrieve the current user object
+    $current_user = wp_get_current_user();
+    
+    // Initialize
+    $flag = false;
+    
+    // Loop through cart items
+    foreach( WC()->cart->get_cart() as $cart_item ) {
+        //Check for variations
+        //$product_id = $cart_item['variation_id'] > 0 ? $cart_item['variation_id'] : $cart_item['product_id'];
+
+		$term_array = array();
+		$terms = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'slugs'));
+		if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+			foreach ( $terms as $term ) {
+				$term_array[] = $term;
+			}
+		}
+			
+        // Checks if a user (by email or ID or both) has bought a course
+        if (in_array('courses', $term_array) && wc_customer_bought_product( $current_user->user_email, $current_user->ID, $product_id ) ) {
+            // Flag becomes true
+            $flag = true;
+            
+            // Break loop
+            break;
+        }
+    }
+    
+    // True
+    if ( $flag ) {
+        // Clear all other notices          
+        wc_clear_notices();
+
+        // Avoid checkout display an error notice
+        wc_add_notice( __( 'You have previously purchased a course in your cart.', 'woocommerce' ), 'error' );
+        
+        // Optional: remove proceed to checkout button
+        remove_action( 'woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20 );   
+    }
+}   
+add_action( 'woocommerce_check_cart_items' , 'action_woocommerce_check_cart_items', 10, 0 );
+
+
+/**
+ * @snippet       Custom Redirect for Logins @ WooCommerce My Account
+ * @compatible    WooCommerce 6
+ */
+ 
+ /* add_filter( 'woocommerce_login_redirect', 'ce_customer_login_redirect', 9999 );
+ 
+ function ce_customer_login_redirect( $redirect_url ) {
+	 $redirect_url = home_url('/my-account/');
+	 return $redirect_url;
+ } */
+
+
 
 /* https://www.wpfloor.com/hide-price-range-for-woocommerce-variable-products/ */
 //Hide Price Range for WooCommerce Variable Products
@@ -437,18 +567,6 @@ return $prod_price;
 }
 */
 
-
-/**
- * @snippet       Custom Redirect for Logins @ WooCommerce My Account
- * @compatible    WooCommerce 6
- */
- 
- /* add_filter( 'woocommerce_login_redirect', 'ce_customer_login_redirect', 9999 );
- 
- function ce_customer_login_redirect( $redirect_url ) {
-	 $redirect_url = home_url('/my-account/');
-	 return $redirect_url;
- } */
 
 
 
