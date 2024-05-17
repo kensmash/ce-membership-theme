@@ -397,6 +397,15 @@ function ce_courseloop_instructors($postId){
 	 }
 }
 
+/* https://wordpress.org/support/topic/change-checkout-login-message-and-class/ */
+add_filter( 'woocommerce_checkout_login_message', 'mycheckoutmessage_return_customer_message' );
+function mycheckoutmessage_return_customer_message() {
+	return '<span class="login-message">Returning customer or member?</span>';
+}
+
+// https://wordpress.org/support/topic/remove-vendor-in-order-email/
+remove_action( 'woocommerce_order_item_meta_start', 'dokan_attach_vendor_name', 10, 2 );
+
 /* https://www.wpfloor.com/hide-price-range-for-woocommerce-variable-products/ */
 //Hide Price Range for WooCommerce Variable Products
 /* 
@@ -427,9 +436,6 @@ $prod_price = '<del>'.$regular_price.$v_product->get_price_suffix() . '</del> <i
 return $prod_price;
 }
 */
-
-// https://wordpress.org/support/topic/remove-vendor-in-order-email/
-remove_action( 'woocommerce_order_item_meta_start', 'dokan_attach_vendor_name', 10, 2 );
 
 
 /**
