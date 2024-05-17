@@ -16,7 +16,33 @@ defined('ABSPATH') || exit;
 
 if ( is_user_logged_in() ) {
           
-//show main menu
+  if (learndash_user_get_enrolled_courses(get_current_user_id())) {
+  //if user has purchased courses, show dropdown courses menu
+    wp_nav_menu(array(
+      'menu'           => 'Learndash Courses Links',
+      'container'      => false,
+      'menu_class'     => '',
+      'fallback_cb'    => '__return_false',
+      'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-lg-0 %2$s">%3$s</ul>',
+      'depth'          => 2,
+      'walker'         => new bootstrap_5_wp_nav_menu_walker()
+    ));
+    //else just show Courses link
+} else { 
+  
+  wp_nav_menu(array(
+      'menu'           => 'Courses Links',
+      'container'      => false,
+      'menu_class'     => '',
+      'fallback_cb'    => '__return_false',
+      'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-lg-0 %2$s">%3$s</ul>',
+      'depth'          => 2,
+      'walker'         => new bootstrap_5_wp_nav_menu_walker()
+    ));
+
+} 
+
+//now show main menu
   wp_nav_menu(array(
     'theme_location' => 'main-menu',
     'container'      => false,
@@ -48,8 +74,17 @@ if( !$pmp_member ) { ?>
     ));
   }
 } else { 
-//no logged in user, show courses, main menu, signup and login buttons ?>
-   <?php  
+//no logged in user, show courses, main menu, signup and login buttons 
+   wp_nav_menu(array(
+      'menu'           => 'Courses Links',
+      'container'      => false,
+      'menu_class'     => '',
+      'fallback_cb'    => '__return_false',
+      'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-lg-0 %2$s">%3$s</ul>',
+      'depth'          => 2,
+      'walker'         => new bootstrap_5_wp_nav_menu_walker()
+    ));
+  
   wp_nav_menu(array(
     'theme_location' => 'main-menu',
     'container'      => false,
