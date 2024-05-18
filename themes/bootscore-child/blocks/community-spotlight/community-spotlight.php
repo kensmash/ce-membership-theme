@@ -37,7 +37,7 @@ if ( ! empty( $block['align'] ) ) {
             $creator_names = get_field( 'creator_names', $book->ID );
         ?>
         <div class="spotlight-slide px-2">
-            <div class="card spotlight-card h-100">
+            <div class="card spotlight-card border-0 h-100">
                 <div class="card-body">
                     <div><a href="<?php echo esc_url( $permalink ); ?>"><?php echo $image; ?></a></div>
                     <div class="pt-5 text-white">

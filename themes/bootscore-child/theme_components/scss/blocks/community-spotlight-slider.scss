@@ -67,16 +67,20 @@
         transform: scale(0.75);
     }
     
-    h3, p {
-        transition: all .25s ease-in;
-        opacity: 0;
+    @media only screen and (min-width: 1024px) {
+        h3, p {
+            transition: all .25s ease-in;
+            opacity: 0;
+        }
     }
 }
 
 .slick-current {
     .spotlight-card {
-        img {
-            transform: scale(0.9);
+        @media only screen and (min-width: 1024px) {
+            img {
+                transform: scale(0.9);
+            }
         }
 
         h3, p {

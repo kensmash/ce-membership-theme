@@ -861,9 +861,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -1674,8 +1674,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/theme_components\/scss\/blocks\/community-spotlight-slider.css",
-      "oF" : 0,
+      "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0

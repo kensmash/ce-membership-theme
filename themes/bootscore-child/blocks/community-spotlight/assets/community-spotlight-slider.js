@@ -5,7 +5,6 @@
           slidesToShow: 1,
           mobileFirst: true,
           focusOnSelect: true,
-          centerMode: true,
           centerPadding: '0',
           prevArrow:
             "<span class='slick-prev'><i class='fa-solid fa-chevron-left' aria-hidden='true'></i></span>",
@@ -21,6 +20,7 @@
             {
               breakpoint: 1024,
               settings: {
+                centerMode: true,
                 slidesToShow: 3,
               },
             },

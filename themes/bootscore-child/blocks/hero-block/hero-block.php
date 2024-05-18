@@ -8,7 +8,7 @@
 // Load values and assign defaults.
 $headline          = !empty(get_field( 'block_headline' )) ? get_field( 'block_headline' ) : 'Your headline here...';
 $subhead           = get_field( 'subhead' );
-$background_image  = 'url(' . get_field( 'background_image' ) . '); background-repeat: no-repeat; background-position: center calc(50% - 20px);background-size: cover';
+$background_image  = 'url(' . get_field( 'background_image' ) . '); background-repeat: no-repeat; background-position: center calc(50% - 2px);background-size: cover';
 $background_color  = get_field( 'background_color' ); // ACF's color picker.
 $text_color        = get_field( 'text_color' ); // ACF's color picker.
 
