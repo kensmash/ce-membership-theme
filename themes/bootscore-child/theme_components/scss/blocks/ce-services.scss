@@ -71,6 +71,10 @@
     background-color: rgba(0,0,0,0.6);
     min-height: 145px;
 
+    @media only screen and (min-width: 768px) {
+        min-height: 100px;
+    }
+
     @media only screen and (min-width: 1024px) {
         min-height: 80px;
     }
