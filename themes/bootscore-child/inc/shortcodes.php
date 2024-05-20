@@ -605,3 +605,43 @@ function get_bundled_courses($atts) {
 }
 
 add_shortcode( 'bundled_courses', 'get_bundled_courses' );
+
+
+/**
+ * Courses Tag Shortcode for WooCommerce
+ * Usage [courses_grid tag="bundle"]
+ */
+function get_courses_by_tag($atts) {
+    global $post;
+    /* https://wpexplorer-themes.com/total/snippets/simple-custom-shortcode-displaying-posts/ */
+  
+    $atts = shortcode_atts( array('tag' => 'bundle'), $atts, 'get_courses_by_tag' );
+
+	// Extract shortcode atributes
+    extract( $atts );
+    
+    // Define output var
+	$output = '';
+         
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => 20,
+        'post_status'  => 'publish',
+        'order' => 'ASC',
+        'tax_query'           => array(
+            // Product tag filter
+            array(
+                'taxonomy' => 'product_tag',
+                'terms'    => array($tag),
+                'field'    => 'slug',
+            ),
+        ),
+    );
+
+    ob_start();
+    get_template_part('template-parts/content', 'coursesloop', $args);
+    return ob_get_clean();
+    
+}
+
+add_shortcode( 'courses_grid', 'get_courses_by_tag' );

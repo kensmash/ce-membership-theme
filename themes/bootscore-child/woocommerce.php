@@ -30,7 +30,7 @@ get_header();
 
         <div class="<?= apply_filters('bootscore/class/main/row', 'row px-0 g-0'); ?>">
 
-            <div class="<?= apply_filters('bootscore/class/main/col', 'col px-3 px-lg-4 px-xl-5 pt-2 pt-lg-4 pb-4'); ?>">
+            <div class="<?= apply_filters('bootscore/class/main/col', 'col px-3 px-lg-4 px-xl-5 pt-3 pt-lg-4 pb-4'); ?>">
                 <?php woocommerce_content(); ?>
             </div><!-- col -->
 
