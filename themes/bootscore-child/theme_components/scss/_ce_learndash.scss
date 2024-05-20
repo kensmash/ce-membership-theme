@@ -95,13 +95,20 @@ body {
     }
 }
 
-.learndash-course-grid .items-wrapper.grid .item .content .entry-content {
-    margin: unset;
+.learndash-course-grid .items-wrapper.grid .item .content {
+
+    .entry-content {
+        margin: unset; //prvent description content from center aligning in div and making the overall alignment ugly
+    }
+   
+    .button {
+        padding-top: 1.25em;
+    }
 }
 
 /*--------------------------------------------------------------
 # Community Pro Lessons
 --------------------------------------------------------------*/
 .learndash-shortcode-wrap-course_content-624927_624927_2 {
-    display: none !important;
+    display: none !important; //hide automatically output course content so I can replace it with the Learndash course grid block
 }
