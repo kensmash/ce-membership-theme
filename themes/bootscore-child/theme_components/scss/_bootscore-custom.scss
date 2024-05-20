@@ -328,10 +328,12 @@ hr {
         @media (min-width: 768px) {
         .alignleft {
             float: left;
+            padding-right: 1em;
         }
         
         .alignright {
             float: right;
+            padding-left: 1em;
         }
     }
 }
