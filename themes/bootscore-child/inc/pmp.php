@@ -142,11 +142,12 @@ function my_login_redirect( $redirect_to, $request, $user ) {
         if ( pmpro_getMembershipLevelForUser($user->ID) ) {
 			//send them to buddypress activity page
             //$redirect_to = home_url('/activity/');
-			$redirect_to = home_url('/my-account/');
+			//$redirect_to = home_url('/my-account/');
+			$redirect_to = home_url();
         } else {
 			//not a member, send them to Woo dashboard
-			$redirect_to = home_url('/my-account/');
-	
+			//$redirect_to = home_url('/my-account/');
+			$redirect_to = home_url();
 		}
 
     }

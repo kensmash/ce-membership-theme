@@ -102,13 +102,13 @@ body {
     }
    
     .button {
-        padding-top: 1.25em;
+        padding-top: 1em;
     }
 }
 
 /*--------------------------------------------------------------
 # Community Pro Lessons
 --------------------------------------------------------------*/
-.learndash-shortcode-wrap-course_content-624927_624927_2 {
+.learndash-shortcode-wrap-course_content-624927_624927_2, .learndash-shortcode-wrap-course_content-625025_625025_2 {
     display: none !important; //hide automatically output course content so I can replace it with the Learndash course grid block
 }
