@@ -241,22 +241,27 @@ function wpmember_endpoint_content() {
 		echo ('<p><a href="/membership-account/">Billing Details</a> | <a href="/membership-account/membership-levels/">Change Membership</a> | <a href="/membership-account/membership-cancel/">Cancel Membership</a></p>'); */
 
 		echo do_shortcode('[pmpro_account sections="membership"]');
+		echo '<hr>';
 		echo do_shortcode('[basic-user-avatars]');
+		echo '<hr>';
 		echo do_shortcode('[pmpro_account sections="invoices"]');
 		
 		echo (
-			'<br>
+			'<div class="my-memberships-section-container">
 			<h4>Connect with our Discord Community</h4>'
 			);
 		echo do_shortcode('[discord_connect_button]');
+		echo '</div>';
 	
-		/* if ($pmp_member->name == 'Community Pro'):
+		 if ($pmp_member->name == 'Community Pro'):
 			echo (
-				'<br>
+				'<hr>
+				<div class="my-memberships-section-container">
 				<h4>Exclusive Member Download</h4>
-				<p><a href="https://drive.google.com/file/d/1d8LKGidRS8UbZLNAJ563BcnBjtnQxdZ3/view" target="_blank">The Business of Independent Comic Book Publishing</a></p>'
+				<p><a href="https://drive.google.com/file/d/1d8LKGidRS8UbZLNAJ563BcnBjtnQxdZ3/view" target="_blank">The Business of Independent Comic Book Publishing</a></p>
+				</div>'
 				);
-		endif; */
+		endif; 
 		
 		echo ('</p>');
 	} else {

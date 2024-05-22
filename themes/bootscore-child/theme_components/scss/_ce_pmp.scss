@@ -218,6 +218,17 @@ form.pmpro_form .pmpro_change_password-fields {}
     @extend .btn-success;
 }
 
+.pmpro_table {
+    @extend .table;
+    @extend .table-striped; 
+}
+
+#pmpro_account {
+    .pmpro_box {
+        border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
 /*---------------------------------------
 	Misc
 ---------------------------------------*/
@@ -250,6 +261,8 @@ form.pmpro_form .pmpro_change_password-fields {}
 	User Avatar Upload Form
 ---------------------------------------*/
 #basic-user-avatar-form {
+    padding-top: 1em;
+    padding-bottom: 1em;
 
     .avatar {
         border-radius: 50%;
