@@ -242,6 +242,7 @@ function wpmember_endpoint_content() {
 
 		echo do_shortcode('[pmpro_account sections="membership"]');
 		echo '<hr>';
+		echo ('<h4>My Avatar</h4>');
 		echo do_shortcode('[basic-user-avatars]');
 		echo '<hr>';
 		echo do_shortcode('[pmpro_account sections="invoices"]');
