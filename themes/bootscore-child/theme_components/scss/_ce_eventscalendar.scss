@@ -33,3 +33,11 @@
         display: none !important;
     }
 }
+
+/* fix horizontal overflow on mobile */
+.tribe-events-calendar-list__event {
+    &.tribe-common-g-row--gutters {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
