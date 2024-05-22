@@ -16,3 +16,20 @@
         color: $ce-mediumblue !important;
     }
 }
+
+.tribe-events-c-search__button {
+    background-color: $ce-darkblue !important;
+}
+
+/* hide svg double arrows which appear alongside a single arrow for some reason */
+.tribe-events-c-nav__list-item--prev {
+    a[rel="prev"]::before {
+        display: none !important;
+    }
+}
+
+.tribe-events-c-nav__list-item--next {
+    a[rel="next"]::after {
+        display: none !important;
+    }
+}
