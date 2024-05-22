@@ -266,10 +266,12 @@ form.pmpro_form .pmpro_change_password-fields {}
 
     .avatar {
         border-radius: 50%;
+        margin-bottom: 1rem;
 
         @media only screen and (min-width: 768px) {
             float: left; 
             margin-right: 1rem;
+            margin-bottom: 0;
         }
     }
     
@@ -289,5 +291,9 @@ form.pmpro_form .pmpro_change_password-fields {}
         @extend .btn;
         @extend .btn-secondary;
         margin-top: 1em;
+    }
+
+    input[type="file"] { 
+        max-width: 100%;
     }
 }
