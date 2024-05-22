@@ -1,3 +1,18 @@
+@import "./_bscore_colors.scss";  // Collecting Bootstrap source from parent-theme
+
+
+.tribe-events-l-container {
+    padding-top: 2em !important;
+    padding-bottom: .5em !important;
+}
+
 .tribe-related-event-info {
     padding: 0 1.5em !important;
+}
+
+.tribe-events-content {
+    a {
+        border-bottom: 0 !important;
+        color: $ce-mediumblue !important;
+    }
 }
