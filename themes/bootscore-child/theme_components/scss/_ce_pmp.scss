@@ -68,6 +68,7 @@ form.pmpro_form select {
 }
 
 form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmpro_form input[type=email], form.pmpro_form input[type=number], form.pmpro_form textarea, form.pmpro_form select, #loginform input[type=text], #loginform input[type=password] {
+    width: 100% !important;
     max-width: 100%;
 }
 
@@ -245,10 +246,35 @@ form.pmpro_form .pmpro_change_password-fields {}
 	border: 0 !important;
 }
 
+/*---------------------------------------
+	User Avatar Upload Form
+---------------------------------------*/
+#basic-user-avatar-form {
 
-#basic-user-avatar-form p {display: inline-block; width: 70%; }
-#basic-user-avatar-form .avatar {float: left; }
-#basic-user-avatar-form p.description {clear: both; font-size: .8em; font-style: italic; line-height: 1.2em; width: 100%; }
-.recent_comments {background: rgba(255,255,255,0.25); border-radius: 10px; padding: 1px 3rem 3rem 3rem; }
-.recent_comments ul {margin: 0; }
-.recent_comments li {list-style: none; border-top: 1px dotted #FFF; margin: 0; padding: 1rem 0; }
+    .avatar {
+        border-radius: 50%;
+
+        @media only screen and (min-width: 768px) {
+            float: left; 
+            margin-right: 1rem;
+        }
+    }
+    
+    p {
+        .description {
+            @media only screen and (min-width: 768px) {
+                clear: both; 
+                font-size: .8em; 
+                font-style: italic; 
+                line-height: 1.2em; 
+                width: 100%; 
+            }
+        }
+    }
+
+    input[type="submit"] { 
+        @extend .btn;
+        @extend .btn-secondary;
+        margin-top: 1em;
+    }
+}
