@@ -49,7 +49,7 @@ if ( ! empty( $block['align'] ) ) {
                     <div class="accordion-body">
                        <div class="container-fluid">
                             <div class="row">
-                                <div class="col-2">
+                                <div class="col-12 col-md-2 text-center">
                                 <a href="<?php echo esc_url( $permalink ); ?>">
                                     <?php if ( $image ) { 
                                             echo $image;
@@ -58,7 +58,7 @@ if ( ! empty( $block['align'] ) ) {
                                     <?php } ?>
                                 </a>
                                 </div><!-- col -->
-                                <div class="col-10">
+                                <div class="col-12 col-md-10 pt-3">
                                     <h5 class="card-title mb-2"><a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $title ); ?></a></h5>
                                     <small class="card-text staff-meta text-muted"><?php echo $content; ?></small>
                                 </div><!-- col -->
