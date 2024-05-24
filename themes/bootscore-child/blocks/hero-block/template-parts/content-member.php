@@ -4,7 +4,7 @@
   $pmp_member = pmpro_getMembershipLevelForUser(get_current_user_id());
 ?>
 
-<h1>Welcome, <?php echo $current_user->display_name; ?>!</h1>
+<h1>Welcome, <?php echo $current_user->user_firstname ? $current_user->user_firstname : $current_user->display_name; ?>!</h1>
 
 <p>We&rsquo;re glad to have you back.</p>
 
