@@ -237,6 +237,7 @@ add_shortcode( 'workshop-staff', 'workshop_tab_staff' );
  * Usage [testimonials category="mentoring"]
  */
 function tab_testimonials($atts) {
+   
     /* https://wpexplorer-themes.com/total/snippets/simple-custom-shortcode-displaying-posts/ */
   
     $atts = shortcode_atts( array('category' => 'mentoring'), $atts, 'tab_testimonials' );
@@ -268,17 +269,16 @@ function tab_testimonials($atts) {
 			// Sets up post data so you can use functions like get_the_title(), get_permalink(), etc
 			$query->the_post();
 
-			// This is the output for your entry so what you want to do for each post.
-            if( get_field('name') ): 
-                $output .= '<p class="testimonial-title my-0">' .  get_field('name') . '</p>';
-            else: 
+            if ( get_field('name', get_the_ID())) {
+                $output .= '<p class="testimonial-title my-0">' .  esc_html(get_field('name', get_the_ID())) . '</p>';
+            } else {
                 $output .= '<p class="testimonial-title my-0">' . get_the_title() . '</p>';
-            endif;
+            }
             
-            if( get_field('credentials') ): 
-                $output .= '<p class="testimonial-credentials">' .  get_field('credentials') . '</p>';
+            if( get_field('credentials', get_the_ID()) ): 
+                $output .= '<p class="testimonial-credentials">' .  get_field('credentials', get_the_ID()) . '</p>';
             endif;
-            $posts = get_field('project');
+            $posts = get_field('project', get_the_ID());
             if( $posts ): 
                  foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) 
                     $output .= '<p class="testimonial-credentials">' .  get_the_title( $p->ID ) . '<sup>&copy;</sup></p>';
