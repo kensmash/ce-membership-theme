@@ -32,7 +32,7 @@
              if( $featured_services ):
              foreach( $featured_services as $service ): 
                  $permalink = get_permalink( $service->ID );
-                 $image = get_the_post_thumbnail( $staff->ID, 'full', array( 'class' => 'rounded-top' ) );  
+                 $image = get_the_post_thumbnail( $service->ID, 'full', array( 'class' => 'rounded-top' ) );  
                  $title = get_the_title( $service->ID );
                  //$content = get_post_field('post_content', $service->ID); 
                  $content = get_the_excerpt($service->ID); 
