@@ -50,8 +50,8 @@ if ( ! empty( $block['align'] ) ) {
         </div>
       </div>
       <div class="col mb-4 mb-lg-0">
-        <div class="card h-100 mb-4 rounded-3 border-primary pricing-card">
-          <div class="card-header text-bg-primary border-primary py-3">
+        <div class="card h-100 mb-4 rounded-3 border-success pricing-card">
+          <div class="card-header text-bg-success border-primary py-3">
             <h4 class="my-0">Community Pro</h4>
           </div>
           <div class="card-body">
@@ -68,7 +68,7 @@ if ( ! empty( $block['align'] ) ) {
           
           </div>
           <div class="card-footer border-top-0">
-            <a class="btn w-100 btn btn-lg btn-primary my-2" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=4'); ?>" role="button">Sign up for free</a>
+            <a class="btn w-100 btn btn-lg btn-success my-2" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=4'); ?>" role="button">Sign up for free</a>
           </div>
         </div>
       </div>

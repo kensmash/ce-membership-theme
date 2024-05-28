@@ -58,7 +58,7 @@ if ( ! empty( $block['align'] ) ) {
                                     <?php } ?>
                                 </a>
                                 </div><!-- col -->
-                                <div class="col-12 col-md-10 pt-3">
+                                <div class="col-12 col-md-10 pt-3 pt-md-0">
                                     <h5 class="card-title mb-2"><a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $title ); ?></a></h5>
                                     <small class="card-text staff-meta text-muted"><?php echo $content; ?></small>
                                 </div><!-- col -->

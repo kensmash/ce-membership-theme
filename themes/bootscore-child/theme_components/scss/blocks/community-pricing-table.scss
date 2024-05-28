@@ -1,5 +1,13 @@
+@import "../_bscore_colors.scss";  // Collecting Bootstrap source from parent-theme
+
 .pricing-card {
     .card-footer {
         background-color: rgba(255, 255, 255, 0) !important;
+    }
+}
+
+#check {
+    path {
+        fill: $ce-green;
     }
 }
