@@ -51,7 +51,7 @@ if ( ! empty( $block['align'] ) ) {
       </div>
       <div class="col mb-4 mb-lg-0">
         <div class="card h-100 mb-4 rounded-3 border-success pricing-card">
-          <div class="card-header text-bg-success border-primary py-3">
+          <div class="card-header text-bg-success border-success py-3">
             <h4 class="my-0">Community Pro</h4>
           </div>
           <div class="card-body">
