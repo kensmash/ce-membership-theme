@@ -41,3 +41,10 @@
         margin-right: 0 !important;
     }
 }
+
+/* hide event featured image in home page hero block */
+.hero-block-container {
+    .tribe-events-pro-week-mobile-events__event-featured-image-wrapper {
+        display: none !important;
+    }
+}
