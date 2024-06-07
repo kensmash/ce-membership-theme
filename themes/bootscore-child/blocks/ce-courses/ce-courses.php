@@ -34,14 +34,22 @@ if ( ! empty( $block['align'] ) ) {
             'post_status' => 'publish',
             'posts_per_page' => -1,
             'order' => 'ASC',
-            'tax_query' => array(
+            'tax_query'           => array(
+                // Product category filter
                 array(
                     'taxonomy' => 'product_cat',
                     'field' => 'slug', 
                     'terms' => array( 'courses' ),
                     'operator' => 'IN'
-                )
-            )
+                ),
+                // Product tag 1 filter
+                array(
+                    'taxonomy' => 'product_tag',
+                    'terms'    => array( 'bundle' ),
+                    'field'    => 'slug',
+                ),
+            
+            ),
         ));
         
         if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>

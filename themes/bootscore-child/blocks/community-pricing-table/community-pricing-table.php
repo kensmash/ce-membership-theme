@@ -132,12 +132,6 @@ if ( ! empty( $block['align'] ) ) {
 
         <tbody>
           <tr>
-            <th scope="row" class="text-start">Comics Experience Library</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
             <th scope="row" class="text-start">Live Q&A Sessions</th>
             <td></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
