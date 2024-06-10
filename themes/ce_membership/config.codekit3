@@ -537,6 +537,120 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/assets\/js\/dist\/bootstrap.bundle.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.bundle-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.bundle.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.bundle.js.map",
+      "oF" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.bundle.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.bundle.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.bundle.min.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.bundle.min.js.map",
+      "oF" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.esm.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.esm-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.esm.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.esm.js.map",
+      "oF" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.esm.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.esm.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.esm.min.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.esm.min.js.map",
+      "oF" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.js.map",
+      "oF" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/dist\/bootstrap.min.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/dist\/bootstrap.min.js.map",
+      "oF" : 0
+    },
     "\/assets\/js\/slick.min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -1874,12 +1988,44 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/template-parts\/content-coursesloop.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-coursesloop.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-coursesmeta.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-coursesmeta.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-excerpt.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-excerpt.php",
+      "oF" : 0
+    },
     "\/template-parts\/content-none.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/content-none.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-page copy.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-page copy.php",
       "oF" : 0
     },
     "\/template-parts\/content-page.php" : {
@@ -1890,6 +2036,14 @@
       "oAP" : "\/template-parts\/content-page.php",
       "oF" : 0
     },
+    "\/template-parts\/content-search copy.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-search copy.php",
+      "oF" : 0
+    },
     "\/template-parts\/content-search.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1898,12 +2052,84 @@
       "oAP" : "\/template-parts\/content-search.php",
       "oF" : 0
     },
+    "\/template-parts\/content-topimage.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-topimage.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-useragreement.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-useragreement.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-useragreementmodal.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-useragreementmodal.php",
+      "oF" : 0
+    },
     "\/template-parts\/content.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/content.php",
+      "oF" : 0
+    },
+    "\/template-parts\/header\/actions-woocommerce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/header\/actions-woocommerce.php",
+      "oF" : 0
+    },
+    "\/template-parts\/header\/collapse-search-woocommerce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/header\/collapse-search-woocommerce.php",
+      "oF" : 0
+    },
+    "\/template-parts\/header\/collapse-search.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/header\/collapse-search.php",
+      "oF" : 0
+    },
+    "\/template-parts\/header\/main-menu.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/header\/main-menu.php",
+      "oF" : 0
+    },
+    "\/template-parts\/tabs\/tabs-courses.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/tabs\/tabs-courses.php",
+      "oF" : 0
+    },
+    "\/template-parts\/tabs\/tabs-products.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/tabs\/tabs-products.php",
       "oF" : 0
     },
     "\/theme_components\/scss\/_bootstrap-variables.scss" : {

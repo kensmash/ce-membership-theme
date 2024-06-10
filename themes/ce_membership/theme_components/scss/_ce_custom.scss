@@ -94,7 +94,6 @@ a {
     text-decoration: none;
 }
 
-
 .testimonial-title {
     font-size: 1.1em;
     font-weight: bold;
@@ -119,6 +118,10 @@ a {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+
+.nav {
+    margin: 0 0 1.5em 0;
+}
 
 #bootscore-navbar, .top-nav-widget-2 {
     font-weight: 700;
