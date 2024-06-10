@@ -108,17 +108,50 @@ add_action( 'after_setup_theme', 'ce_membership_setup' );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function ce_membership_widgets_init() {
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Sidebar', 'ce_membership' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'ce_membership' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
+	// Top Bar
+    register_sidebar(array(
+		'name'          => esc_html__('Top Bar', 'bootscore'),
+		'id'            => 'top-bar',
+		'description'   => esc_html__('Add widgets here.', 'bootscore'),
+		'before_widget' => '<div class="widget top-bar-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<div class="widget-title d-none">',
+		'after_title'   => '</div>'
+	  ));  
+  
+	  // Top Nav
+	  register_sidebar(array(
+		'name'          => esc_html__('Top Nav', 'bootscore'),
+		'id'            => 'top-nav',
+		'description'   => esc_html__('Add widgets here.', 'bootscore'),
+		'before_widget' => '<div class="widget top-nav-widget ms-1 ms-md-2">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<div class="widget-title d-none">',
+		'after_title'   => '</div>'
+	  ));
+  
+	  // Top Nav 2
+	  // Adds a widget next to the Top Nav position but moves to offcanvas on <lg breakpoint
+	  register_sidebar(array(
+		'name'          => esc_html__('Top Nav 2', 'bootscore'),
+		'id'            => 'top-nav-2',
+		'description'   => esc_html__('Add widgets here.', 'bootscore'),
+		'before_widget' => '<div class="widget top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-lg-2">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<div class="widget-title d-none">',
+		'after_title'   => '</div>'
+	  ));
+  
+	  // Top Nav Search
+	  register_sidebar(array(
+		'name'          => esc_html__('Top Nav Search', 'bootscore'),
+		'id'            => 'top-nav-search',
+		'description'   => esc_html__('Add widgets here.', 'bootscore'),
+		'before_widget' => '<div class="widget top-nav-search">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<div class="widget-title d-none">',
+		'after_title'   => '</div>'
+	  ));
 }
 add_action( 'widgets_init', 'ce_membership_widgets_init' );
 
@@ -129,7 +162,7 @@ function ce_membership_scripts() {
 	wp_enqueue_style( 'ce_membership-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'ce_membership-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/dist/bootstrap.min.js', array('jquery'), '4.3.1', true );
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/dist/bootstrap.bundle.min.js', array('jquery'), '4.3.1', true );
 
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/custom.css', array(), '4.4.1', 'all' );
 
@@ -150,6 +183,11 @@ function ce_membership_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ce_membership_scripts' );
+
+/**
+ * Bootstrap 5 walker
+ */
+require get_template_directory() . '/inc/navwalker.php';
 
 /**
  * Implement the Custom Header feature.

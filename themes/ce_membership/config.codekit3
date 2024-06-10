@@ -1186,6 +1186,14 @@
       "oAP" : "\/footer.php",
       "oF" : 0
     },
+    "\/front-page.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/front-page.php",
+      "oF" : 0
+    },
     "\/functions.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1248,6 +1256,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/inc\/learndash.php",
+      "oF" : 0
+    },
+    "\/inc\/navwalker.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/navwalker.php",
       "oF" : 0
     },
     "\/inc\/pmp.php" : {
@@ -1335,500 +1351,6 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
-    },
-    "\/js\/dist\/alert.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/alert-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/alert.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/alert.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/base-component.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/base-component-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/base-component.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/base-component.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/button.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/button-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/button.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/button.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/carousel.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/carousel-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/carousel.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/carousel.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/collapse.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/collapse-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/collapse.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/collapse.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/dom\/data.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/dom\/data-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/dom\/data.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/dom\/data.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/dom\/event-handler.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/dom\/event-handler-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/dom\/event-handler.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/dom\/event-handler.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/dom\/manipulator.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/dom\/manipulator-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/dom\/manipulator.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/dom\/manipulator.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/dom\/selector-engine.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/dom\/selector-engine-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/dom\/selector-engine.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/dom\/selector-engine.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/dropdown.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/dropdown-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/dropdown.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/dropdown.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/modal.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/modal-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/modal.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/modal.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/offcanvas.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/offcanvas-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/offcanvas.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/offcanvas.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/popover.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/popover-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/popover.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/popover.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/scrollspy.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/scrollspy-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/scrollspy.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/scrollspy.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/tab.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/tab-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/tab.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/tab.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/toast.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/toast-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/toast.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/toast.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/tooltip.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/tooltip-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/tooltip.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/tooltip.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/util\/backdrop.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/backdrop-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/util\/backdrop.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/backdrop.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/util\/component-functions.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/component-functions-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/util\/component-functions.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/component-functions.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/util\/config.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/config-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/util\/config.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/config.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/util\/focustrap.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/focustrap-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/util\/focustrap.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/focustrap.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/util\/index.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/index-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/util\/index.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/index.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/util\/sanitizer.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/sanitizer-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/util\/sanitizer.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/sanitizer.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/util\/scrollbar.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/scrollbar-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/util\/scrollbar.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/scrollbar.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/util\/swipe.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/swipe-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/util\/swipe.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/swipe.js.map",
-      "oF" : 0
-    },
-    "\/js\/dist\/util\/template-factory.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/template-factory-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/dist\/util\/template-factory.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/js\/dist\/util\/template-factory.js.map",
-      "oF" : 0
     },
     "\/js\/slick.min.js" : {
       "bF" : 0,
@@ -2092,6 +1614,14 @@
       "oAP" : "\/template-parts\/header\/actions-woocommerce.php",
       "oF" : 0
     },
+    "\/template-parts\/header\/actions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/header\/actions.php",
+      "oF" : 0
+    },
     "\/template-parts\/header\/collapse-search-woocommerce.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2114,6 +1644,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/header\/main-menu.php",
+      "oF" : 0
+    },
+    "\/template-parts\/header\/offcanvas-woocommerce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/header\/offcanvas-woocommerce.php",
       "oF" : 0
     },
     "\/template-parts\/tabs\/tabs-courses.php" : {

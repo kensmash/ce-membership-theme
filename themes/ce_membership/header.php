@@ -25,35 +25,84 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ce_membership' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$ce_membership_description = get_bloginfo( 'description', 'display' );
-			if ( $ce_membership_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $ce_membership_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+	<!-- Top Bar Widget -->
+	<?php if (is_active_sidebar('top-bar')) : ?>
+		<?php dynamic_sidebar('top-bar'); ?>
+	<?php endif; ?>  
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ce_membership' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+  <header id="masthead" class="sticky-top bg-dark site-header">
+
+    <nav id="nav-main" class="navbar navbar-expand-lg">
+
+      <div class="container">
+        
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="<?= esc_url(home_url()); ?>">
+        <?php if ( wp_is_mobile() ) { ?>
+          <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo/logo-sm.svg'; ?>" alt="<?php bloginfo('name'); ?> Logo" class="d-td-none me-2">
+        <?php } else { ?>
+          <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo/logo.svg'; ?>" alt="<?php bloginfo('name'); ?> Logo" class="d-td-none me-2">
+        <?php } ?>
+        </a>  
+
+        <!-- Offcanvas Navbar -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-navbar">
+          <div class="offcanvas-header">
+		  	<span class="h5 offcanvas-title">Menu</span>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body justify-content-xl-center">
+
+            <!-- Bootstrap 5 Nav Walker Main Menu -->
+            <?php get_template_part('template-parts/header/main-menu'); ?>
+
+            <!-- Top Nav 2 Widget -->
+            <?php if (is_active_sidebar('top-nav-2')) : ?>
+              <?php dynamic_sidebar('top-nav-2'); ?>
+            <?php endif; ?>
+
+          </div>
+        </div>
+
+        <div class="header-actions d-flex align-items-center">
+
+          <!-- Top Nav Widget -->
+          <?php if (is_active_sidebar('top-nav')) : ?>
+            <?php dynamic_sidebar('top-nav'); ?>
+          <?php endif; ?>
+
+          <?php
+          if (class_exists('WooCommerce')) :
+            get_template_part('template-parts/header/actions', 'woocommerce');
+          else :
+            get_template_part('template-parts/header/actions');
+          endif;
+          ?>
+
+          <!-- Navbar Toggler -->
+          <button class="btn btn-outline-secondary d-lg-none ms-1 ms-md-2 nav-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i><span class="visually-hidden-focusable">Menu</span>
+          </button>
+
+        </div><!-- .header-actions -->
+
+      </div><!-- .container -->
+
+    </nav><!-- .navbar -->
+
+    <?php
+    if (class_exists('WooCommerce')) :
+      get_template_part('template-parts/header/collapse-search', 'woocommerce');
+    else :
+      get_template_part('template-parts/header/collapse-search');
+    endif;
+    ?>
+
+    <!-- Offcanvas User and Cart -->
+    <?php
+    if (class_exists('WooCommerce')) :
+      get_template_part('template-parts/header/offcanvas', 'woocommerce');
+    endif;
+    ?>
+
+  </header><!-- #masthead -->

@@ -41,7 +41,7 @@ if ( ! empty( $block['align'] ) ) {
 
                 <div class="card ce-images-slider-card-slide border-0">
                     <div class="card-body">
-                        <div data-bs-toggle="modal" data-bs-target="#creativeServicesImageModal">
+                        <div data-bs-toggle="modal" data-bs-target="#creativeServicesImageModal<?php echo esc_html( get_field('block_id') ); ?>">
                             <?php echo wp_get_attachment_image( $image, 'full' ); ?>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ if ( ! empty( $block['align'] ) ) {
         </div><!-- ce-images-slider-cards -->
 
         <!-- Modal -->
-        <div class="modal fade" id="creativeServicesImageModal" tabindex="-1" role="dialog" aria-labelledby="creativeServicesImageModalLabel" aria-hidden="true">
+        <div class="modal fade" id="creativeServicesImageModal<?php echo esc_html( get_field('block_id') ); ?>" tabindex="-1" role="dialog" aria-labelledby="creativeServicesImageModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
