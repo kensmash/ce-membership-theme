@@ -1,0 +1,42 @@
+/* get rid of vendor display in add to cart message */
+.item-quantity {
+   .variation {
+        display: none;
+    }
+}
+
+.cart_item, .woocommerce-mini-cart-item {
+    .variation {
+        display: none !important;
+    }
+}
+
+ /* hide Dokan become a vendor message on dashboard page */
+ .woocommerce-account {
+    .dokan-account-migration-lists {
+      display: none;
+    }
+  }
+
+  /* hide Dokan vendor registration form */
+  #customer_login_1 {
+    .register {
+      display: none !important;
+    }
+  }
+
+  /* fix awful styling on checkout form */
+
+  #dokan-stripe-connect-card-number, #dokan-stripe-connect-card-expiry, #dokan-stripe-connect-card-cvc {
+    display: block;
+    font-size: 1em !important;
+    padding: 1em .5em !important;
+    width: 100%;
+  }
+
+  /* get rid of mobile become a vendor menu item on my account menu */
+  .woocommerce-MyAccount-content {
+    .dokan-account-migration-lists {
+      display: none !important;
+    }
+  }

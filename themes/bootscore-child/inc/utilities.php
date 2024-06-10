@@ -21,7 +21,6 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 //argh, disable horrible idea to redirect user on woocommerce login fail
-//originally located in woocommerce/inc/wc-redirects.php
 function child_remove_parent_function() {
     remove_action('woocommerce_login_failed', 'bootscore_redirect_on_login_failed', 10, 0);
 }

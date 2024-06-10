@@ -1,0 +1,53 @@
+@import "../_ce_colors.scss";  // Collecting Bootstrap source from parent-theme
+
+.hero-block-content-container {
+    padding: 1rem 1.25rem 3rem !important;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    @media only screen and (min-width: 768px) {
+        padding: .5rem 1.75rem 3rem !important;
+    }
+
+    @media only screen and (min-width: 1350px) {
+        background-color: rgba(0, 0, 0, 0);
+        padding: 6rem 0 10rem !important;
+    }
+
+    .tribe-events-widget-events-week {
+        padding-bottom: .5rem !important;
+    }
+
+    .tribe-events-pro-week-day-selector__day-weekday, .tribe-events-pro-week-day-selector__day-daynum, .tribe-events-pro-week-mobile-events__event-time-separator-text, .tribe-events-pro-week-mobile-events__event-datetime-wrapper, .tribe-events-pro-week-mobile-events__event-title-link {
+        color: white !important;
+    }
+
+    .tribe-events-c-top-bar__nav-list-date {
+        font-size: .5em !important;
+    }
+
+    .tribe-events-widget-events-week__view-more {
+        margin-top: .0 !important;
+    }
+
+    .tribe-events-widget-events-week__view-more-link {
+        color: $ce-iceblue !important;
+        transition: all .25s !important;
+
+        &:hover {
+            color: white !important;
+        }
+    }
+
+    .tribe-events-pro-week-day-selector__day--active {
+        border-color: $ce-iceblue !important;
+    }
+
+    .tribe-events-pro-week-day-selector__events-icon {
+        background-color: $ce-iceblue !important;
+    }
+
+    .tribe-common-anchor-thin:hover, .tribe-common-anchor-thin:active, .tribe-common-anchor-thin:focus  {
+        border-bottom: 0px !important;
+    }
+}
+

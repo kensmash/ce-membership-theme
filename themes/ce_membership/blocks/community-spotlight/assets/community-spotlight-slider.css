@@ -1,0 +1,72 @@
+/*!
+ * bootScore custom colors
+ */
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+/*--------------------------------------------------------------
+# DEFAULT SLICK STYLES
+--------------------------------------------------------------*/
+.spotlight-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  outline: none !important;
+  transition: all 0.25s ease-in;
+}
+.spotlight-slider .slick-arrow:hover,
+.spotlight-slider .slick-arrow:focus {
+  color: #83d9ff;
+}
+.spotlight-slider .slick-prev {
+  left: 10px;
+}
+.spotlight-slider .slick-next {
+  right: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  .spotlight-slider .slick-prev {
+    left: -40px;
+  }
+  .spotlight-slider .slick-next {
+    right: -40px;
+  }
+}
+
+/*--------------------------------------------------------------
+# OTHER STYLES
+--------------------------------------------------------------*/
+.spotlight-card {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.spotlight-card img {
+  transition: all 0.25s ease-in;
+  transform: scale(0.75);
+}
+@media only screen and (min-width: 1024px) {
+  .spotlight-card h3, .spotlight-card p {
+    transition: all 0.25s ease-in;
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .slick-current .spotlight-card img {
+    transform: scale(0.9);
+  }
+}
+.slick-current .spotlight-card h3, .slick-current .spotlight-card p {
+  opacity: 1;
+}

@@ -99,7 +99,8 @@
                 "Graphic Novel": "Graphic Novel",
                 "Digital Comic": "Digital Comic",
                 "Limited Series": "Limited Series",
-                "Trade Paperback": "Trade Paperback"
+                "Trade Paperback": "Trade Paperback",
+                "Short Story": "Short Story"
             },
             "default_value": "none",
             "return_format": "label",
@@ -128,5 +129,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702220675
+    "modified": 1715609434
 }

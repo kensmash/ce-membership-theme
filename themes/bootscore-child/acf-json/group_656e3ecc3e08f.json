@@ -96,6 +96,11 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "product"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "!=",
+                "value": "product_cat:courses"
             }
         ]
     ],
@@ -108,5 +113,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702156072
+    "modified": 1715781113
 }

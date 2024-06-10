@@ -5,9 +5,9 @@
 /index.php
 
 !/themes
-!/themes/comics-experience-membership
-!/themes/comics-experience-membership/**/
-/themes/comics-experience-membership/assets
+!/themes/ce_membership
+!/themes/ce_membership/**/
+/themes/ce_membership/assets
 
 !/themes/bootscore-child-main
 !/themes/bootscore-child-main/**/

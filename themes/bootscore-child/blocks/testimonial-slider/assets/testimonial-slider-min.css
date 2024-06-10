@@ -1,0 +1,59 @@
+/*!
+ * bootScore custom colors
+ */
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+/*--------------------------------------------------------------
+# DEFAULT SLICK STYLES
+--------------------------------------------------------------*/
+.testimonial-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #2979a2;
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  outline: none !important;
+  transition: all 0.25s ease-in;
+}
+.testimonial-slider .slick-arrow:hover,
+.testimonial-slider .slick-arrow:focus {
+  color: #83d9ff;
+}
+.testimonial-slider .slick-prev {
+  left: 5px;
+}
+.testimonial-slider .slick-next {
+  right: 5px;
+}
+@media only screen and (min-width: 1024px) {
+  .testimonial-slider .slick-prev {
+    left: -20px;
+  }
+  .testimonial-slider .slick-next {
+    right: -20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# SLIDER STYLES STYLES
+--------------------------------------------------------------*/
+.testimonial-slide .card {
+  border: 0px !important;
+  background-color: #2979a2 !important;
+  color: white !important;
+}
+.testimonial-slide .card .card-footer {
+  border-top: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 0.75em;
+  padding-bottom: 1em;
+}

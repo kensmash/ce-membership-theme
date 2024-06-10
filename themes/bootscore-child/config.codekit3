@@ -97,6 +97,22 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/group_660ffa7f54b12.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_660ffa7f54b12-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/acf-json\/group_663e85483ba6b.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_663e85483ba6b-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/group_6556a9015ced8.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -125,6 +141,14 @@
       "ft" : 524288,
       "oA" : 1,
       "oAP" : "\/acf-json\/group_655686699403d-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/acf-json\/group_661995648004b.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_661995648004b-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
@@ -181,6 +205,14 @@
       "ft" : 524288,
       "oA" : 1,
       "oAP" : "\/acf-json\/taxonomy_657361a49a73b-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/acf-json\/ui_options_page_663e85067ec61.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/ui_options_page_663e85067ec61-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
@@ -784,6 +816,18 @@
       "oAP" : "\/blocks\/ce-staff\/ce-staff.php",
       "oF" : 0
     },
+    "\/blocks\/community-pricing-table\/assets\/community-pricing-table-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-pricing-table\/assets\/community-pricing-table-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/blocks\/community-pricing-table\/assets\/community-pricing-table.asset.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -836,6 +880,29 @@
       "oAP" : "\/blocks\/community-pricing\/community-pricing.php",
       "oF" : 0
     },
+    "\/blocks\/community-spotlight\/assets\/community-spotlight-slider-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/community-spotlight\/assets\/community-spotlight-slider-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.asset.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -861,9 +928,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider-min.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -898,6 +965,18 @@
       "oA" : 0,
       "oAP" : "\/blocks\/creative-services\/creative-services.php",
       "oF" : 0
+    },
+    "\/blocks\/hero-block\/assets\/hero-block-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/hero-block\/assets\/hero-block-min-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/blocks\/hero-block\/assets\/hero-block.asset.php" : {
       "cB" : 0,
@@ -974,6 +1053,29 @@
       "oA" : 0,
       "oAP" : "\/blocks\/home-page-courses\/home-page-courses.php",
       "oF" : 0
+    },
+    "\/blocks\/image-slider\/assets\/image-slider-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/image-slider\/assets\/image-slider-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/image-slider\/assets\/image-slider-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/image-slider\/assets\/image-slider-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/blocks\/image-slider\/assets\/image-slider.asset.php" : {
       "cB" : 0,
@@ -1053,6 +1155,29 @@
       "oA" : 0,
       "oAP" : "\/blocks\/responsive-tabs\/responsive-tabs.php",
       "oF" : 0
+    },
+    "\/blocks\/testimonial-slider\/assets\/testimonial-slider-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial-slider-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/testimonial-slider\/assets\/testimonial-slider-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/testimonial-slider\/assets\/testimonial-slider-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/blocks\/testimonial-slider\/assets\/testimonial-slider.asset.php" : {
       "cB" : 0,
@@ -1245,6 +1370,14 @@
       "oAP" : "\/page.php",
       "oF" : 0
     },
+    "\/README.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0
+    },
     "\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -1308,6 +1441,18 @@
       "oA" : 0,
       "oAP" : "\/single.php",
       "oF" : 0
+    },
+    "\/style-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style-min-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/style.css" : {
       "aP" : 1,
@@ -1667,8 +1812,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/blocks\/ce-services\/assets\/ce-services.css",
-      "oF" : 2,
+      "oAP" : "\/theme_components\/scss\/blocks\/ce-services.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1682,8 +1827,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/blocks\/community-pricing-table\/assets\/community-pricing-table.css",
-      "oF" : 2,
+      "oAP" : "\/theme_components\/scss\/blocks\/community-pricing-table.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1697,8 +1842,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.css",
-      "oF" : 2,
+      "oAP" : "\/theme_components\/scss\/blocks\/community-spotlight-slider.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1712,8 +1857,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/blocks\/hero-block\/assets\/hero-block.css",
-      "oF" : 2,
+      "oAP" : "\/theme_components\/scss\/blocks\/hero-block.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1757,8 +1902,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/css\/main.css",
-      "oF" : 2,
+      "oAP" : "\/theme_components\/scss\/main.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1769,6 +1914,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/woocommerce.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/inc\/wc-redirects.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce\/inc\/wc-redirects.php",
       "oF" : 0
     },
     "\/woocommerce\/loop\/loop-end.php" : {
