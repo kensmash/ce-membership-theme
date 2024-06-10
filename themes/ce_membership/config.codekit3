@@ -1542,28 +1542,12 @@
       "oAP" : "\/template-parts\/content-none.php",
       "oF" : 0
     },
-    "\/template-parts\/content-page copy.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/content-page copy.php",
-      "oF" : 0
-    },
     "\/template-parts\/content-page.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/content-page.php",
-      "oF" : 0
-    },
-    "\/template-parts\/content-search copy.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/content-search copy.php",
       "oF" : 0
     },
     "\/template-parts\/content-search.php" : {

@@ -44,7 +44,7 @@ if ( is_user_logged_in() ) {
 
 //now show main menu
   wp_nav_menu(array(
-    'theme_location' => 'main-menu',
+    'menu'           => 'Main Navigation',
     'container'      => false,
     'menu_class'     => '',
     'fallback_cb'    => '__return_false',
