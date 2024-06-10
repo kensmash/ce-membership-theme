@@ -129,9 +129,15 @@ function ce_membership_scripts() {
 	wp_enqueue_style( 'ce_membership-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'ce_membership-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/dist/bootstrap.min.js', array('jquery'), '4.3.1', true );
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/dist/bootstrap.min.js', array('jquery'), '4.3.1', true );
 
-	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/custom.css', array(), '4.4.1', 'all' );
+	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/custom.css', array(), '4.4.1', 'all' );
+
+	//slick css
+	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/css/slick.css', array(), '1.0.0', 'all' );
+
+	//slick js
+	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/slick.min.js', array('jquery'), '1.0.0', true );
 
 	wp_enqueue_script( 'anchor_scroll', get_template_directory_uri() . '/js/anchorscroll.js', array('jquery'), '20151215', true );
 
@@ -160,15 +166,26 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
+// Custom blocks.
+require get_theme_file_path( 'inc/blocks.php' );
 
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
+// Custom Woo settings.
+require get_theme_file_path( 'inc/woocommerce.php' );
 
+// Extend TinyMCE editor
+require get_theme_file_path( 'inc/extend-tiny-mce.php' );
+
+// PMP customize
+require get_theme_file_path( 'inc/pmp.php' );
+
+// shortcodes
+require get_theme_file_path( 'inc/shortcodes.php' );
+
+// search customizations
+require get_theme_file_path( 'inc/search.php' );
+
+//Learndash customization
+require get_theme_file_path( 'inc/learndash.php' );
+
+//misc
+require get_theme_file_path( 'inc/utilities.php' );

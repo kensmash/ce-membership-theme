@@ -1088,6 +1088,14 @@
       "oAP" : "\/header.php",
       "oF" : 0
     },
+    "\/inc\/blocks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/blocks.php",
+      "oF" : 0
+    },
     "\/inc\/custom-header.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1104,12 +1112,52 @@
       "oAP" : "\/inc\/customizer.php",
       "oF" : 0
     },
+    "\/inc\/extend-tiny-mce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/extend-tiny-mce.php",
+      "oF" : 0
+    },
     "\/inc\/jetpack.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/inc\/jetpack.php",
+      "oF" : 0
+    },
+    "\/inc\/learndash.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/learndash.php",
+      "oF" : 0
+    },
+    "\/inc\/pmp.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/pmp.php",
+      "oF" : 0
+    },
+    "\/inc\/search.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/search.php",
+      "oF" : 0
+    },
+    "\/inc\/shortcodes.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/shortcodes.php",
       "oF" : 0
     },
     "\/inc\/template-functions.php" : {
@@ -1126,6 +1174,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/inc\/template-tags.php",
+      "oF" : 0
+    },
+    "\/inc\/utilities.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/utilities.php",
+      "oF" : 0
+    },
+    "\/inc\/woocommerce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/woocommerce.php",
       "oF" : 0
     },
     "\/index.php" : {
