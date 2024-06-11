@@ -164,7 +164,7 @@ function ce_membership_scripts() {
 
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/dist/bootstrap.bundle.min.js', array('jquery'), '4.3.1', true );
 
-	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/custom.css', array(), '4.4.1', 'all' );
+	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/custom.css', array(), '4.4.2', 'all' );
 
 	//slick css
 	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/css/slick.css', array(), '1.0.0', 'all' );

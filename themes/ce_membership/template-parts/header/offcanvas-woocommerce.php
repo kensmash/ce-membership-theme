@@ -28,7 +28,7 @@ if ( is_account_page() || is_checkout() ) {
   </div>
   <div class="offcanvas-body">
     <div class="my-offcanvas-account">
-      <?= do_shortcode('[woocommerce_my_account]'); ?>
+      <?php echo do_shortcode('[woocommerce_my_account]'); ?>
     </div>
   </div>
 </div>
@@ -41,7 +41,7 @@ if ( is_checkout() || is_cart() ) {
 } else { ?>
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-cart">
     <div class="offcanvas-header">
-      <span class="h5 offcanvas-title"><?= apply_filters('bootscore/offcanvas/cart/title', __('Cart', 'bootscore')); ?></span>
+      <span class="h5 offcanvas-title">Cart</span>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body p-0">

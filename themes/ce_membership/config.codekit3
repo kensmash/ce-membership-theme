@@ -1654,36 +1654,6 @@
       "oAP" : "\/template-parts\/tabs\/tabs-products.php",
       "oF" : 0
     },
-    "\/theme_components\/scss\/_bootscore-style.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/theme_components\/scss\/_bootscore-style.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/theme_components\/scss\/_bootscore-woocommerce.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/theme_components\/scss\/_bootscore-woocommerce.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/theme_components\/scss\/_bootstrap-variables.scss" : {
       "aP" : 0,
       "bl" : 0,
