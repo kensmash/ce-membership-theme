@@ -1916,6 +1916,14 @@
       "oAP" : "\/woocommerce.php",
       "oF" : 0
     },
+    "\/woocommerce\/cart\/mini-cart.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce\/cart\/mini-cart.php",
+      "oF" : 0
+    },
     "\/woocommerce\/inc\/wc-redirects.php" : {
       "cB" : 0,
       "ft" : 8192,

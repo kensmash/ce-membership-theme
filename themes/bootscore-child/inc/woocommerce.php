@@ -453,11 +453,6 @@ function hide_product_from_shop_page_if_user_already_purchased( $query ) {
 
 }
 
-/* resolve issue with WooCommerce Mini Cart becoming blank if error message showing */
-/* https://stackoverflow.com/questions/76495561/woocommerce-mini-cart-is-coming-blank-on-add-to-cart-from-product-page */
-function enqueue_wc_cart_fragments() { wp_enqueue_script( 'wc-cart-fragments' ); }
-add_action( 'wp_enqueue_scripts', 'enqueue_wc_cart_fragments' );
-
 
 /**
  * @snippet       Custom Redirect for Logins @ WooCommerce My Account
