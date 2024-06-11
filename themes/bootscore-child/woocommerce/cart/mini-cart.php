@@ -26,6 +26,11 @@ do_action('woocommerce_before_mini_cart');
 
   <div class="woocommerce-mini-cart cart_list product_list_widget list-group list-group-flush <?php echo esc_attr($args['list_class']); ?>">
     <?php
+    //This refactor attempts to resolve issue where WC error notices would not output in mini-cart offcanvas menu IF cart was previously empty
+    //now error notices will output if cart is empty
+    //but if cart is empty and error message is displaying, subsequently closing the offcanvas menu and re-opening will result in offcanvas menu being empty
+    //until user takes action such as adding an item to cart
+    //frustrating
     do_action('woocommerce_before_mini_cart_contents');
 
     if (WC()->cart->is_empty()) : 
