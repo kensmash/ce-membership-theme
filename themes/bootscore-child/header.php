@@ -38,7 +38,7 @@ defined('ABSPATH') || exit;
     <?php dynamic_sidebar('top-bar'); ?>
   <?php endif; ?>  
 
-  <header id="masthead" class="<?= apply_filters('bootscore/class/header', is_front_page() && !wp_is_mobile() ? 'sticky-top bg-black' : 'sticky-top bg-dark'); ?> site-header">
+  <header id="masthead" class="<?= apply_filters('bootscore/class/header', is_front_page() && !wp_is_mobile() ? 'sticky-top bg-dark' : 'sticky-top bg-dark'); ?> site-header">
 
     <nav id="nav-main" class="navbar <?= apply_filters('bootscore/class/header/navbar/breakpoint', 'navbar-expand-lg'); ?>">
 
@@ -56,7 +56,7 @@ defined('ABSPATH') || exit;
             <span class="h5 offcanvas-title"><?= apply_filters('bootscore/offcanvas/navbar/title', __('Menu', 'bootscore')); ?></span>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body justify-content-xl-center">
+          <div class="offcanvas-body justify-content-lg-center">
 
             <!-- Bootstrap 5 Nav Walker Main Menu -->
             <?php get_template_part('template-parts/header/main-menu'); ?>

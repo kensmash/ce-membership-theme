@@ -1900,10 +1900,10 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 0,
-      "oAP" : "\/theme_components\/scss\/main.css",
-      "oF" : 0,
+      "oAP" : "\/assets\/css\/main.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0

@@ -15147,7 +15147,7 @@ li:focus-within a {
 #nav-main .header-actions .btn-outline-secondary:hover {
   color: white;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   #nav-main {
     /* dropdown menu */
     /* desktop link text */

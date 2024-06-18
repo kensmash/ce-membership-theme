@@ -48,7 +48,7 @@ if ( is_user_logged_in() ) {
     'container'      => false,
     'menu_class'     => '',
     'fallback_cb'    => '__return_false',
-    'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-xl-0 %2$s">%3$s</ul>',
+    'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-lg-0 %2$s">%3$s</ul>',
     'depth'          => 2,
     'walker'         => new bootstrap_5_wp_nav_menu_walker()
   ));
@@ -90,7 +90,7 @@ if( !$pmp_member ) { ?>
     'container'      => false,
     'menu_class'     => '',
     'fallback_cb'    => '__return_false',
-    'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-xl-0 %2$s">%3$s</ul>',
+    'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav ms-auto ms-lg-0 %2$s">%3$s</ul>',
     'depth'          => 2,
     'walker'         => new bootstrap_5_wp_nav_menu_walker()
   ));
