@@ -33,8 +33,6 @@ if ( ! empty( $block['align'] ) ) {
             'post_type' => 'product',
             'post_status' => 'publish',
             'posts_per_page' => -1,
-            'order' => 'ASC',
-            
             'tax_query'           => array(
                 // Product category filter
                 array(
@@ -50,6 +48,8 @@ if ( ! empty( $block['align'] ) ) {
                     'field'    => 'slug',
                 ), */
             ),
+            'orderby'        => 'menu_order',
+            'order' => 'ASC', 
         ));
 
        
