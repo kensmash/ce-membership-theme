@@ -38,7 +38,7 @@ defined('ABSPATH') || exit;
     <?php dynamic_sidebar('top-bar'); ?>
   <?php endif; ?>  
 
-  <header id="masthead" class="<?= apply_filters('bootscore/class/header', 'sticky-top bg-dark'); ?> site-header">
+  <header id="masthead" class="<?= apply_filters('bootscore/class/header', is_front_page() && !wp_is_mobile() ? 'sticky-top bg-black' : 'sticky-top bg-dark'); ?> site-header">
 
     <nav id="nav-main" class="navbar <?= apply_filters('bootscore/class/header/navbar/breakpoint', 'navbar-expand-lg'); ?>">
 
