@@ -28,20 +28,25 @@ if ( ! empty( $block['align'] ) ) {
 
         <?php if( have_rows('professional_services') ): ?>
             
-            <?php while( have_rows('professional_services') ): the_row(); $link = get_sub_field('service_link'); ?>
+            <?php while( have_rows('professional_services') ): the_row(); 
+                $link = get_sub_field('service_link'); 
+                $image = get_sub_field('service_thumbnail'); 
+
+            ?>
                 <div class="col-md-6 mb-3">
-                    <div class="card h-100 px-1 px-lg-3">
-                        <h4 class="card-header bg-white border-0 px-3 pt-4 pb-2 text-center"><?php echo acf_esc_html( get_sub_field('service_name') ); ?></h4>
-                        <div class="card-body">
-                            <?php echo get_sub_field('service_description') ?>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 py-4">
-                            <div class="d-grid px-2">
-                                <a href="<?php echo esc_url( $link ); ?>" class="btn btn-success px-md-5">Learn More</a>
+                    <div class="card h-100">
+                        <div class="row h-100 g-0">
+                            <div class="col-md-4">
+                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="rounded-start"/>
+                            </div>
+                            <div class="col-md-8 h-100">
+                                <div class="card-body h-100 d-flex align-items-center">
+                                    <h5 class="card-title mb-2"><a href="<?php echo esc_url( $link ); ?>"><?php echo get_sub_field('service_name') ?></a></h5>    
+                                </div>
                             </div>
                         </div>
-                    </div><!-- card -->
-                </div> <!-- col -->
+                    </div>
+        </div>
             <?php endwhile; ?>
         
         <?php endif; ?>
