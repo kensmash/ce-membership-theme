@@ -20,9 +20,9 @@ defined('ABSPATH') || exit;
 get_header();
 ?>
 
-<div id="content" class="site-content <?= apply_filters('bootscore/class/container', 'container-fluid', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0 py-lg-5 mt-lg-1', 'page'); ?>">
+<div id="content" class="site-content <?= apply_filters('bootscore/class/container', 'container-fluid', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0 py-xl-5 mt-xl-1', 'page'); ?>">
 
-  <div id="primary" class="content-area <?= apply_filters('bootscore/class/container', 'container bg-white rounded-lg-1', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0', 'page'); ?>">
+  <div id="primary" class="content-area <?= apply_filters('bootscore/class/container', 'container bg-white rounded-xl-1', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0', 'page'); ?>">
 
       <main id="main" class="site-main">
 

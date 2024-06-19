@@ -17,7 +17,7 @@ defined('ABSPATH') || exit;
 ?>
 
 
-<footer class="container-fluid ce-footer px-0 <?php echo !is_front_page() ? "mt-lg-5" : ""; ?>">
+<footer class="container-fluid ce-footer px-0 <?php echo !is_front_page() ? "mt-xl-5" : ""; ?>">
 
     <div class="bootscore-footer pt-3 pb-3">
 
