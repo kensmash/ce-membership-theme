@@ -12,7 +12,7 @@ defined('ABSPATH') || exit;
 get_header();
 ?>
 
-<div id="content" class="site-content <?= apply_filters('bootscore/class/container', 'container-fluid', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0 py-xxl-5 mt-xxl-1', 'page'); ?>">
+<div id="content" class="site-content <?= apply_filters('bootscore/class/container', 'container-fluid', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0 py-xxl-4 mt-xxl-1', 'page'); ?>">
   <div id="primary" class="content-area <?= apply_filters('bootscore/class/container', 'container bg-white rounded-xxl-1', 'page'); ?> <?= apply_filters('bootscore/class/content/spacer', 'px-0', 'page'); ?>">
 
   <?php if (!wp_is_mobile()): get_template_part( 'template-parts/content', 'topimage' ); endif; ?>

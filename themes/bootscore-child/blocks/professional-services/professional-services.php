@@ -34,7 +34,7 @@ if ( ! empty( $block['align'] ) ) {
 
             ?>
                 <div class="col-md-6 mb-3">
-                    <div class="card h-100">
+                    <div class="card h-100" style="min-height: 115px;">
                         <div class="row h-100 g-0">
                             <div class="col-md-4" style="background-image: url(<?php echo esc_url($image['url']); ?>); background-size: cover;">
                                 
