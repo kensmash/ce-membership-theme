@@ -95,7 +95,7 @@ if( !$pmp_member ) { ?>
     'walker'         => new bootstrap_5_wp_nav_menu_walker()
   ));
 ?>
-  <div class="top-nav-widget-2 d-xl-flex align-items-lg-center mt-2 mt-lg-0 ms-xl-2">
+  <div class="top-nav-widget-2 d-lg-flex align-items-lg-center mt-2 mt-lg-0 ms-xl-2">
     <a href="<?php echo site_url('login'); ?>">Login</a>
     <a class="btn btn-success ms-lg-3 mt-3 mt-lg-0" href="<?php echo site_url('community'); ?>" role="button">Community Signup</a>
   </div>
