@@ -6,7 +6,7 @@
 // Because this file is compiled after Bootstrap, you're also able to use Bootstrap mixins for better code.
 // Some examples can be found here: https://bootscore.me/documentation/bootstrap-css-sass
 
-$max-width: 1300px;
+$max-width: 1400px;
 
 body {
     background: #f1f1f1 url(../../assets/images/bg_pattern.jpg);
@@ -310,7 +310,7 @@ hr {
 --------------------------------------------------------------*/
 
 .header-image {
-    @media (min-width: 1200px) {
+    @media (min-width: 1400px) {
         border-radius: 4px 4px 0 0;
     }
 }
