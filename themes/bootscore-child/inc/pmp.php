@@ -108,10 +108,13 @@ add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
  
 		// only show this to members and if the price isn't already the same as regular price.
 		if ( isset( $level_id ) && floatval($price) !== floatval($regular_price) ) {
-			$formatted_price = '<del>' . wc_price( $regular_price ) . '</del> ';
+			//$formatted_price = '<del>' . wc_price( $regular_price ) . '</del> ';
+			$formatted_price = 'Current Price: <del>' . wc_price( $regular_price ) . '</del></br> ';
+			$formatted_price .= 'Membership Discounted Price: ' . wc_price( $price );
+		} else {
+			$formatted_price .= wc_price( $price );
 		}
  
-		$formatted_price .= wc_price( $price );
 		// update price variable so we can return it later.
 		$price = $formatted_price;
 	}
@@ -123,9 +126,13 @@ add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
 		$max_price     = end( $prices['price'] );
 		$regular_range = wc_format_price_range( $min_price, $max_price );
 		if ( isset( $level_id ) && ! empty( $pmprowoo_member_discounts ) && ! empty( $pmprowoo_member_discounts[ $level_id ] ) ) {
-			$formatted_price = '<del>' . $regular_range . '</del> ';
+			//$formatted_price = '<del>' . $regular_range . '</del> ';
+			$formatted_price = 'Current price: <del>' . $regular_range . '</del></br> ';
+			$formatted_price .= 'Membership Discounted Price: ' . $price;
+		} else {
+			$formatted_price .= $price;
 		}
-		$formatted_price .= $price;
+		
 		$price            = $formatted_price;
 	}
  

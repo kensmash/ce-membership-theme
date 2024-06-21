@@ -34,15 +34,16 @@ if ( ! empty( $block['align'] ) ) {
 
             ?>
                 <div class="col-md-6 mb-3">
-                    <div class="card h-100" style="min-height: 115px;">
+                    <div class="card h-100" style="min-height: 110px;">
                         <div class="row h-100 g-0">
-                            <div class="col-md-4" style="background-image: url(<?php echo esc_url($image['url']); ?>); background-size: cover;">
-                                
-                            </div>
+                            
                             <div class="col-md-8 h-100">
                                 <div class="card-body h-100 d-flex align-items-center">
-                                    <h5 class="card-title mb-md-2"><a href="<?php echo esc_url( $link ); ?>"><?php echo get_sub_field('service_name') ?></a></h5>    
+                                    <h5 class="card-title mb-md-2 text-center"><a href="<?php echo esc_url( $link ); ?>"><?php echo get_sub_field('service_name') ?></a></h5>    
                                 </div>
+                            </div>
+                            <div class="col-md-4" style="background-image: url(<?php echo esc_url($image['url']); ?>); background-size: cover; border-radius: 0 4px 4px 0;">
+                                
                             </div>
                         </div>
                     </div>
