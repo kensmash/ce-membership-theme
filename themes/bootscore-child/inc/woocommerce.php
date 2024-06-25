@@ -241,17 +241,21 @@ function wpmember_endpoint_content() {
 		echo ('<p><a href="/membership-account/">Billing Details</a> | <a href="/membership-account/membership-levels/">Change Membership</a> | <a href="/membership-account/membership-cancel/">Cancel Membership</a></p>'); */
 
 		echo do_shortcode('[pmpro_account sections="membership"]');
+
 		echo '<hr>';
-		echo ('<h4>My Avatar</h4>');
-		echo do_shortcode('[basic-user-avatars]');
-		echo do_shortcode('[pmpro_account sections="invoices"]');
-		
+
 		echo (
 			'<div class="my-memberships-section-container">
 			<h4>Connect with our Discord Community</h4>'
 			);
 		echo do_shortcode('[discord_connect_button]');
 		echo '</div>';
+	
+		echo do_shortcode('[pmpro_account sections="invoices"]');
+		
+		
+		echo ('<h4>My Avatar</h4>');
+		echo do_shortcode('[basic-user-avatars]');
 	
 		 if ($pmp_member->name == 'Community Pro'):
 			echo (
