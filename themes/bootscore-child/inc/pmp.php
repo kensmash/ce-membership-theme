@@ -169,5 +169,3 @@ function my_wp_bouncer_number_simultaneous_logins($num) {
 	return 3;
 }
 add_filter('wp_bouncer_number_simultaneous_logins', 'my_wp_bouncer_number_simultaneous_logins');
-
-

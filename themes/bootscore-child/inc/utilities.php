@@ -25,3 +25,9 @@ function child_remove_parent_function() {
     remove_action('woocommerce_login_failed', 'bootscore_redirect_on_login_failed', 10, 0);
 }
 add_action( 'wp_loaded', 'child_remove_parent_function' );
+
+//hopefully update podcast feed
+//https://wordpress.org/support/topic/updating-apple-podcast-feed/
+add_action('rss2_head', function(){
+	echo '<itunes:new-feed-url>https://comicsexperience.com/feed/podcast/make-comics/</itunes:new-feed-url>';
+});
