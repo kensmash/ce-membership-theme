@@ -1,0 +1,17 @@
+{
+    "name": "acf/comics-experience-scripts",
+    "title": "Comics Experience Scripts",
+    "description": "Block to display Comics Experience scripts.",
+    "style": [],
+    "script": "",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["scripts"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "ce-scripts.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
