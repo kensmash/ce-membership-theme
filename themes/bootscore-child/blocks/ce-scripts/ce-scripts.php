@@ -47,7 +47,7 @@ if ( ! empty( $block['align'] ) ) {
                     <div class="accordion-body scripts">
                         <ul>
                             <li>
-                                <a href="<?php bloginfo('template_directory'); ?>/media/Comic-Experience-Script-Template-2021-11-24.doc">
+                                <a href="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/media/Comic-Experience-Script-Template-2021-11-24.doc">
                                     Suggested script format template from Comics Experience (Word)
                                 </a>
                             </li>
