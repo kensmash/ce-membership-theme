@@ -36,14 +36,14 @@ $styles = array( 'background-color: ' . $background_color, 'background-image: ' 
 $style  = implode( '; ', $styles );
 ?>
 
-<div <?php echo esc_attr( $anchor ); ?>class="container-fluid <?php echo esc_attr( $class_name );?> px-0 pt-4 pt-lg-5" style="<?php echo esc_attr( $style ); ?>">
+<div <?php echo esc_attr( $anchor ); ?>class="container-fluid <?php echo esc_attr( $class_name );?> px-0 pt-0 pt-lg-5" style="<?php echo esc_attr( $style ); ?>">
     <div class="container hero-block-container">
         <div class="row justify-content-lg-between row-cols-1 row-cols-sm-1 row-cols-md-2">
            
             <div class="col">
             </div>
 
-            <div class="col hero-block-content-container col-xl-4 col-xxl-5">
+            <div class="col hero-block-content-container col-xl-4 col-xxl-5 pt-4 pt-lg-0">
 
             <?php if ( is_user_logged_in() ) {
               //there is a user, is user a member?
