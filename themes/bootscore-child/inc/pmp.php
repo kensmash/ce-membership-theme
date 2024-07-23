@@ -8,7 +8,7 @@
  * https://www.paidmembershipspro.com/create-a-plugin-for-pmpro-customizations/
  */
 
-function my_pmpro_move_required_asterisk_span() {
+/* function my_pmpro_move_required_asterisk_span() {
 	global $pmpro_pages;
 
 	$shipping_asterisk = false;
@@ -65,6 +65,7 @@ function my_pmpro_move_required_asterisk_span() {
 	}
 }
 add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
+*/
 
 /* https://www.paidmembershipspro.com/strike-through-pricing-woocommerce/ */
 /**
