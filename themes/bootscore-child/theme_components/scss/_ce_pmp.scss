@@ -108,6 +108,23 @@ form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmp
     }
 }
 
+.pmpro_checkout-field-password2 {
+    margin-bottom: 0 !important;
+}
+
+.pmpro_checkout-field-firstname {
+    padding-top: 1.25rem !important;
+}
+
+/* style override to fix weird checkout form issue on mobile safari */
+@media screen and (max-width: 767px) {
+    .pmpro {
+        .pmpro_cols-2 > *, .pmpro_cols-3 > * {
+            width: 100%;
+        }
+    }
+}
+
 /* fix gross birthday field styles */
 .pmpro_display-field-date {
     select, input {
@@ -121,13 +138,6 @@ form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmp
     }
 }
 
-.pmpro_checkout-field-password2 {
-    margin-bottom: 0 !important;
-}
-
-.pmpro_checkout-field-firstname {
-    padding-top: 1.25rem !important;
-}
 
 /*---------------------------------------
 	Log In and Password Reset Pages
@@ -275,6 +285,16 @@ form.pmpro_form .pmpro_change_password-fields {}
 	clip: rect(0,0,0,0) !important;
 	white-space: nowrap !important;
 	border: 0 !important;
+}
+
+.pmpro_btn-password-toggle {
+    font-size: 12px !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .pmpro_btn-password-toggle {
+        font-size: 16px !important;
+    }
 }
 
 /* .pmprosp-progressbar {
