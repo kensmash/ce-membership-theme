@@ -240,16 +240,18 @@ function wpmember_endpoint_content() {
 		echo ('</h3>');
 		echo ('<p><a href="/membership-account/">Billing Details</a> | <a href="/membership-account/membership-levels/">Change Membership</a> | <a href="/membership-account/membership-cancel/">Cancel Membership</a></p>'); */
 
-		echo do_shortcode('[pmpro_account sections="membership"]');
+		echo do_shortcode('[pmpro_account sections="membership" title="My Membership"]');
 
 		echo '<hr>';
 
 		echo (
 			'<div class="my-memberships-section-container">
-			<h4>Connect with our Discord Community</h4>'
+			<h4>Connect with our Discord Community</h4>
+			<p>Please note you <b>must have a Discord account and be logged in</b> prior to connecting to our Community. If you do not have a Discord account, <a href="https://discord.com" target="_blank">sign up here.</a> If you have any questions, please email us at <a href="mailto:info@comicsexperience.com">info@comicsexperience.com.</a></p>'
 			);
 		echo do_shortcode('[discord_connect_button]');
 		echo '</div>';
+		echo '<hr>';
 	
 		echo do_shortcode('[pmpro_account sections="invoices"]');
 		
