@@ -138,6 +138,12 @@ form.pmpro_form input[type=text], form.pmpro_form input[type=password], form.pmp
     }
 }
 
+#pmpro_account-membership {
+    &.pmpro_section {
+        margin-bottom: 0 !important;
+    }
+    
+}
 
 /*---------------------------------------
 	Log In and Password Reset Pages

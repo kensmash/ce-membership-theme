@@ -242,8 +242,6 @@ function wpmember_endpoint_content() {
 
 		echo do_shortcode('[pmpro_account sections="membership" title="My Membership"]');
 
-		echo '<hr>';
-
 		echo (
 			'<div class="my-memberships-section-container">
 			<h4>Connect with our Discord Community</h4>
@@ -256,13 +254,12 @@ function wpmember_endpoint_content() {
 		echo do_shortcode('[pmpro_account sections="invoices"]');
 		
 		
-		echo ('<h4>My Avatar</h4>');
-		echo do_shortcode('[basic-user-avatars]');
+		//echo ('<h4>My Avatar</h4>');
+		//echo do_shortcode('[basic-user-avatars]');
 	
 		 if ($pmp_member->name == 'Community Pro'):
 			echo (
-				'<hr>
-				<div class="my-memberships-section-container">
+				'<div class="my-memberships-section-container">
 				<h4>Exclusive Member Download</h4>
 				<p><a href="https://drive.google.com/file/d/1d8LKGidRS8UbZLNAJ563BcnBjtnQxdZ3/view" target="_blank">The Business of Independent Comic Book Publishing</a></p>
 				</div>'
