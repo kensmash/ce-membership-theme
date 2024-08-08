@@ -1,5 +1,10 @@
 //https://comicsexperience.com/wp-admin/admin.php?page=cp_timeslotsbooking_settings
-#fbuilder  { 
+#fbuilder { 
+
+    .ui-datepicker {
+        box-shadow: none !important;
+    }
+
     .ui-datepicker-inline {
         max-width:none !important;
     }
@@ -24,8 +29,3 @@
     
     }
 }
-
-.ui-datepicker {
-    box-shadow: none !important;
-}
-
