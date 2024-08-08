@@ -1,0 +1,27 @@
+//https://comicsexperience.com/wp-admin/admin.php?page=cp_timeslotsbooking_settings
+#fbuilder .ui-datepicker-inline { 
+    max-width:none !important; 
+}
+
+#fbuilder .slots {
+    border: 0px !important;
+    box-shadow: none !important;
+}
+
+.ui-datepicker {
+    box-shadow: none !important;
+}
+
+#fbuilder .pbSubmit {
+    @extend .btn;
+    @extend .btn-success;
+    background: #3c7f20 !important;
+    border: 1px solid #3c7f20 !important;
+    color: white !important;
+}
+
+#fbuilder .pbSubmit:hover { 
+    background-color: #336c1b !important;
+    border: 1px solid #336c1b !important;
+    color: white !important;
+}
