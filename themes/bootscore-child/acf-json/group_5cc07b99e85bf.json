@@ -1,0 +1,444 @@
+{
+    "key": "group_5cc07b99e85bf",
+    "title": "Course Information",
+    "fields": [
+        {
+            "key": "field_5cc75fd3fa039",
+            "label": "Course Type",
+            "name": "course_type",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Digital Course": "Digital Course",
+                "Live Course": "Live Course",
+                "Master Seminar": "Master Seminar"
+            },
+            "default_value": "Digital Course",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5cd5a418f120e",
+            "label": "Course Length",
+            "name": "course_duration",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cc75fd3fa039",
+                        "operator": "==",
+                        "value": "Live Course"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1 Day": "1 Day",
+                "2 Day": "2 Day",
+                "4 Week": "4 Week",
+                "5 Week": "5 Week",
+                "6 Week": "6 Week",
+                "7 Week": "7 Week",
+                "8 Week": "8 Week"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66227e4dc8664",
+            "label": "Card Image",
+            "name": "card_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Image used at the top of course listings on the home page and course pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_6613fae06db75",
+            "label": "Instructors",
+            "name": "instructors",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "staff"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": [
+                "role:instructor"
+            ],
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": 1,
+            "max": 2,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_5cc7602d50ea1",
+            "label": "Start Date\/Time",
+            "name": "start_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "Select the course date and start time here.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cc75fd3fa039",
+                        "operator": "==",
+                        "value": "Live Course"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5cc75fd3fa039",
+                        "operator": "==",
+                        "value": "Master Seminar"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "l F j, Y g:i a",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 0
+        },
+        {
+            "key": "field_5cc7604950ea2",
+            "label": "End Date\/Time",
+            "name": "end_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "Enter the date and time the course ends here.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cc75fd3fa039",
+                        "operator": "==",
+                        "value": "Live Course"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "l F j, Y g:i a",
+            "return_format": "F j, Y g:i a",
+            "first_day": 0
+        },
+        {
+            "key": "field_5e21bd8873460",
+            "label": "End Time",
+            "name": "end_time",
+            "aria-label": "",
+            "type": "time_picker",
+            "instructions": "Select the end time here.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cc75fd3fa039",
+                        "operator": "==",
+                        "value": "Master Seminar"
+                    },
+                    {
+                        "field": "field_5cd5a418f120e",
+                        "operator": "==",
+                        "value": "1 Day"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "g:i a",
+            "return_format": "g:i a"
+        },
+        {
+            "key": "field_5ccd7905b517d",
+            "label": "Skip Week",
+            "name": "skip_week",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "If this course will be skipping a week, select the date that is to be skipped.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cc75fd3fa039",
+                        "operator": "==",
+                        "value": "Live Course"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 0
+        },
+        {
+            "key": "field_5ccd793eb517e",
+            "label": "Skip Week 2",
+            "name": "skip_week_2",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "If this course will be skipping a second week, select the second date that is to be skipped.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cc75fd3fa039",
+                        "operator": "==",
+                        "value": "Live Course"
+                    },
+                    {
+                        "field": "field_5ccd7905b517d",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 0
+        },
+        {
+            "key": "field_5cc760a5e5b74",
+            "label": "Co-Host",
+            "name": "co-host",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Select Master Seminar co-host",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cc75fd3fa039",
+                        "operator": "==",
+                        "value": "Master Seminar"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "people"
+            ],
+            "taxonomy": [
+                "roles:staff"
+            ],
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": 1,
+            "max": 1,
+            "return_format": "object",
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_5cc1ef5521ee5",
+            "label": "Details",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_5cc1ef1721ee2",
+            "label": "Details Tab",
+            "name": "details_tab",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5cc1ef79910c7",
+            "label": "FAQs",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_5cc1ef3521ee3",
+            "label": "FAQs Tab",
+            "name": "faqs_tab",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5cc1ef8d910c8",
+            "label": "Requirements",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_5cc1ef4421ee4",
+            "label": "Requirements Tab",
+            "name": "requirements_tab",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "product_cat:courses"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1722885217
+}

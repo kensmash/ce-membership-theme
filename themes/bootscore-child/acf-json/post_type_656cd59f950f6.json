@@ -1,6 +1,6 @@
 {
     "key": "post_type_656cd59f950f6",
-    "title": "Connection Comics",
+    "title": "Community Comics",
     "menu_order": 0,
     "active": true,
     "post_type": "connection-comic",
@@ -8,20 +8,20 @@
     "import_source": "",
     "import_date": "",
     "labels": {
-        "name": "Connection Comics",
-        "singular_name": "Connection Comic",
-        "menu_name": "Connection Comics",
-        "all_items": "All Connection Comics",
+        "name": "Community Comics",
+        "singular_name": "Community Comic",
+        "menu_name": "Community Comics",
+        "all_items": "All Community Comics",
         "edit_item": "Edit Comic",
         "view_item": "View Comic",
-        "view_items": "View Connection Comics",
+        "view_items": "View Community Comics",
         "add_new_item": "Add New Comic",
-        "add_new": "",
+        "add_new": "Add New Community Comic",
         "new_item": "New Comic",
         "parent_item_colon": "Parent Comic:",
-        "search_items": "Search Connection Comics",
-        "not_found": "No connection comics found",
-        "not_found_in_trash": "No connection comics found in Trash",
+        "search_items": "Search Community Comics",
+        "not_found": "No Community comics found",
+        "not_found_in_trash": "No Community comics found in Trash",
         "archives": "Comic Archives",
         "attributes": "Comic Attributes",
         "featured_image": "",
@@ -59,7 +59,7 @@
     "menu_position": "",
     "menu_icon": {
         "type": "dashicons",
-        "value": "dashicons-admin-post"
+        "value": "dashicons-admin-customizer"
     },
     "rename_capabilities": false,
     "singular_capability_name": "post",
@@ -71,10 +71,11 @@
         "thumbnail"
     ],
     "taxonomies": "",
-    "has_archive": true,
-    "has_archive_slug": "connection-comics",
+    "has_archive": false,
+    "has_archive_slug": "",
     "rewrite": {
-        "permalink_rewrite": "post_type_key",
+        "permalink_rewrite": "custom_permalink",
+        "slug": "community-comic",
         "with_front": "1",
         "feeds": "0",
         "pages": "1"
@@ -85,5 +86,5 @@
     "delete_with_user": false,
     "register_meta_box_cb": "",
     "enter_title_here": "",
-    "modified": 1716491765
+    "modified": 1719505235
 }
