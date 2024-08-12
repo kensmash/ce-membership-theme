@@ -137,6 +137,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/group_6626a59d2e984.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_6626a59d2e984-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/group_65567ed5e194d.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -1862,6 +1870,21 @@
       "oA" : 0,
       "oAP" : "\/theme_components\/scss\/blocks\/hero-block.css",
       "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/theme_components\/scss\/blocks\/home-page-courses.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/home-page-courses\/assets\/home-page-courses.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0

@@ -71,7 +71,7 @@ if ( ! empty( $block['align'] ) ) {
                         <a href="<?php echo $permalink;?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/thumbnail-scifi.jpg" class="card-img-top" alt="Science Fiction Illustration"></a>
                     <?php } ?>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="<?php echo $permalink;?>"><?php the_title(); ?></a></h5>
+                        <h5 class="card-title"><a href="<?php echo $permalink;?>"><?php echo $title; ?></a></h5>
                         <p class="card-text"><small class="text-muted"><?php ce_courseloop_instructors($course->ID); ?></small></p>
                         <p class="card-text card_course_start">
                             <?php if ( get_field('course_type', $course->ID) == "Live Course" ) { echo '<small class="text-muted">' . the_field('course_duration', $course->ID) . 's </small><span class="badge bg-secondary ms-2 mt-1">Live</span>';} ?>

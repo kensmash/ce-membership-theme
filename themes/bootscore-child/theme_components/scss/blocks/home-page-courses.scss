@@ -1,0 +1,61 @@
+@import "../_bscore_colors.scss";  // Collecting Bootstrap source from parent-theme
+
+
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit !important;
+}
+
+/*--------------------------------------------------------------
+# DEFAULT SLICK STYLES
+--------------------------------------------------------------*/
+.courses-slider {
+  .slick-arrow {
+      position: absolute;
+      top: 50%;
+      -moz-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 1;
+      color: #2979a2;
+      //color: white;
+      font-size: 30px;
+      cursor: pointer;
+      background: transparent;
+      outline: none !important;
+      transition: all 0.25s ease-in;
+    }
+    
+    .slick-arrow:hover,
+    .slick-arrow:focus {
+      color: $ce-blue;
+    }
+    
+
+    .slick-prev {
+      left: 5px;
+    }
+    
+    .slick-next {
+        right: 5px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+    
+        .slick-prev {
+            left: -20px;
+        }
+        
+        .slick-next {
+            right: -20px;
+        }
+
+    }
+}
+
+/*--------------------------------------------------------------
+# SLIDER STYLES
+--------------------------------------------------------------*/
