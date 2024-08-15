@@ -32,7 +32,7 @@ if ( ! empty( $block['align'] ) ) {
             $permalink = get_permalink( $course->ID );
             $title = get_the_title( $course->ID );
             //$content = get_post_field('post_content', $course->ID); 
-            $content = get_the_excerpt($course->ID); 
+            $content = get_the_excerpt( $course->ID ); 
 
             $button_text = "Learn More";
             $product_link = get_the_permalink();
@@ -76,7 +76,7 @@ if ( ! empty( $block['align'] ) ) {
                         <p class="card-text card_course_start">
                             <?php if ( get_field('course_type', $course->ID) == "Live Course" ) { echo '<small class="text-muted">' . the_field('course_duration', $course->ID) . 's </small><span class="badge bg-secondary ms-2 mt-1">Live</span>';} ?>
                         </p>
-                        <?php the_excerpt(); ?>
+                        <?php echo $content; ?>
 
                     </div>
                     <div class="card-footer bg-transparent text-muted border-top-0">

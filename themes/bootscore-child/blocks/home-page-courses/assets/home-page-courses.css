@@ -20,7 +20,7 @@
   transform: translateY(-50%);
   z-index: 1;
   color: #2979a2;
-  font-size: 30px;
+  font-size: 18px;
   cursor: pointer;
   background: transparent;
   outline: none !important;
@@ -42,6 +42,9 @@
   }
   .courses-slider .slick-next {
     right: -20px;
+  }
+  .courses-slider .slick-arrow {
+    font-size: 30px;
   }
 }
 
