@@ -514,7 +514,47 @@ return $prod_price;
 }
 */
 
+//add purchased products column to column list
+// https://rudrastyh.com/woocommerce/columns.html#purchased_products_column
 
+// legacy – for CPT-based orders
+add_filter( 'manage_edit-shop_order_columns', 'misha_order_items_column' );
+// for HPOS-based orders
+add_filter( 'manage_woocommerce_page_wc-orders_columns', 'misha_order_items_column' );
 
+function misha_order_items_column( $columns ) {
+
+	// let's add our column before "Total"
+	$columns = array_slice( $columns, 0, 4, true ) // 4 columns before
+	+ array( 'order_products' => 'Purchased products' ) // our column is going to be 5th
+	+ array_slice( $columns, 4, NULL, true );
+
+	return $columns;
+
+}
+
+// legacy – for CPT-based orders
+add_action( 'manage_shop_order_posts_custom_column', 'misha_populate_order_items_column', 25, 2 );
+// for HPOS-based orders
+add_action( 'manage_woocommerce_page_wc-orders_custom_column', 'misha_populate_order_items_column', 25, 2 );
+function misha_populate_order_items_column( $column_name, $order_or_order_id ) {
+
+	// legacy CPT-based order compatibility
+	$order = $order_or_order_id instanceof WC_Order ? $order_or_order_id : wc_get_order( $order_or_order_id );
+
+	if( 'order_products' === $column_name ) {
+
+		$items = $order->get_items();
+		if( ! is_wp_error( $items ) ) {
+			foreach( $items as $item ) {
+ 				echo $item[ 'quantity' ] .' × <a href="' . get_edit_post_link( $item[ 'product_id' ] ) . '">'. $item[ 'name' ] .'</a><br />';
+				// you can also use $order_item->variation_id parameter
+				// by the way, $item[ 'name' ] will display variation name too
+			}
+		}
+
+	}
+
+}
 
   
