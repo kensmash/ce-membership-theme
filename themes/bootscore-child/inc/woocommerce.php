@@ -458,7 +458,7 @@ function hide_product_from_shop_page_if_user_already_purchased( $query ) {
 
 /* change add to cart buttons in related products output */
 /* https://stackoverflow.com/questions/77461593/change-woocommerce-product-loop-add-to-cart-button-to-a-view-more-linked-to-th */
-add_filter( 'woocommerce_loop_add_to_cart_link', 'replace_external_product_loop_add_to_cart_link', 100, 3 );
+/* add_filter( 'woocommerce_loop_add_to_cart_link', 'replace_external_product_loop_add_to_cart_link', 100, 3 );
 function replace_external_product_loop_add_to_cart_link( $button, $product, $args ) {
     return sprintf( '<a href="%s" class="%s" %s>%s</a>',
         esc_url( $product->get_permalink() ),
@@ -466,7 +466,7 @@ function replace_external_product_loop_add_to_cart_link( $button, $product, $arg
         isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
         esc_html__( 'Learn More' )
     );
-}
+} */
 
 
 /**
