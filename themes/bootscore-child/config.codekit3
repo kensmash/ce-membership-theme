@@ -281,18 +281,6 @@
       "oAP" : "\/archive.php",
       "oF" : 0
     },
-    "\/assets\/css\/main-min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/css\/main-min-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/assets\/css\/main.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1065,6 +1053,18 @@
       "oAP" : "\/blocks\/hero-block\/template-parts\/content-user.php",
       "oF" : 0
     },
+    "\/blocks\/home-page-courses\/assets\/home-page-courses-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/home-page-courses\/assets\/home-page-courses-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/blocks\/home-page-courses\/assets\/home-page-courses.asset.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1546,30 +1546,6 @@
       "oAP" : "\/template-parts\/content.php",
       "oF" : 0
     },
-    "\/template-parts\/header\/actions-woocommerce.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/header\/actions-woocommerce.php",
-      "oF" : 0
-    },
-    "\/template-parts\/header\/collapse-search-woocommerce.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/header\/collapse-search-woocommerce.php",
-      "oF" : 0
-    },
-    "\/template-parts\/header\/collapse-search.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/header\/collapse-search.php",
-      "oF" : 0
-    },
     "\/template-parts\/header\/main-menu.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1895,8 +1871,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/blocks\/home-page-courses\/assets\/home-page-courses.css",
-      "oF" : 2,
+      "oAP" : "\/theme_components\/scss\/blocks\/home-page-courses.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0

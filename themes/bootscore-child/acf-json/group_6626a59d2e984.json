@@ -3,7 +3,7 @@
     "title": "Block: Home Page Courses",
     "fields": [
         {
-            "key": "field_66ba19a738d95",
+            "key": "field_66bb7b89d63c6",
             "label": "Courses",
             "name": "courses",
             "aria-label": "",
@@ -54,5 +54,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1723472737
+    "modified": 1723563814
 }
