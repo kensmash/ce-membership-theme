@@ -28,8 +28,7 @@ if ( ! empty( $block['align'] ) ) {
 
     <div class="hero-slider">
 
-        <?php require get_stylesheet_directory() . '/blocks/hero-block/template-parts/slide-welcome.php'; ?>
-           
+        <?php require get_stylesheet_directory() . '/blocks/hero-block/template-parts/slide-welcome.php'; ?>           
 
      </div> <!-- hero-slider -->
 
