@@ -21,6 +21,11 @@ body {
     max-width: $max-width;
 }
 
+//fix top widget pushing down on nav bar
+.top-bar-widget {
+    margin-bottom: 0 !important;
+}
+
 // Override stupid post image CSS from parent theme
 .wp-post-image {
     width: unset;

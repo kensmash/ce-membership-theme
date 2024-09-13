@@ -70,3 +70,9 @@ function dtbaker_wp_nav_menu_objects($sorted_menu_items, $args){
     return $sorted_menu_items;
 }
 add_filter('wp_nav_menu_objects','dtbaker_wp_nav_menu_objects',10,2);
+
+
+/**
+ * Enable cart page
+ */
+add_filter('bootscore/skip_cart', '__return_false');
