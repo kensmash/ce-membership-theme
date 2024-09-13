@@ -73,9 +73,9 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
  * https://jilt.com/blog/move-the-woocommerce-coupon-field/
  */
 
-remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
+//remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 
-add_action( 'woocommerce_after_checkout_form', 'woocommerce_checkout_coupon_form' );
+//add_action( 'woocommerce_after_checkout_form', 'woocommerce_checkout_coupon_form' );
 
 //add_action( 'woocommerce_after_add_to_cart_button', 'add_content_after_addtocart_button_func' );
 
