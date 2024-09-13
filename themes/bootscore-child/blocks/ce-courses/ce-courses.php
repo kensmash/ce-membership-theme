@@ -31,6 +31,7 @@ if ( ! empty( $block['align'] ) ) {
 
         <?php 
         //get courses that are on sale, we need to show them first
+        //https://www.godaddy.com/resources/skills/get-a-list-of-woocommerce-sale-products
         $query = new WP_Query(array(
             'post_type' => 'product',
             'post_status' => 'publish',
@@ -44,7 +45,7 @@ if ( ! empty( $block['align'] ) ) {
                 ),
             ),
             'meta_query'        => WC()->query->get_meta_query(),
-            'post__in'          => array_merge( array( 0 ), wc_get_product_ids_on_sale() )
+            'post__in'          => array_merge( array( 0 ), wc_get_product_ids_on_sale() ),
             'orderby'        => 'menu_order',
             'order' => 'ASC', 
         ));
@@ -84,14 +85,14 @@ if ( ! empty( $block['align'] ) ) {
                 } 
                         
                 $courses_array[] = array(
-                    'id'				=> get_the_ID();
-                    'title' 			=> get_the_permalink();
-                    'excerpt'           => get_the_excerpt();
-                    'product_link' 		=> $product_link;
-                    'button_text' 		=> $button_text;  
-                    'image'             => $image; 
-                    'course_type'       => $course_type; 
-                    'course_duration'   => $course_duration; 
+                    'id'				=> get_the_ID(),
+                    'title' 			=> get_the_permalink(),
+                    'excerpt'           => get_the_excerpt(),
+                    'product_link' 		=> $product_link,
+                    'button_text' 		=> $button_text,
+                    'image'             => $image,
+                    'course_type'       => $course_type,
+                    'course_duration'   => $course_duration,
                 );
 
         }
@@ -153,14 +154,14 @@ if ( ! empty( $block['align'] ) ) {
                 } 
                         
                 $courses_array[] = array(
-                    'id'				=> get_the_ID();
-                    'title' 			=> get_the_permalink();
-                    'excerpt'           => get_the_excerpt();
-                    'product_link' 		=> $product_link;
-                    'button_text' 		=> $button_text;  
-                    'image'             => $image; 
-                    'course_type'       => $course_type; 
-                    'course_duration'   => $course_duration; 
+                    'id'				=> get_the_ID(),
+                    'title' 			=> get_the_permalink(),
+                    'excerpt'           => get_the_excerpt(),
+                    'product_link' 		=> $product_link,
+                    'button_text' 		=> $button_text,
+                    'image'             => $image,
+                    'course_type'       => $course_type,
+                    'course_duration'   => $course_duration,
                 );
 
            }
