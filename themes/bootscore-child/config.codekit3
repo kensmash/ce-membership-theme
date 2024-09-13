@@ -799,6 +799,77 @@
       "oAP" : "\/blocks\/ce-courses\/ce-courses.php",
       "oF" : 0
     },
+    "\/blocks\/ce-hero-slider\/assets\/ce-hero-slider.asset.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-hero-slider\/assets\/ce-hero-slider.asset.php",
+      "oF" : 0
+    },
+    "\/blocks\/ce-hero-slider\/assets\/ce-hero-slider.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-hero-slider\/assets\/ce-hero-slider-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/ce-hero-slider\/assets\/ce-hero-slider.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-hero-slider\/assets\/ce-hero-slider-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/blocks\/ce-hero-slider\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/ce-hero-slider\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/ce-hero-slider\/ce-hero-slider.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-hero-slider\/ce-hero-slider.php",
+      "oF" : 0
+    },
+    "\/blocks\/ce-hero-slider\/template-parts\/content-member.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-hero-slider\/template-parts\/content-member.php",
+      "oF" : 0
+    },
+    "\/blocks\/ce-hero-slider\/template-parts\/content-nouser.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-hero-slider\/template-parts\/content-nouser.php",
+      "oF" : 0
+    },
+    "\/blocks\/ce-hero-slider\/template-parts\/content-user.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-hero-slider\/template-parts\/content-user.php",
+      "oF" : 0
+    },
     "\/blocks\/ce-scripts\/block.json" : {
       "ft" : 524288,
       "oA" : 1,

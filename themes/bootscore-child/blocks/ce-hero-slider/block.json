@@ -1,0 +1,17 @@
+{
+    "name": "acf/ce-hero-slider",
+    "title": "CE Hero Slider",
+    "description": "Block to display a hero slider on the home page.",
+    "style": [ "file:./assets/ce-hero-slider.css" ],
+    "script": "file:./assets/ce-hero-slider.js",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["ce, hero, slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "ce-hero-slider.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
