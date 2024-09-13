@@ -5,7 +5,7 @@
  * @param array $block The block settings and attributes.
  */
 
-$courses_array = [];
+$courses = [];
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -84,15 +84,16 @@ if ( ! empty( $block['align'] ) ) {
                     }  
                 } 
                         
-                $courses_array[] = array(
+                $courses[] = array(
                     'id'				=> get_the_ID(),
-                    'title' 			=> get_the_permalink(),
+                    'title' 			=> get_the_title(),
                     'excerpt'           => get_the_excerpt(),
-                    'product_link' 		=> $product_link,
+                    'link' 		        => $product_link,
                     'button_text' 		=> $button_text,
                     'image'             => $image,
-                    'course_type'       => $course_type,
-                    'course_duration'   => $course_duration,
+                    'type'              => $course_type,
+                    'duration'          => $course_duration,
+                    'onsale'            => true,
                 );
 
         }
@@ -153,22 +154,55 @@ if ( ! empty( $block['align'] ) ) {
                     }  
                 } 
                         
-                $courses_array[] = array(
+                $courses[] = array(
                     'id'				=> get_the_ID(),
-                    'title' 			=> get_the_permalink(),
+                    'title' 			=> get_the_title(),
                     'excerpt'           => get_the_excerpt(),
-                    'product_link' 		=> $product_link,
+                    'link' 		        => $product_link,
                     'button_text' 		=> $button_text,
                     'image'             => $image,
-                    'course_type'       => $course_type,
-                    'course_duration'   => $course_duration,
+                    'type'              => $course_type,
+                    'duration'          => $course_duration,
+                    'onsale'            => false,
                 );
 
            }
                 
         }
 
-         wp_reset_postdata(); ?>
+         wp_reset_postdata(); 
+
+         foreach( $courses as $course ): ?>
+
+            <div class="woocommerce item-listing col-md-6 col-lg-4 p-2 my-1">
+
+                <div class="card h-100">
+                    <?php 
+                    if( !empty( $course['image'] ) ) { ?>
+                        <a href="<?php echo $course['link']; ?> "><img src="<?php echo esc_url($course['image']['url']); ?>" class="card-img-top" alt="<?php echo esc_attr($course['image']['alt']); ?>" /></a>
+                        <?php } else { ?>
+                            <a href="<?php echo $course['link']; ?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/thumbnail-scifi.jpg" class="card-img-top" alt="Science Fiction Illustration"></a>
+                        <?php } ?>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="<?php echo $course['link']; ?>"><?php echo $course['title']; ?></a></h5>
+                            <p class="card-text"><small class="text-muted"><?php ce_courseloop_instructors($course['id']); ?></small></p>
+                            <p class="card-text card_course_start">
+                                <?php if ( $course['type'] == "Live Course" ) { echo '<small class="text-muted">' . $course['duration'] . 's </small><span class="badge bg-secondary ms-2 mt-1">Live</span>';} ?>
+                            </p>
+                            <?php echo $course['excerpt']; ?>
+
+                        </div>
+                        <div class="card-footer bg-transparent text-muted border-top-0">
+                            <div class="d-grid pt-2">
+                                <a href="<?php echo $course['link']; ?>" class="btn btn-primary btn-block border-0 mb-2"><?php echo $course['button_text']; ?></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- card -->
+
+            </div> <!-- item-listing -->
+
+        <?php endforeach; ?>
 
      </div> <!-- row -->
 
