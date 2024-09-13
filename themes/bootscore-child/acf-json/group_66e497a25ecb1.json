@@ -1,0 +1,159 @@
+{
+    "key": "group_66e497a25ecb1",
+    "title": "Block: CE Hero Slider",
+    "fields": [
+        {
+            "key": "field_66e497a2cf6b8",
+            "label": "Slides",
+            "name": "slides",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_66e49c2fcf6b9",
+                    "label": "Slide Type",
+                    "name": "slide_type",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "welcome": "Welcome",
+                        "course": "Course",
+                        "post": "Post"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "layout": "horizontal",
+                    "parent_repeater": "field_66e497a2cf6b8"
+                },
+                {
+                    "key": "field_66e49ca0cf6ba",
+                    "label": "Course",
+                    "name": "course",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66e49c2fcf6b9",
+                                "operator": "==",
+                                "value": "course"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "product"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": [
+                        "product_cat:courses"
+                    ],
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "object",
+                    "min": "",
+                    "max": "",
+                    "allow_in_bindings": 0,
+                    "elements": "",
+                    "bidirectional": 0,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_66e497a2cf6b8"
+                },
+                {
+                    "key": "field_66e49cd7cf6bb",
+                    "label": "Post",
+                    "name": "post",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66e49c2fcf6b9",
+                                "operator": "==",
+                                "value": "post"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "object",
+                    "min": "",
+                    "max": "",
+                    "allow_in_bindings": 0,
+                    "elements": "",
+                    "bidirectional": 0,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_66e497a2cf6b8"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/ce-hero-slider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1726258932
+}
