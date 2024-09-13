@@ -13,7 +13,7 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'px-0';
+$class_name = 'container-fluid px-0';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
@@ -28,51 +28,34 @@ if ( ! empty( $block['align'] ) ) {
 
     <div class="hero-slider">
 
-        <?php 
-        $query = new WP_Query(array(
-            'post_type' => 'product',
-            'post_status' => 'publish',
-            'posts_per_page' => -1,
-            'order' => 'DESC',
-            'meta_query' => array(
-                array(
-                    'key'   => 'home_page_hero_item',
-                    'value' => '1',
-                )
-            ),
-            'tax_query' => array(
-                array(
-                    'taxonomy' => 'product_cat',
-                    'field' => 'slug', 
-                    'terms' => array( 'comics' ),
-                    'operator' => 'IN'
-                )
-            ),
-        ));
-        
-        if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); $image = get_field('card_thumbnail', get_the_ID()); ?>
-
-            <div class="">
+            <div class="row">
            
-                <div class="hero-slider-card w-100" style="background: url('<?php echo esc_url($image['url']); ?>'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-                    <div class="container h-100">
-                        <div class="d-flex align-items-end h-100 pb-4">
-                            <div class="hero-slider-book-info rounded-1">
-                                <h5 class="card-title"><?php the_title();?></h5>
-                                <p class="card-text mt-3"><?php echo wp_kses_post( get_field('short_promo_text', get_the_ID())); ?></p>
-                                <div class="d-grid pt-2">
-                                    <a href="<?php the_permalink();?>" class="btn btn-success border-0 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col">
                 </div>
+
+                <div class="col hero-block-content-container col-xl-4 col-xxl-5 pt-4 pt-lg-0">
+
+                    <?php if ( is_user_logged_in() ) {
+                    //there is a user, is user a member?
+                    //if not a member, get regular content
+                    $pmp_member = pmpro_getMembershipLevelForUser(get_current_user_id());
+                    //echo "member level: " . var_dump($pmp_member);
+                    if( !$pmp_member ) { 
+                        require get_stylesheet_directory() . '/blocks/hero-block/template-parts/content-user.php';
+                    } else { 
+                        //we have a logged in member, show them custom content
+                        require get_stylesheet_directory() . '/blocks/hero-block/template-parts/content-member.php';
+                    }
+                    } else { 
+                        //no logged in user
+                        require get_stylesheet_directory() . '/blocks/hero-block/template-parts/content-nouser.php';
+                    } 
+                    ?>
+                    
+                </div> <!-- .col -->
                
-            </div>
+         </div> <!-- row -->
 
-            <?php endwhile; endif; ?>
-            <?php wp_reset_postdata(); ?>
-
-     </div> <!-- row -->
+     </div> <!-- hero-slider -->
 
 </div><!-- .container -->

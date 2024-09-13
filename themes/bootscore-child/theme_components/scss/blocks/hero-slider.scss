@@ -1,0 +1,132 @@
+@import "../_bscore_colors.scss";  // Collecting Bootstrap source from parent-theme
+
+.slick-track {
+    display: flex !important;
+  }
+  
+  .slick-track .slick-slide {
+    display: flex !important;
+    height: auto !important;
+  }
+  
+  /*--------------------------------------------------------------
+  # DEFAULT SLICK STYLES
+  --------------------------------------------------------------*/
+  .hero-slider {
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 1;
+        //color: #2979a2;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        background: transparent;
+        outline: none !important;
+        transition: all 0.25s ease-in;
+      }
+      
+      .slick-arrow:hover,
+      .slick-arrow:focus {
+        color: $ce-blue;
+      }
+      
+  
+      .slick-prev {
+        left: 20px;
+      }
+      
+      .slick-next {
+          right: 20px;
+      }
+  
+      @media only screen and (min-width: 768px) {
+  
+        .hero-slider-card {
+          min-height: 450px;
+        }
+    }
+  
+      @media only screen and (min-width: 1024px) {
+      
+          .slick-prev {
+              left: 50px;
+          }
+          
+          .slick-next {
+              right: 50px;
+          }
+  
+          .slick-arrow {
+              font-size: 30px;
+            }
+  
+      }
+  
+      @media only screen and (min-width: 1300px) {
+  
+        .hero-slider-card {
+          min-height: 650px;
+        }
+  
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # SLIDE STYLES
+  --------------------------------------------------------------*/
+
+.hero-block-content-container {
+    padding: 1rem 1.25rem 3rem !important;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    @media only screen and (min-width: 768px) {
+        padding: .5rem 1.75rem 3rem !important;
+    }
+
+    @media only screen and (min-width: 1350px) {
+        background-color: rgba(0, 0, 0, 0);
+        padding: 6rem 0 10rem !important;
+    }
+
+    .tribe-events-widget-events-week {
+        padding-bottom: .5rem !important;
+    }
+
+    .tribe-events-pro-week-day-selector__day-weekday, .tribe-events-pro-week-day-selector__day-daynum, .tribe-events-pro-week-mobile-events__event-time-separator-text, .tribe-events-pro-week-mobile-events__event-datetime-wrapper, .tribe-events-pro-week-mobile-events__event-title-link {
+        color: white !important;
+    }
+
+    .tribe-events-c-top-bar__nav-list-date {
+        font-size: .5em !important;
+    }
+
+    .tribe-events-widget-events-week__view-more {
+        margin-top: .0 !important;
+    }
+
+    .tribe-events-widget-events-week__view-more-link {
+        color: $ce-iceblue !important;
+        transition: all .25s !important;
+
+        &:hover {
+            color: white !important;
+        }
+    }
+
+    .tribe-events-pro-week-day-selector__day--active {
+        border-color: $ce-iceblue !important;
+    }
+
+    .tribe-events-pro-week-day-selector__events-icon {
+        background-color: $ce-iceblue !important;
+    }
+
+    .tribe-common-anchor-thin:hover, .tribe-common-anchor-thin:active, .tribe-common-anchor-thin:focus  {
+        border-bottom: 0px !important;
+    }
+}
+
