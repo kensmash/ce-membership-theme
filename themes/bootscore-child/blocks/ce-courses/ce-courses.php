@@ -116,6 +116,12 @@ if ( ! empty( $block['align'] ) ) {
                     'operator' => 'IN'
                 ),
             ),
+            'meta_query'     => array(
+                array(
+                    'key'     => '_sale_price',
+                    'compare' => 'NOT EXISTS',
+                ),
+            ),
             'orderby'        => 'menu_order',
             'order' => 'ASC', 
         ));
@@ -190,14 +196,12 @@ if ( ! empty( $block['align'] ) ) {
                                 <?php if ( $course['type'] == "Live Course" ) { echo '<small class="text-muted">' . $course['duration'] . 's </small><span class="badge bg-secondary ms-2 mt-1">Live</span>';} ?>
                             </p>
                             <?php echo $course['excerpt']; ?>
-
-                        </div>
+                        </div><!-- card-body -->
                         <div class="card-footer bg-transparent text-muted border-top-0">
                             <div class="d-grid pt-2">
                                 <a href="<?php echo $course['link']; ?>" class="btn btn-primary btn-block border-0 mb-2"><?php echo $course['button_text']; ?></a>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- card-footer -->
                 </div><!-- card -->
 
             </div> <!-- item-listing -->
