@@ -16,6 +16,7 @@ if( $featured_courses ): ?>
 
     <?php foreach( $featured_courses as $featured_course ): 
 
+        $product = new WC_Product($featured_course->ID);
         $permalink = get_permalink( $featured_course->ID );
         $title = get_the_title( $featured_course->ID );
         $excerpt = get_the_excerpt( $featured_course->ID );
@@ -36,6 +37,10 @@ if( $featured_courses ): ?>
 
             <div class="col col-xl-4 col-xxl-5 hero-block-content-container pt-4">
 
+                <?php if ( $product->is_on_sale() )  {    
+                    echo '<p class="h4 mb-2"><span class="badge rounded-pill bg-success">On Sale</span></p>';
+                } ?>
+               
                 <h1><?php echo $title; ?></h1>
 
                 <?php echo $excerpt; ?>

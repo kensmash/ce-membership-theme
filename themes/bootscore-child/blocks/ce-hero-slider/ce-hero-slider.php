@@ -37,7 +37,7 @@ if ( ! empty( $block['align'] ) ) {
                     // Load sub field value.
                     $slide_type = get_sub_field('slide_type');
 
-                    /* switch ($slide_type) {
+                    switch ($slide_type) {
                         case "welcome":
                             require get_stylesheet_directory() . '/blocks/ce-hero-slider/template-parts/slide-welcome.php';
                             break;
@@ -47,7 +47,7 @@ if ( ! empty( $block['align'] ) ) {
                         case "post":
                             require get_stylesheet_directory() . '/blocks/ce-hero-slider/template-parts/slide-post.php';
                             break;
-                    } */
+                    }
                     
                 endwhile;
 
