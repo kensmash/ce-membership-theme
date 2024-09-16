@@ -3,7 +3,7 @@ wp_get_current_user(); ?>
 
 <h1>Welcome, <?php echo $current_user->user_firstname ? $current_user->user_firstname : $current_user->display_name; ?>!</h1>
 
-<?php echo wp_kses_post ( get_field('user_message') ); ?>
+<p>We&rsquo;re glad to have you back.</p>
 
 <div class="d-grid gap-2 pt-3">
   <?php if (learndash_user_get_enrolled_courses(get_current_user_id())): ?>
