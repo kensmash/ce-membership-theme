@@ -190,9 +190,10 @@ if ( ! empty( $block['align'] ) ) {
                             <a href="<?php echo $course['link']; ?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/thumbnail-scifi.jpg" class="card-img-top" alt="Science Fiction Illustration"></a>
                         <?php } ?>
                         <div class="card-body">
+                            <?php if ( $course['onsale'] ) { echo '<p class="h5 mb-2"><span class="badge rounded-pill bg-success">On Sale</span></p>';} ?>
                             <h5 class="card-title"><a href="<?php echo $course['link']; ?>"><?php echo $course['title']; ?></a></h5>
                             <p class="card-text"><small class="text-muted"><?php ce_courseloop_instructors($course['id']); ?></small></p>
-                            <p class="card-text card_course_start">
+                            <p class="card_course_start">
                                 <?php if ( $course['type'] == "Live Course" ) { echo '<small class="text-muted">' . $course['duration'] . 's </small><span class="badge bg-secondary ms-2 mt-1">Live</span>';} ?>
                             </p>
                             <?php echo $course['excerpt']; ?>
