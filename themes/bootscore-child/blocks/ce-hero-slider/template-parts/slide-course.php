@@ -14,39 +14,48 @@ $featured_courses = get_sub_field('course');
 
 if( $featured_courses ): ?>
 
-    <div class="container">
-
     <?php foreach( $featured_courses as $featured_course ): 
 
         $permalink = get_permalink( $featured_course->ID );
         $title = get_the_title( $featured_course->ID );
         $excerpt = get_the_excerpt( $featured_course->ID );
-        $image = get_field( 'hero_image', $featured_course->ID ); ?>
+        $background_image = get_sub_field( 'course_background_image'); 
+        if (!$background_image) {
+            $background_image = get_stylesheet_directory_uri() . '/assets/images/hero-area-block-bg-alt.jpg';
+        }
+        ?>
 
-        <div>
+    <div class="container-fluid hero-block-content-container" style="background-image: url(<?php echo esc_url($background_image); ?>)">
 
-        <?php if( !empty( $image ) ) { ?>
-                    
-                    <img src="<?php echo esc_url($image['url']); ?>" class="card-img" alt="<?php echo esc_attr($image['alt']); ?>" />
+    <div class="container">
+
+        <div class="row justify-content-lg-between row-cols-1 row-cols-sm-1 row-cols-md-2">
                 
-                <?php } else { ?>
+            <div class="col">
+            </div>
+
+            <div class="col col-xl-4 col-xxl-5 hero-block-content-container pt-4">
+
+                <h1><?php echo $title; ?></h1>
+
+                <?php echo $excerpt; ?>
+
+                <div class="d-grid gap-2 pt-4">
+                    <a class="btn btn-success" href="<?php echo esc_url($permalink); ?>">View Course</a>
+                </div>
                 
-                    <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/images/gui/hero-bgs/hero-bg-fantasy.jpg" class="card-img" alt="Fantasy Illustration">
-                    
-                <?php } ?>
-               
-                        <h2 class="mt-2"><?php echo $title; ?></h2>
-                        <div class="pr-4"><?php echo $excerpt; ?></div>
-                    
-                        <a href="<?php echo $permalink; ?>"><button type="button" class="btn btn-info mt-lg-3 border-0">View Course</button></a>
+            </div> <!-- .col -->
+            
+        </div> <!-- row -->
 
-        </div>
+    </div><!-- container -->
+       
+    <?php 
+        endforeach; 
+        endif; 
+    ?>
 
-    <?php endforeach; ?>
-
-    </div> <!-- container -->
-
-<?php endif; ?>
+</div>
 
 
 

@@ -37,11 +37,6 @@
 .hero-slider .slick-next {
   right: 20px;
 }
-@media only screen and (min-width: 768px) {
-  .hero-slider .hero-slider-card {
-    min-height: 450px;
-  }
-}
 @media only screen and (min-width: 1024px) {
   .hero-slider .slick-prev {
     left: 50px;
@@ -53,11 +48,6 @@
     font-size: 30px;
   }
 }
-@media only screen and (min-width: 1300px) {
-  .hero-slider .hero-slider-card {
-    min-height: 650px;
-  }
-}
 
 /*--------------------------------------------------------------
 # SLIDE STYLES
@@ -65,15 +55,13 @@
 .hero-block-content-container {
   padding: 1rem 1.25rem 3rem !important;
   background-color: rgb(0, 0, 0);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media only screen and (min-width: 768px) {
   .hero-block-content-container {
     padding: 0.5rem 1.75rem 3rem !important;
-  }
-}
-@media only screen and (min-width: 1350px) {
-  .hero-block-content-container {
-    padding: 6rem 0 10rem !important;
   }
 }
 .hero-block-content-container .tribe-events-widget-events-week {

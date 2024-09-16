@@ -524,6 +524,32 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/assets\/images\/hero-area-block-bg-alt.jpg" : {
+      "ft" : 16384,
+      "iS" : 363287,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/hero-area-block-bg-alt.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/hero-bg-fantasy.jpg" : {
+      "ft" : 16384,
+      "iS" : 71900,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/hero-bg-fantasy.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/logo\/ce-logo-footer.svg" : {
       "ft" : 2097152,
       "miP" : 0,

@@ -13,7 +13,7 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'container-fluid px-0';
+$class_name = 'px-0';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
@@ -24,11 +24,10 @@ if ( ! empty( $block['align'] ) ) {
 ?>
 
 
-<div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
+<div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>">
 
-    <div class="hero-block-content-container">
 
-        <div class="hero-slider">
+        <div class="hero-slider container-fluid p-0">
 
             <?php if( have_rows('slides') ):
 
@@ -37,8 +36,8 @@ if ( ! empty( $block['align'] ) ) {
 
                     // Load sub field value.
                     $slide_type = get_sub_field('slide_type');
-                    
-                    switch ($slide_type) {
+
+                    /* switch ($slide_type) {
                         case "welcome":
                             require get_stylesheet_directory() . '/blocks/ce-hero-slider/template-parts/slide-welcome.php';
                             break;
@@ -48,14 +47,12 @@ if ( ! empty( $block['align'] ) ) {
                         case "post":
                             require get_stylesheet_directory() . '/blocks/ce-hero-slider/template-parts/slide-post.php';
                             break;
-                    }
+                    } */
                     
                 endwhile;
 
             endif; ?>    
 
         </div> <!-- hero-slider -->
-
-    </div><!-- .container -->
 
 </div><!-- .container-fluid -->

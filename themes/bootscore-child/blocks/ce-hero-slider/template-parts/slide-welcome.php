@@ -1,13 +1,13 @@
-<div class="container-fluid">
+<div class="container-fluid hero-block-content-container" style="background-image: url(<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/hero-area-block-bg-alt.jpg);">
 
     <div class="container">
 
-        <div class="row">
+       <div class="row justify-content-lg-between row-cols-1 row-cols-sm-1 row-cols-md-2">
                 
             <div class="col">
             </div>
 
-            <div class="col hero-block-content-container col-xl-4 col-xxl-5 pt-4 pt-lg-0">
+            <div class="col col-xl-4 col-xxl-5 hero-block-content-container pt-4">
 
                 <?php if ( is_user_logged_in() ) {
                 //there is a user, is user a member?
