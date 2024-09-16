@@ -2,6 +2,25 @@
 # WooCommerce Single Product Pages
 --------------------------------------------------------------*/
 
+span.onsale {
+  background-color: $ce-green !important;
+  color: #ffffff;
+  border-radius: 50% !important; 
+  height: 50px !important;
+  width: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: -12px !important;
+  margin-top: -24px !important;
+  text-transform: uppercase !important;
+  @media only screen and (min-width: 1200px) {
+    height: 100px !important;
+    width: 100px !important;
+    font-size: 1.5em !important;
+  }
+}
+
   /* course product */
   .course-meta {
     font-size: 0.75em;
