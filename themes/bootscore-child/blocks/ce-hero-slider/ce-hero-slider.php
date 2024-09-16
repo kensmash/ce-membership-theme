@@ -26,10 +26,36 @@ if ( ! empty( $block['align'] ) ) {
 
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
 
-    <div class="hero-slider">
+    <div class="hero-block-content-container">
 
-        <?php require get_stylesheet_directory() . '/blocks/hero-block/template-parts/slide-welcome.php'; ?>           
+        <div class="hero-slider">
 
-     </div> <!-- hero-slider -->
+            <?php if( have_rows('slides') ):
 
-</div><!-- .container -->
+                // Loop through rows.
+                while( have_rows('slides') ) : the_row();
+
+                    // Load sub field value.
+                    $slide_type = get_sub_field('slide_type');
+                    
+                    switch ($slide_type) {
+                        case "welcome":
+                            require get_stylesheet_directory() . '/blocks/ce-hero-slider/template-parts/slide-welcome.php';
+                            break;
+                        case "course":
+                            require get_stylesheet_directory() . '/blocks/ce-hero-slider/template-parts/slide-course.php';
+                            break;
+                        case "post":
+                            require get_stylesheet_directory() . '/blocks/ce-hero-slider/template-parts/slide-post.php';
+                            break;
+                    }
+                    
+                endwhile;
+
+            endif; ?>    
+
+        </div> <!-- hero-slider -->
+
+    </div><!-- .container -->
+
+</div><!-- .container-fluid -->

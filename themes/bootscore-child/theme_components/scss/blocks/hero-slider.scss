@@ -81,14 +81,13 @@
 
 .hero-block-content-container {
     padding: 1rem 1.25rem 3rem !important;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 1);
 
     @media only screen and (min-width: 768px) {
         padding: .5rem 1.75rem 3rem !important;
     }
 
     @media only screen and (min-width: 1350px) {
-        background-color: rgba(0, 0, 0, 0);
         padding: 6rem 0 10rem !important;
     }
 
@@ -127,6 +126,10 @@
 
     .tribe-common-anchor-thin:hover, .tribe-common-anchor-thin:active, .tribe-common-anchor-thin:focus  {
         border-bottom: 0px !important;
+    }
+
+    .tribe-events-pro-week-day-selector__nav-list-item--prev, .tribe-events-pro-week-day-selector__nav-list-item--next {
+      //display: none !important;
     }
 }
 
