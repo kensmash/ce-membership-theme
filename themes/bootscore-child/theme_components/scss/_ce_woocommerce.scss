@@ -14,10 +14,15 @@ span.onsale {
   margin-left: -12px !important;
   margin-top: -24px !important;
   text-transform: uppercase !important;
-  @media only screen and (min-width: 1200px) {
-    height: 100px !important;
-    width: 100px !important;
-    font-size: 1.5em !important;
+}
+
+.type-product {
+  span.onsale {
+    @media only screen and (min-width: 1200px) {
+      height: 100px !important;
+      width: 100px !important;
+      font-size: 1.5em !important;
+    }
   }
 }
 
