@@ -6,7 +6,7 @@
           mobileFirst: true,
           focusOnSelect: true,
           autoplay: true,
-          autoplaySpeed: 6000,
+          autoplaySpeed: 8000,
           pauseOnFocus: false, 
           pauseOnHover: true,
           prevArrow:

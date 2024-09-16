@@ -59,7 +59,7 @@ if ( ! empty( $block['align'] ) ) {
                 }  
             } 
         ?>
-        <div class="woocommerce item-listing p-2 my-1">
+        <div class="woocommerce item-listing p-4 my-1">
 
             <div class="card h-100">
                 <?php 
