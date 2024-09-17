@@ -38,7 +38,7 @@ if( $featured_courses ): ?>
             <div class="col col-xl-4 col-xxl-5 hero-block-content-container pt-4">
 
                 <?php if ( $product->is_on_sale() )  {    
-                    echo '<p class="h4 mb-2"><span class="badge rounded-pill bg-success">Now On Sale!</span></p>';
+                    echo '<p class="h4 mb-3"><span class="badge rounded-pill bg-success">Now On Sale!</span></p>';
                 } ?>
                
                 <h1><?php echo $title; ?></h1>

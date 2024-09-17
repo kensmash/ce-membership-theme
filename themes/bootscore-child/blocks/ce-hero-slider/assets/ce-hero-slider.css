@@ -95,3 +95,6 @@
 .hero-block-content-container .tribe-common-anchor-thin:hover, .hero-block-content-container .tribe-common-anchor-thin:active, .hero-block-content-container .tribe-common-anchor-thin:focus {
   border-bottom: 0px !important;
 }
+.hero-block-content-container .tribe-events-pro-week-mobile-events__event-featured-image-wrapper {
+  display: none !important;
+}
