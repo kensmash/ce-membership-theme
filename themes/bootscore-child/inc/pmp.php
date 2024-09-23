@@ -92,6 +92,7 @@ add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
  
 	$formatted_price = ''; // Define the new variable.
 	$level_id = $current_user->membership_level->id;
+	$current_price_text = "Current Price";
  
 	// get pricing for simple product
 	if ( $product->is_type( 'simple' ) || $product->is_type( 'virtual' ) || $product->is_type( 'course' ) ) {
@@ -107,7 +108,7 @@ add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
 			$price = pmprowoo_get_membership_price( $regular_price, $product );
 		}
 
-		$current_price_text = "Current Price";
+		
 
 		global $product;
 		if ( $product->is_on_sale() )  {    
@@ -129,6 +130,7 @@ add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
  
 	// get pricing for variable products.
 	if ( $product->is_type( 'variable' ) ) {
+		
 		$prices        = $product->get_variation_prices( true );
 		$min_price     = current( $prices['price'] );
 		$max_price     = end( $prices['price'] );
