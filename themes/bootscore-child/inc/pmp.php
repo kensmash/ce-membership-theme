@@ -108,9 +108,6 @@ add_action( 'wp_footer', 'my_pmpro_move_required_asterisk_span', 20 );
 			$price = pmprowoo_get_membership_price( $regular_price, $product );
 		}
 
-		
-
-		global $product;
 		if ( $product->is_on_sale() )  {    
 			$current_price_text = "Sale Price";
 		}
