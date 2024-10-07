@@ -912,6 +912,14 @@
       "oAP" : "\/blocks\/ce-hero-slider\/template-parts\/content-user.php",
       "oF" : 0
     },
+    "\/blocks\/ce-hero-slider\/template-parts\/slide-announcement.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-hero-slider\/template-parts\/slide-announcement.php",
+      "oF" : 0
+    },
     "\/blocks\/ce-hero-slider\/template-parts\/slide-course.php" : {
       "cB" : 0,
       "ft" : 8192,
