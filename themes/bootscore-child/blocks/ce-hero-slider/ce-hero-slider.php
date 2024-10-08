@@ -47,6 +47,9 @@ if ( ! empty( $block['align'] ) ) {
                         case "post":
                             require get_stylesheet_directory() . '/blocks/ce-hero-slider/template-parts/slide-post.php';
                             break;
+                        case "announcement":
+                            require get_stylesheet_directory() . '/blocks/ce-hero-slider/template-parts/slide-announcement.php';
+                            break;
                     }
                     
                 endwhile;
