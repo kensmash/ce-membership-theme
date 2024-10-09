@@ -342,7 +342,7 @@
                         [
                             {
                                 "field": "field_66e49c2fcf6b9",
-                                "operator": "!=",
+                                "operator": "==",
                                 "value": "announcement"
                             }
                         ]
@@ -437,5 +437,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1728409838
+    "modified": 1728480605
 }

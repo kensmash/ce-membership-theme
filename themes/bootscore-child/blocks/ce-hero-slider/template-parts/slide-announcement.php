@@ -17,8 +17,8 @@ if (!$background_image) {
 
             <div class="col col-lg-6 hero-block-content-container h-100 d-flex align-items-center">
                 <div class="hero-slider-announcement rounded-1">
-                    <h1 class="text-center text-light"><?php echo esc_html(get_sub_field('headline') ); ?></h1>
-                    <p class="text-center text-light"><?php echo esc_html(get_sub_field('description') ); ?></p>
+                    <h1 class="text-light"><?php echo esc_html(get_sub_field('headline') ); ?></h1>
+                    <p class="text-light"><?php echo esc_html(get_sub_field('description') ); ?></p>
                     <div class="d-grid gap-2 pt-3">
                         <a class="anchorlink btn btn-success" href="<?php echo esc_url( $link ); ?>" role="button"><?php echo esc_html(get_sub_field('button_text') ); ?></a>
                     </div> <!-- d-grid -->
