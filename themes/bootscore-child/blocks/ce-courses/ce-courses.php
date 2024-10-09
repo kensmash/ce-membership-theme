@@ -76,12 +76,14 @@ if ( ! empty( $block['align'] ) ) {
             while ( $query->have_posts() ) {
 
                 $query->the_post();
-
                 $button_text = "Learn More";
                 $product_link = get_the_permalink();
                 $image = get_field('card_image', get_the_ID());
                 $course_type = get_field('course_type', get_the_ID());
                 $course_duration = get_field('course_duration', get_the_ID());
+                $price = get_post_meta( get_the_ID(), '_price', true );
+                $regular_price = get_post_meta( get_the_ID(), '_regular_price', true );
+		        $sale_price    = get_post_meta( get_the_ID(), '_sale_price', true );
 
                 if ( is_user_logged_in() ) {
                     //if there is a logged in user, get the product's related learndash courses
@@ -105,15 +107,18 @@ if ( ! empty( $block['align'] ) ) {
                 } 
                         
                 $courses[] = array(
-                    'id'				=> get_the_ID(),
-                    'title' 			=> get_the_title(),
-                    'excerpt'           => get_the_excerpt(),
-                    'link' 		        => $product_link,
-                    'button_text' 		=> $button_text,
-                    'image'             => $image,
-                    'type'              => $course_type,
-                    'duration'          => $course_duration,
-                    'onsale'            => true,
+                    'id'				    => get_the_ID(),
+                    'title' 			    => get_the_title(),
+                    'excerpt'               => get_the_excerpt(),
+                    'link' 		            => $product_link,
+                    'button_text' 		    => $button_text,
+                    'image'                 => $image,
+                    'type'                  => $course_type,
+                    'duration'              => $course_duration,
+                    'onsale'                => true,
+                    'price'                 => $price,
+                    'regular_price'         => $regular_price,
+                    'sale_price'            => $sale_price,
                 );
 
         }
@@ -175,15 +180,15 @@ if ( ! empty( $block['align'] ) ) {
                 } 
                         
                 $courses[] = array(
-                    'id'				=> get_the_ID(),
-                    'title' 			=> get_the_title(),
-                    'excerpt'           => get_the_excerpt(),
-                    'link' 		        => $product_link,
-                    'button_text' 		=> $button_text,
-                    'image'             => $image,
-                    'type'              => $course_type,
-                    'duration'          => $course_duration,
-                    'onsale'            => false,
+                    'id'				    => get_the_ID(),
+                    'title' 			    => get_the_title(),
+                    'excerpt'               => get_the_excerpt(),
+                    'link' 		            => $product_link,
+                    'button_text' 		    => $button_text,
+                    'image'                 => $image,
+                    'type'                  => $course_type,
+                    'duration'              => $course_duration,
+                    'onsale'                => false,
                 );
 
            }
@@ -213,7 +218,8 @@ if ( ! empty( $block['align'] ) ) {
                             <p class="card_course_start">
                                 <?php if ( $course['type'] == "Live Course" ) { echo '<small class="text-muted">' . $course['duration'] . 's </small><span class="badge bg-secondary ms-2 mt-1">Live</span>';} ?>
                             </p>
-                            <?php echo $course['excerpt']; ?>
+                            <?php if ( $course['onsale'] && $sale_courses_only ): echo '<p>Regular Price: <del>' . wc_price( $course['regular_price'] ) . '</del><br>Sale Price: ' . wc_price( $course['sale_price'] ) . '</p>'; endif; ?>
+                            <p><?php echo $course['excerpt']; ?></p>
                         </div><!-- card-body -->
                         <div class="card-footer bg-transparent text-muted border-top-0">
                             <div class="d-grid pt-2">
