@@ -5,7 +5,34 @@
  * @param array $block The block settings and attributes.
  */
 
+$sale_courses_only = get_field('show_only_courses_on_sale');
+$courses_type = get_field('courses_type');
 $courses = [];
+$tax_query = array(
+    array(
+        'taxonomy' => 'product_cat',
+        'field' => 'slug', 
+        'terms' => array( 'courses' ),
+    ),
+);
+
+if ($courses_type) {
+    if (!is_array($courses_type)) {
+        $courses_type = array($courses_type);
+    }
+    $tax_query = array(
+        array(
+            'taxonomy' => 'product_cat',
+            'field' => 'slug', 
+            'terms' => array( 'courses' ),
+        ),
+        array(
+            'taxonomy' => 'product_tag',
+            'terms' => $courses_type,
+        ),
+    );
+}
+
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -33,21 +60,14 @@ if ( ! empty( $block['align'] ) ) {
         //get courses that are on sale, we need to show them first
         //https://www.godaddy.com/resources/skills/get-a-list-of-woocommerce-sale-products
         $query = new WP_Query(array(
-            'post_type' => 'product',
-            'post_status' => 'publish',
-            'posts_per_page' => -1,
-            'tax_query'           => array(
-                array(
-                    'taxonomy' => 'product_cat',
-                    'field' => 'slug', 
-                    'terms' => array( 'courses' ),
-                    'operator' => 'IN'
-                ),
-            ),
+            'post_type'         => 'product',
+            'post_status'       => 'publish',
+            'posts_per_page'    => -1,
+            'tax_query'         => $tax_query,
             'meta_query'        => WC()->query->get_meta_query(),
             'post__in'          => array_merge( array( 0 ), wc_get_product_ids_on_sale() ),
-            'orderby'        => 'menu_order',
-            'order' => 'ASC', 
+            'orderby'           => 'menu_order',
+            'order'             => 'ASC', 
         ));
 
 
@@ -102,20 +122,14 @@ if ( ! empty( $block['align'] ) ) {
 
         wp_reset_postdata(); 
 
+    if (!$sale_courses_only): 
 
-        //now get courses that are NOT on sale
+        //get courses that are NOT on sale
         $query = new WP_Query(array(
             'post_type' => 'product',
             'post_status' => 'publish',
             'posts_per_page' => -1,
-            'tax_query'           => array(
-                array(
-                    'taxonomy' => 'product_cat',
-                    'field' => 'slug', 
-                    'terms' => array( 'courses' ),
-                    'operator' => 'IN'
-                ),
-            ),
+            'tax_query'         => $tax_query,
             'meta_query'     => array(
                 array(
                     'key'     => '_sale_price',
@@ -176,9 +190,12 @@ if ( ! empty( $block['align'] ) ) {
                 
         }
 
-         wp_reset_postdata(); 
+        wp_reset_postdata(); 
 
-         foreach( $courses as $course ): ?>
+        endif; //end getting courses that are not on sale
+
+        //now loop through the courses array and output courses
+        foreach( $courses as $course ): ?>
 
             <div class="woocommerce item-listing col-md-6 col-lg-4 p-2 my-1">
 
