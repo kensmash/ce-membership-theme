@@ -126,6 +126,40 @@
             "bidirectional_target": []
         },
         {
+            "key": "field_6717dffe190b0",
+            "label": "Bundle",
+            "name": "bundle",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "If this course is part of a bundle, select the bundle here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "product"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": [
+                "product_cat:courses"
+            ],
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": 1,
+            "allow_in_bindings": 0,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
             "key": "field_5cc7602d50ea1",
             "label": "Start Date\/Time",
             "name": "start_date",
@@ -440,5 +474,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1722885217
+    "modified": 1729618026
 }
