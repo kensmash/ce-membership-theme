@@ -82,6 +82,28 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 /*--------------------------------------------------------------
 # WooCommerce Single Product  Pages
 --------------------------------------------------------------*/
+
+//https://stackoverflow.com/questions/54702486/append-a-text-string-to-woocommerce-product-title
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+
+function woocommerce_template_single_title_custom(){
+
+	$bundle_button = NULL;
+	$bundled_course = get_field('bundle', get_the_ID());
+	
+	if( $bundled_course ):
+		//we are allowing a maximum of one in ACF, so this loop will return one result
+		foreach( $bundled_course as $course ): 
+			$bundle_permalink = get_permalink( $course->ID );
+			$bundle_title = get_the_title( $course->ID );
+			$bundle_button = '<div class="mb-3"><a class="btn btn-info btn-sm" href="' . $bundle_permalink . '" role="button">Also available as part of: ' . $bundle_title . '</a></div>';
+		endforeach; 
+	endif;
+
+    the_title( '<h1 class="product_title entry-title">', '</h1>' . $bundle_button );
+}
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title_custom', 5);
+
 /**
  * Change number of related products output
  */ 

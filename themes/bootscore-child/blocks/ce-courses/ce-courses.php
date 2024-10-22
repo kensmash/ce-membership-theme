@@ -76,14 +76,14 @@ if ( ! empty( $block['align'] ) ) {
             while ( $query->have_posts() ) {
 
                 $query->the_post();
-
+                $bundled = false;
                 $bundled_course = get_field('bundle', get_the_ID());
                 if( $bundled_course ):
                     //we are allowing a maximum of one in ACF, so this loop will return one result
                     foreach( $bundled_course as $course ): 
                         $bundled = true;
-                        $permalink = get_permalink( $course->ID );
-                        $title = get_the_title( $course->ID );
+                        $bundle_permalink = get_permalink( $course->ID );
+                        $bundle_title = get_the_title( $course->ID );
                     endforeach; 
                 endif;
 
@@ -130,6 +130,9 @@ if ( ! empty( $block['align'] ) ) {
                     'price'                 => $price,
                     'regular_price'         => $regular_price,
                     'sale_price'            => $sale_price,
+                    'bundled'               => $bundled,
+                    'bundle_permalink'      => $bundle_permalink,
+                    'bundle_title'          => $bundle_title,
                 );
 
         }
@@ -164,12 +167,14 @@ if ( ! empty( $block['align'] ) ) {
                 $query->the_post();
 
                 $bundled_course = get_field('bundle', get_the_ID());
+                $bundled = false;
                 if( $bundled_course ):
                     //we are allowing a maximum of one in ACF, so this loop will return one result
                     foreach( $bundled_course as $course ): 
+                        //echo var_dump($course);
                         $bundled = true;
-                        $permalink = get_permalink( $course->ID );
-                        $title = get_the_title( $course->ID );
+                        $bundle_permalink = get_permalink( $course->ID );
+                        $bundle_title = get_the_title( $course->ID );
                     endforeach; 
                 endif;
 
@@ -211,8 +216,8 @@ if ( ! empty( $block['align'] ) ) {
                     'duration'              => $course_duration,
                     'onsale'                => false,
                     'bundled'               => $bundled,
-                    'bundled_course_title'  => $bundled_course_title,
-                    'bundled_course_text'   => $bundled_course_text,
+                    'bundle_permalink'      => $bundle_permalink,
+                    'bundle_title'          => $bundle_title,
                 );
 
            }
@@ -237,11 +242,11 @@ if ( ! empty( $block['align'] ) ) {
                         <?php } ?>
                         <div class="card-body">
                             <?php if ( $course['onsale'] ) { echo '<p class="h5 mb-2"><span class="badge rounded-pill bg-success">On Sale</span></p>';} ?>
+                            <?php if ( $course['bundled'] ) { echo '<div class="mb-3"><a class="btn btn-info btn-sm" href="' . $course['bundle_permalink'] . '" role="button"> Bundled Course</a></div>'; } ?>
                             <h5 class="card-title"><a href="<?php echo $course['link']; ?>"><?php echo $course['title']; ?></a></h5>
                             <p class="card-text"><small class="text-muted"><?php ce_courseloop_instructors($course['id']); ?></small></p>
                             <p class="card_course_start">
                                 <?php if ( $course['type'] == "Live Course" ) { echo '<small class="text-muted">' . $course['duration'] . 's </small><span class="badge bg-secondary ms-2 mt-1">Live</span>'; } ?>
-                                <?php if ( $course['bundled'] ) { echo '<span class="badge bg-secondary mt-1">Bundled Course</span>'; } ?>
                             </p>
                             <?php if ( $course['onsale'] && $sale_courses_only ): echo '<p>Regular Price: <del>' . wc_price( $course['regular_price'] ) . '</del><br>Sale Price: ' . wc_price( $course['sale_price'] ) . '</p>'; endif; ?>
                             <p><?php echo $course['excerpt']; ?></p>
