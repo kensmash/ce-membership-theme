@@ -16,6 +16,7 @@ $tax_query = array(
     ),
 );
 
+//only display courses from a certain category if courses_type ACF field is selected
 if ($courses_type) {
     if (!is_array($courses_type)) {
         $courses_type = array($courses_type);
@@ -55,6 +56,7 @@ if ( ! empty( $block['align'] ) ) {
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
 
     <?php 
+        //create filtering buttons to filter by custom taxonomy
         $all_categories = get_terms( array( 
         'taxonomy' => 'courses-category',
         'hide_empty' => true,
@@ -63,6 +65,7 @@ if ( ! empty( $block['align'] ) ) {
     if ($all_categories): ?>
 
         <div>
+            <button type="button" data-filter="all">All Courses</button>
             <?php
                 foreach($all_categories as $category): ?>
             
@@ -99,6 +102,7 @@ if ( ! empty( $block['align'] ) ) {
                 $slugs = wp_list_pluck($categories, 'slug');
                 $class_names = join(' ', $slugs);
 
+                //show bundle tag if course is part of a bundle
                 $bundled = false;
                 $bundled_course = get_field('bundle', get_the_ID());
                 if( $bundled_course ):
@@ -194,6 +198,7 @@ if ( ! empty( $block['align'] ) ) {
                 $slugs = wp_list_pluck($categories, 'slug');
                 $class_names = join(' ', $slugs);
 
+                //show bundle tag if course is part of a bundle
                 $bundled_course = get_field('bundle', get_the_ID());
                 $bundled = false;
                 if( $bundled_course ):
@@ -301,7 +306,7 @@ if ( ! empty( $block['align'] ) ) {
 
     var mixer = mixitup(containerEl, {
         animation: {
-            effects: 'fade scale(0.5)'
+            effects: 'fade scale(0.25)'
         }
     });
 </script>
