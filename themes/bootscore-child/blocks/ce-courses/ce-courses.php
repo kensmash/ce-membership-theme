@@ -65,10 +65,10 @@ if ( ! empty( $block['align'] ) ) {
     ) ); ?>
 
     <div class="ps-2 pb-2">
-        <button type="button" class="btn btn-secondary btn-sm" data-filter="all">All Courses</button>
+        <button type="button" class="btn btn-secondary btn-sm mt-2 mt-lg-0" data-filter="all">All Courses</button>
         <?php
             foreach($all_categories as $category): ?>
-                <button type="button" class="btn btn-secondary btn-sm" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
+                <button type="button" class="btn btn-secondary btn-sm mt-2 mt-lg-0" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
         <?php endforeach; ?>
     </div>
 
