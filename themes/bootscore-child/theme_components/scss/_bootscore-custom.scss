@@ -35,6 +35,10 @@ body {
 # Form Elements
 --------------------------------------------------------------*/
 
+.mixitup-control-active {
+    @extend .btn-success;
+}
+
 //attempt to disable ugly focus ring
 .bootstrap-select .form-control:focus {
     outline: 0px none #fff !important;
