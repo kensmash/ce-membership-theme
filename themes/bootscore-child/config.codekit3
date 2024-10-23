@@ -257,6 +257,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/taxonomy_6718ed778e536.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/taxonomy_6718ed778e536-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/taxonomy_657361a49a73b.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -821,6 +829,25 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/assets\/js\/slick.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/blocks\/ce-courses\/assets\/ce-courses.asset.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-courses\/assets\/ce-courses.asset.php",
+      "oF" : 0
+    },
+    "\/blocks\/ce-courses\/assets\/mixitup.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-courses\/assets\/mixitup.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0

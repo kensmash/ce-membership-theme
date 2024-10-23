@@ -76,6 +76,11 @@ if ( ! empty( $block['align'] ) ) {
             while ( $query->have_posts() ) {
 
                 $query->the_post();
+                //https://www.kunkalabs.com/tutorials/integrating-mixitup-into-your-project/
+                $categories = get_the_terms( get_the_ID(), 'course-category' );
+                $slugs = wp_list_pluck($categories, 'slug');
+                $class_names = join(' ', $slugs);
+
                 $bundled = false;
                 $bundled_course = get_field('bundle', get_the_ID());
                 if( $bundled_course ):
@@ -121,6 +126,7 @@ if ( ! empty( $block['align'] ) ) {
                     'id'				    => get_the_ID(),
                     'title' 			    => get_the_title(),
                     'excerpt'               => get_the_excerpt(),
+                    'class_names'           => $class_names,
                     'link' 		            => $product_link,
                     'button_text' 		    => $button_text,
                     'image'                 => $image,
@@ -165,6 +171,10 @@ if ( ! empty( $block['align'] ) ) {
             while ( $query->have_posts() ) {
         
                 $query->the_post();
+                //https://www.kunkalabs.com/tutorials/integrating-mixitup-into-your-project/
+                $categories = get_the_terms( get_the_ID(), 'course-category' );
+                $slugs = wp_list_pluck($categories, 'slug');
+                $class_names = join(' ', $slugs);
 
                 $bundled_course = get_field('bundle', get_the_ID());
                 $bundled = false;
@@ -209,6 +219,7 @@ if ( ! empty( $block['align'] ) ) {
                     'id'				    => get_the_ID(),
                     'title' 			    => get_the_title(),
                     'excerpt'               => get_the_excerpt(),
+                    'class_names'           => $class_names,
                     'link' 		            => $product_link,
                     'button_text' 		    => $button_text,
                     'image'                 => $image,
@@ -226,12 +237,28 @@ if ( ! empty( $block['align'] ) ) {
 
         wp_reset_postdata(); 
 
-        endif; //end getting courses that are not on sale
+        endif; //end getting courses that are not on sale ?>
 
+        <div>
+            <!-- Iterate through each category -->
+            <?php 
+             $all_categories = get_terms( array( 
+                'taxonomy' => 'course-category',
+                'hide_empty' => true,
+            ) );
+            
+                foreach($all_categories as $category): ?>
+                <!-- Output control button markup, setting the data-filter attribute as the category "slug" -->
+        
+                <button type="button" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
+            <?php endforeach; ?>
+        </div>
+
+        <?php
         //now loop through the courses array and output courses
         foreach( $courses as $course ): ?>
 
-            <div class="woocommerce item-listing col-md-6 col-lg-4 p-2 my-1">
+            <div class="woocommerce item-listing col-md-6 col-lg-4 p-2 my-1 mix<?php if ($course['class_names']) { echo ' ' . $course['class_names']; } ?>">
 
                 <div class="card h-100">
                     <?php 

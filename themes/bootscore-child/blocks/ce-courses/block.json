@@ -3,7 +3,7 @@
     "title": "Comics Experience Courses",
     "description": "Block to display Comics Experience courses.",
     "style": [ "file:./assets/ce-courses.css" ],
-    "script": "",
+    "script": "file:./assets/mixitup.min.js",
     "category": "formatting",
     "icon": "admin-comments",
     "keywords": ["courses"],
