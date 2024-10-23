@@ -54,6 +54,24 @@ if ( ! empty( $block['align'] ) ) {
 
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
 
+    <?php 
+        $all_categories = get_terms( array( 
+        'taxonomy' => 'courses-category',
+        'hide_empty' => true,
+    ) );
+
+    if ($all_categories): ?>
+
+        <div>
+            <?php
+                foreach($all_categories as $category): ?>
+            
+                <button type="button" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
+            <?php endforeach; ?>
+        </div>
+
+    <?php endif; ?>
+
     <div class="row g-0">
 
         <?php 
@@ -172,7 +190,7 @@ if ( ! empty( $block['align'] ) ) {
         
                 $query->the_post();
                 //https://www.kunkalabs.com/tutorials/integrating-mixitup-into-your-project/
-                $categories = get_the_terms( get_the_ID(), 'course-category' );
+                $categories = get_the_terms( get_the_ID(), 'courses-category' );
                 $slugs = wp_list_pluck($categories, 'slug');
                 $class_names = join(' ', $slugs);
 
@@ -237,24 +255,8 @@ if ( ! empty( $block['align'] ) ) {
 
         wp_reset_postdata(); 
 
-        endif; //end getting courses that are not on sale ?>
+        endif; //end getting courses that are not on sale 
 
-        <div>
-            <!-- Iterate through each category -->
-            <?php 
-             $all_categories = get_terms( array( 
-                'taxonomy' => 'course-category',
-                'hide_empty' => true,
-            ) );
-            
-                foreach($all_categories as $category): ?>
-                <!-- Output control button markup, setting the data-filter attribute as the category "slug" -->
-        
-                <button type="button" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
-            <?php endforeach; ?>
-        </div>
-
-        <?php
         //now loop through the courses array and output courses
         foreach( $courses as $course ): ?>
 
@@ -292,3 +294,14 @@ if ( ! empty( $block['align'] ) ) {
      </div> <!-- row -->
 
 </div><!-- .container -->
+
+<script>
+    //https://www.kunkalabs.com/mixitup/docs/mixitup-factory/
+    var containerEl = document.querySelector('.ce-courses');
+
+    var mixer = mixitup(containerEl, {
+        animation: {
+            effects: 'fade scale(0.5)'
+        }
+    });
+</script>

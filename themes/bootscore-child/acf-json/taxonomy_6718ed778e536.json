@@ -3,7 +3,7 @@
     "title": "Course Categories",
     "menu_order": 0,
     "active": true,
-    "taxonomy": "course-category",
+    "taxonomy": "courses-category",
     "object_type": [
         "product"
     ],
@@ -71,5 +71,5 @@
     "meta_box": "default",
     "meta_box_cb": "",
     "meta_box_sanitize_cb": "",
-    "modified": 1729687002
+    "modified": 1729688512
 }
