@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "taxonomy": "product_tag",
+            "taxonomy": "courses-category",
             "add_term": 0,
             "save_terms": 0,
             "load_terms": 0,
@@ -68,5 +68,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1728414963
+    "modified": 1729691898
 }

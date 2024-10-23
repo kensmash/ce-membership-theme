@@ -56,24 +56,21 @@ if ( ! empty( $block['align'] ) ) {
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
 
     <?php 
+    //only show filtering buttons if we are not showing a specific course type
+    if (!$courses_type):
         //create filtering buttons to filter by custom taxonomy
         $all_categories = get_terms( array( 
         'taxonomy' => 'courses-category',
         'hide_empty' => true,
-    ) );
+    ) ); ?>
 
-    $all_categories_amount = count($all_categories);
-
-    //only show filtering buttons if we have more than one taxonomy term
-    if ($all_categories_amount >= 2): ?>
-
-        <div class="ps-2 pb-2">
-            <button type="button" class="btn btn-secondary btn-sm" data-filter="all">All Courses</button>
-            <?php
-                foreach($all_categories as $category): ?>
-                    <button type="button" class="btn btn-secondary btn-sm" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
-            <?php endforeach; ?>
-        </div>
+    <div class="ps-2 pb-2">
+        <button type="button" class="btn btn-secondary btn-sm" data-filter="all">All Courses</button>
+        <?php
+            foreach($all_categories as $category): ?>
+                <button type="button" class="btn btn-secondary btn-sm" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
+        <?php endforeach; ?>
+    </div>
 
     <?php endif; ?>
 
