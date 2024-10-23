@@ -62,7 +62,9 @@ if ( ! empty( $block['align'] ) ) {
         'hide_empty' => true,
     ) );
 
-    if ($all_categories && !$courses_type): ?>
+    $all_categories_amount = count($all_categories);
+
+    if ($all_categories_amount >= 2 && !$courses_type): ?>
 
         <div class="ps-2 pb-2">
             <button type="button" class="btn btn-secondary btn-sm" data-filter="all">All Courses</button>
