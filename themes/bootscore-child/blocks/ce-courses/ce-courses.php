@@ -62,14 +62,13 @@ if ( ! empty( $block['align'] ) ) {
         'hide_empty' => true,
     ) );
 
-    if ($all_categories): ?>
+    if ($all_categories && !$courses_type): ?>
 
-        <div>
-            <button type="button" data-filter="all">All Courses</button>
+        <div class="ps-2 pb-2">
+            <button type="button" class="btn btn-secondary btn-sm" data-filter="all">All Courses</button>
             <?php
                 foreach($all_categories as $category): ?>
-            
-                <button type="button" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
+                    <button type="button" class="btn btn-secondary btn-sm" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
             <?php endforeach; ?>
         </div>
 
