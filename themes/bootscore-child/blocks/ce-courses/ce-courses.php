@@ -64,7 +64,8 @@ if ( ! empty( $block['align'] ) ) {
 
     $all_categories_amount = count($all_categories);
 
-    if ($all_categories_amount >= 2 && !$courses_type): ?>
+    //only show filtering buttons if we have more than one taxonomy term
+    if ($all_categories_amount >= 2): ?>
 
         <div class="ps-2 pb-2">
             <button type="button" class="btn btn-secondary btn-sm" data-filter="all">All Courses</button>
