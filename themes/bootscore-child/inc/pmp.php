@@ -160,7 +160,8 @@ function my_login_redirect( $redirect_to, $request, $user ) {
 			if ($pmp_member->name == 'Community Pro') {
 				//user is Community Pro member
 				//$redirect_to = home_url();
-				$redirect_to = home_url('/my-account/');
+				//$redirect_to = home_url('/my-account/');
+				$redirect_to = home_url('/dashboard/');
 			} else {
 				//user is Community Member
 				//$redirect_to = home_url('/activity/');

@@ -304,9 +304,31 @@ form.pmpro_form .pmpro_change_password-fields {}
     }
 }
 
+#pmpro_account-profile {
+    margin-bottom: 8px !important;
+}
+
 /* .pmprosp-progressbar {
     display: none !important;
 } */
+
+/*---------------------------------------
+	Discord Connect Button
+---------------------------------------*/
+
+.ets-btn {
+    border-radius: 4px;
+    padding: 12px 38px !important;
+}
+
+.ets_assigned_role {
+    display: none;
+    margin-top: 8px !important;
+}
+
+.ets_assigned_role>span {
+    padding: 4px 12px !important;
+}
 
 /*---------------------------------------
 	User Avatar Upload Form
