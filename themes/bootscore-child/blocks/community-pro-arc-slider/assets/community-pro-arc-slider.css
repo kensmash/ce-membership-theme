@@ -12,9 +12,11 @@
 /*--------------------------------------------------------------
 # DEFAULT SLICK STYLES
 --------------------------------------------------------------*/
-.courses-slider .slick-arrow {
+.arc-slider .slick-arrow {
   position: absolute;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
   color: #2979a2;
@@ -24,24 +26,24 @@
   outline: none !important;
   transition: all 0.25s ease-in;
 }
-.courses-slider .slick-arrow:hover,
-.courses-slider .slick-arrow:focus {
+.arc-slider .slick-arrow:hover,
+.arc-slider .slick-arrow:focus {
   color: #83d9ff;
 }
-.courses-slider .slick-prev {
+.arc-slider .slick-prev {
   left: 5px;
 }
-.courses-slider .slick-next {
+.arc-slider .slick-next {
   right: 5px;
 }
 @media only screen and (min-width: 1024px) {
-  .courses-slider .slick-prev {
+  .arc-slider .slick-prev {
     left: -20px;
   }
-  .courses-slider .slick-next {
+  .arc-slider .slick-next {
     right: -20px;
   }
-  .courses-slider .slick-arrow {
+  .arc-slider .slick-arrow {
     font-size: 30px;
   }
 }

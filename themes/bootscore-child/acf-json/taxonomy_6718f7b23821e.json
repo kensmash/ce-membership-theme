@@ -1,5 +1,5 @@
 {
-    "key": "taxonomy_6718ed778e536",
+    "key": "taxonomy_6718f7b23821e",
     "title": "Course Categories",
     "menu_order": 0,
     "active": true,
@@ -21,10 +21,10 @@
         "add_new_item": "Add New Course Category",
         "new_item_name": "New Course Category Name",
         "search_items": "Search Course Categories",
-        "popular_items": "",
-        "separate_items_with_commas": "",
-        "add_or_remove_items": "",
-        "choose_from_most_used": "",
+        "popular_items": "Popular Course Categories",
+        "separate_items_with_commas": "Separate course categories with commas",
+        "add_or_remove_items": "Add or remove course categories",
+        "choose_from_most_used": "Choose from the most used course categories",
         "most_used": "",
         "not_found": "No course categories found",
         "no_terms": "No course categories",
@@ -56,7 +56,7 @@
     "rest_controller_class": "WP_REST_Terms_Controller",
     "show_tagcloud": 1,
     "show_in_quick_edit": 1,
-    "show_admin_column": 0,
+    "show_admin_column": 1,
     "rewrite": {
         "permalink_rewrite": "taxonomy_key",
         "with_front": "1",
@@ -71,5 +71,5 @@
     "meta_box": "default",
     "meta_box_cb": "",
     "meta_box_sanitize_cb": "",
-    "modified": 1729688512
+    "modified": 1729690478
 }

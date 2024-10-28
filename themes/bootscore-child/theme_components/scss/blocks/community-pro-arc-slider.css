@@ -1,0 +1,53 @@
+/*!
+ * bootScore custom colors
+ */
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+/*--------------------------------------------------------------
+# DEFAULT SLICK STYLES
+--------------------------------------------------------------*/
+.arc-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #2979a2;
+  font-size: 18px;
+  cursor: pointer;
+  background: transparent;
+  outline: none !important;
+  transition: all 0.25s ease-in;
+}
+.arc-slider .slick-arrow:hover,
+.arc-slider .slick-arrow:focus {
+  color: #83d9ff;
+}
+.arc-slider .slick-prev {
+  left: 5px;
+}
+.arc-slider .slick-next {
+  right: 5px;
+}
+@media only screen and (min-width: 1024px) {
+  .arc-slider .slick-prev {
+    left: -20px;
+  }
+  .arc-slider .slick-next {
+    right: -20px;
+  }
+  .arc-slider .slick-arrow {
+    font-size: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# SLIDER STYLES
+--------------------------------------------------------------*/

@@ -1,0 +1,17 @@
+{
+    "name": "acf/community-pro-arc-slider",
+    "title": "Community Pro Arc Slider",
+    "description": "Block to display a slider of Community Pro ARC posts.",
+    "style": [ "file:./assets/community-pro-arc-slider.css" ],
+    "script": "file:./assets/community-pro-arc-slider.js",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["community", "community pro", "arc"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "community-pro-arc-slider.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
