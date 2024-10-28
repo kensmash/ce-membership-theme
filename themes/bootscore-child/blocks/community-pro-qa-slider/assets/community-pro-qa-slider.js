@@ -1,7 +1,7 @@
 (function($){
     
     var initializeBlock = function( $block ) {
-        $(".arc-slider").slick({
+        $(".qa-slider").slick({
           slidesToShow: 1,
           mobileFirst: true,
           focusOnSelect: true,

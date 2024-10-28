@@ -12,7 +12,7 @@
 /*--------------------------------------------------------------
 # DEFAULT SLICK STYLES
 --------------------------------------------------------------*/
-.arc-slider .slick-arrow {
+.qa-slider .slick-arrow {
   position: absolute;
   top: 50%;
   -moz-transform: translateY(-50%);
@@ -26,24 +26,24 @@
   outline: none !important;
   transition: all 0.25s ease-in;
 }
-.arc-slider .slick-arrow:hover,
-.arc-slider .slick-arrow:focus {
+.qa-slider .slick-arrow:hover,
+.qa-slider .slick-arrow:focus {
   color: #83d9ff;
 }
-.arc-slider .slick-prev {
+.qa-slider .slick-prev {
   left: 5px;
 }
-.arc-slider .slick-next {
+.qa-slider .slick-next {
   right: 5px;
 }
 @media only screen and (min-width: 1024px) {
-  .arc-slider .slick-prev {
+  .qa-slider .slick-prev {
     left: -20px;
   }
-  .arc-slider .slick-next {
+  .qa-slider .slick-next {
     right: -20px;
   }
-  .arc-slider .slick-arrow {
+  .qa-slider .slick-arrow {
     font-size: 30px;
   }
 }

@@ -1,15 +1,15 @@
 {
-    "name": "acf/community-pro-arc-slider",
-    "title": "Community Pro Arc Slider",
-    "description": "Block to display a slider of Community Pro ARC posts.",
-    "style": [ "file:./assets/community-pro-arc-slider.css" ],
-    "script": "file:./assets/community-pro-arc-slider.js",
+    "name": "acf/community-pro-qa-slider",
+    "title": "Community Pro Q&A Slider",
+    "description": "Block to display a slider of Community Pro Q&A posts.",
+    "style": [ "file:./assets/community-pro-qa-slider.css" ],
+    "script": "file:./assets/community-pro-qa-slider.js",
     "category": "formatting",
     "icon": "admin-comments",
-    "keywords": ["community", "community pro", "arc"],
+    "keywords": ["community", "community pro", "qa"],
     "acf": {
         "mode": "edit",
-        "renderTemplate": "community-pro-arc-slider.php"
+        "renderTemplate": "community-pro-qa-slider.php"
     },
     "supports": {
         "anchor": true

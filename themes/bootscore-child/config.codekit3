@@ -1165,14 +1165,6 @@
       "oAP" : "\/blocks\/community-pro-arc-slider\/community-pro-arc-slider.php",
       "oF" : 0
     },
-    "\/blocks\/community-pro-qa-slider\/assets\/community-pro-arc-slider.asset.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/blocks\/community-pro-qa-slider\/assets\/community-pro-arc-slider.asset.php",
-      "oF" : 0
-    },
     "\/blocks\/community-pro-qa-slider\/assets\/community-pro-arc-slider.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1185,14 +1177,34 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/blocks\/community-pro-qa-slider\/assets\/community-pro-arc-slider.js" : {
+    "\/blocks\/community-pro-qa-slider\/assets\/community-pro-qa-slider.asset.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-pro-qa-slider\/assets\/community-pro-qa-slider.asset.php",
+      "oF" : 0
+    },
+    "\/blocks\/community-pro-qa-slider\/assets\/community-pro-qa-slider.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-pro-qa-slider\/assets\/community-pro-qa-slider-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/community-pro-qa-slider\/assets\/community-pro-qa-slider.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/blocks\/community-pro-qa-slider\/assets\/community-pro-arc-slider-min.js",
-      "oF" : 0,
+      "oA" : 1,
+      "oAP" : "\/blocks\/community-pro-qa-slider\/assets\/community-pro-qa-slider-min.js",
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -1204,12 +1216,12 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/blocks\/community-pro-qa-slider\/community-pro-arc-slider.php" : {
+    "\/blocks\/community-pro-qa-slider\/community-pro-qa-slider.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/blocks\/community-pro-qa-slider\/community-pro-arc-slider.php",
+      "oAP" : "\/blocks\/community-pro-qa-slider\/community-pro-qa-slider.php",
       "oF" : 0
     },
     "\/blocks\/community-spotlight\/assets\/community-spotlight-slider.asset.php" : {
@@ -2102,18 +2114,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/theme_components\/scss\/blocks\/community-pro-arc-slider.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/theme_components\/scss\/blocks\/community-pro-arc-slider-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/theme_components\/scss\/blocks\/community-pro-arc-slider.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -2124,6 +2124,21 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/blocks\/community-pro-arc-slider\/assets\/community-pro-arc-slider.css",
+      "oF" : 2,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/theme_components\/scss\/blocks\/community-pro-qa-slider.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-pro-qa-slider\/assets\/community-pro-qa-slider.css",
       "oF" : 2,
       "oS" : 0,
       "pg" : 0,
