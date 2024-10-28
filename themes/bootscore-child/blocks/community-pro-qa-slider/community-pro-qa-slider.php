@@ -1,30 +1,14 @@
 <?php
 /**
- * CE Community Pro Post Slider Block template.
+ * CE Community Pro Q&A Slider Block template.
  *
  * @param array $block The block settings and attributes.
  */
 
-$arc_headline = get_field('slider_headline');
-$arc_category = get_field('slider_category');
-$arc_link = get_field('category_link');
+$qa_headline = get_field('slider_headline');
+$qa_link = get_field('category_link');
 
 $posts = array();
-$tax_query = array();
-
-//only display posts from a certain category
-if ($arc_type) {
-    if (!is_array($arc_type)) {
-        $arc_type = array($arc_type);
-    }
-    $tax_query = array(
-        array(
-            'taxonomy' => 'arc-category',
-            'terms' => $arc_type,
-        ),
-    );
-}
-
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -44,11 +28,10 @@ if ( ! empty( $block['align'] ) ) {
 ?>
 
 <?php $query = new WP_Query(array(
-    'post_type'         => 'resource',
+    'post_type'         => 'qa-session',
     'post_status'       => 'publish',
     'posts_per_page'    => 5,
-    'tax_query'         => $tax_query,
-    'order'             => 'ASC', 
+    'order'             => 'DESC', 
 ));
 
 
@@ -63,7 +46,7 @@ if ( $query->have_posts() ) {
                 'title' 			    => get_the_title(),
                 'excerpt'               => get_the_excerpt(),
                 'link' 		            => get_the_permalink(),
-                'button_text' 		    => "Learn More",
+                'button_text' 		    => "See Q&A Session",
             );
 
         }
@@ -81,13 +64,13 @@ if ($posts): ?>
         <div class="row g-0">
 
             <div class="col-12 d-flex align-items-center justify-content-between">
-                <h2 class="mb-0"><?php echo esc_html( $arc_headline ); ?></h2>
-                <a href="<?php echo esc_url( $arc_link ); ?>"><bold>See All</bold></a>
+                <h2 class="mb-0"><?php echo esc_html( $qa_headline ); ?></h2>
+                <a href="<?php echo esc_url( $qa_link ); ?>"><bold>See All</bold></a>
             </div>
 
             <div class="col-12">
 
-                <div class="arc-slider">
+                <div class="qa-slider">
 
                     <?php foreach( $posts as $post ): ?>
 
@@ -109,7 +92,7 @@ if ($posts): ?>
 
                     <?php endforeach; ?>
 
-                </div> <!-- arc-slider -->
+                </div> <!-- qa-slider -->
 
             </div> <!-- col-12 -->
 

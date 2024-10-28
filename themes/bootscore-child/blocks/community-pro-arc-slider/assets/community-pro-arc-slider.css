@@ -38,13 +38,13 @@
 }
 @media only screen and (min-width: 1024px) {
   .arc-slider .slick-prev {
-    left: -20px;
+    left: -10px;
   }
   .arc-slider .slick-next {
-    right: -20px;
+    right: -10px;
   }
   .arc-slider .slick-arrow {
-    font-size: 30px;
+    font-size: 16px;
   }
 }
 

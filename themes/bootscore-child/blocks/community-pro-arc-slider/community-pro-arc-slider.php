@@ -63,7 +63,7 @@ if ( $query->have_posts() ) {
                 'title' 			    => get_the_title(),
                 'excerpt'               => get_the_excerpt(),
                 'link' 		            => get_the_permalink(),
-                'button_text' 		    => "Learn More",
+                'button_text' 		    => "Read More",
             );
 
         }
