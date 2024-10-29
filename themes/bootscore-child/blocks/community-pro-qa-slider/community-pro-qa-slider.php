@@ -65,7 +65,7 @@ if ($posts): ?>
 
             <div class="col-12 d-flex align-items-center justify-content-between">
                 <h2 class="mb-0"><?php echo esc_html( $qa_headline ); ?></h2>
-                <a href="<?php echo esc_url( $qa_link ); ?>"><bold>See All</bold></a>
+                <a href="<?php echo esc_url( $qa_link ); ?>"><b>See All</b></a>
             </div>
 
             <div class="col-12">

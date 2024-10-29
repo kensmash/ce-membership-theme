@@ -82,7 +82,7 @@ if ($posts): ?>
 
             <div class="col-12 d-flex align-items-center justify-content-between">
                 <h2 class="mb-0"><?php echo esc_html( $arc_headline ); ?></h2>
-                <a href="<?php echo esc_url( $arc_link ); ?>">See All</a>
+                <a href="<?php echo esc_url( $arc_link ); ?>"><b>See All</b></a>
             </div>
 
             <div class="col-12">
