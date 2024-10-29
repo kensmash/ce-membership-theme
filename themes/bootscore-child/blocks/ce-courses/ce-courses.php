@@ -10,7 +10,9 @@ $sale_courses_only = get_field('show_only_courses_on_sale');
 $courses_type = get_field('courses_type');
 //for displaying only courses with certain tags
 $courses_tag = get_field('courses_tag');
-$courses = [];
+$courses = array();
+$all_categories = array();
+//base taxonomy query to return only courses
 $tax_query = array(
     array(
         'taxonomy' => 'product_cat',
@@ -30,6 +32,7 @@ if ($courses_type) {
     ));
 }
 
+//only display courses with certain tags
 if ($courses_tag) {
     if (!is_array($courses_tag)) {
         $courses_tag = array($courses_tag);
@@ -84,8 +87,14 @@ if ( ! empty( $block['align'] ) ) {
                 //https://www.kunkalabs.com/tutorials/integrating-mixitup-into-your-project/
                 $categories = get_the_terms( get_the_ID(), 'course-category' );
                 $slugs = wp_list_pluck($categories, 'slug');
+                //add terms to all_categories for mixitup filter
+                foreach($slugs as $slug){
+                    if(!in_array($slug, $all_categories, true)){
+                        array_push($all_categories, $slug);
+                    }
+                }
+                sort($all_categories);
                 $class_names = join(' ', $slugs);
-
                 //show bundle tag if course is part of a bundle
                 $bundled = false;
                 $bundled_course = get_field('bundle', get_the_ID());
@@ -173,8 +182,6 @@ if ( ! empty( $block['align'] ) ) {
 
        
         if ( $query->have_posts() ) {
-
-            $all_categories = array();
         
             while ( $query->have_posts() ) {
         
@@ -182,6 +189,7 @@ if ( ! empty( $block['align'] ) ) {
                 //https://www.kunkalabs.com/tutorials/integrating-mixitup-into-your-project/
                 $categories = get_the_terms( get_the_ID(), 'courses-category' );
                 $slugs = wp_list_pluck($categories, 'slug');
+                //add terms to all_categories for mixitup filter
                 foreach($slugs as $slug){
                     if(!in_array($slug, $all_categories, true)){
                         array_push($all_categories, $slug);
