@@ -6,7 +6,10 @@
  */
 
 $sale_courses_only = get_field('show_only_courses_on_sale');
+//for mixitup filter with custom ACF taxonomy
 $courses_type = get_field('courses_type');
+//for displaying only courses with certain tags
+$courses_tag = get_field('courses_tag');
 $courses = [];
 $tax_query = array(
     array(
@@ -21,17 +24,20 @@ if ($courses_type) {
     if (!is_array($courses_type)) {
         $courses_type = array($courses_type);
     }
-    $tax_query = array(
-        array(
-            'taxonomy' => 'product_cat',
-            'field' => 'slug', 
-            'terms' => array( 'courses' ),
-        ),
-        array(
-            'taxonomy' => 'product_tag',
-            'terms' => $courses_type,
-        ),
-    );
+    array_push($tax_query, array(
+        'taxonomy' => 'courses-category',
+        'terms' => $courses_type,
+    ));
+}
+
+if ($courses_tag) {
+    if (!is_array($courses_tag)) {
+        $courses_tag = array($courses_tag);
+    }
+    array_push($tax_query, array(
+        'taxonomy' => 'product_tag',
+        'terms' => $courses_tag,
+    ));
 }
 
 
@@ -54,27 +60,6 @@ if ( ! empty( $block['align'] ) ) {
 
 
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $class_name ); ?>" style="">
-
-    <?php 
-    //only show filtering buttons if we are not showing a specific course type
-    if (!$courses_type):
-        //create filtering buttons to filter by custom taxonomy
-        $all_categories = get_terms( array( 
-        'taxonomy' => 'courses-category',
-        'hide_empty' => true,
-    ) ); ?>
-
-    <div class="ps-2 pb-2">
-        <button type="button" class="btn btn-secondary btn-sm mt-2 mt-lg-0" data-filter="all">All Courses</button>
-        <?php
-            foreach($all_categories as $category): ?>
-                <button type="button" class="btn btn-secondary btn-sm mt-2 mt-lg-0" data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
-        <?php endforeach; ?>
-    </div>
-
-    <?php endif; ?>
-
-    <div class="row g-0">
 
         <?php 
         //get courses that are on sale, we need to show them first
@@ -188,6 +173,8 @@ if ( ! empty( $block['align'] ) ) {
 
        
         if ( $query->have_posts() ) {
+
+            $all_categories = array();
         
             while ( $query->have_posts() ) {
         
@@ -195,6 +182,12 @@ if ( ! empty( $block['align'] ) ) {
                 //https://www.kunkalabs.com/tutorials/integrating-mixitup-into-your-project/
                 $categories = get_the_terms( get_the_ID(), 'courses-category' );
                 $slugs = wp_list_pluck($categories, 'slug');
+                foreach($slugs as $slug){
+                    if(!in_array($slug, $all_categories, true)){
+                        array_push($all_categories, $slug);
+                    }
+                }
+                sort($all_categories);
                 $class_names = join(' ', $slugs);
 
                 //show bundle tag if course is part of a bundle
@@ -261,7 +254,23 @@ if ( ! empty( $block['align'] ) ) {
 
         endif; //end getting courses that are not on sale 
 
-        //now loop through the courses array and output courses
+        //output filter buttons if more than 1 category
+        if (count($all_categories) >= 2): ?>
+
+        <div class="ps-2 pb-2">
+            <button type="button" class="btn btn-secondary btn-sm mt-2 mt-lg-0" data-filter="all">All Courses</button>
+            <?php
+                foreach($all_categories as $category): ?>
+                    <button type="button" class="btn btn-secondary btn-sm mt-2 mt-lg-0" data-filter=".<?php echo $category; ?>"><?php echo ucwords($category); ?></button>
+            <?php endforeach; ?>
+        </div>
+
+        <?php endif; ?>
+
+        <div class="row g-0">
+
+        <?php
+        //now loop through the courses array and output courses 
         foreach( $courses as $course ): ?>
 
             <div class="woocommerce item-listing col-md-6 col-lg-4 p-2 my-1 mix<?php if ($course['class_names']) { echo ' ' . $course['class_names']; } ?>">

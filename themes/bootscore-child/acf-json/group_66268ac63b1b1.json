@@ -22,7 +22,33 @@
             "load_terms": 0,
             "return_format": "id",
             "field_type": "select",
-            "allow_null": 0,
+            "allow_null": 1,
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "multiple": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_672146cbcfba7",
+            "label": "Courses Tag",
+            "name": "courses_tag",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "product_tag",
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "field_type": "select",
+            "allow_null": 1,
             "allow_in_bindings": 0,
             "bidirectional": 0,
             "multiple": 0,
@@ -68,5 +94,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1729691872
+    "modified": 1730234264
 }
