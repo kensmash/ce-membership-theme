@@ -81,7 +81,7 @@ if ($posts): ?>
         <div class="row g-0">
 
             <div class="col-12 d-flex align-items-center justify-content-between">
-                <h2 class="mb-0"><?php echo esc_html( $arc_headline ); ?></h2>
+                <h2 class="mb-1"><?php echo esc_html( $arc_headline ); ?></h2>
                 <a href="<?php echo esc_url( $arc_link ); ?>"><b>See All</b></a>
             </div>
 
@@ -95,8 +95,8 @@ if ($posts): ?>
 
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="<?php echo $post['link']; ?>"><?php echo $post['title']; ?></a></h5>
-                                    <p><?php echo $post['excerpt']; ?></p>
+                                    <h5 class="card-title fs-6"><a href="<?php echo $post['link']; ?>"><?php echo $post['title']; ?></a></h5>
+                                    <p class="lh-sm"><small><?php echo $post['excerpt']; ?></small></p>
                                 </div><!-- card-body -->
                                 <div class="card-footer bg-transparent text-muted border-top-0">
                                     <div class="d-grid pt-2">

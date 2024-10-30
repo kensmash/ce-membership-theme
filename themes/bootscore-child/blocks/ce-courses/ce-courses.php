@@ -15,6 +15,12 @@ $all_categories = array();
 //base taxonomy query to return only courses
 $tax_query = array(
     array(
+        'taxonomy' => 'product_visibility',
+        'field'    => 'name',
+        'terms'    => 'exclude-from-catalog',
+        'operator' => 'NOT IN',
+    ),
+    array(
         'taxonomy' => 'product_cat',
         'field' => 'slug', 
         'terms' => array( 'courses' ),

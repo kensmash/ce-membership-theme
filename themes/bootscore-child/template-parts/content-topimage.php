@@ -11,7 +11,7 @@
 ?>
 
 <?php
-if( get_field('show_header_image') || is_archive('script') || is_single() ) { 
+if( get_field('show_header_image') || is_archive('script') || is_single('post') ) { 
 
 	$image = get_field('custom_header_image');
 	if( !empty( $image ) ): ?>
