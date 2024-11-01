@@ -8,6 +8,7 @@
 $arc_headline = get_field('slider_headline');
 $arc_category = get_field('slider_category');
 $arc_link = get_field('category_link');
+$post_order = get_field('post_order');
 
 $posts = array();
 $tax_query = array();
@@ -48,7 +49,7 @@ if ( ! empty( $block['align'] ) ) {
     'post_status'       => 'publish',
     'posts_per_page'    => 5,
     'tax_query'         => $tax_query,
-    'order'             => 'ASC', 
+    'order'             => $post_order ? $post_order : 'ASC', 
 ));
 
 
