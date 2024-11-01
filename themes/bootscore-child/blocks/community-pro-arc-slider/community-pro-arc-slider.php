@@ -47,7 +47,7 @@ if ( ! empty( $block['align'] ) ) {
 <?php $query = new WP_Query(array(
     'post_type'         => 'resource',
     'post_status'       => 'publish',
-    'posts_per_page'    => 5,
+    'posts_per_page'    => 10,
     'tax_query'         => $tax_query,
     'order'             => $post_order ? $post_order : 'ASC', 
 ));

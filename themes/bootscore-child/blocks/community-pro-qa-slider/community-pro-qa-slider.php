@@ -30,7 +30,7 @@ if ( ! empty( $block['align'] ) ) {
 <?php $query = new WP_Query(array(
     'post_type'         => 'qa-session',
     'post_status'       => 'publish',
-    'posts_per_page'    => 5,
+    'posts_per_page'    => 10,
     'order'             => 'DESC', 
 ));
 
