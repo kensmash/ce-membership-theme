@@ -16,7 +16,7 @@
 
   if ($pmp_member->name == 'Community Pro'): ?>
     <div class="d-grid gap-2 pt-2">
-      <a class="btn btn-success" href="<?php echo site_url('my-courses'); ?>">Go to Your Courses</a>
+      <a class="btn btn-success" href="<?php echo site_url('dashboard'); ?>">Go to Your Dashboard</a>
     </div>
 
     <p class="mt-4 ms-2"><strong>Member Events</strong></p>
