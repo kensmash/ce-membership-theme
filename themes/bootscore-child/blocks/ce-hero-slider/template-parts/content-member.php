@@ -16,7 +16,11 @@
 
   if ($pmp_member->name == 'Community Pro'): ?>
     <div class="d-grid gap-2 pt-2">
-      <a class="btn btn-success" href="<?php echo site_url('dashboard'); ?>">Go to Your Dashboard</a>
+      <a class="btn btn-success" href="<?php echo site_url('dashboard'); ?>">Community Pro Dashboard</a>
+
+      <?php if (learndash_user_get_enrolled_courses(get_current_user_id())): ?>
+        <a class="btn btn-primary" href="<?php echo site_url('my-courses'); ?>">Your Courses</a>
+      <?php endif; ?>
     </div>
 
     <p class="mt-4 ms-2"><strong>Member Events</strong></p>
