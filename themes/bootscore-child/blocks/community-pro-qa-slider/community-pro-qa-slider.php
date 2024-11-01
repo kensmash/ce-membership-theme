@@ -74,7 +74,7 @@ if ($posts): ?>
 
                     <?php foreach( $posts as $post ): ?>
 
-                        <div class="woocommerce item-listing col-md-6 col-lg-4 p-2 my-1">
+                        <div class="woocommerce item-listing p-2 my-1">
 
                             <div class="card h-100">
                                 <div class="card-body">

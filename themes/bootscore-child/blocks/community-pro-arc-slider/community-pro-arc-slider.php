@@ -13,14 +13,14 @@ $posts = array();
 $tax_query = array();
 
 //only display posts from a certain category
-if ($arc_type) {
-    if (!is_array($arc_type)) {
-        $arc_type = array($arc_type);
+if ($arc_category) {
+    if (!is_array($arc_category)) {
+        $arc_category = array($arc_category);
     }
     $tax_query = array(
         array(
             'taxonomy' => 'arc-category',
-            'terms' => $arc_type,
+            'terms' => $arc_category,
         ),
     );
 }
@@ -63,6 +63,7 @@ if ( $query->have_posts() ) {
                 'title' 			    => get_the_title(),
                 'excerpt'               => get_the_excerpt(),
                 'link' 		            => get_the_permalink(),
+                'image' 		        => wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ),
                 'button_text' 		    => "Read More",
             );
 
@@ -83,7 +84,7 @@ if ($posts): ?>
             <div class="col-12 d-flex align-items-center justify-content-between">
                 <h2 class="mb-1"><?php echo esc_html( $arc_headline ); ?></h2>
                 <a href="<?php echo esc_url( $arc_link ); ?>"><b>See All</b></a>
-            </div>
+            </div> <!-- col-12 -->
 
             <div class="col-12">
 
@@ -91,9 +92,12 @@ if ($posts): ?>
 
                     <?php foreach( $posts as $post ): ?>
 
-                        <div class="woocommerce item-listing col-md-6 col-lg-4 p-2 my-1">
+                        <div class="woocommerce item-listing p-2 my-1">
 
                             <div class="card h-100">
+                            <?php if( !empty( $post['image'] ) ) { ?>
+                                <a href="<?php echo $post['link']; ?>"><img src="<?php echo $post['image'][0]; ?>" class="card-img-top" alt="<?php echo $post['title']; ?>" /></a>
+                                <?php } ?>
                                 <div class="card-body">
                                     <h5 class="card-title fs-6"><a href="<?php echo $post['link']; ?>"><?php echo $post['title']; ?></a></h5>
                                     <p class="lh-sm"><small><?php echo $post['excerpt']; ?></small></p>
