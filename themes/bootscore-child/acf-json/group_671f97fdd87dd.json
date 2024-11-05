@@ -65,6 +65,30 @@
             },
             "return_format": "url",
             "allow_in_bindings": 0
+        },
+        {
+            "key": "field_6724ddbb1d4c4",
+            "label": "Post Order",
+            "name": "post_order",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "ASC": "ASC",
+                "DESC": "DESC"
+            },
+            "default_value": "DESC",
+            "return_format": "value",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "layout": "horizontal"
         }
     ],
     "location": [
@@ -85,5 +109,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730132678
+    "modified": 1730469401
 }

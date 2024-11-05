@@ -20,6 +20,7 @@ if( $featured_courses ): ?>
         $permalink = get_permalink( $featured_course->ID );
         $title = get_the_title( $featured_course->ID );
         $excerpt = get_the_excerpt( $featured_course->ID );
+        $start_date = get_field( 'start_date', $featured_course->ID );
         $background_image = get_sub_field( 'course_background_image'); 
         if (!$background_image) {
             $background_image = get_stylesheet_directory_uri() . '/assets/images/hero-area-block-bg-alt.jpg';
@@ -41,6 +42,10 @@ if( $featured_courses ): ?>
                     echo '<p class="h4 mb-3"><span class="badge rounded-pill bg-success">Now On Sale!</span></p>';
                 } ?>
                
+                <?php if ($start_date): ?>
+                    <strong class="d-inline-block text-primary <?php echo ($product->is_on_sale()) ? "ms-4" : "ms-0" ?>">Starts <?php echo date('F j, Y', strtotime($start_date)); ?></strong>
+                <?php endif; ?>
+
                 <h1><?php echo $title; ?></h1>
 
                 <?php echo $excerpt; ?>

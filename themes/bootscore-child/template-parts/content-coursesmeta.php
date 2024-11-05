@@ -22,6 +22,7 @@ $unixtimestamp = strtotime(get_field('start_date')); ?>
         <?php 
             if (get_field('course_duration')): 
                 the_field('course_duration');
+                echo ' ';
             endif;
             
                 the_field('course_type'); 

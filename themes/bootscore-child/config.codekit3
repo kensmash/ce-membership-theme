@@ -329,6 +329,18 @@
       "oAP" : "\/archive.php",
       "oF" : 0
     },
+    "\/assets\/css\/main-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/css\/main-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/css\/main.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -884,6 +896,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/blocks\/ce-courses\/ce-courses_20241029.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/ce-courses\/ce-courses_20241029.php",
+      "oF" : 0
+    },
     "\/blocks\/ce-courses\/ce-courses.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1126,6 +1146,18 @@
       "oAP" : "\/blocks\/community-pricing\/community-pricing.php",
       "oF" : 0
     },
+    "\/blocks\/community-pro-arc-slider\/assets\/community-pro-arc-slider-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-pro-arc-slider\/assets\/community-pro-arc-slider-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/blocks\/community-pro-arc-slider\/assets\/community-pro-arc-slider.asset.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1172,6 +1204,18 @@
       "oA" : 0,
       "oAP" : "\/blocks\/community-pro-arc-slider\/community-pro-arc-slider.php",
       "oF" : 0
+    },
+    "\/blocks\/community-pro-qa-slider\/assets\/community-pro-qa-slider-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/community-pro-qa-slider\/assets\/community-pro-qa-slider-min-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/blocks\/community-pro-qa-slider\/assets\/community-pro-qa-slider.asset.php" : {
       "cB" : 0,

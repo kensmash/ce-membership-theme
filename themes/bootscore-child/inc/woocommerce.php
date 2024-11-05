@@ -478,6 +478,23 @@ function hide_product_from_shop_page_if_user_already_purchased( $query ) {
 
 }
 
+/**
+ * Add course meta info before title
+ * *https://wordpress.org/support/topic/add-content-under-single-product-title/
+ */ 
+
+ add_action( 'woocommerce_before_single_product', 'display_courses_meta', 5 );
+ function display_courses_meta(){
+	 $content = "";
+ 
+	if ( is_product() && has_term( 'live-course', 'product_tag' ) ) {
+	 $content = get_template_part( 'template-parts/content', 'coursesmeta' );
+ } 
+ 
+	return $content;
+ }
+
+
 /* change add to cart buttons in related products output */
 /* https://stackoverflow.com/questions/77461593/change-woocommerce-product-loop-add-to-cart-button-to-a-view-more-linked-to-th */
 /* add_filter( 'woocommerce_loop_add_to_cart_link', 'replace_external_product_loop_add_to_cart_link', 100, 3 );
