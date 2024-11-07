@@ -1796,6 +1796,14 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/template-parts\/content-coursebundle.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-coursebundle.php",
+      "oF" : 0
+    },
     "\/template-parts\/content-coursesloop.php" : {
       "cB" : 0,
       "ft" : 8192,
