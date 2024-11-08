@@ -164,8 +164,8 @@ function product_custom_content() {
 	/* https://docs.woocommerce.com/document/remov-product-content-based-on-category */
 	//is it a course?
 	if ( is_product() && has_term( 'courses', 'product_cat' ) ) {
-			$content = get_template_part( 'template-parts/content', 'coursebundle' ) . get_template_part( 'template-parts/tabs/tabs', 'courses' );
-			/* $content = get_template_part( 'template-parts/tabs/tabs', 'courses' ); */
+			/*$content = get_template_part( 'template-parts/content', 'coursebundle' ) . get_template_part( 'template-parts/tabs/tabs', 'courses' ); */
+			 $content = get_template_part( 'template-parts/tabs/tabs', 'courses' );
 	} else {
 		//else get page tabs
 		$content = get_template_part( 'template-parts/tabs/tabs', 'products' );

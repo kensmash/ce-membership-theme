@@ -17,14 +17,18 @@
                 "id": ""
             },
             "choices": {
-                "Digital Course": "Digital Course",
+                "On-Demand Course": "On-Demand Course",
                 "Live Course": "Live Course",
-                "Master Seminar": "Master Seminar"
+                "Master Seminar": "Master Seminar",
+                "On-Demand Course Bundle": "On-Demand Course Bundle",
+                "Live Course Bundle": "Live Course Bundle",
+                "Live and On-Demand Course Bundle": "Live and On-Demand Course Bundle"
             },
             "default_value": "Digital Course",
             "return_format": "value",
             "allow_null": 0,
             "other_choice": 0,
+            "allow_in_bindings": 1,
             "layout": "vertical",
             "save_other_choice": 0
         },
@@ -474,5 +478,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1729628586
+    "modified": 1731073605
 }
