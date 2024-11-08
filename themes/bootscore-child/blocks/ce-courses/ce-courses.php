@@ -302,7 +302,7 @@ if ( ! empty( $block['align'] ) ) {
                             <h5 class="card-title"><a href="<?php echo $course['link']; ?>"><?php echo $course['title']; ?></a></h5>
                             <p class="card-text"><small class="text-muted"><?php ce_courseloop_instructors($course['id']); ?></small></p>
                             <p class="card_course_start">
-                                <?php if ( $course['type'] == "Live Course" ) { echo '<small class="text-muted">' . $course['duration'] . 's </small><span class="badge bg-secondary ms-2 mt-1">Live</span>'; } ?>
+                                <?php if ( $course['type'] == "Live Course" ) { echo '<span class="badge bg-secondary me-2 mt-1">Live</span><small class="text-muted">' . $course['duration'] . 's </small>'; } ?>
                             </p>
                             <?php if ( $course['onsale'] && $sale_courses_only ): echo '<p>Regular Price: <del>' . wc_price( $course['regular_price'] ) . '</del><br>Sale Price: ' . wc_price( $course['sale_price'] ) . '</p>'; endif; ?>
                             <p><?php echo $course['excerpt']; ?></p>
