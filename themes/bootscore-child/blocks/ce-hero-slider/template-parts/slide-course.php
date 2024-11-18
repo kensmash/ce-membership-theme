@@ -43,7 +43,7 @@ if( $featured_courses ): ?>
                 } ?>
                
                 <?php if ($start_date): ?>
-                    <strong class="d-inline-block text-primary <?php echo ($product->is_on_sale()) ? "ms-4" : "ms-0" ?>">Starts <?php echo date('F j, Y', strtotime($start_date)); ?></strong>
+                    <strong class="d-inline-block mb-3 <?php echo ($product->is_on_sale()) ? "mts-4" : "ms-0" ?>">Starts <?php echo date('F j, Y', strtotime($start_date)); ?></strong>
                 <?php endif; ?>
 
                 <h1><?php echo $title; ?></h1>

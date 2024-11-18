@@ -11,5 +11,4 @@ add_action( 'wp_loaded', function() {
     if ( strpos( sanitize_text_field( $_SERVER['REQUEST_URI'] ), $pmpro_login_page->post_name ) ) {
         remove_filter( 'login_form_top', 'learndash_add_login_field_top' );
     }
-} ); 
-
+} );
