@@ -1,0 +1,84 @@
+
+@import 'mixins/media_query';
+
+.umc-countdown-clock {
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 3em 2em;
+	min-height: 500px;
+	width: 100%;
+
+
+	&__content {
+		width: 100%;
+
+		h2, h3, h4, p{
+			color: #ffffff;
+			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+		}
+
+		h2 {
+			margin-bottom: 8px;
+		}
+	}
+
+	&__timer {
+		display: flex;
+		align-items: center;
+		min-height: 200px;
+		justify-content: center;
+		width: 100%;
+
+		div {
+			display: inline-block;
+			line-height: 1;
+			padding: 20px;
+			font-size: 40px;
+			text-align: center;
+			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+			font-weight: 700;
+		}
+
+		span {
+			display: block;
+			font-size: 15px;
+			margin-top: 12px;
+			color: #f6f6f6;
+			text-align: center;
+			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+
+			@include for-size(desktop-up) {
+				font-size: 20px;
+			}
+		}
+
+		#days, #hours, #minutes, #seconds  {
+			font-size: 45px;
+			color: #fff;
+
+			@include for-size(desktop-up) {
+				font-size: 75px;
+			}
+		  }
+	}
+
+	&__button {
+		padding-top: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+
+		.button {
+			margin: 0;
+		}
+	}
+
+
+}

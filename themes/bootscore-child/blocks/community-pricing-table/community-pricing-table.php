@@ -31,24 +31,7 @@ if ( ! empty( $block['align'] ) ) {
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" style="">
 
 <section>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 mb-xl-4 text-center">
-      <div class="col mb-4 mb-lg-0">
-        <div class="card h-100 mb-4 rounded-3 pricing-card" style="transform: scale(0.95);">
-          <div class="card-header py-3">
-            <h4 class="my-0">Community</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$4.99<small class="text-body-secondary fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Discord Community access</li>
-              <li>Peer Critiques on Art and Scripts</li>
-            </ul>
-          </div>
-          <div class="card-footer border-top-0">
-            <a class="btn w-100 btn btn-lg btn-outline-primary my-2" href="<?php echo site_url('membership-account/membership-checkout/?pmpro_level=3'); ?>" role="button">Sign up for free</a>
-          </div>
-        </div>
-      </div>
+    <div class="row row-cols-1 row-cols-md-2 mb-3 mb-xl-4 text-center">
       <div class="col mb-4 mb-lg-0">
         <div class="card h-100 mb-4 rounded-3 border-success pricing-card">
           <div class="card-header text-bg-success border-success py-3">
@@ -73,7 +56,7 @@ if ( ! empty( $block['align'] ) ) {
         </div>
       </div>
       <div class="col mb-4 mb-lg-0">
-        <div class="card h-100 mb-4 rounded-3 pricing-card" style="transform: scale(0.95);">
+        <div class="card h-100 mb-4 rounded-3 pricing-card" style="">
           <div class="card-header py-3">
             <h4 class="my-0">Enterprise</h4>
           </div>
@@ -94,81 +77,6 @@ if ( ! empty( $block['align'] ) ) {
           </div>
         </div>
       </div>
-    </div>
-
-    <h3 class="text-center mb-4 mb-xl-5 pt-3">Compare plans</h3>
-
-    <div class="table-responsive">
-      <table class="table text-center">
-        <thead>
-          <tr>
-            <th style="width: 34%;"></th>
-            <th style="width: 22%;">Community</th>
-            <th style="width: 22%;">Community Pro</th>
-            <th style="width: 22%;">Enterprise</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="text-start">Discord Community</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Peer Art and Script Critiques</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Pro Art and Script Critiques</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-        </tbody>
-
-        <tbody>
-          <tr>
-            <th scope="row" class="text-start">Live Q&A Sessions</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Pro Office Hours</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Lessons and Q&A Videos</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">The Business of Comic Book Publishing e-book</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">10% store discount</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Group enrollments and benefits</th>
-            <td></td>
-            <td></td>
-            <td>Contact us</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
 </section>
 

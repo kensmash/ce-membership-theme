@@ -1299,6 +1299,33 @@
       "oAP" : "\/blocks\/community-spotlight\/community-spotlight.php",
       "oF" : 0
     },
+    "\/blocks\/countdown-clock\/assets\/block-countdown-clocks.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/countdown-clock\/assets\/block-countdown-clocks-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/blocks\/countdown-clock\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/countdown-clock\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/countdown-clock\/countdown-clock.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/countdown-clock\/countdown-clock.php",
+      "oF" : 0
+    },
     "\/blocks\/creative-services\/block.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -2190,6 +2217,21 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/theme_components\/scss\/blocks\/community-spotlight-slider.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/theme_components\/scss\/blocks\/countdown-clock.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/theme_components\/scss\/blocks\/countdown-clock.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
