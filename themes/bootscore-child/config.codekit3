@@ -1283,6 +1283,33 @@
       "oAP" : "\/blocks\/community-spotlight\/community-spotlight.php",
       "oF" : 0
     },
+    "\/blocks\/countdown-clock\/assets\/block-countdown-clock.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/countdown-clock\/assets\/block-countdown-clock-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/blocks\/countdown-clock\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/countdown-clock\/block-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/blocks\/countdown-clock\/countdown-clock.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/countdown-clock\/countdown-clock.php",
+      "oF" : 0
+    },
     "\/blocks\/creative-services\/block.json" : {
       "ft" : 524288,
       "oA" : 1,
