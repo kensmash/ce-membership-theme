@@ -91,11 +91,11 @@ if ( ! empty( $block['align'] ) ) {
 
                 $query->the_post();
                 //https://www.kunkalabs.com/tutorials/integrating-mixitup-into-your-project/
-                $categories = get_the_terms( get_the_ID(), 'course-category' );
+                $categories = get_the_terms( get_the_ID(), 'courses-category' );
                 $slugs = wp_list_pluck($categories, 'slug');
                 //add terms to all_categories for mixitup filter
                 foreach($slugs as $slug){
-                    if(!in_array($slug, $all_categories, true)){
+                    if(!in_array($slug, $all_categories)){
                         array_push($all_categories, $slug);
                     }
                 }
@@ -197,7 +197,7 @@ if ( ! empty( $block['align'] ) ) {
                 $slugs = wp_list_pluck($categories, 'slug');
                 //add terms to all_categories for mixitup filter
                 foreach($slugs as $slug){
-                    if(!in_array($slug, $all_categories, true)){
+                    if(!in_array($slug, $all_categories)){
                         array_push($all_categories, $slug);
                     }
                 }
