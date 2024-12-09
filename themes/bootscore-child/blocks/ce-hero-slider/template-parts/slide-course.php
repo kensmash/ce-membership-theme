@@ -51,7 +51,7 @@ if( $featured_courses ): ?>
                 <?php echo $excerpt; ?>
 
                 <div class="d-grid gap-2 pt-4">
-                    <a class="btn btn-success" href="<?php echo esc_url($permalink); ?>">View Course</a>
+                    <a class="btn btn-success" href="<?php echo esc_url($permalink); ?>">Learn More</a>
                 </div>
                 
             </div> <!-- .col -->
