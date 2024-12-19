@@ -542,7 +542,8 @@ function get_bundled_courses($atts) {
         'post_type' => 'product',
         'posts_per_page' => 10,
         'post_status'  => 'publish',
-        'order' => 'ASC',
+        'orderby'           => 'menu_order',
+        'order'             => 'ASC', 
         'tax_query'           => array(
             // Product tag filter
             array(
@@ -571,15 +572,15 @@ function get_bundled_courses($atts) {
             // Sets up post data so you can use functions like get_the_title(), get_permalink(), etc
             $query->the_post();
   
-            $output .= '<div class="col-12 my-2">';
-            $output .= '<div class="card">';
+            $output .= '<div class="col-12 mt-2 mb-3">';
+            $output .= '<div class="card border-0">';
             $output .= '<div class="container-fluid p-0">';
             $output .= '<div class="row pb-1 pb-lg-0">';
             $output .= '<div class="col-1 d-none d-lg-flex">';
-            $output .= '<a href="'. get_the_permalink() .'">' . get_the_post_thumbnail($post->ID, 'thumbnail', array( 'class' => 'rounded-left' )) . '</a>';
+            $output .= '<a href="'. get_the_permalink() .'">' . get_the_post_thumbnail($post->ID, 'thumbnail', array( 'class' => 'rounded' )) . '</a>';
             $output .= '</div">';
             $output .= '<div class="col">';
-            $output .= '<div class="card-body py-2 ps-3 ps-lg-0 pe-2">';
+            $output .= '<div class="card-body pt-0 py-2 ps-3 ps-lg-0 pe-2">';
             $output .= '<h5 class="card-title"><a href="'. get_the_permalink() .'">' . get_the_title() . '</a></h5>';
             $output .= '<p class="text-secondary bundle-course-excerpt">' . get_the_excerpt() . '</p>';
             $output .= '</div> <!-- card-body -->';
@@ -588,6 +589,7 @@ function get_bundled_courses($atts) {
             $output .= '</div> <!-- container-fluid -->';
             $output .= '</div> <!-- card -->';
             $output .= '</div> <!-- col -->';
+            $output .= '<hr>';
         }
 
         // Close div wrapper around loop
@@ -627,7 +629,8 @@ function get_courses_by_tag($atts) {
         'post_type' => 'product',
         'posts_per_page' => 20,
         'post_status'  => 'publish',
-        'order' => 'ASC',
+        'orderby'           => 'menu_order',
+        'order'             => 'ASC', 
         'tax_query'           => array(
             // Product tag filter
             array(
