@@ -48,3 +48,26 @@
         display: none !important;
     }
 }
+
+
+/*--------------------------------------------------------------
+# Events Tickets customizations
+--------------------------------------------------------------*/
+
+//override this style which breaks bootstrap accordion
+.accordion-item {
+    .accordion-header {
+        font-size: inherit !important;
+        font-weight: inherit !important;
+        padding: 0 !important;
+    }
+
+    .accordion-header:before {
+        display:none !important;
+    }
+    .accordion-header:after {
+        display:none !important;
+    }
+      
+}
+
