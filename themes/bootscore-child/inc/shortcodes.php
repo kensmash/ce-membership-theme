@@ -564,7 +564,7 @@ function get_bundled_courses($atts) {
         $output .= '<div class="container p-0 mb-3">';
         $output .= '<div class="row">';
         $output .= '<div class="col-12 my-2">';
-        $output .= '<h4 class="mb-0">Included in the Bundle:</h4>';
+        $output .= '<h4 class="mb-3">Included in the Bundle:</h4>';
         $output .= '</div> <!-- col -->';
         // Loop through posts
         while ( $query->have_posts() ) {
@@ -572,7 +572,7 @@ function get_bundled_courses($atts) {
             // Sets up post data so you can use functions like get_the_title(), get_permalink(), etc
             $query->the_post();
   
-            $output .= '<div class="col-12 mt-2 mb-3">';
+            $output .= '<div class="col-12 mt-21 mb-3">';
             $output .= '<div class="card border-0">';
             $output .= '<div class="container-fluid p-0">';
             $output .= '<div class="row pb-1 pb-lg-0">';
