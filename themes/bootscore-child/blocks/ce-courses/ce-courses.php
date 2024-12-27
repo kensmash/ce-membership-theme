@@ -268,8 +268,8 @@ if ( ! empty( $block['align'] ) ) {
 
         endif; //end getting courses that are not on sale 
 
-        //output filter buttons if more than 1 category
-        if (count($all_categories) >= 2): ?>
+        //output filter buttons if more than 1 category and there are a number of courses
+        if (count($all_categories) >= 2 && count($courses) >= 7): ?>
 
         <div class="ps-2 pb-2">
             <button type="button" class="btn btn-secondary btn-sm mt-2 mt-lg-0" data-filter="all">All Courses</button>
