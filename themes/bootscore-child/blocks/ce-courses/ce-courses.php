@@ -107,9 +107,11 @@ if ( ! empty( $block['align'] ) ) {
                 if( $bundled_course ):
                     //we are allowing a maximum of one in ACF, so this loop will return one result
                     foreach( $bundled_course as $course ): 
-                        $bundled = true;
-                        $bundle_permalink = get_permalink( $course->ID );
-                        $bundle_title = get_the_title( $course->ID );
+                        if ( get_post_status ( $course->ID ) == 'publish' ) {
+                            $bundled = true;
+                            $bundle_permalink = get_permalink( $course->ID );
+                            $bundle_title = get_the_title( $course->ID );
+                        } 
                     endforeach; 
                 endif;
 
@@ -211,9 +213,12 @@ if ( ! empty( $block['align'] ) ) {
                     //we are allowing a maximum of one in ACF, so this loop will return one result
                     foreach( $bundled_course as $course ): 
                         //echo var_dump($course);
-                        $bundled = true;
-                        $bundle_permalink = get_permalink( $course->ID );
-                        $bundle_title = get_the_title( $course->ID );
+                        if ( get_post_status ( $course->ID ) == 'publish' ) {
+                            $bundled = true;
+                            $bundle_permalink = get_permalink( $course->ID );
+                            $bundle_title = get_the_title( $course->ID );
+                        } 
+                      
                     endforeach; 
                 endif;
 
