@@ -114,6 +114,12 @@ body {
         margin-bottom: .25rem;
     }
 }
+/*--------------------------------------------------------------
+# Course Page
+--------------------------------------------------------------*/
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-name {
+   flex: 1 !important;
+}
 
 /*--------------------------------------------------------------
 # Community Pro Lessons
@@ -127,4 +133,8 @@ body {
 --------------------------------------------------------------*/
 .vczapi-jvb-countdown-content {
     display: none !important;
+}
+
+.learndash_post_sfwd-courses .learndash-wrapper .ld-item-list {
+    margin-top: 0 !important;
 }
