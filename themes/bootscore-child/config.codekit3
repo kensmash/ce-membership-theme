@@ -2292,6 +2292,14 @@
       "oAP" : "\/woocommerce.php",
       "oF" : 0
     },
+    "\/woocommerce\/cart\/mini-cart_20250211.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce\/cart\/mini-cart_20250211.php",
+      "oF" : 0
+    },
     "\/woocommerce\/cart\/mini-cart.php" : {
       "cB" : 0,
       "ft" : 8192,
