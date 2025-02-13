@@ -19,3 +19,14 @@ function bbp_tinymce_paste_plain_text( $plugins = array() ) {
     return $plugins;
 }
 add_filter( 'bbp_get_tiny_mce_plugins', 'bbp_tinymce_paste_plain_text' );
+
+
+/* stop bbpress emails from going to noreply@comicsexperience - resulting in those emails getting bounced */
+/* https://bbpress.org/forums/topic/remove-noreply-email-from-notification-emails/page/2/ */
+
+function my_bbp_no_reply_email(){
+    $email = 'ken@comicsexperience.com'; // any email you want
+    return $email;
+}
+
+add_filter('bbp_get_do_not_reply_address','my_bbp_no_reply_email');

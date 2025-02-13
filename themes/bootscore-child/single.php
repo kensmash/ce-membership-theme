@@ -56,6 +56,7 @@ get_header();
               <div class="mb-4">
                 <?php bootscore_tags(); ?>
               </div>
+              <?php if ($post_type !== "resource"): ?>
               <!-- Related posts using bS Swiper plugin -->
               <?php if (function_exists('bootscore_related_posts')) bootscore_related_posts(); ?>
               <nav aria-label="bs page navigation">
@@ -68,6 +69,7 @@ get_header();
                   </li>
                 </ul>
               </nav>
+              <?php endif; ?>
               <?php comments_template(); ?>
             </div>
 
