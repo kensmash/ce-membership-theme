@@ -155,18 +155,17 @@ function my_login_redirect( $redirect_to, $request, $user ) {
 
 		$pmp_member = pmpro_getMembershipLevelForUser($user->ID);
 
-        if ( $pmp_member  ) {
-			//user is a member
+        if ( $pmp_member ) {
+			//we only have one membership level, so this check is not needed anymore
+			/*
 			if ($pmp_member->name == 'Community Pro') {
-				//user is Community Pro member
-				//$redirect_to = home_url();
-				//$redirect_to = home_url('/my-account/');
 				$redirect_to = home_url('/dashboard/');
 			} else {
-				//user is Community Member
-				//$redirect_to = home_url('/activity/');
 				$redirect_to = home_url('/my-account/my-membership/');
-			}
+			} 
+			*/
+			//user is Community Pro member
+			$redirect_to = home_url('/dashboard/');	
         } else {
 			//not a member, send them to Woo dashboard
 			$redirect_to = home_url('/my-account/');
