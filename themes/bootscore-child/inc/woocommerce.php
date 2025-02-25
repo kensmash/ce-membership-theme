@@ -257,12 +257,13 @@ function wpmember_endpoint_content() {
 
 	if ($pmp_member) {
 		// At the moment I will add Learndash profile with the shordcode
-		/* echo ('<h3>My Membership: ');
+		 echo ('<h3>My Membership: ');
 		echo do_shortcode('[pmpro_member field="membership_name"]');
 		echo ('</h3>');
-		echo ('<p><a href="/membership-account/">Billing Details</a> | <a href="/membership-account/membership-levels/">Change Membership</a> | <a href="/membership-account/membership-cancel/">Cancel Membership</a></p>'); */
+		echo ('<p><a href="/membership-account/membership-cancel/">Cancel Membership</a></p>'); 
+		//echo ('<p><a href="/membership-account/">Billing Details</a> | <a href="/membership-account/membership-levels/">Change Membership</a> | <a href="/membership-account/membership-cancel/">Cancel Membership</a></p>'); 
 
-		echo do_shortcode('[pmpro_account sections="membership" title="My Membership"]');
+		//echo do_shortcode('[pmpro_account sections="membership" title="My Membership"]');
 
 		echo (
 			'<div class="my-memberships-section-container">
