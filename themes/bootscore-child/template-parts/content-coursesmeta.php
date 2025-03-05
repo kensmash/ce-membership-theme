@@ -45,9 +45,9 @@ $unixtimestamp = strtotime(get_field('start_date')); ?>
         if (get_field('course_type') == "Live Course") {
             echo date('l', strtotime(get_field('start_date'))); ?>s, <?php echo date('F j', strtotime(get_field('start_date'))); ?> – <?php echo date('F j, Y', strtotime(get_field('end_date'))); ?>
         | <?php echo date('g:i a', strtotime(get_field('start_date'))); ?> - <?php echo date('g:i a', strtotime(get_field('end_date'))); ?>
-        ET | <?php if (get_field('skip_week_2') != "") { ?> | <span> Skip Weeks <?php echo date('F j', strtotime(get_field('skip_week')));?>, <?php echo date('F j', strtotime(get_field('skip_week_2'))); ?> </span>
+        ET | <?php if (get_field('skip_week_2') != "") { ?> <span> Skip Weeks <?php echo date('F j', strtotime(get_field('skip_week')));?>, <?php echo date('F j', strtotime(get_field('skip_week_2'))); ?> </span>
         <?php } elseif (get_field('skip_week') != "") { ?>
-        | <span> Skip Week <?php echo date('F j', strtotime(get_field('skip_week'))); ?> | </span>
+        <span> Skip Week <?php echo date('F j', strtotime(get_field('skip_week'))); ?> | </span>
         <?php }
     }
         
