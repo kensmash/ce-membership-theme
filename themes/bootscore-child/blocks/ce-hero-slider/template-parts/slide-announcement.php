@@ -10,12 +10,12 @@ if (!$background_image) {
 
     <div class="container h-100">
 
-       <div class="row h-100 justify-content-lg-between row-cols-1 row-cols-sm-1 row-cols-md-2">
+       <div class="row justify-content-lg-between row-cols-1 row-cols-sm-1 row-cols-md-2">
                 
             <div class="col">
             </div>
 
-            <div class="col col-lg-6 hero-block-content-container h-100 d-flex align-items-center">
+            <div class="col col-lg-6 hero-block-content-container d-flex align-items-center py-lg-3">
                 <div class="hero-slider-announcement rounded-1">
                     <h1 class="text-light"><?php echo esc_html(get_sub_field('headline') ); ?></h1>
                     <p class="text-light"><?php echo esc_html(get_sub_field('description') ); ?></p>
