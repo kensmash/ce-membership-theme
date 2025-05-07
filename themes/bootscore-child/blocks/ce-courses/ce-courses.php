@@ -303,7 +303,7 @@ if ( ! empty( $block['align'] ) ) {
                         <?php } ?>
                         <div class="card-body">
                             <?php if ( $course['onsale'] ) { echo '<p class="h5 mb-2"><span class="badge rounded-pill bg-success">On Sale</span></p>';} ?>
-                            <?php if ( $course['bundled'] ) { echo '<div class="mb-3"><a class="btn btn-info btn-sm" href="' . $course['bundle_permalink'] . '" role="button"> Bundled Course</a></div>'; } ?>
+                            <?php /* if ( $course['bundled'] ) { echo '<div class="mb-3"><a class="btn btn-info btn-sm" href="' . $course['bundle_permalink'] . '" role="button"> Bundled Course</a></div>'; } */ ?>
                             <h5 class="card-title"><a href="<?php echo $course['link']; ?>"><?php echo $course['title']; ?></a></h5>
                             <p class="card-text"><small class="text-muted"><?php ce_courseloop_instructors($course['id']); ?></small></p>
                             <p class="card_course_start">

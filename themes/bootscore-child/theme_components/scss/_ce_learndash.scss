@@ -11,7 +11,6 @@ body {
  }
 
     
-
 .ld-course-status-seg-price {
     display: none;
 }
@@ -67,9 +66,21 @@ body {
     }
 }
 
+.learndash-wrapper .ld-button {
+    color: white !important;
+}
+
 /*--------------------------------------------------------------
 # Learndash course list styles
 --------------------------------------------------------------*/
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-focus-sidebar-wrapper {
+    overflow: auto !important;
+}
+
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation {
+    overflow: auto !important;
+}
+
 .ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article, .ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption {
     display: flex;
     flex-direction: column;
@@ -87,7 +98,7 @@ body {
     .entry-content {
         font-size: .85em;
         color: $ce-grey;
-        flex: 1; //make this div fill the available space, pushing button down to bottom of container
+        //flex: 1; //make this div fill the available space, pushing button down to bottom of container
     }
 
     .ld_course_grid_button {
