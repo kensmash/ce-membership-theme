@@ -65,8 +65,13 @@ body {
     }
 }
 
+/* add some space between lesson video and descriptive text */
+.ld-video {
+    margin-bottom: 1em;
+}
+
 /* fix issue where button text color was dark gray for some reason */
-.learndash-wrapper .ld-button {
+.learndash-wrapper .ld-button:hover:not([disabled]):not(.ld-button-transparent):not(.ld--ignore-inline-css), #learndash-tooltips .ld-tooltip:after, #learndash-tooltips .ld-tooltip, .ld-tooltip:not(.ld-tooltip--modern) [role="tooltip"], .learndash-wrapper .ld-primary-background, .learndash-wrapper .btn-join:not(.ld--ignore-inline-css), .learndash-wrapper #btn-join:not(.ld--ignore-inline-css), .learndash-wrapper .ld-button:not([disabled]):not(.ld-button-reverse):not(.ld-button-transparent):not(.ld--ignore-inline-css), .learndash-wrapper .ld-expand-button:not([disabled]), .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:not([disabled]):not(.wpProQuiz_button_reShowQuestion):not(.wpProQuiz_button_restartQuiz), .learndash-wrapper .wpProQuiz_content .wpProQuiz_button2:not([disabled]), .learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation-heading, .learndash-wrapper .ld-focus-comments .form-submit #submit, .learndash-wrapper .ld-login-modal input[type='submit']:not([disabled]), .learndash-wrapper .ld-login-modal .ld-login-modal-register:not([disabled]), .learndash-wrapper .wpProQuiz_content .wpProQuiz_certificate a.btn-blue:not([disabled]), .learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items a:not([disabled]), #wpProQuiz_user_content table.wp-list-table thead th, #wpProQuiz_overlay_close:not([disabled]), .learndash-wrapper .ld-expand-button.ld-button-alternate:not([disabled]) .ld-icon {
     color: white !important;
 }
 
@@ -80,6 +85,7 @@ body {
 
 .learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation {
     overflow: auto !important;
+    padding-bottom: 30px !important;
 }
 
 .ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article, .ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption {

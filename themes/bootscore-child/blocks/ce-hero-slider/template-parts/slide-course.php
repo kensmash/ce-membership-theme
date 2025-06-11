@@ -36,23 +36,26 @@ if( $featured_courses ): ?>
             <div class="col">
             </div>
 
-            <div class="col col-xl-4 col-xxl-5 hero-block-content-container pt-4">
+            <div class="col col-xl-4 col-xxl-5 h-100 d-flex align-items-center">
 
-                <?php if ( $product->is_on_sale() )  {    
-                    echo '<p class="h4 mb-3"><span class="badge rounded-pill bg-success">Now On Sale!</span></p>';
-                } ?>
-               
-                <?php if ($start_date): ?>
-                    <strong class="d-inline-block mb-3 <?php echo ($product->is_on_sale()) ? "mts-4" : "ms-0" ?>">Starts <?php echo date('F j, Y', strtotime($start_date)); ?></strong>
-                <?php endif; ?>
+                <div class="hero-block-content-container pt-4">
 
-                <h1><?php echo $title; ?></h1>
+                    <?php if ( $product->is_on_sale() )  {    
+                        echo '<p class="h4 mb-3"><span class="badge rounded-pill bg-success">Now On Sale!</span></p>';
+                    } ?>
+                
+                    <?php if ($start_date): ?>
+                        <strong class="d-inline-block mb-3 <?php echo ($product->is_on_sale()) ? "mts-4" : "ms-0" ?>">Starts <?php echo date('F j, Y', strtotime($start_date)); ?></strong>
+                    <?php endif; ?>
 
-                <?php echo $excerpt; ?>
+                    <h1><?php echo $title; ?></h1>
 
-                <div class="d-grid gap-2 pt-4">
-                    <a class="btn btn-success" href="<?php echo esc_url($permalink); ?>">Learn More</a>
-                </div>
+                    <?php echo $excerpt; ?>
+
+                    <div class="d-grid gap-2 pt-4">
+                        <a class="btn btn-success" href="<?php echo esc_url($permalink); ?>">Learn More</a>
+                    </div>
+                 </div>
                 
             </div> <!-- .col -->
             
