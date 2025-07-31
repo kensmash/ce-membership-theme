@@ -17,6 +17,10 @@
 !/themes/bootscore-child/**/
 /themes/bootscore-child/assets
 
+!/themes/ce-fse
+!/themes/ce-fse/**/
+/themes/ce-fse/assets
+
 
 !/plugins
 
