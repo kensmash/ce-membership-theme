@@ -2,17 +2,17 @@
 /**
  * WP Foundation Six utility functions
  *
- * @package comics-experience
+ * @package comics_experience
  */
 
-if ( ! function_exists( 'comics-experience_dev_helper' ) ) {
+if ( ! function_exists( 'comics_experience_dev_helper' ) ) {
 	/**
 	 * Used to help identify template file.
 	 *
-	 * @method comics-experience_dev_helper
+	 * @method comics_experience_dev_helper
 	 * @param  [string] $file - Takes in the file name.
 	 */
-	function comics-experience_dev_helper( $file ) {
+	function comics_experience_dev_helper( $file ) {
 		if ( is_super_admin() && ( defined( 'WPFS_INLINE_DEBUG' ) && WPFS_INLINE_DEBUG ) ) {
 			echo '<div class="placeHolderPosition" style="top: 0; background: rgb(236, 234, 234); color: rgba(0, 0, 0, 0.4); font-size: 12px; padding: 5px 25px; display: none;">' . esc_html( $file ) . '.php</div>';
 		}
@@ -66,7 +66,7 @@ if ( ! function_exists( 'wpfs_theme_error_log' ) ) {
 	}
 }
 
-if ( ! function_exists( 'comics-experience_privacy' ) ) {
+if ( ! function_exists( 'comics_experience_privacy' ) ) {
 	/**
 	 * Display a link to the privacy policy page, if one is published.
 	 *
@@ -74,7 +74,7 @@ if ( ! function_exists( 'comics-experience_privacy' ) ) {
 	 *
 	 * @return string Link to the privacy policy page, if one is published.
 	 */
-	function comics-experience_privacy() {
+	function comics_experience_privacy() {
 		if ( get_the_privacy_policy_link() ) {
 			return '<!-- wp:paragraph {"color":"foreground","fontSize":"extra-small","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}}} --><p class="has-extra-small-font-size has-text-color has-foreground-color has-link-color">' . get_the_privacy_policy_link() . '</p><!-- /wp:paragraph -->';
 		}

@@ -1,6 +1,64 @@
+body {
+	&.admin-bar {
+		header {
+			top: 32px;
+		}
+	}
+}
+
 .comics-experience {
 	main {
 		display: block;
 		margin-block-start: 0;
 	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.indent {
+	padding-left: 20px;
+}
+
+.columns {
+	column-count: 1;
+	column-gap: 1.5em;
+
+	@media only screen and (min-width: 768px) {
+		column-count: 2;
+	}
+
+	&.columns-four {
+		@media only screen and (min-width: 1024px) {
+			column-count: 3;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			column-count: 4;
+		}
+	}
+
+	p {
+		/* don't break paragraphs */
+		break-inside: avoid;
+		/* Use padding instead of margin to avoid weird space at top of the second column.*/
+		margin: 0;
+		padding-bottom: 1em;
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	h2,
+	h3 {
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+}
+
+.gform_button {
+	font-weight: 700 !important;
+	padding: 1.25em 3em !important;
 }

@@ -2,10 +2,10 @@
 /**
  * Gravity Form Filters
  *
- * @package comics-experience
+ * @package comics_experience
  */
 
-if ( ! function_exists( 'comics-experience_gform_init_scripts' ) ) {
+if ( ! function_exists( 'comics_experience_gform_init_scripts' ) ) {
 	/**
 	 * Forces gravity forms scritps to load in the footer
 	 *
@@ -16,17 +16,17 @@ if ( ! function_exists( 'comics-experience_gform_init_scripts' ) ) {
 	 *
 	 * @link https://www.gravityhelp.com/documentation/article/gform_init_scripts_footer/
 	 *
-	 * @method comics-experience_gform_init_scripts
+	 * @method comics_experience_gform_init_scripts
 	 * @return bool - If true load scripts in the footer
 	 */
-	function comics-experience_gform_init_scripts() {
+	function comics_experience_gform_init_scripts() {
 		return true;
 	}
 }
-add_filter( 'gform_init_scripts_footer', 'comics-experience_gform_init_scripts' );
+add_filter( 'gform_init_scripts_footer', 'comics_experience_gform_init_scripts' );
 
 
-if ( ! function_exists( 'comics-experience_gform_anchor' ) ) {
+if ( ! function_exists( 'comics_experience_gform_anchor' ) ) {
 	/**
 	 * Use this filter to enable or disable the confirmation anchor
 	 * functionality that will automatically scroll the page. This can be used
@@ -34,11 +34,11 @@ if ( ! function_exists( 'comics-experience_gform_anchor' ) ) {
 	 *
 	 * @link https://docs.gravityforms.com/gform_confirmation_anchor/
 	 *
-	 * @method comics-experience_gform_anchor
+	 * @method comics_experience_gform_anchor
 	 * @return string - __return_false or __return_true
 	 */
-	function comics-experience_gform_anchor() {
+	function comics_experience_gform_anchor() {
 		return '__return_true';
 	}
 }
-add_filter( 'gform_confirmation_anchor', 'comics-experience_gform_anchor' );
+add_filter( 'gform_confirmation_anchor', 'comics_experience_gform_anchor' );

@@ -2,49 +2,13 @@ body {
 	word-wrap: break-word;
 }
 
-// Click button for displaying page template parts
-// prettier-ignore
-/* stylelint-disable selector-id-pattern, selector-max-id */
-#theme_debug_regions {
-	background: rgba($black, 0.1);
-	bottom: 10px;
-	color: $white;
-	padding: 10px 20px;
-	position: fixed;
-	right: 10px;
-	z-index: 2000000;
-
-	&:hover,
-	&:focus {
-		color: $white;
-	}
-}
-/* stylelint-enable */
-
 .hidden {
 	display: none;
 }
 
-/* Foundation figure was coming out of the layout container */
-figure {
-	background: $accent-1;
-	margin: 0;
-	padding: 1em 20px;
-
-	img {
-		display: block;
-		margin: 0 auto;
-	}
-
-	figcaption {
-		font-size: 12px;
-		margin: 13px 0 0;
-		text-align: center;
-	}
-}
 
 /* Wordpress styles */
-@include breakpoint(medium) {
+@media screen and (min-width: 768) {
 	.alignright {
 		float: right;
 		margin: 0 0 0 16px;
@@ -68,17 +32,6 @@ figure {
 	width: auto;
 }
 
-pre {
-	background-color: $code-background;
-	border: $code-border;
-	color: $code-color;
-	font-family: $code-font-family;
-	font-weight: $code-font-weight;
-	margin-bottom: 16px;
-	padding: $code-padding;
-	white-space: pre-wrap;
-}
-
 [type='text'],
 [type='password'] {
 	height: 2.48rem;
@@ -100,7 +53,15 @@ pre {
 }
 
 .screen-reader-text {
-	@include element-invisible;
+	border: 0;
+  	clip-path: inset(50%);
+  	height: 1px;
+  	margin: -1px;
+  	overflow: hidden;
+  	padding: 0;
+  	position: absolute;
+  	width: 1px;
+  	word-wrap: normal !important;
 }
 
 /* Callout */
@@ -116,5 +77,5 @@ pre {
 }
 
 .has-background-dim {
-	color: $white;
+	color: FFFFFF;
 }

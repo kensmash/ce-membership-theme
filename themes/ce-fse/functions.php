@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  * @link https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#ignoring-files-and-folders
  *
- * @package comics-experience
+ * @package comics_experience
  */
 
 // Include functions for the theme.
@@ -21,7 +21,7 @@ require get_template_directory() . '/blocks/blocks.php';
 // Include components.
 require_once get_theme_file_path( '/inc/includes.php' );
 
-if ( ! function_exists( 'comics-experience_setup' ) ) {
+if ( ! function_exists( 'comics_experience_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -29,11 +29,11 @@ if ( ! function_exists( 'comics-experience_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function comics-experience_setup() {
+	function comics_experience_setup() {
 		/*
 		 * Make theme available for translation.
 		 */
-		load_theme_textdomain( 'comics-experience', get_theme_file_path( '/languages' ) );
+		load_theme_textdomain( 'comics_experience', get_theme_file_path( '/languages' ) );
 
 		// Add default posts and comments RSS feed links to head.
 		// add_theme_support( 'automatic-feed-links' );
@@ -67,8 +67,8 @@ if ( ! function_exists( 'comics-experience_setup' ) ) {
 		 */
 		// register_nav_menus(
 		// array(
-		// 'primary' => __( 'Primary Menu', 'comics-experience' ),
-		// 'footer'  => __( 'Footer Menu', 'comics-experience' ),
+		// 'primary' => __( 'Primary Menu', 'comics_experience' ),
+		// 'footer'  => __( 'Footer Menu', 'comics_experience' ),
 		// )
 		// );
 
@@ -119,7 +119,7 @@ if ( ! function_exists( 'comics-experience_setup' ) ) {
 	 */
 	define( 'WPFS_INLINE_DEBUG', true );
 }
-add_action( 'after_setup_theme', 'comics-experience_setup' );
+add_action( 'after_setup_theme', 'comics_experience_setup' );
 
 
 /**
@@ -138,11 +138,11 @@ add_filter( 'the_generator', '__return_false' );
 add_editor_style( get_theme_file_uri( '/assets/css/editor-styles.min.css' ) );
 
 
-if ( ! function_exists( 'comics-experience_scripts' ) ) {
+if ( ! function_exists( 'comics_experience_scripts' ) ) {
 	/**
 	 * Enqueue scripts and styles.
 	 */
-	function comics-experience_scripts() {
+	function comics_experience_scripts() {
 		/* Asset file paths set to variables */
 		$modern_jquery  = get_theme_file_uri( '/assets/js/vendors/jquery.min.js' );
 		$global_styles  = get_theme_file_uri( '/assets/css/global-styles.min.css' );
@@ -150,20 +150,20 @@ if ( ! function_exists( 'comics-experience_scripts' ) ) {
 		$modernizr      = get_theme_file_uri( '/assets/js/vendors/modernizr.js' );
 
 		/* Import CSS (Sass files are in the theme-components folder) */
-		wp_enqueue_style( 'comics-experience-style', $global_styles, array(), wpfs_cache_bust( $global_styles ) );
+		wp_enqueue_style( 'comics_experience-style', $global_styles, array(), wpfs_cache_bust( $global_styles ) );
 
 		/* Import Scripts (Keep to a minimum or import into global-scripts.js file) */
-		wp_enqueue_script( 'comics-experience-global', $global_scripts, array( 'jquery', 'comics-experience-modernizr' ), wpfs_cache_bust( $global_scripts ), true );
-		wp_enqueue_script( 'comics-experience-modernizr', $modernizr, array(), wpfs_cache_bust( $modernizr ), true );
+		wp_enqueue_script( 'comics_experience-global', $global_scripts, array( 'jquery', 'comics_experience-modernizr' ), wpfs_cache_bust( $global_scripts ), true );
+		wp_enqueue_script( 'comics_experience-modernizr', $modernizr, array(), wpfs_cache_bust( $modernizr ), true );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'comics-experience_scripts' );
+add_action( 'wp_enqueue_scripts', 'comics_experience_scripts' );
 
 add_action(
 	'enqueue_block_editor_assets',
 	function () {
 		$editor_styles = get_theme_file_uri( '/assets/css/editor-styles.min.css' );
-		wp_enqueue_style( 'comics-experience-editor-style', $editor_styles, array(), wpfs_cache_bust( $editor_styles ), 'all' );
+		wp_enqueue_style( 'comics_experience-editor-style', $editor_styles, array(), wpfs_cache_bust( $editor_styles ), 'all' );
 	}
 );
 

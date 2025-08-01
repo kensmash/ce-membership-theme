@@ -393,8 +393,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/theme_components\/sass\/editor-styles.css",
-      "oF" : 0,
+      "oAP" : "\/assets\/css\/editor-styles.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -633,8 +633,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/theme_components\/sass\/login-admin.css",
-      "oF" : 0,
+      "oAP" : "\/assets\/css\/login-admin.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
