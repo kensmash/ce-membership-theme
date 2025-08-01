@@ -41,7 +41,7 @@
       "oAP" : "\/.stylelintrc",
       "oF" : 0
     },
-    "\/assets\/css\/global-styles.css" : {
+    "\/assets\/css\/global-styles.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -49,9 +49,17 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/css\/global-styles-min.css",
+      "oAP" : "\/assets\/css\/global-styles.min-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/assets\/css\/global-styles.min.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/css\/global-styles.min.css.map",
+      "oF" : 0
     },
     "\/blocks\/blocks.php" : {
       "cB" : 0,
@@ -417,13 +425,13 @@
     "\/theme_components\/sass\/global-styles.scss" : {
       "aP" : 0,
       "bl" : 0,
-      "co" : 0,
+      "co" : 1,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 0,
-      "oAP" : "\/assets\/css\/global-styles.css",
+      "oAP" : "\/assets\/css\/global-styles.min.css",
       "oF" : 3,
       "oS" : 0,
       "pg" : 0,
