@@ -1,7 +1,11 @@
 body {
 	&.admin-bar {
-		header {
+		.ce-site-header {
 			top: 32px;
+		}
+
+		main {
+			margin-top: 75px !important;
 		}
 	}
 }
@@ -12,6 +16,10 @@ body {
 		margin-block-start: 0;
 		margin-top: 50px;
 	}
+}
+
+.wp-block-group {
+	margin-block-start: 0 !important;
 }
 
 img {
@@ -57,9 +65,4 @@ img {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-}
-
-.gform_button {
-	font-weight: 700 !important;
-	padding: 1.25em 3em !important;
 }

@@ -557,6 +557,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/theme_components\/sass\/layout\/_gravity-forms.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/theme_components\/sass\/layout\/_gravity-forms.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/theme_components\/sass\/layout\/_header.scss" : {
       "aP" : 0,
       "bl" : 0,
