@@ -1,20 +1,12 @@
-/*
- Theme Name:   GeneratePress Child
- Theme URI:    https://generatepress.com
- Description:  Default GeneratePress child theme
- Author:       Tom Usborne
- Author URI:   https://tomusborne.com
- Template:     generatepress
- Version:      0.1
-*/
-
-/*--------------------------------------------------------------
-# GENERAL STYLES
---------------------------------------------------------------*/
-
+/*!
+ * custom colors
+ */
+/*!
+ * general custom styles
+ */
 /*fix footer form spacing */
 .site-footer .gform-footer {
-    margin-block-start: .75rem !important;
+  margin-block-start: 0.75rem !important;
 }
 
 /* gutenberg table block */
@@ -25,10 +17,9 @@
 /*--------------------------------------------------------------
 # WOOCOMMERCE
 --------------------------------------------------------------*/
-
 /* archive page description text */
 .archive .woocommerce-product-details__short-description {
-  font-size: .75rem; 
+  font-size: 0.75rem;
 }
 
 .woocommerce-products-header__title {
@@ -37,5 +28,144 @@
 
 /* single product page price */
 .price {
-  margin-top: .25rem;
+  margin-top: 0.25rem;
 }
+
+body.ld-in-focus-mode {
+  background: #f1f1f1 url(../../assets/images/bg_pattern.jpg) !important;
+}
+body.ld-in-focus-mode .learndash-wrapper {
+  background: rgba(255, 255, 255, 0) !important;
+}
+
+.ld-course-status-seg-price {
+  display: none;
+}
+
+.woocommerce-MyAccount-content .learndash-wrapper .ld-item-list {
+  margin-top: 0;
+}
+
+/* hide pointless back to course button */
+/* .learndash-wrapper .ld-content-actions .ld-content-action .ld-course-step-back {
+    display: none !important;
+} */
+/* center align back to course button */
+.ld-course-step-back {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.learndash-course-grid .items-wrapper .grid-2 .content .entry-content {
+  padding-bottom: 1.75em;
+}
+
+.learndash-course-grid .items-wrapper .grid-2 .ribbon {
+  text-shadow: none;
+}
+
+/* make course list look nicer */
+.ld-item-list .ld-item-list-item {
+  border: 1px solid #e2e7ed !important;
+}
+
+.ld-status-icon {
+  margin-top: 0 !important;
+  border: 1px solid #e2e7ed !important;
+}
+
+/* fix ugliness on mobile */
+.ld-expand-button {
+  max-width: 100% !important;
+}
+@media only screen and (min-width: 768px) {
+  .ld-expand-button {
+    max-width: 120px;
+  }
+}
+
+/* add some space between lesson video and descriptive text */
+.ld-video {
+  margin-bottom: 1em;
+}
+
+/* fix issue where button text color was dark gray for some reason */
+.learndash-wrapper .ld-button:hover:not([disabled]):not(.ld-button-transparent):not(.ld--ignore-inline-css), #learndash-tooltips .ld-tooltip:after, #learndash-tooltips .ld-tooltip, .ld-tooltip:not(.ld-tooltip--modern) [role=tooltip], .learndash-wrapper .ld-primary-background, .learndash-wrapper .btn-join:not(.ld--ignore-inline-css), .learndash-wrapper #btn-join:not(.ld--ignore-inline-css), .learndash-wrapper .ld-button:not([disabled]):not(.ld-button-reverse):not(.ld-button-transparent):not(.ld--ignore-inline-css), .learndash-wrapper .ld-expand-button:not([disabled]), .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:not([disabled]):not(.wpProQuiz_button_reShowQuestion):not(.wpProQuiz_button_restartQuiz), .learndash-wrapper .wpProQuiz_content .wpProQuiz_button2:not([disabled]), .learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation-heading, .learndash-wrapper .ld-focus-comments .form-submit #submit, .learndash-wrapper .ld-login-modal input[type=submit]:not([disabled]), .learndash-wrapper .ld-login-modal .ld-login-modal-register:not([disabled]), .learndash-wrapper .wpProQuiz_content .wpProQuiz_certificate a.btn-blue:not([disabled]), .learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items a:not([disabled]), #wpProQuiz_user_content table.wp-list-table thead th, #wpProQuiz_overlay_close:not([disabled]), .learndash-wrapper .ld-expand-button.ld-button-alternate:not([disabled]) .ld-icon {
+  color: white !important;
+}
+
+/*--------------------------------------------------------------
+# Learndash course list styles
+--------------------------------------------------------------*/
+/* fix weird issue where scrolling in lesson list sidebar didn't work anymore */
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-focus-sidebar-wrapper {
+  overflow: auto !important;
+}
+
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation {
+  overflow: auto !important;
+  padding-bottom: 30px !important;
+}
+
+.ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article, .ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption {
+  padding: 1em 1.25em;
+}
+.ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption .entry-title {
+  font-size: 1.2em;
+}
+.ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption .entry-content {
+  font-size: 0.85em;
+  color: #b8b7b7;
+}
+.ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption .ld_course_grid_button {
+  padding-top: 1.5em;
+}
+
+.learndash-course-grid .items-wrapper.grid .item .content .entry-content {
+  margin: unset;
+}
+.learndash-course-grid .items-wrapper.grid .item .content .button {
+  padding-top: 1em;
+}
+
+#ld_course_categorydropdown {
+  padding-bottom: 1.5em;
+}
+#ld_course_categorydropdown label {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+/*--------------------------------------------------------------
+# Course Page
+--------------------------------------------------------------*/
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-name {
+  flex: 1 !important;
+}
+
+/*--------------------------------------------------------------
+# Community Pro Lessons
+--------------------------------------------------------------*/
+.learndash-shortcode-wrap-course_content-624927_624927_2, .learndash-shortcode-wrap-course_content-625025_625025_2 {
+  display: none !important;
+}
+
+/*--------------------------------------------------------------
+# Zoom meeting countdown
+--------------------------------------------------------------*/
+.vczapi-jvb-countdown-content {
+  display: none !important;
+}
+
+.learndash_post_sfwd-courses .learndash-wrapper .ld-item-list {
+  margin-top: 0 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

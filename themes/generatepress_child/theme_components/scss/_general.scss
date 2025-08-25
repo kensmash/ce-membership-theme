@@ -1,0 +1,16 @@
+/*!
+ * general custom styles
+ */
+
+
+/*fix footer form spacing */
+.site-footer .gform-footer {
+    margin-block-start: .75rem !important;
+}
+
+/* gutenberg table block */
+.wp-block-table td, .wp-block-table th {
+  border: 1px solid #dadada;
+}
+
+
