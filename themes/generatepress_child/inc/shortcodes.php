@@ -407,7 +407,7 @@ function get_instructor($atts) {
 	$output = '';
          
     $args = array(
-        'post_type' => 'people',
+        'post_type' => 'staff',
         'posts_per_page' => 1,
         'name' => $name,
         );
@@ -429,8 +429,9 @@ function get_instructor($atts) {
 
             // This is the output for your entry so what you want to do for each post.
                                 
-            $output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'alignleft' ));
-            $output .= get_the_content();
+            //$output .= get_the_post_thumbnail($post->ID, 'medium', array( 'class' => 'alignleft' ));
+            $content= get_the_content();
+            $output .= apply_filters( 'the_content', $content );
          
 		}
 
