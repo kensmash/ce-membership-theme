@@ -11,7 +11,16 @@
   margin-bottom: 1.5rem;
 }
 
+
 /* single product page price */
 .price {
   margin-top: .25rem;
 }
+
+/* reduce awfule spacing on woo product variations label text */
+.woocommerce div.product form.cart .variations th {
+    line-height: 1.3;
+    padding-right: .5em;
+    text-align: left;
+  }  
+  
