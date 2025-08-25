@@ -23,6 +23,7 @@
 
 !/themes/generatepress_child
 !/themes/generatepress_child/**/
+/themes/generatepress_child/assets
 
 !/plugins
 

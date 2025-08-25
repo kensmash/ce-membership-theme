@@ -96,7 +96,7 @@ function woocommerce_template_single_title_custom(){
 			if ($is_published && $is_visible) {
 				$bundle_permalink = get_permalink( $course->ID );
 				$bundle_title = get_the_title( $course->ID );
-				$bundle_button = '<div class="mb-3"><a class="btn btn-info btn-sm" href="' . $bundle_permalink . '" role="button">Also available as part of: ' . $bundle_title . '</a></div>';
+				$bundle_button = '<div><a href="' . $bundle_permalink . '">Also available as part of: ' . $bundle_title . '</a></div>';
 			}
 			
 		endforeach; 

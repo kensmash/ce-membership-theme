@@ -25,6 +25,11 @@
     text-align: left;
   }  
   
-  .related {
+.related {
     padding-top: 1rem;
+}
+
+  /*remove redundant title in tab*/
+.yikes-custom-woo-tab-title {
+    display: none;
   }

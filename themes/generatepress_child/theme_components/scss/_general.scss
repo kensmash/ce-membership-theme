@@ -22,3 +22,15 @@
   padding-top: .25rem;
 }
 
+.header-image {
+  margin-bottom: 0;
+}
+
+/* change current menu item color in header */
+.main-navigation .main-nav ul li[class*="current-menu-"] > a {
+  color: $ce-iceblue;
+}
+
+li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a {
+    color: $ce-iceblue;
+}
