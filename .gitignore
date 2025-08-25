@@ -21,6 +21,8 @@
 !/themes/ce-fse/**/
 /themes/ce-fse/assets
 
+!/themes/generatepress_child
+!/themes/generatepress_child/**/
 
 !/plugins
 

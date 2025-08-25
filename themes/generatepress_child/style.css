@@ -1,0 +1,41 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    https://generatepress.com
+ Description:  Default GeneratePress child theme
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+
+/*--------------------------------------------------------------
+# GENERAL STYLES
+--------------------------------------------------------------*/
+
+/*fix footer form spacing */
+.site-footer .gform-footer {
+    margin-block-start: .75rem !important;
+}
+
+/* gutenberg table block */
+.wp-block-table td, .wp-block-table th {
+  border: 1px solid #dadada;
+}
+
+/*--------------------------------------------------------------
+# WOOCOMMERCE
+--------------------------------------------------------------*/
+
+/* archive page description text */
+.archive .woocommerce-product-details__short-description {
+  font-size: .75rem; 
+}
+
+.woocommerce-products-header__title {
+  margin-bottom: 1.5rem;
+}
+
+/* single product page price */
+.price {
+  margin-top: .25rem;
+}
