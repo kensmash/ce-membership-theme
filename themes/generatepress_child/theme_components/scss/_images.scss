@@ -53,6 +53,7 @@ img.alignright {
 img.aligncenter {
   clear: both;
   display: block;
+    text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -72,11 +73,7 @@ img.aligncenter {
 }
 
 @media (min-width: 768px) {
-  .wp-block-image {
-    display: inherit;
-  }
-
-  .alignleft,
+   .alignleft,
   .wp-block-image .alignleft,
   img.alignleft {
     float: left;
@@ -112,71 +109,4 @@ img.aligncenter {
 
 .wp-caption-text {
   text-align: center;
-}
-
-.wp-caption-text,
-figcaption {
-  color: #666;
-  font-size: 0.8em;
-}
-
-/* Gutenburg image caption width tweak */
-/* https://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside */
-figure {
-  display: table !important;
-}
-
-.wp-block-image figcaption {
-  display: table-cell;
-  vertical-align: bottom;
-}
-
-/* Galleries
---------------------------------------------- */
-.gallery {
-  margin-bottom: 1.5em;
-  display: grid;
-  grid-gap: 1.5em;
-}
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-}
-
-.gallery-columns-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.gallery-columns-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.gallery-columns-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.gallery-columns-5 {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.gallery-columns-6 {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.gallery-columns-7 {
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.gallery-columns-8 {
-  grid-template-columns: repeat(8, 1fr);
-}
-
-.gallery-columns-9 {
-  grid-template-columns: repeat(9, 1fr);
-}
-
-.gallery-caption {
-  display: block;
 }
