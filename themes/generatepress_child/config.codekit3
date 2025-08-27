@@ -540,6 +540,14 @@
       "oAP" : "\/style.css.map",
       "oF" : 0
     },
+    "\/template-parts\/content-useragreement.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-useragreement.php",
+      "oF" : 0
+    },
     "\/theme_components\/scss\/_ce_gravityforms.scss" : {
       "aP" : 0,
       "bl" : 0,
