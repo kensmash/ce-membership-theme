@@ -1,9 +1,15 @@
 .home-page-hero {
-    a {
-        color: white;
-    }
+    .wc-block-grid__product {
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
 
-    a:hover {
-        color: $ce-lightblue;
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: $ce-lightblue;
+        }
     }
+    
 }
