@@ -31,6 +31,12 @@
   color: $ce-iceblue;
 }
 
-li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a {
+.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a  {
     color: $ce-iceblue;
+}
+
+/* what the... */
+
+.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull {
+  width: 100%;
 }
