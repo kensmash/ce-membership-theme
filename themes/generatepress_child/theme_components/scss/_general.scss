@@ -1,3 +1,8 @@
+/* hack to address issue with horizontal scroll on WooCommerce variable product pages */
+html, body {
+    overflow-x: hidden;
+}
+
 /*fix footer form spacing */
 .site-footer .gform-footer {
     margin-block-start: .75rem !important;
@@ -38,4 +43,4 @@
 /* what the... */
 .entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull {
   width: 100%;
-}
+} 

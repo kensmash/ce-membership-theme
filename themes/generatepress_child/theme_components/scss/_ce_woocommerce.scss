@@ -29,10 +29,18 @@
     padding-top: 1rem;
 }
 
-  /*remove redundant title in tab*/
+/*remove redundant title in tab*/
 .yikes-custom-woo-tab-title {
-    display: none;
-  }
+  display: none;
+}
+
+.wc-sticky-cart-panel {
+    overflow-x: hidden; /* Hide any overflowing horizontal content */
+    max-width: 100%;    /* Ensure the panel doesn't exceed its parent's width */
+}
+.wc-sticky-cart-panel .child-element-class {
+    max-width: 100%; /* Target specific elements inside if needed */
+}
 
 /*--------------------------------------------------------------
 # BLOCKS
