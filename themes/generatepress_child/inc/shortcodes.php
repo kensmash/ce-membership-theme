@@ -123,7 +123,7 @@ function reviewers_tab_reviewers() {
             $output .= '</div>';
             $output .= '<div class="col-md-9">';
             $output .= '<div class="card-body">';
-            $output .= '<p class="testimonial-title">' . get_the_title() . '</p>';
+            $output .= '<h4 class="testimonial-title">' . get_the_title() . '</h4>';
             $output .= get_field('reviewer_description');
             $output .= '</div></div></div></div>';
             if ($query->current_post +1 < $query->post_count) { $output .= "<hr />"; }
@@ -562,9 +562,7 @@ function get_bundled_courses($atts) {
     
         $output .= '<div class="container p-0 mb-3">';
         $output .= '<div class="row">';
-        $output .= '<div class="col-12 my-2">';
-        $output .= '<h4 class="mb-3">Included in the Bundle:</h4>';
-        $output .= '</div> <!-- col -->';
+
         // Loop through posts
         while ( $query->have_posts() ) {
 
@@ -572,21 +570,9 @@ function get_bundled_courses($atts) {
             $query->the_post();
   
             $output .= '<div class="col-12 mt-21 mb-3">';
-            $output .= '<div class="card border-0">';
-            $output .= '<div class="container-fluid p-0">';
-            $output .= '<div class="row pb-1 pb-lg-0">';
-            $output .= '<div class="col-1 d-none d-lg-flex">';
-            $output .= '<a href="'. get_the_permalink() .'">' . get_the_post_thumbnail($post->ID, 'thumbnail', array( 'class' => 'rounded' )) . '</a>';
-            $output .= '</div">';
-            $output .= '<div class="col">';
-            $output .= '<div class="card-body pt-0 py-2 ps-3 ps-lg-0 pe-2">';
+            $output .= get_the_post_thumbnail($post->ID, 'thumbnail', array( 'class' => 'rounded' ));
             $output .= '<h5 class="card-title"><a href="'. get_the_permalink() .'">' . get_the_title() . '</a></h5>';
             $output .= '<p class="text-secondary bundle-course-excerpt">' . get_the_excerpt() . '</p>';
-            $output .= '</div> <!-- card-body -->';
-            $output .= '</div> <!-- col -->';
-            $output .= '</div> <!-- row -->';
-            $output .= '</div> <!-- container-fluid -->';
-            $output .= '</div> <!-- card -->';
             $output .= '</div> <!-- col -->';
             $output .= '<hr>';
         }
