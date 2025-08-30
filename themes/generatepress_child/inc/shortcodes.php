@@ -54,7 +54,7 @@ function mentors_tab_mentors() {
             $output .= '</div></div>';
             $output .= '<div class="col-md-9">';
             $output .= '<div class="card-body">';
-            $output .= '<p class="testimonial-title">' . get_the_title() . '</p>';
+            $output .= '<h4 class="testimonial-title">' . get_the_title() . '</h4>';
             $output .= get_field('mentor_description');
             $output .= '</div></div></div></div>';
             if ($query->current_post +1 < $query->post_count) { $output .= "<hr />"; }
@@ -270,9 +270,9 @@ function tab_testimonials($atts) {
 			$query->the_post();
 
             if ( get_field('name', get_the_ID())) {
-                $output .= '<p class="testimonial-title my-0">' .  esc_html(get_field('name', get_the_ID())) . '</p>';
+                $output .= '<h4 class="testimonial-title my-0">' .  esc_html(get_field('name', get_the_ID())) . '</h4>';
             } else {
-                $output .= '<p class="testimonial-title my-0">' . get_the_title() . '</p>';
+                $output .= '<h4 class="testimonial-title my-0">' . get_the_title() . '</h4>';
             }
             
             if( get_field('credentials', get_the_ID()) ): 
@@ -473,7 +473,6 @@ function course_requirements($atts) {
     if ( $type == "Digital" ) { 
         $output .= '<p><strong>To enroll in a Comics Experience digital course, you will need:</strong></p>';
         $output .= '<ul>';
-        $output .= '<li>To agree to the terms included in <a href="#userAgreementModal" data-bs-toggle="modal" data-bs-target="#userAgreementModal">Comics Experience&rsquo;s User Agreement.</a></li>';
         $output .= '<li>High-speed Internet access.</li>';
         $output .= '<li>A mind like a sponge!</li>';
         $output .= '</ul>';
@@ -483,7 +482,6 @@ function course_requirements($atts) {
         
             $output .= '<li>A computer or mobile device that meets <a href="https://support.zoom.us/hc/en-us/categories/200101697" title="Zoom minimum requirements" target="_blank">Zoom&rsquo;s minimum requirements</a></li>';
       
-        $output .= '<li>To agree to the terms included in <a href="#userAgreementModal" data-bs-toggle="modal" data-bs-target="#userAgreementModal">Comics Experience’s User Agreement.</a></li>';
         $output .= '<li>High-speed Internet access</li>';
         $output .= '<li>Headphones/ear buds with microphone (optional, but strongly suggested)</li>';
         $output .= '<li>A mind like a sponge!</li>';

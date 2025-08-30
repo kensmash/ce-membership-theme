@@ -88,40 +88,8 @@ body {
     padding-bottom: 30px !important;
 }
 
-.ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article, .ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
- 
-.ce-courses .ld-course-list-content .ld-course-list-items .ld_course_grid article .caption {
-    padding: 1em 1.25em;
-    //justify-content: space-between;
-
-    .entry-title {
-        font-size: 1.2em;
-    }
-
-    .entry-content {
-        font-size: .85em;
-        color: $ce-grey;
-        //flex: 1; //make this div fill the available space, pushing button down to bottom of container
-    }
-
-    .ld_course_grid_button {
-        padding-top: 1.5em;
-    }
-}
-
-.learndash-course-grid .items-wrapper.grid .item .content {
-
-    .entry-content {
-        margin: unset; //prvent description content from center aligning in div and making the overall alignment ugly
-    }
-   
-    .button {
-        padding-top: 1em;
-    }
+.items-wrapper article .button {
+    margin-top: 1rem !important;
 }
 
 #ld_course_categorydropdown {
@@ -137,6 +105,10 @@ body {
 --------------------------------------------------------------*/
 .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-name {
    flex: 1 !important;
+}
+
+.ld-course-status {
+    margin-bottom: 1rem;
 }
 
 /*--------------------------------------------------------------
