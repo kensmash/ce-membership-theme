@@ -40,3 +40,8 @@
       display: none !important;
     }
   }
+
+  /* get rid of vendor dashboard button on my account page */
+input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn {
+    display: none !important;
+  }

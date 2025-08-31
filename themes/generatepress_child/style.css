@@ -53,6 +53,13 @@ html, body {
   width: 100%;
 }
 
+/* Indent sub menus */
+@media (max-width: 900px) {
+  .main-navigation .main-nav ul ul {
+    padding-left: 1rem;
+  }
+}
+
 .home-page-hero .wc-block-grid__product {
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
@@ -266,6 +273,11 @@ body.ld-in-focus-mode .learndash-wrapper {
 
 /* get rid of mobile become a vendor menu item on my account menu */
 .woocommerce-MyAccount-content .dokan-account-migration-lists {
+  display: none !important;
+}
+
+/* get rid of vendor dashboard button on my account page */
+input[type=submit].dokan-btn, a.dokan-btn, .dokan-btn {
   display: none !important;
 }
 

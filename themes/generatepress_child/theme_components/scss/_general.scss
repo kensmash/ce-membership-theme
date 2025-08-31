@@ -44,3 +44,11 @@ html, body {
 .entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull {
   width: 100%;
 } 
+
+
+/* Indent sub menus */
+.main-navigation .main-nav ul ul {
+  @media (max-width: 900px) {
+    padding-left: 1rem;
+  }
+}
