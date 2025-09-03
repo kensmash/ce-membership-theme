@@ -34,13 +34,11 @@
   display: none;
 }
 
-.wc-sticky-cart-panel {
-    overflow-x: hidden; /* Hide any overflowing horizontal content */
-    max-width: 100%;    /* Ensure the panel doesn't exceed its parent's width */
+/* change active tab text color */
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+     color: #1e80ae !important; /* Changes the text color of the active tab */
 }
-.wc-sticky-cart-panel .child-element-class {
-    max-width: 100%; /* Target specific elements inside if needed */
-}
+
 
 /*--------------------------------------------------------------
 # BLOCKS
