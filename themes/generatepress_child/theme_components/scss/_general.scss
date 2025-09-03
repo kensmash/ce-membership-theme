@@ -45,8 +45,7 @@ html, body {
   width: 100%;
 } 
 
-
-/* Indent sub menus */
+/* Indent sub menus on mobile */
 .main-navigation .main-nav ul ul {
   @media (max-width: 900px) {
     padding-left: 1rem;

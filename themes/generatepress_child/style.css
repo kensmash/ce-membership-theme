@@ -53,7 +53,7 @@ html, body {
   width: 100%;
 }
 
-/* Indent sub menus */
+/* Indent sub menus on mobile */
 @media (max-width: 900px) {
   .main-navigation .main-nav ul ul {
     padding-left: 1rem;
@@ -213,6 +213,10 @@ body.ld-in-focus-mode .learndash-wrapper {
 #ld_course_categorydropdown label {
   font-weight: 700;
   margin-bottom: 0.25rem;
+}
+
+.ld-profile__saved-cards {
+  display: none;
 }
 
 /*--------------------------------------------------------------

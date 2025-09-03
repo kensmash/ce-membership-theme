@@ -135,8 +135,8 @@ function wpmember_endpoint_content() {
 		 echo ('<h3>My Membership: ');
 		echo do_shortcode('[pmpro_member field="membership_name"]');
 		echo ('</h3>');
-		echo ('<p><a href="/membership-account/membership-cancel/">Cancel Membership</a></p>'); 
-		//echo ('<p><a href="/membership-account/">Billing Details</a> | <a href="/membership-account/membership-levels/">Change Membership</a> | <a href="/membership-account/membership-cancel/">Cancel Membership</a></p>'); 
+		//echo ('<p><a href="/membership-account/membership-cancel/">Cancel Membership</a></p>'); 
+		echo ('<p><a href="/membership-account/membership-billing/">Billing Details</a> | <a href="/membership-account/membership-levels/">Change Membership</a> | <a href="/membership-account/membership-cancel/">Cancel Membership</a></p>'); 
 
 		//echo do_shortcode('[pmpro_account sections="membership" title="My Membership"]');
 
@@ -178,9 +178,9 @@ add_filter ( 'woocommerce_account_menu_items', 'wpsh_custom_endpoint_order' );
 function wpsh_custom_endpoint_order() {
  $myorder = array(
         'dashboard'          => __( 'Dashboard', 'woocommerce' ),
-	 	'my-courses'    	 => __( 'Your courses', 'woocommerce' ), // Don’t forget to change the slug and title here
-		'my-membership'    	 => __( 'Your membership', 'woocommerce' ), // Don’t forget to change the slug and title here
-        'orders'             => __( 'Your orders', 'woocommerce' ), 
+	 	'my-courses'    	 => __( 'My courses', 'woocommerce' ), // Don’t forget to change the slug and title here
+		'my-membership'    	 => __( 'My membership', 'woocommerce' ), // Don’t forget to change the slug and title here
+        'orders'             => __( 'My orders', 'woocommerce' ), 
         'edit-account'       => __( 'Account details', 'woocommerce' ),
 	 	'edit-address'       => __( 'Edit address', 'woocommerce' ),
         'customer-logout'    => __( 'Log out', 'woocommerce' ),
