@@ -39,6 +39,13 @@ html, body {
   margin-bottom: 0;
 }
 
+/* remove unnecessary margin at phone size */
+@media (max-width: 768px) {
+  .separate-containers .site-main {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
 /* breadcrumbs */
 #breadcrumbs {
   font-size: 0.85rem;
