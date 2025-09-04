@@ -88,9 +88,13 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_t
 
 
 /*--------------------------------------------------------------
-# WooCommerce Archive Pages
+# WooCommerce Cart Page
 --------------------------------------------------------------*/
+add_filter( 'woocommerce_return_to_shop_text', 'custom_return_to_shop_text' );
 
+function custom_return_to_shop_text() {
+    return 'Return to Store'; // Change this to your desired text
+}
 
 /*--------------------------------------------------------------
 # WooCommerce My Account Menu
