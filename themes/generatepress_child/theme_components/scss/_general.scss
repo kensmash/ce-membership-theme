@@ -31,6 +31,17 @@ html, body {
   margin-bottom: 0;
 }
 
+/* breadcrumbs */
+#breadcrumbs {
+  font-size: .85rem;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-trail {
+  font-size: .85rem;
+  padding-bottom: .75rem;
+}
+
 /* change current menu item color in header */
 .main-navigation .main-nav ul li[class*="current-menu-"] > a {
   color: $ce-iceblue;

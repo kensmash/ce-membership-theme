@@ -43,7 +43,7 @@ remove_action( 'woocommerce_single_product_summary',
 'woocommerce_template_single_meta', 40 );
 
 //remove breadcrumbs
-remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+//remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
 
 //remove showing x results text
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
@@ -75,7 +75,7 @@ function woocommerce_template_single_title_custom(){
 			if ($is_published && $is_visible) {
 				$bundle_permalink = get_permalink( $course->ID );
 				$bundle_title = get_the_title( $course->ID );
-				$bundle_button = '<div><a href="' . $bundle_permalink . '">Also available as part of: ' . $bundle_title . '</a></div>';
+				$bundle_button = '<div class="below-title-bundled-course-link"><a href="' . $bundle_permalink . '">Also available as part of: ' . $bundle_title . '</a></div>';
 			}
 			
 		endforeach; 
